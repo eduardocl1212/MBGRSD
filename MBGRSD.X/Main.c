@@ -1,75 +1,134 @@
-/*
- * File:   Main.c
- * Author: eduar
- *
- * Created on 9 de mayo de 2019, 01:00 PM
- */
-#pragma config PLLSEL = PLL4X   // PLL Selection (4x clock multiplier)
-#pragma config CFGPLLEN = OFF   // PLL Enable Configuration bit (PLL Disabled (firmware controlled))
-#pragma config CPUDIV = NOCLKDIV// CPU System Clock Postscaler (CPU uses system clock (no divide))
-#pragma config LS48MHZ = SYS24X4// Low Speed USB mode with 48 MHz system clock (System clock at 24 MHz, USB clock divider is set to 4)
+#include "mcc_generated_files/mcc.h"
+#include "ff.h"
+#include "lcd_lib.h"
 
-// CONFIG1H
-#pragma config FOSC = INTOSCIO  // Oscillator Selection (Internal oscillator)
-#pragma config PCLKEN = ON     // Primary Oscillator Shutdown (Primary oscillator shutdown firmware controlled)
-#pragma config FCMEN = OFF      // Fail-Safe Clock Monitor (Fail-Safe Clock Monitor disabled)
-#pragma config IESO = OFF      // Internal/External Oscillator Switchover (Oscillator Switchover mode disabled)
+FATFS FatFs;
+FIL Fil;
 
-// CONFIG2L
-#pragma config nPWRTEN = OFF    // Power-up Timer Enable (Power up timer disabled)
-#pragma config BOREN = SBORDIS  // Brown-out Reset Enable (BOR enabled in hardware (SBOREN is ignored))
-#pragma config BORV = 190       // Brown-out Reset Voltage (BOR set to 1.9V nominal)
-#pragma config nLPBOR = OFF     // Low-Power Brown-out Reset (Low-Power Brown-out Reset disabled)
-
-// CONFIG2H
-#pragma config WDTEN = OFF      // Watchdog Timer Enable bits (WDT disabled in hardware (SWDTEN ignored))
-#pragma config WDTPS = 32768    // Watchdog Timer Postscaler (1:32768)
-
-// CONFIG3H
-#pragma config CCP2MX = RC1     // CCP2 MUX bit (CCP2 input/output is multiplexed with RC1)
-#pragma config PBADEN = ON      // PORTB A/D Enable bit (PORTB<5:0> pins are configured as analog input channels on Reset)
-#pragma config T3CMX = RC0      // Timer3 Clock Input MUX bit (T3CKI function is on RC0)
-#pragma config SDOMX = RB3      // SDO Output MUX bit (SDO function is on RB3)
-#pragma config MCLRE = ON       // Master Clear Reset Pin Enable (MCLR pin enabled; RE3 input disabled)
-
-// CONFIG4L
-#pragma config STVREN = OFF      // Stack Full/Underflow Reset (Stack full/underflow will cause Reset)
-#pragma config LVP = ON         // Single-Supply ICSP Enable bit (Single-Supply ICSP enabled if MCLRE is also 1)
-#pragma config ICPRT = OFF      // Dedicated In-Circuit Debug/Programming Port Enable (ICPORT disabled)
-#pragma config XINST = OFF      // Extended Instruction Set Enable bit (Instruction set extension and Indexed Addressing mode disabled)
-
-// CONFIG5L
-#pragma config CP0 = OFF        // Block 0 Code Protect (Block 0 is not code-protected)
-#pragma config CP1 = OFF        // Block 1 Code Protect (Block 1 is not code-protected)
-#pragma config CP2 = OFF        // Block 2 Code Protect (Block 2 is not code-protected)
-#pragma config CP3 = OFF        // Block 3 Code Protect (Block 3 is not code-protected)
-
-// CONFIG5H
-#pragma config CPB = OFF        // Boot Block Code Protect (Boot block is not code-protected)
-#pragma config CPD = OFF        // Data EEPROM Code Protect (Data EEPROM is not code-protected)
-
-// CONFIG6L
-#pragma config WRT0 = OFF       // Block 0 Write Protect (Block 0 (0800-1FFFh) is not write-protected)
-#pragma config WRT1 = OFF       // Block 1 Write Protect (Block 1 (2000-3FFFh) is not write-protected)
-#pragma config WRT2 = OFF       // Block 2 Write Protect (Block 2 (04000-5FFFh) is not write-protected)
-#pragma config WRT3 = OFF       // Block 3 Write Protect (Block 3 (06000-7FFFh) is not write-protected)
-
-// CONFIG6H
-#pragma config WRTC = OFF       // Configuration Registers Write Protect (Configuration registers (300000-3000FFh) are not write-protected)
-#pragma config WRTB = OFF       // Boot Block Write Protect (Boot block (0000-7FFh) is not write-protected)
-#pragma config WRTD = OFF       // Data EEPROM Write Protect (Data EEPROM is not write-protected)
-
-// CONFIG7L
-#pragma config EBTR0 = OFF      // Block 0 Table Read Protect (Block 0 is not protected from table reads executed in other blocks)
-#pragma config EBTR1 = OFF      // Block 1 Table Read Protect (Block 1 is not protected from table reads executed in other blocks)
-#pragma config EBTR2 = OFF      // Block 2 Table Read Protect (Block 2 is not protected from table reads executed in other blocks)
-#pragma config EBTR3 = OFF      // Block 3 Table Read Protect (Block 3 is not protected from table reads executed in other blocks)
-
-// CONFIG7H
-#pragma config EBTRB = OFF      // Boot Block Table Read Protect (Boot block is not protected from table reads executed in other blocks)
-
-#include <xc.h>
-
-void main(void) {
-    return;
+void __delay_sec(char sec) {
+    for(char i=0;i<=(50*sec);i++) {
+        __delay_ms(20);
+    }
 }
+
+/*
+                         Main application
+ */
+void main(void)
+{
+    
+    LATA = 0x00;
+    TRISA = 0x00;
+    ANSELA = 0x00;
+    UINT bw;
+   
+    // Initialize the device
+    SYSTEM_Initialize();
+
+    // If using interrupts in PIC18 High/Low Priority Mode you need to enable the Global High and Low Interrupts
+    // If using interrupts in PIC Mid-Range Compatibility Mode you need to enable the Global and Peripheral Interrupts
+    // Use the following macros to:
+
+    // Enable high priority global interrupts
+    //INTERRUPT_GlobalInterruptHighEnable();
+
+    // Enable low priority global interrupts.
+    //INTERRUPT_GlobalInterruptLowEnable();
+
+    // Disable high priority global interrupts
+    //INTERRUPT_GlobalInterruptHighDisable();
+
+    // Disable low priority global interrupts.
+    //INTERRUPT_GlobalInterruptLowDisable();
+
+    // Enable the Global Interrupts
+    //INTERRUPT_GlobalInterruptEnable();
+
+    // Enable the Peripheral Interrupts
+    //INTERRUPT_PeripheralInterruptEnable();
+
+    // Disable the Global Interrupts
+    //INTERRUPT_GlobalInterruptDisable();
+
+    // Disable the Peripheral Interrupts
+    //INTERRUPT_PeripheralInterruptDisable();
+
+    Lcd_Init();
+    Lcd_Clear();
+    
+    if (f_mount(&FatFs, "", 1) != FR_OK) {	/* Inicializa SD */
+        Lcd_Set_Cursor(1,1);
+        Lcd_Write_String("Inicio: ERROR");
+        LATAbits.LATA0 ^= 1;
+        LATAbits.LATA1 ^= 1;
+        LATAbits.LATA2 ^= 1;
+        LATAbits.LATA3 ^= 1;
+        LATAbits.LATA4 ^= 1;
+        LATAbits.LATA5 ^= 1;
+        LATAbits.LATA6 ^= 1;
+        LATAbits.LATA7 ^= 1;
+        __delay_sec(2);
+        
+        while(f_mount(&FatFs, "", 1) != FR_OK) {
+            ;
+        }
+    }    
+    
+    Lcd_Clear();
+    Lcd_Set_Cursor(1,1);
+         LATAbits.LATA0 ^= 0;
+        LATAbits.LATA1 ^= 0;
+        LATAbits.LATA2 ^= 0;
+        LATAbits.LATA3 ^= 0;
+        LATAbits.LATA4 ^= 0;
+        LATAbits.LATA5 ^= 0;
+        LATAbits.LATA6 ^= 0;
+        LATAbits.LATA7 ^= 1;
+    Lcd_Write_String("SD INICIALIZADA");
+    __delay_sec(2);
+        
+    if (f_open(&Fil, "BeeDev.txt", FA_OPEN_ALWAYS | FA_READ | FA_WRITE) == FR_OK) {	/* Abre o crea el archivo */
+        Lcd_Set_Cursor(1,1);
+        Lcd_Write_String("Archivo CREADO");
+        LATAbits.LATA1 ^= 1;
+        __delay_sec(2);
+            
+			if ((Fil.fsize != 0) && (f_lseek(&Fil, Fil.fsize) != FR_OK)) goto endSD;	/* Salta al final del archivo */
+                Lcd_Set_Cursor(1,1);
+                LATAbits.LATA1 ^= 0;
+                Lcd_Write_String("Archivo ABIERTO");
+                __delay_sec(2);
+                
+                f_write(&Fil, "Este archivo TXT fue creado desde BeeDev_UG.\r\n", 46, &bw);	/* ]Escribe en el archivo */
+                Lcd_Set_Cursor(1,1);
+                LATAbits.LATA2 ^= 1;
+                Lcd_Write_String("Archivo EDITADO");
+                __delay_sec(2);
+                
+                endSD: f_close(&Fil);								/* Cierra el archivo */
+                Lcd_Set_Cursor(1,1);
+                Lcd_Write_String("Archivo GUARDADO");
+                LATAbits.LATA2 ^= 0;
+                Lcd_Set_Cursor(2,1);
+                Lcd_Write_String("Extraer SD");
+                LATAbits.LATA3 ^= 1;
+                __delay_sec(2);
+     
+	}
+    else {
+       Lcd_Clear();
+       Lcd_Set_Cursor(1,1);
+       Lcd_Write_String("Archivo: ERROR");
+       LATAbits.LATA1 ^= 1;
+       LATAbits.LATA2 ^= 1;
+       LATAbits.LATA3 ^= 1;
+    }
+    
+    while (1)
+    {
+        // Add your application code
+    }
+}
+/**
+ End of File
+*/
