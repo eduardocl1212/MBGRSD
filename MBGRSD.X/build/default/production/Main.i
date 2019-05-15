@@ -8421,6 +8421,96 @@ void Lcd_Shift_Left()
 }
 # 3 "Main.c" 2
 
+# 1 "./Errores.h" 1
+# 11 "./Errores.h"
+void Error(char a){
+    if (a == 1){
+        LATAbits.LATA0 ^= 1;
+        LATAbits.LATA1 ^= 1;
+        LATAbits.LATA2 ^= 1;
+        LATAbits.LATA3 ^= 1;
+        LATAbits.LATA4 ^= 1;
+        LATAbits.LATA5 ^= 1;
+        LATAbits.LATA6 ^= 1;
+        LATAbits.LATA7 ^= 1;
+    }
+    if (a == 2){
+        LATAbits.LATA0 ^= 0;
+        LATAbits.LATA1 ^= 0;
+        LATAbits.LATA2 ^= 0;
+        LATAbits.LATA3 ^= 0;
+        LATAbits.LATA4 ^= 0;
+        LATAbits.LATA5 ^= 0;
+        LATAbits.LATA6 ^= 0;
+        LATAbits.LATA7 ^= 1;
+    }
+    if (a == 3){
+        LATAbits.LATA0 ^= 0;
+        LATAbits.LATA1 ^= 0;
+        LATAbits.LATA2 ^= 0;
+        LATAbits.LATA3 ^= 0;
+        LATAbits.LATA4 ^= 0;
+        LATAbits.LATA5 ^= 0;
+        LATAbits.LATA6 ^= 1;
+        LATAbits.LATA7 ^= 1;
+    }
+    if (a == 4){
+        LATAbits.LATA0 ^= 0;
+        LATAbits.LATA1 ^= 0;
+        LATAbits.LATA2 ^= 0;
+        LATAbits.LATA3 ^= 0;
+        LATAbits.LATA4 ^= 0;
+        LATAbits.LATA5 ^= 1;
+        LATAbits.LATA6 ^= 1;
+        LATAbits.LATA7 ^= 1;
+    }
+    if (a == 5){
+        LATAbits.LATA0 ^= 0;
+        LATAbits.LATA1 ^= 0;
+        LATAbits.LATA2 ^= 0;
+        LATAbits.LATA3 ^= 0;
+        LATAbits.LATA4 ^= 1;
+        LATAbits.LATA5 ^= 1;
+        LATAbits.LATA6 ^= 1;
+        LATAbits.LATA7 ^= 1;
+    }
+    if (a == 6){
+        LATAbits.LATA0 ^= 0;
+        LATAbits.LATA1 ^= 0;
+        LATAbits.LATA2 ^= 0;
+        LATAbits.LATA3 ^= 1;
+        LATAbits.LATA4 ^= 1;
+        LATAbits.LATA5 ^= 1;
+        LATAbits.LATA6 ^= 1;
+        LATAbits.LATA7 ^= 1;
+    }
+    if (a == 7){
+        LATAbits.LATA0 ^= 0;
+        LATAbits.LATA1 ^= 0;
+        LATAbits.LATA2 ^= 1;
+        LATAbits.LATA3 ^= 1;
+        LATAbits.LATA4 ^= 1;
+        LATAbits.LATA5 ^= 1;
+        LATAbits.LATA6 ^= 1;
+        LATAbits.LATA7 ^= 1;
+    }
+    if (a == 11){
+        LATAbits.LATA0 ^= 0;
+        LATAbits.LATA1 ^= 1;
+        LATAbits.LATA2 ^= 0;
+        LATAbits.LATA3 ^= 0;
+        LATAbits.LATA4 ^= 0;
+        LATAbits.LATA5 ^= 1;
+        LATAbits.LATA6 ^= 0;
+        LATAbits.LATA7 ^= 1;
+    }
+    if(a == 15) {
+        LATAbits.LATA0 ^= 0;
+
+    }
+}
+# 4 "Main.c" 2
+
 
 FATFS FatFs;
 FIL Fil;
@@ -8431,9 +8521,6 @@ void __delay_sec(char sec) {
     }
 }
 
-
-
-
 void main(void)
 {
 
@@ -8442,23 +8529,9 @@ void main(void)
     ANSELA = 0x00;
     UINT bw;
 
-
     SYSTEM_Initialize();
-# 56 "Main.c"
-    Lcd_Init();
-    Lcd_Clear();
-
     if (f_mount(&FatFs, "", 1) != FR_OK) {
-        Lcd_Set_Cursor(1,1);
-        Lcd_Write_String("Inicio: ERROR");
-        LATAbits.LATA0 ^= 1;
-        LATAbits.LATA1 ^= 1;
-        LATAbits.LATA2 ^= 1;
-        LATAbits.LATA3 ^= 1;
-        LATAbits.LATA4 ^= 1;
-        LATAbits.LATA5 ^= 1;
-        LATAbits.LATA6 ^= 1;
-        LATAbits.LATA7 ^= 1;
+        Error(1);
         __delay_sec(2);
 
         while(f_mount(&FatFs, "", 1) != FR_OK) {
@@ -8466,58 +8539,34 @@ void main(void)
         }
     }
 
-    Lcd_Clear();
-    Lcd_Set_Cursor(1,1);
-         LATAbits.LATA0 ^= 0;
-        LATAbits.LATA1 ^= 0;
-        LATAbits.LATA2 ^= 0;
-        LATAbits.LATA3 ^= 0;
-        LATAbits.LATA4 ^= 0;
-        LATAbits.LATA5 ^= 0;
-        LATAbits.LATA6 ^= 0;
-        LATAbits.LATA7 ^= 1;
-    Lcd_Write_String("SD INICIALIZADA");
+    Error(2);
     __delay_sec(2);
 
     if (f_open(&Fil, "BeeDev.txt", 0x10 | 0x01 | 0x02) == FR_OK) {
-        Lcd_Set_Cursor(1,1);
-        Lcd_Write_String("Archivo CREADO");
-        LATAbits.LATA1 ^= 1;
+        Error(3);
         __delay_sec(2);
 
    if ((Fil.fsize != 0) && (f_lseek(&Fil, Fil.fsize) != FR_OK)) goto endSD;
-                Lcd_Set_Cursor(1,1);
-                LATAbits.LATA1 ^= 0;
-                Lcd_Write_String("Archivo ABIERTO");
+                Error(4);
                 __delay_sec(2);
 
-                f_write(&Fil, "Este archivo TXT fue creado desde BeeDev_UG.\r\n", 46, &bw);
-                Lcd_Set_Cursor(1,1);
-                LATAbits.LATA2 ^= 1;
-                Lcd_Write_String("Archivo EDITADO");
+                f_write(&Fil, "ESTAS MUERTO.\r\n", 46, &bw);
+                Error(5);
                 __delay_sec(2);
 
                 endSD: f_close(&Fil);
-                Lcd_Set_Cursor(1,1);
-                Lcd_Write_String("Archivo GUARDADO");
-                LATAbits.LATA2 ^= 0;
-                Lcd_Set_Cursor(2,1);
-                Lcd_Write_String("Extraer SD");
-                LATAbits.LATA3 ^= 1;
+                Error(6);
+                __delay_sec(1);
+                Error(7);
                 __delay_sec(2);
 
  }
     else {
-       Lcd_Clear();
-       Lcd_Set_Cursor(1,1);
-       Lcd_Write_String("Archivo: ERROR");
-       LATAbits.LATA1 ^= 1;
-       LATAbits.LATA2 ^= 1;
-       LATAbits.LATA3 ^= 1;
+        Error(11);
     }
 
     while (1)
     {
-
+        Error(15);
     }
 }

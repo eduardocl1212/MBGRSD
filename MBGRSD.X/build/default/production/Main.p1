@@ -22,6 +22,21 @@ Version 4.0 HI-TECH Software Intermediate Code
 "183 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18.h
 [v __delay `JF4805 ~T0 @X0 0 e ]
 [p i __delay ]
+"3785 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h: 3785:     struct {
+[s S164 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S164 . LATA0 LATA1 LATA2 LATA3 LATA4 LATA5 LATA6 LATA7 ]
+"3795
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h: 3795:     struct {
+[s S165 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S165 . LA0 LA1 LA2 LA3 LA4 LA5 LA6 LA7 ]
+"3784
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h: 3784: typedef union {
+[u S163 `S164 1 `S165 1 ]
+[n S163 . . . ]
+"3806
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h: 3806: extern volatile LATAbits_t LATAbits __attribute__((address(0xF89)));
+[v _LATAbits `VS163 ~T0 @X0 0 e@3977 ]
 "78 ./ff.h
 [; ;./ff.h: 78: typedef struct {
 [s S636 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `us 1 `us 1 `ul 1 `ul 1 `ul 1 `ul 1 `ul 1 `ul 1 `ul 1 `ul 1 `ul 1 `uc -> 512 `i ]
@@ -43,29 +58,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 "68 ./mcc_generated_files/mcc.h
 [; ;./mcc_generated_files/mcc.h: 68: void SYSTEM_Initialize(void);
 [v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
-"59 Main.c
-[; ;Main.c: 59:     if (f_mount(&FatFs, "", 1) != FR_OK) {
+"24 Main.c
+[; ;Main.c: 24:     if (f_mount(&FatFs, "", 1) != FR_OK) {
 [c E4918 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 .. ]
 [n E4918 . FR_OK FR_DISK_ERR FR_INT_ERR FR_NOT_READY FR_NO_FILE FR_NO_PATH FR_INVALID_NAME FR_DENIED FR_EXIST FR_INVALID_OBJECT FR_WRITE_PROTECTED FR_INVALID_DRIVE FR_NOT_ENABLED FR_NO_FILESYSTEM FR_MKFS_ABORTED FR_TIMEOUT FR_LOCKED FR_NOT_ENOUGH_CORE FR_TOO_MANY_OPEN_FILES FR_INVALID_PARAMETER  ]
 "237 ./ff.h
 [; ;./ff.h: 237: FRESULT f_mount (FATFS* fs, const TCHAR* path, BYTE opt);
 [v _f_mount `(E4918 ~T0 @X0 0 ef3`*S636`*Cuc`uc ]
-"3785 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h: 3785:     struct {
-[s S164 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S164 . LATA0 LATA1 LATA2 LATA3 LATA4 LATA5 LATA6 LATA7 ]
-"3795
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h: 3795:     struct {
-[s S165 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S165 . LA0 LA1 LA2 LA3 LA4 LA5 LA6 LA7 ]
-"3784
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h: 3784: typedef union {
-[u S163 `S164 1 `S165 1 ]
-[n S163 . . . ]
-"3806
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h: 3806: extern volatile LATAbits_t LATAbits __attribute__((address(0xF89)));
-[v _LATAbits `VS163 ~T0 @X0 0 e@3977 ]
-"212 ./ff.h
+"212
 [; ;./ff.h: 212: FRESULT f_open (FIL* fp, const TCHAR* path, BYTE mode);
 [v _f_open `(E4918 ~T0 @X0 0 ef3`*S637`*Cuc`uc ]
 "217
@@ -1080,290 +1080,458 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;./lcd_lib.h: 125: }
 [e :UE 663 ]
 }
-"5 Main.c
-[; ;Main.c: 5: FATFS FatFs;
+"11 ./Errores.h
+[; ;./Errores.h: 11: void Error(char a){
+[v _Error `(v ~T0 @X0 1 ef1`uc ]
+{
+[e :U _Error ]
+[v _a `uc ~T0 @X0 1 r1 ]
+[f ]
+"12
+[; ;./Errores.h: 12:     if (a == 1){
+[e $ ! == -> _a `i -> 1 `i 665  ]
+{
+"13
+[; ;./Errores.h: 13:         LATAbits.LATA0 ^= 1;
+[e =^ . . _LATAbits 0 0 -> -> 1 `i `Vuc ]
+"14
+[; ;./Errores.h: 14:         LATAbits.LATA1 ^= 1;
+[e =^ . . _LATAbits 0 1 -> -> 1 `i `Vuc ]
+"15
+[; ;./Errores.h: 15:         LATAbits.LATA2 ^= 1;
+[e =^ . . _LATAbits 0 2 -> -> 1 `i `Vuc ]
+"16
+[; ;./Errores.h: 16:         LATAbits.LATA3 ^= 1;
+[e =^ . . _LATAbits 0 3 -> -> 1 `i `Vuc ]
+"17
+[; ;./Errores.h: 17:         LATAbits.LATA4 ^= 1;
+[e =^ . . _LATAbits 0 4 -> -> 1 `i `Vuc ]
+"18
+[; ;./Errores.h: 18:         LATAbits.LATA5 ^= 1;
+[e =^ . . _LATAbits 0 5 -> -> 1 `i `Vuc ]
+"19
+[; ;./Errores.h: 19:         LATAbits.LATA6 ^= 1;
+[e =^ . . _LATAbits 0 6 -> -> 1 `i `Vuc ]
+"20
+[; ;./Errores.h: 20:         LATAbits.LATA7 ^= 1;
+[e =^ . . _LATAbits 0 7 -> -> 1 `i `Vuc ]
+"21
+[; ;./Errores.h: 21:     }
+}
+[e :U 665 ]
+"22
+[; ;./Errores.h: 22:     if (a == 2){
+[e $ ! == -> _a `i -> 2 `i 666  ]
+{
+"23
+[; ;./Errores.h: 23:         LATAbits.LATA0 ^= 0;
+[e =^ . . _LATAbits 0 0 -> -> 0 `i `Vuc ]
+"24
+[; ;./Errores.h: 24:         LATAbits.LATA1 ^= 0;
+[e =^ . . _LATAbits 0 1 -> -> 0 `i `Vuc ]
+"25
+[; ;./Errores.h: 25:         LATAbits.LATA2 ^= 0;
+[e =^ . . _LATAbits 0 2 -> -> 0 `i `Vuc ]
+"26
+[; ;./Errores.h: 26:         LATAbits.LATA3 ^= 0;
+[e =^ . . _LATAbits 0 3 -> -> 0 `i `Vuc ]
+"27
+[; ;./Errores.h: 27:         LATAbits.LATA4 ^= 0;
+[e =^ . . _LATAbits 0 4 -> -> 0 `i `Vuc ]
+"28
+[; ;./Errores.h: 28:         LATAbits.LATA5 ^= 0;
+[e =^ . . _LATAbits 0 5 -> -> 0 `i `Vuc ]
+"29
+[; ;./Errores.h: 29:         LATAbits.LATA6 ^= 0;
+[e =^ . . _LATAbits 0 6 -> -> 0 `i `Vuc ]
+"30
+[; ;./Errores.h: 30:         LATAbits.LATA7 ^= 1;
+[e =^ . . _LATAbits 0 7 -> -> 1 `i `Vuc ]
+"31
+[; ;./Errores.h: 31:     }
+}
+[e :U 666 ]
+"32
+[; ;./Errores.h: 32:     if (a == 3){
+[e $ ! == -> _a `i -> 3 `i 667  ]
+{
+"33
+[; ;./Errores.h: 33:         LATAbits.LATA0 ^= 0;
+[e =^ . . _LATAbits 0 0 -> -> 0 `i `Vuc ]
+"34
+[; ;./Errores.h: 34:         LATAbits.LATA1 ^= 0;
+[e =^ . . _LATAbits 0 1 -> -> 0 `i `Vuc ]
+"35
+[; ;./Errores.h: 35:         LATAbits.LATA2 ^= 0;
+[e =^ . . _LATAbits 0 2 -> -> 0 `i `Vuc ]
+"36
+[; ;./Errores.h: 36:         LATAbits.LATA3 ^= 0;
+[e =^ . . _LATAbits 0 3 -> -> 0 `i `Vuc ]
+"37
+[; ;./Errores.h: 37:         LATAbits.LATA4 ^= 0;
+[e =^ . . _LATAbits 0 4 -> -> 0 `i `Vuc ]
+"38
+[; ;./Errores.h: 38:         LATAbits.LATA5 ^= 0;
+[e =^ . . _LATAbits 0 5 -> -> 0 `i `Vuc ]
+"39
+[; ;./Errores.h: 39:         LATAbits.LATA6 ^= 1;
+[e =^ . . _LATAbits 0 6 -> -> 1 `i `Vuc ]
+"40
+[; ;./Errores.h: 40:         LATAbits.LATA7 ^= 1;
+[e =^ . . _LATAbits 0 7 -> -> 1 `i `Vuc ]
+"41
+[; ;./Errores.h: 41:     }
+}
+[e :U 667 ]
+"42
+[; ;./Errores.h: 42:     if (a == 4){
+[e $ ! == -> _a `i -> 4 `i 668  ]
+{
+"43
+[; ;./Errores.h: 43:         LATAbits.LATA0 ^= 0;
+[e =^ . . _LATAbits 0 0 -> -> 0 `i `Vuc ]
+"44
+[; ;./Errores.h: 44:         LATAbits.LATA1 ^= 0;
+[e =^ . . _LATAbits 0 1 -> -> 0 `i `Vuc ]
+"45
+[; ;./Errores.h: 45:         LATAbits.LATA2 ^= 0;
+[e =^ . . _LATAbits 0 2 -> -> 0 `i `Vuc ]
+"46
+[; ;./Errores.h: 46:         LATAbits.LATA3 ^= 0;
+[e =^ . . _LATAbits 0 3 -> -> 0 `i `Vuc ]
+"47
+[; ;./Errores.h: 47:         LATAbits.LATA4 ^= 0;
+[e =^ . . _LATAbits 0 4 -> -> 0 `i `Vuc ]
+"48
+[; ;./Errores.h: 48:         LATAbits.LATA5 ^= 1;
+[e =^ . . _LATAbits 0 5 -> -> 1 `i `Vuc ]
+"49
+[; ;./Errores.h: 49:         LATAbits.LATA6 ^= 1;
+[e =^ . . _LATAbits 0 6 -> -> 1 `i `Vuc ]
+"50
+[; ;./Errores.h: 50:         LATAbits.LATA7 ^= 1;
+[e =^ . . _LATAbits 0 7 -> -> 1 `i `Vuc ]
+"51
+[; ;./Errores.h: 51:     }
+}
+[e :U 668 ]
+"52
+[; ;./Errores.h: 52:     if (a == 5){
+[e $ ! == -> _a `i -> 5 `i 669  ]
+{
+"53
+[; ;./Errores.h: 53:         LATAbits.LATA0 ^= 0;
+[e =^ . . _LATAbits 0 0 -> -> 0 `i `Vuc ]
+"54
+[; ;./Errores.h: 54:         LATAbits.LATA1 ^= 0;
+[e =^ . . _LATAbits 0 1 -> -> 0 `i `Vuc ]
+"55
+[; ;./Errores.h: 55:         LATAbits.LATA2 ^= 0;
+[e =^ . . _LATAbits 0 2 -> -> 0 `i `Vuc ]
+"56
+[; ;./Errores.h: 56:         LATAbits.LATA3 ^= 0;
+[e =^ . . _LATAbits 0 3 -> -> 0 `i `Vuc ]
+"57
+[; ;./Errores.h: 57:         LATAbits.LATA4 ^= 1;
+[e =^ . . _LATAbits 0 4 -> -> 1 `i `Vuc ]
+"58
+[; ;./Errores.h: 58:         LATAbits.LATA5 ^= 1;
+[e =^ . . _LATAbits 0 5 -> -> 1 `i `Vuc ]
+"59
+[; ;./Errores.h: 59:         LATAbits.LATA6 ^= 1;
+[e =^ . . _LATAbits 0 6 -> -> 1 `i `Vuc ]
+"60
+[; ;./Errores.h: 60:         LATAbits.LATA7 ^= 1;
+[e =^ . . _LATAbits 0 7 -> -> 1 `i `Vuc ]
+"61
+[; ;./Errores.h: 61:     }
+}
+[e :U 669 ]
+"62
+[; ;./Errores.h: 62:     if (a == 6){
+[e $ ! == -> _a `i -> 6 `i 670  ]
+{
+"63
+[; ;./Errores.h: 63:         LATAbits.LATA0 ^= 0;
+[e =^ . . _LATAbits 0 0 -> -> 0 `i `Vuc ]
+"64
+[; ;./Errores.h: 64:         LATAbits.LATA1 ^= 0;
+[e =^ . . _LATAbits 0 1 -> -> 0 `i `Vuc ]
+"65
+[; ;./Errores.h: 65:         LATAbits.LATA2 ^= 0;
+[e =^ . . _LATAbits 0 2 -> -> 0 `i `Vuc ]
+"66
+[; ;./Errores.h: 66:         LATAbits.LATA3 ^= 1;
+[e =^ . . _LATAbits 0 3 -> -> 1 `i `Vuc ]
+"67
+[; ;./Errores.h: 67:         LATAbits.LATA4 ^= 1;
+[e =^ . . _LATAbits 0 4 -> -> 1 `i `Vuc ]
+"68
+[; ;./Errores.h: 68:         LATAbits.LATA5 ^= 1;
+[e =^ . . _LATAbits 0 5 -> -> 1 `i `Vuc ]
+"69
+[; ;./Errores.h: 69:         LATAbits.LATA6 ^= 1;
+[e =^ . . _LATAbits 0 6 -> -> 1 `i `Vuc ]
+"70
+[; ;./Errores.h: 70:         LATAbits.LATA7 ^= 1;
+[e =^ . . _LATAbits 0 7 -> -> 1 `i `Vuc ]
+"71
+[; ;./Errores.h: 71:     }
+}
+[e :U 670 ]
+"72
+[; ;./Errores.h: 72:     if (a == 7){
+[e $ ! == -> _a `i -> 7 `i 671  ]
+{
+"73
+[; ;./Errores.h: 73:         LATAbits.LATA0 ^= 0;
+[e =^ . . _LATAbits 0 0 -> -> 0 `i `Vuc ]
+"74
+[; ;./Errores.h: 74:         LATAbits.LATA1 ^= 0;
+[e =^ . . _LATAbits 0 1 -> -> 0 `i `Vuc ]
+"75
+[; ;./Errores.h: 75:         LATAbits.LATA2 ^= 1;
+[e =^ . . _LATAbits 0 2 -> -> 1 `i `Vuc ]
+"76
+[; ;./Errores.h: 76:         LATAbits.LATA3 ^= 1;
+[e =^ . . _LATAbits 0 3 -> -> 1 `i `Vuc ]
+"77
+[; ;./Errores.h: 77:         LATAbits.LATA4 ^= 1;
+[e =^ . . _LATAbits 0 4 -> -> 1 `i `Vuc ]
+"78
+[; ;./Errores.h: 78:         LATAbits.LATA5 ^= 1;
+[e =^ . . _LATAbits 0 5 -> -> 1 `i `Vuc ]
+"79
+[; ;./Errores.h: 79:         LATAbits.LATA6 ^= 1;
+[e =^ . . _LATAbits 0 6 -> -> 1 `i `Vuc ]
+"80
+[; ;./Errores.h: 80:         LATAbits.LATA7 ^= 1;
+[e =^ . . _LATAbits 0 7 -> -> 1 `i `Vuc ]
+"81
+[; ;./Errores.h: 81:     }
+}
+[e :U 671 ]
+"82
+[; ;./Errores.h: 82:     if (a == 11){
+[e $ ! == -> _a `i -> 11 `i 672  ]
+{
+"83
+[; ;./Errores.h: 83:         LATAbits.LATA0 ^= 0;
+[e =^ . . _LATAbits 0 0 -> -> 0 `i `Vuc ]
+"84
+[; ;./Errores.h: 84:         LATAbits.LATA1 ^= 1;
+[e =^ . . _LATAbits 0 1 -> -> 1 `i `Vuc ]
+"85
+[; ;./Errores.h: 85:         LATAbits.LATA2 ^= 0;
+[e =^ . . _LATAbits 0 2 -> -> 0 `i `Vuc ]
+"86
+[; ;./Errores.h: 86:         LATAbits.LATA3 ^= 0;
+[e =^ . . _LATAbits 0 3 -> -> 0 `i `Vuc ]
+"87
+[; ;./Errores.h: 87:         LATAbits.LATA4 ^= 0;
+[e =^ . . _LATAbits 0 4 -> -> 0 `i `Vuc ]
+"88
+[; ;./Errores.h: 88:         LATAbits.LATA5 ^= 1;
+[e =^ . . _LATAbits 0 5 -> -> 1 `i `Vuc ]
+"89
+[; ;./Errores.h: 89:         LATAbits.LATA6 ^= 0;
+[e =^ . . _LATAbits 0 6 -> -> 0 `i `Vuc ]
+"90
+[; ;./Errores.h: 90:         LATAbits.LATA7 ^= 1;
+[e =^ . . _LATAbits 0 7 -> -> 1 `i `Vuc ]
+"91
+[; ;./Errores.h: 91:     }
+}
+[e :U 672 ]
+"92
+[; ;./Errores.h: 92:     if(a == 15) {
+[e $ ! == -> _a `i -> 15 `i 673  ]
+{
+"93
+[; ;./Errores.h: 93:         LATAbits.LATA0 ^= 0;
+[e =^ . . _LATAbits 0 0 -> -> 0 `i `Vuc ]
+"95
+[; ;./Errores.h: 95:     }
+}
+[e :U 673 ]
+"96
+[; ;./Errores.h: 96: }
+[e :UE 664 ]
+}
+"6 Main.c
+[; ;Main.c: 6: FATFS FatFs;
 [v _FatFs `S636 ~T0 @X0 1 e ]
-"6
-[; ;Main.c: 6: FIL Fil;
+"7
+[; ;Main.c: 7: FIL Fil;
 [v _Fil `S637 ~T0 @X0 1 e ]
-"8
-[; ;Main.c: 8: void __delay_sec(char sec) {
+"9
+[; ;Main.c: 9: void __delay_sec(char sec) {
 [v ___delay_sec `(v ~T0 @X0 1 ef1`uc ]
 {
 [e :U ___delay_sec ]
 [v _sec `uc ~T0 @X0 1 r1 ]
 [f ]
-"9
-[; ;Main.c: 9:     for(char i=0;i<=(50*sec);i++) {
+"10
+[; ;Main.c: 10:     for(char i=0;i<=(50*sec);i++) {
 {
 [v _i `uc ~T0 @X0 1 a ]
 [e = _i -> -> 0 `i `uc ]
-[e $U 668  ]
-[e :U 665 ]
+[e $U 678  ]
+[e :U 675 ]
 {
-"10
-[; ;Main.c: 10:         _delay((unsigned long)((20)*(8000000/4000.0)));
-[e ( __delay (1 -> * -> -> 20 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
 "11
-[; ;Main.c: 11:     }
+[; ;Main.c: 11:         _delay((unsigned long)((20)*(8000000/4000.0)));
+[e ( __delay (1 -> * -> -> 20 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+"12
+[; ;Main.c: 12:     }
 }
 [e ++ _i -> -> 1 `i `uc ]
-[e :U 668 ]
-[e $ <= -> _i `i * -> 50 `i -> _sec `i 665  ]
-[e :U 666 ]
+[e :U 678 ]
+[e $ <= -> _i `i * -> 50 `i -> _sec `i 675  ]
+[e :U 676 ]
 }
-"12
-[; ;Main.c: 12: }
-[e :UE 664 ]
+"13
+[; ;Main.c: 13: }
+[e :UE 674 ]
 }
 [v $root$_main `(v ~T0 @X0 0 e ]
-"17
-[; ;Main.c: 17: void main(void)
+"15
+[; ;Main.c: 15: void main(void)
 [v _main `(v ~T0 @X0 1 ef ]
-"18
-[; ;Main.c: 18: {
+"16
+[; ;Main.c: 16: {
 {
 [e :U _main ]
 [f ]
-"20
-[; ;Main.c: 20:     LATA = 0x00;
+"18
+[; ;Main.c: 18:     LATA = 0x00;
 [e = _LATA -> -> 0 `i `uc ]
-"21
-[; ;Main.c: 21:     TRISA = 0x00;
+"19
+[; ;Main.c: 19:     TRISA = 0x00;
 [e = _TRISA -> -> 0 `i `uc ]
-"22
-[; ;Main.c: 22:     ANSELA = 0x00;
+"20
+[; ;Main.c: 20:     ANSELA = 0x00;
 [e = _ANSELA -> -> 0 `i `uc ]
-"23
-[; ;Main.c: 23:     UINT bw;
+"21
+[; ;Main.c: 21:     UINT bw;
 [v _bw `us ~T0 @X0 1 a ]
-"26
-[; ;Main.c: 26:     SYSTEM_Initialize();
+"23
+[; ;Main.c: 23:     SYSTEM_Initialize();
 [e ( _SYSTEM_Initialize ..  ]
-"56
-[; ;Main.c: 56:     Lcd_Init();
-[e ( _Lcd_Init ..  ]
-"57
-[; ;Main.c: 57:     Lcd_Clear();
-[e ( _Lcd_Clear ..  ]
-"59
-[; ;Main.c: 59:     if (f_mount(&FatFs, "", 1) != FR_OK) {
-[e $ ! != -> ( _f_mount (3 , , &U _FatFs :s 1C -> -> 1 `i `uc `ui -> . `E4918 0 `ui 670  ]
+"24
+[; ;Main.c: 24:     if (f_mount(&FatFs, "", 1) != FR_OK) {
+[e $ ! != -> ( _f_mount (3 , , &U _FatFs :s 1C -> -> 1 `i `uc `ui -> . `E4918 0 `ui 680  ]
 {
-"60
-[; ;Main.c: 60:         Lcd_Set_Cursor(1,1);
-[e ( _Lcd_Set_Cursor (2 , -> -> 1 `i `uc -> -> 1 `i `uc ]
-"61
-[; ;Main.c: 61:         Lcd_Write_String("Inicio: ERROR");
-[e ( _Lcd_Write_String (1 :s 2C ]
-"62
-[; ;Main.c: 62:         LATAbits.LATA0 ^= 1;
-[e =^ . . _LATAbits 0 0 -> -> 1 `i `Vuc ]
-"63
-[; ;Main.c: 63:         LATAbits.LATA1 ^= 1;
-[e =^ . . _LATAbits 0 1 -> -> 1 `i `Vuc ]
-"64
-[; ;Main.c: 64:         LATAbits.LATA2 ^= 1;
-[e =^ . . _LATAbits 0 2 -> -> 1 `i `Vuc ]
-"65
-[; ;Main.c: 65:         LATAbits.LATA3 ^= 1;
-[e =^ . . _LATAbits 0 3 -> -> 1 `i `Vuc ]
-"66
-[; ;Main.c: 66:         LATAbits.LATA4 ^= 1;
-[e =^ . . _LATAbits 0 4 -> -> 1 `i `Vuc ]
-"67
-[; ;Main.c: 67:         LATAbits.LATA5 ^= 1;
-[e =^ . . _LATAbits 0 5 -> -> 1 `i `Vuc ]
-"68
-[; ;Main.c: 68:         LATAbits.LATA6 ^= 1;
-[e =^ . . _LATAbits 0 6 -> -> 1 `i `Vuc ]
-"69
-[; ;Main.c: 69:         LATAbits.LATA7 ^= 1;
-[e =^ . . _LATAbits 0 7 -> -> 1 `i `Vuc ]
-"70
-[; ;Main.c: 70:         __delay_sec(2);
+"25
+[; ;Main.c: 25:         Error(1);
+[e ( _Error (1 -> -> 1 `i `uc ]
+"26
+[; ;Main.c: 26:         __delay_sec(2);
 [e ( ___delay_sec (1 -> -> 2 `i `uc ]
-"72
-[; ;Main.c: 72:         while(f_mount(&FatFs, "", 1) != FR_OK) {
-[e $U 671  ]
-[e :U 672 ]
+"28
+[; ;Main.c: 28:         while(f_mount(&FatFs, "", 1) != FR_OK) {
+[e $U 681  ]
+[e :U 682 ]
 {
-"74
-[; ;Main.c: 74:         }
+"30
+[; ;Main.c: 30:         }
 }
-[e :U 671 ]
-"72
-[; ;Main.c: 72:         while(f_mount(&FatFs, "", 1) != FR_OK) {
-[e $ != -> ( _f_mount (3 , , &U _FatFs :s 3C -> -> 1 `i `uc `ui -> . `E4918 0 `ui 672  ]
-[e :U 673 ]
-"75
-[; ;Main.c: 75:     }
+[e :U 681 ]
+"28
+[; ;Main.c: 28:         while(f_mount(&FatFs, "", 1) != FR_OK) {
+[e $ != -> ( _f_mount (3 , , &U _FatFs :s 2C -> -> 1 `i `uc `ui -> . `E4918 0 `ui 682  ]
+[e :U 683 ]
+"31
+[; ;Main.c: 31:     }
 }
-[e :U 670 ]
-"77
-[; ;Main.c: 77:     Lcd_Clear();
-[e ( _Lcd_Clear ..  ]
-"78
-[; ;Main.c: 78:     Lcd_Set_Cursor(1,1);
-[e ( _Lcd_Set_Cursor (2 , -> -> 1 `i `uc -> -> 1 `i `uc ]
-"79
-[; ;Main.c: 79:          LATAbits.LATA0 ^= 0;
-[e =^ . . _LATAbits 0 0 -> -> 0 `i `Vuc ]
-"80
-[; ;Main.c: 80:         LATAbits.LATA1 ^= 0;
-[e =^ . . _LATAbits 0 1 -> -> 0 `i `Vuc ]
-"81
-[; ;Main.c: 81:         LATAbits.LATA2 ^= 0;
-[e =^ . . _LATAbits 0 2 -> -> 0 `i `Vuc ]
-"82
-[; ;Main.c: 82:         LATAbits.LATA3 ^= 0;
-[e =^ . . _LATAbits 0 3 -> -> 0 `i `Vuc ]
-"83
-[; ;Main.c: 83:         LATAbits.LATA4 ^= 0;
-[e =^ . . _LATAbits 0 4 -> -> 0 `i `Vuc ]
-"84
-[; ;Main.c: 84:         LATAbits.LATA5 ^= 0;
-[e =^ . . _LATAbits 0 5 -> -> 0 `i `Vuc ]
-"85
-[; ;Main.c: 85:         LATAbits.LATA6 ^= 0;
-[e =^ . . _LATAbits 0 6 -> -> 0 `i `Vuc ]
-"86
-[; ;Main.c: 86:         LATAbits.LATA7 ^= 1;
-[e =^ . . _LATAbits 0 7 -> -> 1 `i `Vuc ]
-"87
-[; ;Main.c: 87:     Lcd_Write_String("SD INICIALIZADA");
-[e ( _Lcd_Write_String (1 :s 4C ]
-"88
-[; ;Main.c: 88:     __delay_sec(2);
-[e ( ___delay_sec (1 -> -> 2 `i `uc ]
-"90
-[; ;Main.c: 90:     if (f_open(&Fil, "BeeDev.txt", 0x10 | 0x01 | 0x02) == FR_OK) {
-[e $ ! == -> ( _f_open (3 , , &U _Fil :s 5C -> | | -> 16 `i -> 1 `i -> 2 `i `uc `ui -> . `E4918 0 `ui 674  ]
-{
-"91
-[; ;Main.c: 91:         Lcd_Set_Cursor(1,1);
-[e ( _Lcd_Set_Cursor (2 , -> -> 1 `i `uc -> -> 1 `i `uc ]
-"92
-[; ;Main.c: 92:         Lcd_Write_String("Archivo CREADO");
-[e ( _Lcd_Write_String (1 :s 6C ]
-"93
-[; ;Main.c: 93:         LATAbits.LATA1 ^= 1;
-[e =^ . . _LATAbits 0 1 -> -> 1 `i `Vuc ]
-"94
-[; ;Main.c: 94:         __delay_sec(2);
-[e ( ___delay_sec (1 -> -> 2 `i `uc ]
-"96
-[; ;Main.c: 96:    if ((Fil.fsize != 0) && (f_lseek(&Fil, Fil.fsize) != FR_OK)) goto endSD;
-[e $ ! && != . _Fil 5 -> -> -> 0 `i `l `ul != -> ( _f_lseek (2 , &U _Fil . _Fil 5 `ui -> . `E4918 0 `ui 675  ]
-[e $U 676  ]
-[e :U 675 ]
-"97
-[; ;Main.c: 97:                 Lcd_Set_Cursor(1,1);
-[e ( _Lcd_Set_Cursor (2 , -> -> 1 `i `uc -> -> 1 `i `uc ]
-"98
-[; ;Main.c: 98:                 LATAbits.LATA1 ^= 0;
-[e =^ . . _LATAbits 0 1 -> -> 0 `i `Vuc ]
-"99
-[; ;Main.c: 99:                 Lcd_Write_String("Archivo ABIERTO");
-[e ( _Lcd_Write_String (1 :s 7C ]
-"100
-[; ;Main.c: 100:                 __delay_sec(2);
-[e ( ___delay_sec (1 -> -> 2 `i `uc ]
-"102
-[; ;Main.c: 102:                 f_write(&Fil, "Este archivo TXT fue creado desde BeeDev_UG.\r\n", 46, &bw);
-[e ( _f_write (4 , , , &U _Fil :s 8C -> -> 46 `i `us &U _bw ]
-"103
-[; ;Main.c: 103:                 Lcd_Set_Cursor(1,1);
-[e ( _Lcd_Set_Cursor (2 , -> -> 1 `i `uc -> -> 1 `i `uc ]
-"104
-[; ;Main.c: 104:                 LATAbits.LATA2 ^= 1;
-[e =^ . . _LATAbits 0 2 -> -> 1 `i `Vuc ]
-"105
-[; ;Main.c: 105:                 Lcd_Write_String("Archivo EDITADO");
-[e ( _Lcd_Write_String (1 :s 9C ]
-"106
-[; ;Main.c: 106:                 __delay_sec(2);
-[e ( ___delay_sec (1 -> -> 2 `i `uc ]
-"108
-[; ;Main.c: 108:                 endSD: f_close(&Fil);
-[e :U 676 ]
-[e ( _f_close (1 &U _Fil ]
-"109
-[; ;Main.c: 109:                 Lcd_Set_Cursor(1,1);
-[e ( _Lcd_Set_Cursor (2 , -> -> 1 `i `uc -> -> 1 `i `uc ]
-"110
-[; ;Main.c: 110:                 Lcd_Write_String("Archivo GUARDADO");
-[e ( _Lcd_Write_String (1 :s 10C ]
-"111
-[; ;Main.c: 111:                 LATAbits.LATA2 ^= 0;
-[e =^ . . _LATAbits 0 2 -> -> 0 `i `Vuc ]
-"112
-[; ;Main.c: 112:                 Lcd_Set_Cursor(2,1);
-[e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 1 `i `uc ]
-"113
-[; ;Main.c: 113:                 Lcd_Write_String("Extraer SD");
-[e ( _Lcd_Write_String (1 :s 11C ]
-"114
-[; ;Main.c: 114:                 LATAbits.LATA3 ^= 1;
-[e =^ . . _LATAbits 0 3 -> -> 1 `i `Vuc ]
-"115
-[; ;Main.c: 115:                 __delay_sec(2);
-[e ( ___delay_sec (1 -> -> 2 `i `uc ]
-"117
-[; ;Main.c: 117:  }
-}
-[e $U 677  ]
-"118
-[; ;Main.c: 118:     else {
-[e :U 674 ]
-{
-"119
-[; ;Main.c: 119:        Lcd_Clear();
-[e ( _Lcd_Clear ..  ]
-"120
-[; ;Main.c: 120:        Lcd_Set_Cursor(1,1);
-[e ( _Lcd_Set_Cursor (2 , -> -> 1 `i `uc -> -> 1 `i `uc ]
-"121
-[; ;Main.c: 121:        Lcd_Write_String("Archivo: ERROR");
-[e ( _Lcd_Write_String (1 :s 12C ]
-"122
-[; ;Main.c: 122:        LATAbits.LATA1 ^= 1;
-[e =^ . . _LATAbits 0 1 -> -> 1 `i `Vuc ]
-"123
-[; ;Main.c: 123:        LATAbits.LATA2 ^= 1;
-[e =^ . . _LATAbits 0 2 -> -> 1 `i `Vuc ]
-"124
-[; ;Main.c: 124:        LATAbits.LATA3 ^= 1;
-[e =^ . . _LATAbits 0 3 -> -> 1 `i `Vuc ]
-"125
-[; ;Main.c: 125:     }
-}
-[e :U 677 ]
-"127
-[; ;Main.c: 127:     while (1)
-[e :U 679 ]
-"128
-[; ;Main.c: 128:     {
-{
-"130
-[; ;Main.c: 130:     }
-}
-[e :U 678 ]
-[e $U 679  ]
 [e :U 680 ]
-"131
-[; ;Main.c: 131: }
-[e :UE 669 ]
+"33
+[; ;Main.c: 33:     Error(2);
+[e ( _Error (1 -> -> 2 `i `uc ]
+"34
+[; ;Main.c: 34:     __delay_sec(2);
+[e ( ___delay_sec (1 -> -> 2 `i `uc ]
+"36
+[; ;Main.c: 36:     if (f_open(&Fil, "BeeDev.txt", 0x10 | 0x01 | 0x02) == FR_OK) {
+[e $ ! == -> ( _f_open (3 , , &U _Fil :s 3C -> | | -> 16 `i -> 1 `i -> 2 `i `uc `ui -> . `E4918 0 `ui 684  ]
+{
+"37
+[; ;Main.c: 37:         Error(3);
+[e ( _Error (1 -> -> 3 `i `uc ]
+"38
+[; ;Main.c: 38:         __delay_sec(2);
+[e ( ___delay_sec (1 -> -> 2 `i `uc ]
+"40
+[; ;Main.c: 40:    if ((Fil.fsize != 0) && (f_lseek(&Fil, Fil.fsize) != FR_OK)) goto endSD;
+[e $ ! && != . _Fil 5 -> -> -> 0 `i `l `ul != -> ( _f_lseek (2 , &U _Fil . _Fil 5 `ui -> . `E4918 0 `ui 685  ]
+[e $U 686  ]
+[e :U 685 ]
+"41
+[; ;Main.c: 41:                 Error(4);
+[e ( _Error (1 -> -> 4 `i `uc ]
+"42
+[; ;Main.c: 42:                 __delay_sec(2);
+[e ( ___delay_sec (1 -> -> 2 `i `uc ]
+"44
+[; ;Main.c: 44:                 f_write(&Fil, "ESTAS MUERTO.\r\n", 46, &bw);
+[e ( _f_write (4 , , , &U _Fil :s 4C -> -> 46 `i `us &U _bw ]
+"45
+[; ;Main.c: 45:                 Error(5);
+[e ( _Error (1 -> -> 5 `i `uc ]
+"46
+[; ;Main.c: 46:                 __delay_sec(2);
+[e ( ___delay_sec (1 -> -> 2 `i `uc ]
+"48
+[; ;Main.c: 48:                 endSD: f_close(&Fil);
+[e :U 686 ]
+[e ( _f_close (1 &U _Fil ]
+"49
+[; ;Main.c: 49:                 Error(6);
+[e ( _Error (1 -> -> 6 `i `uc ]
+"50
+[; ;Main.c: 50:                 __delay_sec(1);
+[e ( ___delay_sec (1 -> -> 1 `i `uc ]
+"51
+[; ;Main.c: 51:                 Error(7);
+[e ( _Error (1 -> -> 7 `i `uc ]
+"52
+[; ;Main.c: 52:                 __delay_sec(2);
+[e ( ___delay_sec (1 -> -> 2 `i `uc ]
+"54
+[; ;Main.c: 54:  }
 }
-[a 5C 66 101 101 68 101 118 46 116 120 116 0 ]
-[a 12C 65 114 99 104 105 118 111 58 32 69 82 82 79 82 0 ]
-[a 2C 73 110 105 99 105 111 58 32 69 82 82 79 82 0 ]
-[a 7C 65 114 99 104 105 118 111 32 65 66 73 69 82 84 79 0 ]
-[a 9C 65 114 99 104 105 118 111 32 69 68 73 84 65 68 79 0 ]
-[a 6C 65 114 99 104 105 118 111 32 67 82 69 65 68 79 0 ]
-[a 10C 65 114 99 104 105 118 111 32 71 85 65 82 68 65 68 79 0 ]
-[a 11C 69 120 116 114 97 101 114 32 83 68 0 ]
-[a 4C 83 68 32 73 78 73 67 73 65 76 73 90 65 68 65 0 ]
-[a 8C 69 115 116 101 32 97 114 99 104 105 118 111 32 84 88 84 32 102 117 101 32 99 114 101 97 100 111 32 100 101 115 100 101 32 66 101 101 68 101 118 95 85 71 46 13 10 0 ]
+[e $U 687  ]
+"55
+[; ;Main.c: 55:     else {
+[e :U 684 ]
+{
+"56
+[; ;Main.c: 56:         Error(11);
+[e ( _Error (1 -> -> 11 `i `uc ]
+"57
+[; ;Main.c: 57:     }
+}
+[e :U 687 ]
+"59
+[; ;Main.c: 59:     while (1)
+[e :U 689 ]
+"60
+[; ;Main.c: 60:     {
+{
+"61
+[; ;Main.c: 61:         Error(15);
+[e ( _Error (1 -> -> 15 `i `uc ]
+"62
+[; ;Main.c: 62:     }
+}
+[e :U 688 ]
+[e $U 689  ]
+[e :U 690 ]
+"63
+[; ;Main.c: 63: }
+[e :UE 679 ]
+}
+[a 3C 66 101 101 68 101 118 46 116 120 116 0 ]
+[a 4C 69 83 84 65 83 32 77 85 69 82 84 79 46 13 10 0 ]
 [a 1C 0 ]
-[a 3C 0 ]
+[a 2C 0 ]

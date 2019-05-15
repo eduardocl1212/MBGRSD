@@ -6,4 +6,5 @@ mcc_generated_files/spi1.h  \
 ff.h  \
 integer.h  \
 ffconf.h  \
-lcd_lib.h 
+lcd_lib.h  \
+Errores.h 
