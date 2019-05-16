@@ -41,7 +41,7 @@ void guardar(char* data){
                 __delay_sec(2);
                 
                 Error(99);
-                f_write(&Fil, data , 28 , &bw);	/* ]Escribe en el archivo */
+                f_write(&Fil, data , 28 , &bw);	// DATA ARRAY, NUMERO DE CHAR
                 //f_printf(&fil, "%s", "String");  
                 Error(5);
                 __delay_sec(2);
