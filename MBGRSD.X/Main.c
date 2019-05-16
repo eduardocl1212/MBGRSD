@@ -62,7 +62,7 @@ void main(void)
     else {
         Error(11);
     }
-    
+
     while (1)
     {
         Error(15);
