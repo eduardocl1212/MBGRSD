@@ -8404,6 +8404,7 @@ void Error(char a){
 # 4 "Main.c" 2
 
 
+char data[255];
 FATFS FatFs;
 FIL Fil;
 
@@ -8413,7 +8414,7 @@ void __delay_sec(char sec) {
     }
 }
 
-void guardar(){
+void guardar(char* data){
     UINT bw;
     SYSTEM_Initialize();
     if (f_mount(&FatFs, "", 1) != FR_OK) {
@@ -8441,7 +8442,8 @@ void guardar(){
                 __delay_sec(2);
 
                 Error(99);
-                f_write(&Fil, "CREADO POR MI :V .\r\n", 46, &bw);
+                f_write(&Fil, data , 46, &bw);
+
                 Error(5);
                 __delay_sec(2);
                  Error(99);
@@ -8465,15 +8467,13 @@ void main(void)
     LATA = 0x00;
     TRISA = 0x00;
     ANSELA = 0x00;
-
-    guardar();
-
+    guardar("Prueba por ARRAY \r\n");
     while (1)
     {
         Error(1);
-        __delay_sec(5);
+        __delay_sec(1);
         Error(15);
-        __delay_sec(2);
+        __delay_sec(1);
 
     }
 }
