@@ -68,6 +68,8 @@ void main(void)
         Error(15);
 	__delay_sec(5);
 	Error(99);
+	 __delay_sec(10);
+	 //asm("reset"); //Reset Programado, no se para que ponerlo pero por si las moscas aqui esta :V
     }
 }
 /**
