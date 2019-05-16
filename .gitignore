@@ -4,4 +4,7 @@
 *.map
 *.o
 *.rlf
+*.hex
+*.sym
+*.d
 *.sym
