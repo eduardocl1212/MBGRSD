@@ -1,0 +1,7 @@
+/dist
+*.cmf
+*.lst
+*.map
+*.o
+*.rlf
+*.sym
