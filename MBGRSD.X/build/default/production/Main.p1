@@ -1,27 +1,4 @@
 Version 4.0 HI-TECH Software Intermediate Code
-"3311 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h: 3311:     struct {
-[s S145 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S145 . RD0 RD1 RD2 RD3 RD4 RD5 RD6 RD7 ]
-"3321
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h: 3321:     struct {
-[s S146 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S146 . SPP0 SPP1 SPP2 SPP3 SPP4 SPP5 SPP6 SPP7 ]
-"3331
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h: 3331:     struct {
-[s S147 :7 `uc 1 :1 `uc 1 ]
-[n S147 . . SS2 ]
-"3310
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h: 3310: typedef union {
-[u S144 `S145 1 `S146 1 `S147 1 ]
-[n S144 . . . . ]
-"3336
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h: 3336: extern volatile PORTDbits_t PORTDbits __attribute__((address(0xF83)));
-[v _PORTDbits `VS144 ~T0 @X0 0 e@3971 ]
-[v F4805 `(v ~T0 @X0 1 tf1`ul ]
-"183 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18.h
-[v __delay `JF4805 ~T0 @X0 0 e ]
-[p i __delay ]
 "3785 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h: 3785:     struct {
 [s S164 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -45,6 +22,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;./ff.h: 114: typedef struct {
 [s S637 `*S636 1 `us 1 `uc 1 `uc 1 `ul 1 `ul 1 `ul 1 `ul 1 `ul 1 `ul 1 `*uc 1 ]
 [n S637 . fs id flag err fptr fsize sclust clust dsect dir_sect dir_ptr ]
+[v F4805 `(v ~T0 @X0 1 tf1`ul ]
+"183 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18.h
+[v __delay `JF4805 ~T0 @X0 0 e ]
+[p i __delay ]
 [p mainexit ]
 "3779 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h: 3779: extern volatile unsigned char LATA __attribute__((address(0xF89)));
@@ -701,385 +682,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 "13651
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h: 13651: __asm("TOSU equ 0FFFh");
 [; <" TOSU equ 0FFFh ;# ">
-"14 ./lcd_lib.h
-[; ;./lcd_lib.h: 14: void Lcd_Port(char a)
-[v _Lcd_Port `(v ~T0 @X0 1 ef1`uc ]
-"15
-[; ;./lcd_lib.h: 15: {
-{
-[e :U _Lcd_Port ]
-"14
-[; ;./lcd_lib.h: 14: void Lcd_Port(char a)
-[v _a `uc ~T0 @X0 1 r1 ]
-"15
-[; ;./lcd_lib.h: 15: {
-[f ]
-"16
-[; ;./lcd_lib.h: 16:  if(a & 1)
-[e $ ! != & -> _a `i -> 1 `i -> 0 `i 641  ]
-"17
-[; ;./lcd_lib.h: 17:   PORTDbits.RD4 = 1;
-[e = . . _PORTDbits 0 4 -> -> 1 `i `uc ]
-[e $U 642  ]
-"18
-[; ;./lcd_lib.h: 18:  else
-[e :U 641 ]
-"19
-[; ;./lcd_lib.h: 19:   PORTDbits.RD4 = 0;
-[e = . . _PORTDbits 0 4 -> -> 0 `i `uc ]
-[e :U 642 ]
-"21
-[; ;./lcd_lib.h: 21:  if(a & 2)
-[e $ ! != & -> _a `i -> 2 `i -> 0 `i 643  ]
-"22
-[; ;./lcd_lib.h: 22:   PORTDbits.RD5 = 1;
-[e = . . _PORTDbits 0 5 -> -> 1 `i `uc ]
-[e $U 644  ]
-"23
-[; ;./lcd_lib.h: 23:  else
-[e :U 643 ]
-"24
-[; ;./lcd_lib.h: 24:   PORTDbits.RD5 = 0;
-[e = . . _PORTDbits 0 5 -> -> 0 `i `uc ]
-[e :U 644 ]
-"26
-[; ;./lcd_lib.h: 26:  if(a & 4)
-[e $ ! != & -> _a `i -> 4 `i -> 0 `i 645  ]
-"27
-[; ;./lcd_lib.h: 27:   PORTDbits.RD6 = 1;
-[e = . . _PORTDbits 0 6 -> -> 1 `i `uc ]
-[e $U 646  ]
-"28
-[; ;./lcd_lib.h: 28:  else
-[e :U 645 ]
-"29
-[; ;./lcd_lib.h: 29:   PORTDbits.RD6 = 0;
-[e = . . _PORTDbits 0 6 -> -> 0 `i `uc ]
-[e :U 646 ]
-"31
-[; ;./lcd_lib.h: 31:  if(a & 8)
-[e $ ! != & -> _a `i -> 8 `i -> 0 `i 647  ]
-"32
-[; ;./lcd_lib.h: 32:   PORTDbits.RD7 = 1;
-[e = . . _PORTDbits 0 7 -> -> 1 `i `uc ]
-[e $U 648  ]
-"33
-[; ;./lcd_lib.h: 33:  else
-[e :U 647 ]
-"34
-[; ;./lcd_lib.h: 34:   PORTDbits.RD7 = 0;
-[e = . . _PORTDbits 0 7 -> -> 0 `i `uc ]
-[e :U 648 ]
-"35
-[; ;./lcd_lib.h: 35: }
-[e :UE 640 ]
-}
-"36
-[; ;./lcd_lib.h: 36: void Lcd_Cmd(char a)
-[v _Lcd_Cmd `(v ~T0 @X0 1 ef1`uc ]
-"37
-[; ;./lcd_lib.h: 37: {
-{
-[e :U _Lcd_Cmd ]
-"36
-[; ;./lcd_lib.h: 36: void Lcd_Cmd(char a)
-[v _a `uc ~T0 @X0 1 r1 ]
-"37
-[; ;./lcd_lib.h: 37: {
-[f ]
-"38
-[; ;./lcd_lib.h: 38:  PORTDbits.RD0 = 0;
-[e = . . _PORTDbits 0 0 -> -> 0 `i `uc ]
-"39
-[; ;./lcd_lib.h: 39:     PORTDbits.RD1 = 0;
-[e = . . _PORTDbits 0 1 -> -> 0 `i `uc ]
-"40
-[; ;./lcd_lib.h: 40:  Lcd_Port(a);
-[e ( _Lcd_Port (1 _a ]
-"41
-[; ;./lcd_lib.h: 41:  PORTDbits.RD2 = 1;
-[e = . . _PORTDbits 0 2 -> -> 1 `i `uc ]
-"42
-[; ;./lcd_lib.h: 42:         _delay((unsigned long)((4)*(8000000/4000.0)));
-[e ( __delay (1 -> * -> -> 4 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-"43
-[; ;./lcd_lib.h: 43:         PORTDbits.RD2 = 0;
-[e = . . _PORTDbits 0 2 -> -> 0 `i `uc ]
-"44
-[; ;./lcd_lib.h: 44: }
-[e :UE 649 ]
-}
-"46
-[; ;./lcd_lib.h: 46: void Lcd_Clear(void)
-[v _Lcd_Clear `(v ~T0 @X0 1 ef ]
-"47
-[; ;./lcd_lib.h: 47: {
-{
-[e :U _Lcd_Clear ]
-[f ]
-"48
-[; ;./lcd_lib.h: 48:  Lcd_Cmd(0);
-[e ( _Lcd_Cmd (1 -> -> 0 `i `uc ]
-"49
-[; ;./lcd_lib.h: 49:  Lcd_Cmd(1);
-[e ( _Lcd_Cmd (1 -> -> 1 `i `uc ]
-"50
-[; ;./lcd_lib.h: 50: }
-[e :UE 650 ]
-}
-"52
-[; ;./lcd_lib.h: 52: void Lcd_Set_Cursor(char a, char b)
-[v _Lcd_Set_Cursor `(v ~T0 @X0 1 ef2`uc`uc ]
-"53
-[; ;./lcd_lib.h: 53: {
-{
-[e :U _Lcd_Set_Cursor ]
-"52
-[; ;./lcd_lib.h: 52: void Lcd_Set_Cursor(char a, char b)
-[v _a `uc ~T0 @X0 1 r1 ]
-[v _b `uc ~T0 @X0 1 r2 ]
-"53
-[; ;./lcd_lib.h: 53: {
-[f ]
-"54
-[; ;./lcd_lib.h: 54:  char temp,z,y;
-[v _temp `uc ~T0 @X0 1 a ]
-[v _z `uc ~T0 @X0 1 a ]
-[v _y `uc ~T0 @X0 1 a ]
-"55
-[; ;./lcd_lib.h: 55:  if(a == 1)
-[e $ ! == -> _a `i -> 1 `i 652  ]
-"56
-[; ;./lcd_lib.h: 56:  {
-{
-"57
-[; ;./lcd_lib.h: 57:    temp = 0x80 + b - 1;
-[e = _temp -> - + -> 128 `i -> _b `i -> 1 `i `uc ]
-"58
-[; ;./lcd_lib.h: 58:   z = temp>>4;
-[e = _z -> >> -> _temp `i -> 4 `i `uc ]
-"59
-[; ;./lcd_lib.h: 59:   y = temp & 0x0F;
-[e = _y -> & -> _temp `i -> 15 `i `uc ]
-"60
-[; ;./lcd_lib.h: 60:   Lcd_Cmd(z);
-[e ( _Lcd_Cmd (1 _z ]
-"61
-[; ;./lcd_lib.h: 61:   Lcd_Cmd(y);
-[e ( _Lcd_Cmd (1 _y ]
-"62
-[; ;./lcd_lib.h: 62:  }
-}
-[e $U 653  ]
-"63
-[; ;./lcd_lib.h: 63:  else if(a == 2)
-[e :U 652 ]
-[e $ ! == -> _a `i -> 2 `i 654  ]
-"64
-[; ;./lcd_lib.h: 64:  {
-{
-"65
-[; ;./lcd_lib.h: 65:   temp = 0xC0 + b - 1;
-[e = _temp -> - + -> 192 `i -> _b `i -> 1 `i `uc ]
-"66
-[; ;./lcd_lib.h: 66:   z = temp>>4;
-[e = _z -> >> -> _temp `i -> 4 `i `uc ]
-"67
-[; ;./lcd_lib.h: 67:   y = temp & 0x0F;
-[e = _y -> & -> _temp `i -> 15 `i `uc ]
-"68
-[; ;./lcd_lib.h: 68:   Lcd_Cmd(z);
-[e ( _Lcd_Cmd (1 _z ]
-"69
-[; ;./lcd_lib.h: 69:   Lcd_Cmd(y);
-[e ( _Lcd_Cmd (1 _y ]
-"70
-[; ;./lcd_lib.h: 70:  }
-}
-[e :U 654 ]
-[e :U 653 ]
-"71
-[; ;./lcd_lib.h: 71: }
-[e :UE 651 ]
-}
-"73
-[; ;./lcd_lib.h: 73: void Lcd_Init()
-[v _Lcd_Init `(v ~T0 @X0 1 ef ]
-"74
-[; ;./lcd_lib.h: 74: {
-{
-[e :U _Lcd_Init ]
-[f ]
-"75
-[; ;./lcd_lib.h: 75:   Lcd_Port(0x00);
-[e ( _Lcd_Port (1 -> -> 0 `i `uc ]
-"76
-[; ;./lcd_lib.h: 76:    _delay((unsigned long)((20)*(8000000/4000.0)));
-[e ( __delay (1 -> * -> -> 20 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-"77
-[; ;./lcd_lib.h: 77:   Lcd_Cmd(0x03);
-[e ( _Lcd_Cmd (1 -> -> 3 `i `uc ]
-"78
-[; ;./lcd_lib.h: 78:  _delay((unsigned long)((5)*(8000000/4000.0)));
-[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-"79
-[; ;./lcd_lib.h: 79:   Lcd_Cmd(0x03);
-[e ( _Lcd_Cmd (1 -> -> 3 `i `uc ]
-"80
-[; ;./lcd_lib.h: 80:  _delay((unsigned long)((11)*(8000000/4000.0)));
-[e ( __delay (1 -> * -> -> 11 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-"81
-[; ;./lcd_lib.h: 81:   Lcd_Cmd(0x03);
-[e ( _Lcd_Cmd (1 -> -> 3 `i `uc ]
-"83
-[; ;./lcd_lib.h: 83:   Lcd_Cmd(0x02);
-[e ( _Lcd_Cmd (1 -> -> 2 `i `uc ]
-"84
-[; ;./lcd_lib.h: 84:   Lcd_Cmd(0x02);
-[e ( _Lcd_Cmd (1 -> -> 2 `i `uc ]
-"85
-[; ;./lcd_lib.h: 85:   Lcd_Cmd(0x08);
-[e ( _Lcd_Cmd (1 -> -> 8 `i `uc ]
-"86
-[; ;./lcd_lib.h: 86:   Lcd_Cmd(0x00);
-[e ( _Lcd_Cmd (1 -> -> 0 `i `uc ]
-"87
-[; ;./lcd_lib.h: 87:   Lcd_Cmd(0x0C);
-[e ( _Lcd_Cmd (1 -> -> 12 `i `uc ]
-"88
-[; ;./lcd_lib.h: 88:   Lcd_Cmd(0x00);
-[e ( _Lcd_Cmd (1 -> -> 0 `i `uc ]
-"89
-[; ;./lcd_lib.h: 89:   Lcd_Cmd(0x06);
-[e ( _Lcd_Cmd (1 -> -> 6 `i `uc ]
-"90
-[; ;./lcd_lib.h: 90: }
-[e :UE 655 ]
-}
-"92
-[; ;./lcd_lib.h: 92: void Lcd_Write_Char(char a)
-[v _Lcd_Write_Char `(v ~T0 @X0 1 ef1`uc ]
-"93
-[; ;./lcd_lib.h: 93: {
-{
-[e :U _Lcd_Write_Char ]
-"92
-[; ;./lcd_lib.h: 92: void Lcd_Write_Char(char a)
-[v _a `uc ~T0 @X0 1 r1 ]
-"93
-[; ;./lcd_lib.h: 93: {
-[f ]
-"94
-[; ;./lcd_lib.h: 94:    char temp,y;
-[v _temp `uc ~T0 @X0 1 a ]
-[v _y `uc ~T0 @X0 1 a ]
-"95
-[; ;./lcd_lib.h: 95:    temp = a&0x0F;
-[e = _temp -> & -> _a `i -> 15 `i `uc ]
-"96
-[; ;./lcd_lib.h: 96:    y = a&0xF0;
-[e = _y -> & -> _a `i -> 240 `i `uc ]
-"97
-[; ;./lcd_lib.h: 97:    PORTDbits.RD0 = 1;
-[e = . . _PORTDbits 0 0 -> -> 1 `i `uc ]
-"98
-[; ;./lcd_lib.h: 98:    Lcd_Port(y>>4);
-[e ( _Lcd_Port (1 -> >> -> _y `i -> 4 `i `uc ]
-"99
-[; ;./lcd_lib.h: 99:    PORTDbits.RD2 = 1;
-[e = . . _PORTDbits 0 2 -> -> 1 `i `uc ]
-"100
-[; ;./lcd_lib.h: 100:    _delay((unsigned long)((40)*(8000000/4000000.0)));
-[e ( __delay (1 -> * -> -> 40 `i `d / -> -> 8000000 `l `d .4000000.0 `ul ]
-"101
-[; ;./lcd_lib.h: 101:    PORTDbits.RD2 = 0;
-[e = . . _PORTDbits 0 2 -> -> 0 `i `uc ]
-"102
-[; ;./lcd_lib.h: 102:    Lcd_Port(temp);
-[e ( _Lcd_Port (1 _temp ]
-"103
-[; ;./lcd_lib.h: 103:    PORTDbits.RD2 = 1;
-[e = . . _PORTDbits 0 2 -> -> 1 `i `uc ]
-"104
-[; ;./lcd_lib.h: 104:    _delay((unsigned long)((40)*(8000000/4000000.0)));
-[e ( __delay (1 -> * -> -> 40 `i `d / -> -> 8000000 `l `d .4000000.0 `ul ]
-"105
-[; ;./lcd_lib.h: 105:    PORTDbits.RD2 = 0;
-[e = . . _PORTDbits 0 2 -> -> 0 `i `uc ]
-"106
-[; ;./lcd_lib.h: 106: }
-[e :UE 656 ]
-}
-"108
-[; ;./lcd_lib.h: 108: void Lcd_Write_String(const char *a)
-[v _Lcd_Write_String `(v ~T0 @X0 1 ef1`*Cuc ]
-"109
-[; ;./lcd_lib.h: 109: {
-{
-[e :U _Lcd_Write_String ]
-"108
-[; ;./lcd_lib.h: 108: void Lcd_Write_String(const char *a)
-[v _a `*Cuc ~T0 @X0 1 r1 ]
-"109
-[; ;./lcd_lib.h: 109: {
-[f ]
-"110
-[; ;./lcd_lib.h: 110:  int i;
-[v _i `i ~T0 @X0 1 a ]
-"111
-[; ;./lcd_lib.h: 111:  for(i=0;a[i]!='\0';i++)
-{
-[e = _i -> 0 `i ]
-[e $U 661  ]
-[e :U 658 ]
-"112
-[; ;./lcd_lib.h: 112:     Lcd_Write_Char(a[i]);
-[e ( _Lcd_Write_Char (1 *U + _a * -> _i `x -> -> # *U _a `i `x ]
-[e ++ _i -> 1 `i ]
-[e :U 661 ]
-[e $ != -> *U + _a * -> _i `x -> -> # *U _a `i `x `ui -> 0 `ui 658  ]
-[e :U 659 ]
-}
-"113
-[; ;./lcd_lib.h: 113: }
-[e :UE 657 ]
-}
-"115
-[; ;./lcd_lib.h: 115: void Lcd_Shift_Right()
-[v _Lcd_Shift_Right `(v ~T0 @X0 1 ef ]
-"116
-[; ;./lcd_lib.h: 116: {
-{
-[e :U _Lcd_Shift_Right ]
-[f ]
-"117
-[; ;./lcd_lib.h: 117:  Lcd_Cmd(0x01);
-[e ( _Lcd_Cmd (1 -> -> 1 `i `uc ]
-"118
-[; ;./lcd_lib.h: 118:  Lcd_Cmd(0x0C);
-[e ( _Lcd_Cmd (1 -> -> 12 `i `uc ]
-"119
-[; ;./lcd_lib.h: 119: }
-[e :UE 662 ]
-}
-"121
-[; ;./lcd_lib.h: 121: void Lcd_Shift_Left()
-[v _Lcd_Shift_Left `(v ~T0 @X0 1 ef ]
-"122
-[; ;./lcd_lib.h: 122: {
-{
-[e :U _Lcd_Shift_Left ]
-[f ]
-"123
-[; ;./lcd_lib.h: 123:  Lcd_Cmd(0x01);
-[e ( _Lcd_Cmd (1 -> -> 1 `i `uc ]
-"124
-[; ;./lcd_lib.h: 124:  Lcd_Cmd(0x08);
-[e ( _Lcd_Cmd (1 -> -> 8 `i `uc ]
-"125
-[; ;./lcd_lib.h: 125: }
-[e :UE 663 ]
-}
 "11 ./Errores.h
 [; ;./Errores.h: 11: void Error(char a){
 [v _Error `(v ~T0 @X0 1 ef1`uc ]
@@ -1089,7 +691,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [f ]
 "12
 [; ;./Errores.h: 12:     if (a == 1){
-[e $ ! == -> _a `i -> 1 `i 665  ]
+[e $ ! == -> _a `i -> 1 `i 641  ]
 {
 "13
 [; ;./Errores.h: 13:         LATAbits.LATA0 ^= 1;
@@ -1118,10 +720,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "21
 [; ;./Errores.h: 21:     }
 }
-[e :U 665 ]
+[e :U 641 ]
 "22
 [; ;./Errores.h: 22:     if (a == 2){
-[e $ ! == -> _a `i -> 2 `i 666  ]
+[e $ ! == -> _a `i -> 2 `i 642  ]
 {
 "23
 [; ;./Errores.h: 23:         LATAbits.LATA0 ^= 0;
@@ -1150,10 +752,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "31
 [; ;./Errores.h: 31:     }
 }
-[e :U 666 ]
+[e :U 642 ]
 "32
 [; ;./Errores.h: 32:     if (a == 3){
-[e $ ! == -> _a `i -> 3 `i 667  ]
+[e $ ! == -> _a `i -> 3 `i 643  ]
 {
 "33
 [; ;./Errores.h: 33:         LATAbits.LATA0 ^= 0;
@@ -1182,10 +784,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "41
 [; ;./Errores.h: 41:     }
 }
-[e :U 667 ]
+[e :U 643 ]
 "42
 [; ;./Errores.h: 42:     if (a == 4){
-[e $ ! == -> _a `i -> 4 `i 668  ]
+[e $ ! == -> _a `i -> 4 `i 644  ]
 {
 "43
 [; ;./Errores.h: 43:         LATAbits.LATA0 ^= 0;
@@ -1214,10 +816,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "51
 [; ;./Errores.h: 51:     }
 }
-[e :U 668 ]
+[e :U 644 ]
 "52
 [; ;./Errores.h: 52:     if (a == 5){
-[e $ ! == -> _a `i -> 5 `i 669  ]
+[e $ ! == -> _a `i -> 5 `i 645  ]
 {
 "53
 [; ;./Errores.h: 53:         LATAbits.LATA0 ^= 0;
@@ -1246,10 +848,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "61
 [; ;./Errores.h: 61:     }
 }
-[e :U 669 ]
+[e :U 645 ]
 "62
 [; ;./Errores.h: 62:     if (a == 6){
-[e $ ! == -> _a `i -> 6 `i 670  ]
+[e $ ! == -> _a `i -> 6 `i 646  ]
 {
 "63
 [; ;./Errores.h: 63:         LATAbits.LATA0 ^= 0;
@@ -1278,10 +880,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "71
 [; ;./Errores.h: 71:     }
 }
-[e :U 670 ]
+[e :U 646 ]
 "72
 [; ;./Errores.h: 72:     if (a == 7){
-[e $ ! == -> _a `i -> 7 `i 671  ]
+[e $ ! == -> _a `i -> 7 `i 647  ]
 {
 "73
 [; ;./Errores.h: 73:         LATAbits.LATA0 ^= 0;
@@ -1310,10 +912,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "81
 [; ;./Errores.h: 81:     }
 }
-[e :U 671 ]
+[e :U 647 ]
 "82
 [; ;./Errores.h: 82:     if (a == 11){
-[e $ ! == -> _a `i -> 11 `i 672  ]
+[e $ ! == -> _a `i -> 11 `i 648  ]
 {
 "83
 [; ;./Errores.h: 83:         LATAbits.LATA0 ^= 0;
@@ -1342,10 +944,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "91
 [; ;./Errores.h: 91:     }
 }
-[e :U 672 ]
+[e :U 648 ]
 "92
 [; ;./Errores.h: 92:     if(a == 15) {
-[e $ ! == -> _a `i -> 15 `i 673  ]
+[e $ ! == -> _a `i -> 15 `i 649  ]
 {
 "93
 [; ;./Errores.h: 93:         LATAbits.LATA0 ^= 0;
@@ -1353,10 +955,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "95
 [; ;./Errores.h: 95:     }
 }
-[e :U 673 ]
+[e :U 649 ]
 "96
 [; ;./Errores.h: 96: }
-[e :UE 664 ]
+[e :UE 640 ]
 }
 "6 Main.c
 [; ;Main.c: 6: FATFS FatFs;
@@ -1376,8 +978,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 {
 [v _i `uc ~T0 @X0 1 a ]
 [e = _i -> -> 0 `i `uc ]
-[e $U 678  ]
-[e :U 675 ]
+[e $U 654  ]
+[e :U 651 ]
 {
 "11
 [; ;Main.c: 11:         _delay((unsigned long)((20)*(8000000/4000.0)));
@@ -1386,13 +988,13 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;Main.c: 12:     }
 }
 [e ++ _i -> -> 1 `i `uc ]
-[e :U 678 ]
-[e $ <= -> _i `i * -> 50 `i -> _sec `i 675  ]
-[e :U 676 ]
+[e :U 654 ]
+[e $ <= -> _i `i * -> 50 `i -> _sec `i 651  ]
+[e :U 652 ]
 }
 "13
 [; ;Main.c: 13: }
-[e :UE 674 ]
+[e :UE 650 ]
 }
 [v $root$_main `(v ~T0 @X0 0 e ]
 "15
@@ -1420,7 +1022,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e ( _SYSTEM_Initialize ..  ]
 "24
 [; ;Main.c: 24:     if (f_mount(&FatFs, "", 1) != FR_OK) {
-[e $ ! != -> ( _f_mount (3 , , &U _FatFs :s 1C -> -> 1 `i `uc `ui -> . `E4918 0 `ui 680  ]
+[e $ ! != -> ( _f_mount (3 , , &U _FatFs :s 1C -> -> 1 `i `uc `ui -> . `E4918 0 `ui 656  ]
 {
 "25
 [; ;Main.c: 25:         Error(1);
@@ -1428,110 +1030,137 @@ Version 4.0 HI-TECH Software Intermediate Code
 "26
 [; ;Main.c: 26:         __delay_sec(2);
 [e ( ___delay_sec (1 -> -> 2 `i `uc ]
+"27
+[; ;Main.c: 27:         Error(99);
+[e ( _Error (1 -> -> 99 `i `uc ]
 "28
 [; ;Main.c: 28:         while(f_mount(&FatFs, "", 1) != FR_OK) {
-[e $U 681  ]
-[e :U 682 ]
+[e $U 657  ]
+[e :U 658 ]
 {
 "30
 [; ;Main.c: 30:         }
 }
-[e :U 681 ]
+[e :U 657 ]
 "28
 [; ;Main.c: 28:         while(f_mount(&FatFs, "", 1) != FR_OK) {
-[e $ != -> ( _f_mount (3 , , &U _FatFs :s 2C -> -> 1 `i `uc `ui -> . `E4918 0 `ui 682  ]
-[e :U 683 ]
+[e $ != -> ( _f_mount (3 , , &U _FatFs :s 2C -> -> 1 `i `uc `ui -> . `E4918 0 `ui 658  ]
+[e :U 659 ]
 "31
 [; ;Main.c: 31:     }
 }
-[e :U 680 ]
+[e :U 656 ]
 "33
 [; ;Main.c: 33:     Error(2);
 [e ( _Error (1 -> -> 2 `i `uc ]
 "34
 [; ;Main.c: 34:     __delay_sec(2);
 [e ( ___delay_sec (1 -> -> 2 `i `uc ]
-"36
-[; ;Main.c: 36:     if (f_open(&Fil, "BeeDev.txt", 0x10 | 0x01 | 0x02) == FR_OK) {
-[e $ ! == -> ( _f_open (3 , , &U _Fil :s 3C -> | | -> 16 `i -> 1 `i -> 2 `i `uc `ui -> . `E4918 0 `ui 684  ]
-{
+"35
+[; ;Main.c: 35:     Error(99);
+[e ( _Error (1 -> -> 99 `i `uc ]
 "37
-[; ;Main.c: 37:         Error(3);
-[e ( _Error (1 -> -> 3 `i `uc ]
+[; ;Main.c: 37:     if (f_open(&Fil, "BeeDev.txt", 0x10 | 0x01 | 0x02) == FR_OK) {
+[e $ ! == -> ( _f_open (3 , , &U _Fil :s 3C -> | | -> 16 `i -> 1 `i -> 2 `i `uc `ui -> . `E4918 0 `ui 660  ]
+{
 "38
-[; ;Main.c: 38:         __delay_sec(2);
-[e ( ___delay_sec (1 -> -> 2 `i `uc ]
-"40
-[; ;Main.c: 40:    if ((Fil.fsize != 0) && (f_lseek(&Fil, Fil.fsize) != FR_OK)) goto endSD;
-[e $ ! && != . _Fil 5 -> -> -> 0 `i `l `ul != -> ( _f_lseek (2 , &U _Fil . _Fil 5 `ui -> . `E4918 0 `ui 685  ]
-[e $U 686  ]
-[e :U 685 ]
+[; ;Main.c: 38:         Error(3);
+[e ( _Error (1 -> -> 3 `i `uc ]
 "41
-[; ;Main.c: 41:                 Error(4);
-[e ( _Error (1 -> -> 4 `i `uc ]
-"42
-[; ;Main.c: 42:                 __delay_sec(2);
+[; ;Main.c: 41:         __delay_sec(2);
 [e ( ___delay_sec (1 -> -> 2 `i `uc ]
+"42
+[; ;Main.c: 42:          Error(99);
+[e ( _Error (1 -> -> 99 `i `uc ]
 "44
-[; ;Main.c: 44:                 f_write(&Fil, "ESTAS MUERTO.\r\n", 46, &bw);
-[e ( _f_write (4 , , , &U _Fil :s 4C -> -> 46 `i `us &U _bw ]
+[; ;Main.c: 44:    if ((Fil.fsize != 0) && (f_lseek(&Fil, Fil.fsize) != FR_OK)) goto endSD;
+[e $ ! && != . _Fil 5 -> -> -> 0 `i `l `ul != -> ( _f_lseek (2 , &U _Fil . _Fil 5 `ui -> . `E4918 0 `ui 661  ]
+[e $U 662  ]
+[e :U 661 ]
 "45
-[; ;Main.c: 45:                 Error(5);
-[e ( _Error (1 -> -> 5 `i `uc ]
+[; ;Main.c: 45:                 Error(4);
+[e ( _Error (1 -> -> 4 `i `uc ]
 "46
 [; ;Main.c: 46:                 __delay_sec(2);
 [e ( ___delay_sec (1 -> -> 2 `i `uc ]
 "48
-[; ;Main.c: 48:                 endSD: f_close(&Fil);
-[e :U 686 ]
-[e ( _f_close (1 &U _Fil ]
+[; ;Main.c: 48:                 Error(99);
+[e ( _Error (1 -> -> 99 `i `uc ]
 "49
-[; ;Main.c: 49:                 Error(6);
-[e ( _Error (1 -> -> 6 `i `uc ]
+[; ;Main.c: 49:                 f_write(&Fil, "CREADO POR MI :V .\r\n", 46, &bw);
+[e ( _f_write (4 , , , &U _Fil :s 4C -> -> 46 `i `us &U _bw ]
 "50
-[; ;Main.c: 50:                 __delay_sec(1);
-[e ( ___delay_sec (1 -> -> 1 `i `uc ]
+[; ;Main.c: 50:                 Error(5);
+[e ( _Error (1 -> -> 5 `i `uc ]
 "51
-[; ;Main.c: 51:                 Error(7);
-[e ( _Error (1 -> -> 7 `i `uc ]
-"52
-[; ;Main.c: 52:                 __delay_sec(2);
+[; ;Main.c: 51:                 __delay_sec(2);
 [e ( ___delay_sec (1 -> -> 2 `i `uc ]
+"52
+[; ;Main.c: 52:                  Error(99);
+[e ( _Error (1 -> -> 99 `i `uc ]
+"53
+[; ;Main.c: 53:                 endSD: f_close(&Fil);
+[e :U 662 ]
+[e ( _f_close (1 &U _Fil ]
 "54
-[; ;Main.c: 54:  }
-}
-[e $U 687  ]
+[; ;Main.c: 54:                 Error(6);
+[e ( _Error (1 -> -> 6 `i `uc ]
 "55
-[; ;Main.c: 55:     else {
-[e :U 684 ]
-{
-"56
-[; ;Main.c: 56:         Error(11);
-[e ( _Error (1 -> -> 11 `i `uc ]
+[; ;Main.c: 55:                 __delay_sec(1);
+[e ( ___delay_sec (1 -> -> 1 `i `uc ]
 "57
-[; ;Main.c: 57:     }
-}
-[e :U 687 ]
+[; ;Main.c: 57:                 Error(7);
+[e ( _Error (1 -> -> 7 `i `uc ]
+"58
+[; ;Main.c: 58:                 __delay_sec(2);
+[e ( ___delay_sec (1 -> -> 2 `i `uc ]
 "59
-[; ;Main.c: 59:     while (1)
-[e :U 689 ]
-"60
-[; ;Main.c: 60:     {
-{
+[; ;Main.c: 59:                  Error(99);
+[e ( _Error (1 -> -> 99 `i `uc ]
 "61
-[; ;Main.c: 61:         Error(15);
-[e ( _Error (1 -> -> 15 `i `uc ]
-"62
-[; ;Main.c: 62:     }
+[; ;Main.c: 61:  }
 }
-[e :U 688 ]
-[e $U 689  ]
-[e :U 690 ]
+[e $U 663  ]
+"62
+[; ;Main.c: 62:     else {
+[e :U 660 ]
+{
 "63
-[; ;Main.c: 63: }
-[e :UE 679 ]
+[; ;Main.c: 63:         Error(11);
+[e ( _Error (1 -> -> 11 `i `uc ]
+"64
+[; ;Main.c: 64:     }
+}
+[e :U 663 ]
+"66
+[; ;Main.c: 66:     while (1)
+[e :U 665 ]
+"67
+[; ;Main.c: 67:     {
+{
+"68
+[; ;Main.c: 68:         Error(15);
+[e ( _Error (1 -> -> 15 `i `uc ]
+"69
+[; ;Main.c: 69:  __delay_sec(5);
+[e ( ___delay_sec (1 -> -> 5 `i `uc ]
+"70
+[; ;Main.c: 70:  Error(99);
+[e ( _Error (1 -> -> 99 `i `uc ]
+"71
+[; ;Main.c: 71:   __delay_sec(10);
+[e ( ___delay_sec (1 -> -> 10 `i `uc ]
+"73
+[; ;Main.c: 73:     }
+}
+[e :U 664 ]
+[e $U 665  ]
+[e :U 666 ]
+"74
+[; ;Main.c: 74: }
+[e :UE 655 ]
 }
 [a 3C 66 101 101 68 101 118 46 116 120 116 0 ]
-[a 4C 69 83 84 65 83 32 77 85 69 82 84 79 46 13 10 0 ]
+[a 4C 67 82 69 65 68 79 32 80 79 82 32 77 73 32 58 86 32 46 13 10 0 ]
 [a 1C 0 ]
 [a 2C 0 ]

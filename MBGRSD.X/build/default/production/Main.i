@@ -8305,121 +8305,6 @@ int f_printf (FIL* fp, const TCHAR* str, ...);
 TCHAR* f_gets (TCHAR* buff, int len, FIL* fp);
 # 2 "Main.c" 2
 
-# 1 "./lcd_lib.h" 1
-# 14 "./lcd_lib.h"
-void Lcd_Port(char a)
-{
- if(a & 1)
-  PORTDbits.RD4 = 1;
- else
-  PORTDbits.RD4 = 0;
-
- if(a & 2)
-  PORTDbits.RD5 = 1;
- else
-  PORTDbits.RD5 = 0;
-
- if(a & 4)
-  PORTDbits.RD6 = 1;
- else
-  PORTDbits.RD6 = 0;
-
- if(a & 8)
-  PORTDbits.RD7 = 1;
- else
-  PORTDbits.RD7 = 0;
-}
-void Lcd_Cmd(char a)
-{
- PORTDbits.RD0 = 0;
-    PORTDbits.RD1 = 0;
- Lcd_Port(a);
- PORTDbits.RD2 = 1;
-        _delay((unsigned long)((4)*(8000000/4000.0)));
-        PORTDbits.RD2 = 0;
-}
-
-void Lcd_Clear(void)
-{
- Lcd_Cmd(0);
- Lcd_Cmd(1);
-}
-
-void Lcd_Set_Cursor(char a, char b)
-{
- char temp,z,y;
- if(a == 1)
- {
-   temp = 0x80 + b - 1;
-  z = temp>>4;
-  y = temp & 0x0F;
-  Lcd_Cmd(z);
-  Lcd_Cmd(y);
- }
- else if(a == 2)
- {
-  temp = 0xC0 + b - 1;
-  z = temp>>4;
-  y = temp & 0x0F;
-  Lcd_Cmd(z);
-  Lcd_Cmd(y);
- }
-}
-
-void Lcd_Init()
-{
-  Lcd_Port(0x00);
-   _delay((unsigned long)((20)*(8000000/4000.0)));
-  Lcd_Cmd(0x03);
- _delay((unsigned long)((5)*(8000000/4000.0)));
-  Lcd_Cmd(0x03);
- _delay((unsigned long)((11)*(8000000/4000.0)));
-  Lcd_Cmd(0x03);
-
-  Lcd_Cmd(0x02);
-  Lcd_Cmd(0x02);
-  Lcd_Cmd(0x08);
-  Lcd_Cmd(0x00);
-  Lcd_Cmd(0x0C);
-  Lcd_Cmd(0x00);
-  Lcd_Cmd(0x06);
-}
-
-void Lcd_Write_Char(char a)
-{
-   char temp,y;
-   temp = a&0x0F;
-   y = a&0xF0;
-   PORTDbits.RD0 = 1;
-   Lcd_Port(y>>4);
-   PORTDbits.RD2 = 1;
-   _delay((unsigned long)((40)*(8000000/4000000.0)));
-   PORTDbits.RD2 = 0;
-   Lcd_Port(temp);
-   PORTDbits.RD2 = 1;
-   _delay((unsigned long)((40)*(8000000/4000000.0)));
-   PORTDbits.RD2 = 0;
-}
-
-void Lcd_Write_String(const char *a)
-{
- int i;
- for(i=0;a[i]!='\0';i++)
-    Lcd_Write_Char(a[i]);
-}
-
-void Lcd_Shift_Right()
-{
- Lcd_Cmd(0x01);
- Lcd_Cmd(0x0C);
-}
-
-void Lcd_Shift_Left()
-{
- Lcd_Cmd(0x01);
- Lcd_Cmd(0x08);
-}
-# 3 "Main.c" 2
 
 # 1 "./Errores.h" 1
 # 11 "./Errores.h"
@@ -8533,7 +8418,7 @@ void main(void)
     if (f_mount(&FatFs, "", 1) != FR_OK) {
         Error(1);
         __delay_sec(2);
-
+        Error(99);
         while(f_mount(&FatFs, "", 1) != FR_OK) {
             ;
         }
@@ -8541,24 +8426,31 @@ void main(void)
 
     Error(2);
     __delay_sec(2);
+    Error(99);
 
     if (f_open(&Fil, "BeeDev.txt", 0x10 | 0x01 | 0x02) == FR_OK) {
         Error(3);
+
+
         __delay_sec(2);
+         Error(99);
 
    if ((Fil.fsize != 0) && (f_lseek(&Fil, Fil.fsize) != FR_OK)) goto endSD;
                 Error(4);
                 __delay_sec(2);
 
-                f_write(&Fil, "ESTAS MUERTO.\r\n", 46, &bw);
+                Error(99);
+                f_write(&Fil, "CREADO POR MI :V .\r\n", 46, &bw);
                 Error(5);
                 __delay_sec(2);
-
+                 Error(99);
                 endSD: f_close(&Fil);
                 Error(6);
                 __delay_sec(1);
+
                 Error(7);
                 __delay_sec(2);
+                 Error(99);
 
  }
     else {
@@ -8568,5 +8460,9 @@ void main(void)
     while (1)
     {
         Error(15);
+ __delay_sec(5);
+ Error(99);
+  __delay_sec(10);
+
     }
 }
