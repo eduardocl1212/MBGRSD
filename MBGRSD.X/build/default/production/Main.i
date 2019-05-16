@@ -8404,7 +8404,7 @@ void Error(char a){
 # 4 "Main.c" 2
 
 
-char data[255];
+char data[];
 FATFS FatFs;
 FIL Fil;
 
@@ -8442,7 +8442,7 @@ void guardar(char* data){
                 __delay_sec(2);
 
                 Error(99);
-                f_write(&Fil, data , 46, &bw);
+                f_write(&Fil, data , 28 , &bw);
 
                 Error(5);
                 __delay_sec(2);
@@ -8467,7 +8467,8 @@ void main(void)
     LATA = 0x00;
     TRISA = 0x00;
     ANSELA = 0x00;
-    guardar("Prueba por ARRAY \r\n");
+    guardar("Prueba por ARRAY.\r\n");
+    __delay_sec(5);
     while (1)
     {
         Error(1);

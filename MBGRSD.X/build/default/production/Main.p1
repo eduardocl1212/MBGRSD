@@ -982,8 +982,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :UE 640 ]
 }
 "6 Main.c
-[; ;Main.c: 6: char data[255];
-[v _data `uc ~T0 @X0 -> 255 `i e ]
+[; ;Main.c: 6: char data[];
+[v _data `uc ~T0 @X0 -> -> 1 `i `ux e ]
 "7
 [; ;Main.c: 7: FATFS FatFs;
 [v _FatFs `S636 ~T0 @X0 1 e ]
@@ -1100,8 +1100,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;Main.c: 43:                 Error(99);
 [e ( _Error (1 -> -> 99 `i `uc ]
 "44
-[; ;Main.c: 44:                 f_write(&Fil, data , 46, &bw);
-[e ( _f_write (4 , , , &U _Fil -> _data `*Cv -> -> 46 `i `us &U _bw ]
+[; ;Main.c: 44:                 f_write(&Fil, data , 28 , &bw);
+[e ( _f_write (4 , , , &U _Fil -> _data `*Cv -> -> 28 `i `us &U _bw ]
 "46
 [; ;Main.c: 46:                 Error(5);
 [e ( _Error (1 -> -> 5 `i `uc ]
@@ -1168,37 +1168,40 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;Main.c: 68:     ANSELA = 0x00;
 [e = _ANSELA -> -> 0 `i `uc ]
 "69
-[; ;Main.c: 69:     guardar("Prueba por ARRAY \r\n");
+[; ;Main.c: 69:     guardar("Prueba por ARRAY.\r\n");
 [e ( _guardar (1 :s 4C ]
 "70
-[; ;Main.c: 70:     while (1)
-[e :U 666 ]
+[; ;Main.c: 70:     __delay_sec(5);
+[e ( ___delay_sec (1 -> -> 5 `i `uc ]
 "71
-[; ;Main.c: 71:     {
-{
+[; ;Main.c: 71:     while (1)
+[e :U 666 ]
 "72
-[; ;Main.c: 72:         Error(1);
-[e ( _Error (1 -> -> 1 `i `uc ]
+[; ;Main.c: 72:     {
+{
 "73
-[; ;Main.c: 73:         __delay_sec(1);
-[e ( ___delay_sec (1 -> -> 1 `i `uc ]
+[; ;Main.c: 73:         Error(1);
+[e ( _Error (1 -> -> 1 `i `uc ]
 "74
-[; ;Main.c: 74:         Error(15);
-[e ( _Error (1 -> -> 15 `i `uc ]
-"75
-[; ;Main.c: 75:         __delay_sec(1);
+[; ;Main.c: 74:         __delay_sec(1);
 [e ( ___delay_sec (1 -> -> 1 `i `uc ]
-"77
-[; ;Main.c: 77:     }
+"75
+[; ;Main.c: 75:         Error(15);
+[e ( _Error (1 -> -> 15 `i `uc ]
+"76
+[; ;Main.c: 76:         __delay_sec(1);
+[e ( ___delay_sec (1 -> -> 1 `i `uc ]
+"78
+[; ;Main.c: 78:     }
 }
 [e :U 665 ]
 [e $U 666  ]
 [e :U 667 ]
-"78
-[; ;Main.c: 78: }
+"79
+[; ;Main.c: 79: }
 [e :UE 664 ]
 }
 [a 3C 66 101 101 68 101 118 46 116 120 116 0 ]
-[a 4C 80 114 117 101 98 97 32 112 111 114 32 65 82 82 65 89 32 13 10 0 ]
+[a 4C 80 114 117 101 98 97 32 112 111 114 32 65 82 82 65 89 46 13 10 0 ]
 [a 1C 0 ]
 [a 2C 0 ]
