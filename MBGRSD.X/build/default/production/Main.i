@@ -8391,6 +8391,13 @@ void Error(char a){
     }
     if(a == 15) {
         LATAbits.LATA0 ^= 0;
+        LATAbits.LATA1 ^= 0;
+        LATAbits.LATA2 ^= 0;
+        LATAbits.LATA3 ^= 0;
+        LATAbits.LATA4 ^= 0;
+        LATAbits.LATA5 ^= 0;
+        LATAbits.LATA6 ^= 0;
+        LATAbits.LATA7 ^= 0;
 
     }
 }
@@ -8406,14 +8413,8 @@ void __delay_sec(char sec) {
     }
 }
 
-void main(void)
-{
-
-    LATA = 0x00;
-    TRISA = 0x00;
-    ANSELA = 0x00;
+void guardar(){
     UINT bw;
-
     SYSTEM_Initialize();
     if (f_mount(&FatFs, "", 1) != FR_OK) {
         Error(1);
@@ -8456,13 +8457,23 @@ void main(void)
     else {
         Error(11);
     }
+}
+
+void main(void)
+{
+
+    LATA = 0x00;
+    TRISA = 0x00;
+    ANSELA = 0x00;
+
+    guardar();
 
     while (1)
     {
+        Error(1);
+        __delay_sec(5);
         Error(15);
- __delay_sec(5);
- Error(99);
-  __delay_sec(10);
+        __delay_sec(2);
 
     }
 }

@@ -91,6 +91,13 @@ void Error(char a){
     }
     if(a == 15) { //EN ESPERA    
         LATAbits.LATA0 ^= 0;
+        LATAbits.LATA1 ^= 0;
+        LATAbits.LATA2 ^= 0;
+        LATAbits.LATA3 ^= 0;
+        LATAbits.LATA4 ^= 0;
+        LATAbits.LATA5 ^= 0;
+        LATAbits.LATA6 ^= 0;
+        LATAbits.LATA7 ^= 0;
     
     }
 }

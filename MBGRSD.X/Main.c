@@ -12,14 +12,8 @@ void __delay_sec(char sec) {
     }
 }
 
-void main(void)
-{
-    
-    LATA = 0x00;
-    TRISA = 0x00;
-    ANSELA = 0x00;
+void guardar(){
     UINT bw;   
-    
     SYSTEM_Initialize();
     if (f_mount(&FatFs, "", 1) != FR_OK) {	/* Inicializa SD */
         Error(1);
@@ -62,13 +56,23 @@ void main(void)
     else {
         Error(11);
     }
+}
+
+void main(void)
+{
+    
+    LATA = 0x00;
+    TRISA = 0x00;
+    ANSELA = 0x00;
+    
+    guardar();
 
     while (1)
     {
+        Error(1);
+        __delay_sec(5);
         Error(15);
-	__delay_sec(5);
-	Error(99);
-	 __delay_sec(10);
+        __delay_sec(2);
 	 //asm("reset"); //Reset Programado, no se para que ponerlo pero por si las moscas aqui esta :V
     }
 }
