@@ -66,6 +66,8 @@ void main(void)
     while (1)
     {
         Error(15);
+	__delay_sec(5);
+	Error(99);
     }
 }
 /**
