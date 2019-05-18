@@ -8307,98 +8307,23 @@ TCHAR* f_gets (TCHAR* buff, int len, FIL* fp);
 
 
 # 1 "./Errores.h" 1
-# 11 "./Errores.h"
-void Error(char a){
-    if (a == 1){
-        LATAbits.LATA0 ^= 1;
-        LATAbits.LATA1 ^= 1;
-        LATAbits.LATA2 ^= 1;
-        LATAbits.LATA3 ^= 1;
-        LATAbits.LATA4 ^= 1;
-        LATAbits.LATA5 ^= 1;
-        LATAbits.LATA6 ^= 1;
-        LATAbits.LATA7 ^= 1;
-    }
-    if (a == 2){
-        LATAbits.LATA0 ^= 0;
-        LATAbits.LATA1 ^= 0;
-        LATAbits.LATA2 ^= 0;
-        LATAbits.LATA3 ^= 0;
-        LATAbits.LATA4 ^= 0;
-        LATAbits.LATA5 ^= 0;
-        LATAbits.LATA6 ^= 0;
-        LATAbits.LATA7 ^= 1;
-    }
-    if (a == 3){
-        LATAbits.LATA0 ^= 0;
-        LATAbits.LATA1 ^= 0;
-        LATAbits.LATA2 ^= 0;
-        LATAbits.LATA3 ^= 0;
-        LATAbits.LATA4 ^= 0;
-        LATAbits.LATA5 ^= 0;
-        LATAbits.LATA6 ^= 1;
-        LATAbits.LATA7 ^= 1;
-    }
-    if (a == 4){
-        LATAbits.LATA0 ^= 0;
-        LATAbits.LATA1 ^= 0;
-        LATAbits.LATA2 ^= 0;
-        LATAbits.LATA3 ^= 0;
-        LATAbits.LATA4 ^= 0;
-        LATAbits.LATA5 ^= 1;
-        LATAbits.LATA6 ^= 1;
-        LATAbits.LATA7 ^= 1;
-    }
-    if (a == 5){
-        LATAbits.LATA0 ^= 0;
-        LATAbits.LATA1 ^= 0;
-        LATAbits.LATA2 ^= 0;
-        LATAbits.LATA3 ^= 0;
-        LATAbits.LATA4 ^= 1;
-        LATAbits.LATA5 ^= 1;
-        LATAbits.LATA6 ^= 1;
-        LATAbits.LATA7 ^= 1;
-    }
-    if (a == 6){
-        LATAbits.LATA0 ^= 0;
-        LATAbits.LATA1 ^= 0;
-        LATAbits.LATA2 ^= 0;
-        LATAbits.LATA3 ^= 1;
-        LATAbits.LATA4 ^= 1;
-        LATAbits.LATA5 ^= 1;
-        LATAbits.LATA6 ^= 1;
-        LATAbits.LATA7 ^= 1;
-    }
-    if (a == 7){
-        LATAbits.LATA0 ^= 0;
-        LATAbits.LATA1 ^= 0;
-        LATAbits.LATA2 ^= 1;
-        LATAbits.LATA3 ^= 1;
-        LATAbits.LATA4 ^= 1;
-        LATAbits.LATA5 ^= 1;
-        LATAbits.LATA6 ^= 1;
-        LATAbits.LATA7 ^= 1;
-    }
-    if (a == 11){
-        LATAbits.LATA0 ^= 0;
-        LATAbits.LATA1 ^= 1;
-        LATAbits.LATA2 ^= 0;
-        LATAbits.LATA3 ^= 0;
-        LATAbits.LATA4 ^= 0;
-        LATAbits.LATA5 ^= 1;
-        LATAbits.LATA6 ^= 0;
-        LATAbits.LATA7 ^= 1;
-    }
-    if(a == 15) {
-        LATAbits.LATA0 ^= 0;
-        LATAbits.LATA1 ^= 0;
-        LATAbits.LATA2 ^= 0;
-        LATAbits.LATA3 ^= 0;
-        LATAbits.LATA4 ^= 0;
-        LATAbits.LATA5 ^= 0;
-        LATAbits.LATA6 ^= 0;
-        LATAbits.LATA7 ^= 0;
+# 13 "./Errores.h"
+void Error(int a){
+    LATD = 0x00;
+    TRISD = 0x00;
+    ANSELD = 0x00;
+    LATE = 0x00;
+    TRISE = 0x00;
+    ANSELE = 0x00;
 
+    unsigned char v_seg[10]={0x7E,0x30,0x6D,0x79,0x33,0x5B,0x5F,0x70,0x7F,0x73};
+    if(a != 33){
+    LATD = v_seg[a];
+    LATE = 0x01;
+    }
+    else{
+    LATD = v_seg[6];
+    LATE = 0x02;
     }
 }
 # 4 "Main.c" 2
@@ -8418,63 +8343,57 @@ void guardar(char* data){
     UINT bw;
     SYSTEM_Initialize();
     if (f_mount(&FatFs, "", 1) != FR_OK) {
-        Error(1);
+
+        Error(33);
         __delay_sec(2);
-        Error(99);
         while(f_mount(&FatFs, "", 1) != FR_OK) {
             ;
         }
     }
 
-    Error(2);
+    Error(1);
     __delay_sec(2);
-    Error(99);
+    Error(2);
 
     if (f_open(&Fil, "BeeDev.txt", 0x10 | 0x01 | 0x02) == FR_OK) {
         Error(3);
 
 
         __delay_sec(2);
-         Error(99);
+         Error(0);
 
    if ((Fil.fsize != 0) && (f_lseek(&Fil, Fil.fsize) != FR_OK)) goto endSD;
                 Error(4);
                 __delay_sec(2);
 
-                Error(99);
+                Error(0);
                 f_write(&Fil, data , 28 , &bw);
 
                 Error(5);
                 __delay_sec(2);
-                 Error(99);
+                 Error(0);
                 endSD: f_close(&Fil);
                 Error(6);
                 __delay_sec(1);
 
                 Error(7);
                 __delay_sec(2);
-                 Error(99);
+                 Error(0);
 
  }
     else {
-        Error(11);
+        Error(9);
     }
 }
 
 void main(void)
 {
 
-    LATA = 0x00;
-    TRISA = 0x00;
-    ANSELA = 0x00;
+
     guardar("Prueba por ARRAY.\r\n");
     __delay_sec(5);
     while (1)
     {
-        Error(1);
-        __delay_sec(1);
-        Error(15);
-        __delay_sec(1);
 
     }
 }

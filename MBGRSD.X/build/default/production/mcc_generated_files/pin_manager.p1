@@ -1,40 +1,31 @@
 Version 4.0 HI-TECH Software Intermediate Code
-"4217 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h: 4217: extern volatile unsigned char LATE __attribute__((address(0xF8D)));
-[v _LATE `Vuc ~T0 @X0 0 e@3981 ]
-"4105
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h: 4105: extern volatile unsigned char LATD __attribute__((address(0xF8C)));
-[v _LATD `Vuc ~T0 @X0 0 e@3980 ]
+"3779 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h: 3779: extern volatile unsigned char LATA __attribute__((address(0xF89)));
+[v _LATA `Vuc ~T0 @X0 0 e@3977 ]
 "3891
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h: 3891: extern volatile unsigned char LATB __attribute__((address(0xF8A)));
 [v _LATB `Vuc ~T0 @X0 0 e@3978 ]
 "4003
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h: 4003: extern volatile unsigned char LATC __attribute__((address(0xF8B)));
 [v _LATC `Vuc ~T0 @X0 0 e@3979 ]
-"5470
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h: 5470: extern volatile unsigned char TRISE __attribute__((address(0xF96)));
-[v _TRISE `Vuc ~T0 @X0 0 e@3990 ]
+"4626
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h: 4626: extern volatile unsigned char TRISA __attribute__((address(0xF92)));
+[v _TRISA `Vuc ~T0 @X0 0 e@3986 ]
 "4848
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h: 4848: extern volatile unsigned char TRISB __attribute__((address(0xF93)));
 [v _TRISB `Vuc ~T0 @X0 0 e@3987 ]
 "5070
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h: 5070: extern volatile unsigned char TRISC __attribute__((address(0xF94)));
 [v _TRISC `Vuc ~T0 @X0 0 e@3988 ]
-"5248
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h: 5248: extern volatile unsigned char TRISD __attribute__((address(0xF95)));
-[v _TRISD `Vuc ~T0 @X0 0 e@3989 ]
 "327
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h: 327: extern volatile unsigned char ANSELC __attribute__((address(0xF5D)));
 [v _ANSELC `Vuc ~T0 @X0 0 e@3933 ]
 "277
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h: 277: extern volatile unsigned char ANSELB __attribute__((address(0xF5C)));
 [v _ANSELB `Vuc ~T0 @X0 0 e@3932 ]
-"361
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h: 361: extern volatile unsigned char ANSELD __attribute__((address(0xF5E)));
-[v _ANSELD `Vuc ~T0 @X0 0 e@3934 ]
-"423
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h: 423: extern volatile unsigned char ANSELE __attribute__((address(0xF5F)));
-[v _ANSELE `Vuc ~T0 @X0 0 e@3935 ]
+"232
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h: 232: extern volatile unsigned char ANSELA __attribute__((address(0xF5B)));
+[v _ANSELA `Vuc ~T0 @X0 0 e@3931 ]
 "3545
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h: 3545: extern volatile unsigned char WPUB __attribute__((address(0xF85)));
 [v _WPUB `Vuc ~T0 @X0 0 e@3973 ]
@@ -689,42 +680,33 @@ Version 4.0 HI-TECH Software Intermediate Code
 {
 [e :U _PIN_MANAGER_Initialize ]
 [f ]
-"56
-[; ;mcc_generated_files/pin_manager.c: 56:     LATE = 0x00;
-[e = _LATE -> -> 0 `i `uc ]
-"57
-[; ;mcc_generated_files/pin_manager.c: 57:     LATD = 0x00;
-[e = _LATD -> -> 0 `i `uc ]
+"58
+[; ;mcc_generated_files/pin_manager.c: 58:     LATA = 0x00;
+[e = _LATA -> -> 0 `i `uc ]
 "59
 [; ;mcc_generated_files/pin_manager.c: 59:     LATB = 0x04;
 [e = _LATB -> -> 4 `i `uc ]
 "60
 [; ;mcc_generated_files/pin_manager.c: 60:     LATC = 0x00;
 [e = _LATC -> -> 0 `i `uc ]
-"65
-[; ;mcc_generated_files/pin_manager.c: 65:     TRISE = 0x07;
-[e = _TRISE -> -> 7 `i `uc ]
+"66
+[; ;mcc_generated_files/pin_manager.c: 66:     TRISA = 0xFF;
+[e = _TRISA -> -> 255 `i `uc ]
 "67
 [; ;mcc_generated_files/pin_manager.c: 67:     TRISB = 0xF1;
 [e = _TRISB -> -> 241 `i `uc ]
 "68
 [; ;mcc_generated_files/pin_manager.c: 68:     TRISC = 0xC7;
 [e = _TRISC -> -> 199 `i `uc ]
-"69
-[; ;mcc_generated_files/pin_manager.c: 69:     TRISD = 0x00;
-[e = _TRISD -> -> 0 `i `uc ]
 "74
 [; ;mcc_generated_files/pin_manager.c: 74:     ANSELC = 0xC4;
 [e = _ANSELC -> -> 196 `i `uc ]
 "75
 [; ;mcc_generated_files/pin_manager.c: 75:     ANSELB = 0x30;
 [e = _ANSELB -> -> 48 `i `uc ]
-"76
-[; ;mcc_generated_files/pin_manager.c: 76:     ANSELD = 0x00;
-[e = _ANSELD -> -> 0 `i `uc ]
-"77
-[; ;mcc_generated_files/pin_manager.c: 77:     ANSELE = 0x07;
-[e = _ANSELE -> -> 7 `i `uc ]
+"78
+[; ;mcc_generated_files/pin_manager.c: 78:     ANSELA = 0x2F;
+[e = _ANSELA -> -> 47 `i `uc ]
 "83
 [; ;mcc_generated_files/pin_manager.c: 83:     WPUB = 0xFF;
 [e = _WPUB -> -> 255 `i `uc ]

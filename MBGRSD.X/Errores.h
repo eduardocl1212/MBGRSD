@@ -7,98 +7,25 @@
 
 #ifndef ERRORES_H
 #define	ERRORES_H
+#define _mSec 1
 
-void Error(char a){
-    if (a == 1){         //Error Inicializar
-        LATAbits.LATA0 ^= 1;
-        LATAbits.LATA1 ^= 1;
-        LATAbits.LATA2 ^= 1;
-        LATAbits.LATA3 ^= 1;
-        LATAbits.LATA4 ^= 1;
-        LATAbits.LATA5 ^= 1;
-        LATAbits.LATA6 ^= 1;
-        LATAbits.LATA7 ^= 1;
+
+void Error(int a){
+    LATD = 0x00;
+    TRISD = 0x00;       //Todos como salida digital
+    ANSELD = 0x00;
+    LATE = 0x00;
+    TRISE = 0x00;       //Todos como salida digital
+    ANSELE = 0x00;
+
+    unsigned char v_seg[10]={0x7E,0x30,0x6D,0x79,0x33,0x5B,0x5F,0x70,0x7F,0x73};
+    if(a != 33){   
+    LATD = v_seg[a];              //asigna valor Display a puerto D
+    LATE = 0x01;                    //Enciende display     
     }
-    if (a == 2){        //SD INIT
-        LATAbits.LATA0 ^= 0;
-        LATAbits.LATA1 ^= 0;
-        LATAbits.LATA2 ^= 0;
-        LATAbits.LATA3 ^= 0;
-        LATAbits.LATA4 ^= 0;
-        LATAbits.LATA5 ^= 0;
-        LATAbits.LATA6 ^= 0;
-        LATAbits.LATA7 ^= 1;
-    }
-    if (a == 3){        //Archivo Creado
-        LATAbits.LATA0 ^= 0;
-        LATAbits.LATA1 ^= 0;
-        LATAbits.LATA2 ^= 0;
-        LATAbits.LATA3 ^= 0;
-        LATAbits.LATA4 ^= 0;
-        LATAbits.LATA5 ^= 0;
-        LATAbits.LATA6 ^= 1;
-        LATAbits.LATA7 ^= 1;
-    }
-    if (a == 4){        //Archivo Abierto
-        LATAbits.LATA0 ^= 0;
-        LATAbits.LATA1 ^= 0;
-        LATAbits.LATA2 ^= 0;
-        LATAbits.LATA3 ^= 0;
-        LATAbits.LATA4 ^= 0;
-        LATAbits.LATA5 ^= 1;
-        LATAbits.LATA6 ^= 1;
-        LATAbits.LATA7 ^= 1;
-    }
-    if (a == 5){        //Archivo Editado
-        LATAbits.LATA0 ^= 0;
-        LATAbits.LATA1 ^= 0;
-        LATAbits.LATA2 ^= 0;
-        LATAbits.LATA3 ^= 0;
-        LATAbits.LATA4 ^= 1;
-        LATAbits.LATA5 ^= 1;
-        LATAbits.LATA6 ^= 1;
-        LATAbits.LATA7 ^= 1;
-    }
-    if (a == 6){        //Archivo Guardado
-        LATAbits.LATA0 ^= 0;
-        LATAbits.LATA1 ^= 0;
-        LATAbits.LATA2 ^= 0;
-        LATAbits.LATA3 ^= 1;
-        LATAbits.LATA4 ^= 1;
-        LATAbits.LATA5 ^= 1;
-        LATAbits.LATA6 ^= 1;
-        LATAbits.LATA7 ^= 1;
-    }
-    if (a == 7){        //Extraer SD
-        LATAbits.LATA0 ^= 0;
-        LATAbits.LATA1 ^= 0;
-        LATAbits.LATA2 ^= 1;
-        LATAbits.LATA3 ^= 1;
-        LATAbits.LATA4 ^= 1;
-        LATAbits.LATA5 ^= 1;
-        LATAbits.LATA6 ^= 1;
-        LATAbits.LATA7 ^= 1;
-    }
-    if (a == 11){
-        LATAbits.LATA0 ^= 0;
-        LATAbits.LATA1 ^= 1;
-        LATAbits.LATA2 ^= 0;
-        LATAbits.LATA3 ^= 0;
-        LATAbits.LATA4 ^= 0;
-        LATAbits.LATA5 ^= 1;
-        LATAbits.LATA6 ^= 0;
-        LATAbits.LATA7 ^= 1;
-    }
-    if(a == 15) { //EN ESPERA    
-        LATAbits.LATA0 ^= 0;
-        LATAbits.LATA1 ^= 0;
-        LATAbits.LATA2 ^= 0;
-        LATAbits.LATA3 ^= 0;
-        LATAbits.LATA4 ^= 0;
-        LATAbits.LATA5 ^= 0;
-        LATAbits.LATA6 ^= 0;
-        LATAbits.LATA7 ^= 0;
-    
+    else{
+    LATD = v_seg[6];              //asigna valor Display a puerto D
+    LATE = 0x02;  
     }
 }
 
