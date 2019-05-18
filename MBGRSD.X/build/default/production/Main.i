@@ -8317,13 +8317,30 @@ void Error(int a){
     ANSELE = 0x00;
 
     unsigned char v_seg[10]={0x7E,0x30,0x6D,0x79,0x33,0x5B,0x5F,0x70,0x7F,0x73};
-    if(a != 33){
+    if(a != 33 && a != 55){
     LATD = v_seg[a];
     LATE = 0x01;
     }
-    else{
+    else if(a == 33){
     LATD = v_seg[6];
     LATE = 0x02;
+    }
+    else {
+    LATD = v_seg[0];
+    LATE = 0x01;
+    _delay((unsigned long)((1)*(8000000/4000.0)));
+
+    LATE = 0x00;
+    LATD = v_seg[9];
+    LATE = 0x02;
+    _delay((unsigned long)((1)*(8000000/4000.0)));
+
+    LATE = 0x00;
+    LATD = v_seg[6];
+    LATE = 0x04;
+    _delay((unsigned long)((1)*(8000000/4000.0)));
+
+    LATE = 0x00;
     }
 }
 # 4 "Main.c" 2
@@ -8353,47 +8370,41 @@ void guardar(char* data){
 
     Error(1);
     __delay_sec(2);
-    Error(2);
 
     if (f_open(&Fil, "BeeDev.txt", 0x10 | 0x01 | 0x02) == FR_OK) {
-        Error(3);
+        Error(2);
 
 
         __delay_sec(2);
-         Error(0);
+         Error(3);
 
    if ((Fil.fsize != 0) && (f_lseek(&Fil, Fil.fsize) != FR_OK)) goto endSD;
                 Error(4);
                 __delay_sec(2);
 
-                Error(0);
                 f_write(&Fil, data , 28 , &bw);
 
                 Error(5);
                 __delay_sec(2);
-                 Error(0);
                 endSD: f_close(&Fil);
                 Error(6);
                 __delay_sec(1);
 
                 Error(7);
                 __delay_sec(2);
-                 Error(0);
 
  }
     else {
-        Error(9);
+        Error(0);
     }
 }
 
 void main(void)
 {
-
-
     guardar("Prueba por ARRAY.\r\n");
-    __delay_sec(5);
+    __delay_sec(1);
     while (1)
     {
-
+        Error(55);
     }
 }

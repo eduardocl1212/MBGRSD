@@ -8023,7 +8023,7 @@ void PIN_MANAGER_Initialize(void)
 
 
 
-    LATA = 0x00;
+
     LATB = 0x04;
     LATC = 0x00;
 
@@ -8031,7 +8031,7 @@ void PIN_MANAGER_Initialize(void)
 
 
 
-    TRISA = 0xFF;
+
     TRISB = 0xF1;
     TRISC = 0xC7;
 
@@ -8043,7 +8043,7 @@ void PIN_MANAGER_Initialize(void)
     ANSELB = 0x30;
 
 
-    ANSELA = 0x2F;
+
 
 
 

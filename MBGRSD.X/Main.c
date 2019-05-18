@@ -29,11 +29,11 @@ void guardar(char* data){
     __delay_sec(2);
         
     if (f_open(&Fil, "BeeDev.txt", FA_OPEN_ALWAYS | FA_READ | FA_WRITE) == FR_OK) {	/* Abre o crea el archivo */
-        Error(3);
+        Error(2);
         
        
         __delay_sec(2);
-         Error(0);
+         Error(3);
             
 			if ((Fil.fsize != 0) && (f_lseek(&Fil, Fil.fsize) != FR_OK)) goto endSD;	/* Salta al final del archivo */
                 Error(4);
@@ -52,19 +52,17 @@ void guardar(char* data){
      
 	}
     else {
-        Error(9);
+        Error(0);
     }
 }
 
 void main(void)
 {
-    
-   
     guardar("Prueba por ARRAY.\r\n");
-    __delay_sec(5);
+    __delay_sec(1);
     while (1)
     {
-	 //asm("reset"); //Reset Programado, no se para que ponerlo pero por si las moscas aqui esta :V
+        Error(55);
     }
 }
 /**

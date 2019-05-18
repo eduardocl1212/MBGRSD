@@ -12,73 +12,73 @@
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
 $dist/default/production\MBGRSD.X.production.o
-cinit CODE 0 527C 527C 5C 1
-text0 CODE 0 5580 5580 16 1
-text1 CODE 0 3F40 3F40 18C 1
+cinit CODE 0 5306 5306 5C 1
+text0 CODE 0 556C 556C 22 1
+text1 CODE 0 3F40 3F40 15C 1
 text2 CODE 0 11DE 11DE 764 1
 text3 CODE 0 2FC0 2FC0 396 1
-text4 CODE 0 4224 4224 14A 1
-text5 CODE 0 436E 436E 146 1
-text6 CODE 0 50B0 50B0 7E 1
-text7 CODE 0 47F6 47F6 EC 1
-text8 CODE 0 5216 5216 66 1
+text4 CODE 0 41F4 41F4 14A 1
+text5 CODE 0 433E 433E 146 1
+text6 CODE 0 513A 513A 7E 1
+text7 CODE 0 47C6 47C6 EC 1
+text8 CODE 0 52A0 52A0 66 1
 text9 CODE 0 3912 3912 284 1
-text10 CODE 0 5384 5384 48 1
-text11 CODE 0 4AAC 4AAC D6 1
-text12 CODE 0 4C4E 4C4E BA 1
-text13 CODE 0 4706 4706 F0 1
+text10 CODE 0 53B8 53B8 48 1
+text11 CODE 0 4A7C 4A7C D6 1
+text12 CODE 0 4C1E 4C1E BA 1
+text13 CODE 0 46D6 46D6 F0 1
 text14 CODE 0 3650 3650 2C2 1
 text15 CODE 0 2818 2818 406 1
-text16 CODE 0 4DC2 4DC2 B0 1
+text16 CODE 0 4E4C 4E4C B0 1
 text17 CODE 0 830 830 9AE 1
-text18 CODE 0 49CE 49CE DE 1
+text18 CODE 0 499E 499E DE 1
 text19 CODE 0 3B96 3B96 1EA 1
-text20 CODE 0 55CA 55CA E 1
-text21 CODE 0 48E2 48E2 EC 1
+text20 CODE 0 5600 5600 E 1
+text21 CODE 0 48B2 48B2 EC 1
 text22 CODE 0 1942 1942 60E 1
 text23 CODE 0 3356 3356 2FA 1
 text24 CODE 0 23EE 23EE 42A 1
 text25 CODE 0 2C1E 2C1E 3A2 1
-text26 CODE 0 4D08 4D08 BA 1
-text27 CODE 0 52D8 52D8 56 1
-text28 CODE 0 4FAC 4FAC 82 1
-text29 CODE 0 544A 544A 3A 1
-text30 CODE 0 44B4 44B4 142 1
-text31 CODE 0 4F18 4F18 94 1
-text32 CODE 0 5596 5596 12 1
+text26 CODE 0 4CD8 4CD8 BA 1
+text27 CODE 0 5362 5362 56 1
+text28 CODE 0 5036 5036 82 1
+text29 CODE 0 547E 547E 3A 1
+text30 CODE 0 4484 4484 142 1
+text31 CODE 0 4FA2 4FA2 94 1
+text32 CODE 0 55CC 55CC 12 1
 text33 CODE 0 3D80 3D80 1C0 1
-text34 CODE 0 54BC 54BC 2C 1
+text34 CODE 0 54F0 54F0 2C 1
 text35 CODE 0 1F50 1F50 49E 1
-text36 CODE 0 553C 553C 26 1
-text37 CODE 0 54E8 54E8 2A 1
-text38 CODE 0 4E72 4E72 A6 1
-text39 CODE 0 40CC 40CC 158 1
-text40 CODE 0 45F6 45F6 110 1
-text41 CODE 0 512E 512E 7C 1
-text42 CODE 0 4B82 4B82 CC 1
-text43 CODE 0 53CC 53CC 42 1
-text44 CODE 0 502E 502E 82 1
-text45 CODE 0 5562 5562 1E 1
-text46 CODE 0 540E 540E 3C 1
-text47 CODE 0 55FE 55FE A 1
-text48 CODE 0 51AA 51AA 6C 1
-text49 CODE 0 55BA 55BA 10 1
-text50 CODE 0 5484 5484 38 1
-text51 CODE 0 55D8 55D8 E 1
-text52 CODE 0 55E6 55E6 E 1
-text53 CODE 0 5512 5512 2A 1
-text54 CODE 0 55A8 55A8 12 1
-text55 CODE 0 532E 532E 56 1
+text36 CODE 0 5546 5546 26 1
+text37 CODE 0 551C 551C 2A 1
+text38 CODE 0 4EFC 4EFC A6 1
+text39 CODE 0 409C 409C 158 1
+text40 CODE 0 45C6 45C6 110 1
+text41 CODE 0 51B8 51B8 7C 1
+text42 CODE 0 4B52 4B52 CC 1
+text43 CODE 0 5400 5400 42 1
+text44 CODE 0 50B8 50B8 82 1
+text45 CODE 0 55AE 55AE 1E 1
+text46 CODE 0 5442 5442 3C 1
+text47 CODE 0 5634 5634 A 1
+text48 CODE 0 5234 5234 6C 1
+text49 CODE 0 55F0 55F0 10 1
+text50 CODE 0 54B8 54B8 38 1
+text51 CODE 0 560E 560E E 1
+text52 CODE 0 561C 561C E 1
+text53 CODE 0 558E 558E 20 1
+text54 CODE 0 55DE 55DE 12 1
+text55 CODE 0 4D92 4D92 BA 1
 cstackCOMRAM COMRAM 1 1 1 5F 1
 cstackBANK0 BANK0 1 60 60 74 1
 bssBANK0 BANK0 1 D4 D4 26 1
 smallconst SMALLCONST 0 800 800 30 1
-idataBANK0 CODE 0 5608 5608 1 1
-idataBANK1 CODE 0 55F4 55F4 A 1
+idataBANK0 CODE 0 563E 563E 1 1
+idataBANK1 CODE 0 562A 562A A 1
 dataBANK0 BANK0 1 FA FA 1 1
 dataBANK1 BANK1 1 100 100 A 1
 bssBIGRAM BIGRAM 1 10A 10A 22E 1
-$C:\Users\eduar\AppData\Local\Temp\s7bo.o
+$C:\Users\eduar\AppData\Local\Temp\shg0.o
 idloc IDLOC 0 200000 200000 8 1
 init CODE 0 0 0 4 1
 config CONFIG 0 300000 300000 E 1
@@ -98,15 +98,15 @@ BANK5 500-5FF 1
 BANK6 600-6FF 1
 BANK7 700-7FF 1
 CONST 4-7FF 1
-CONST 5609-7FFF 1
+CONST 563F-7FFF 1
 STACK 338-7FF 1
-SMALLCONST 5609-7FFF 1
+SMALLCONST 563F-7FFF 1
 CODE 4-7FF 1
-CODE 5609-7FFF 1
+CODE 563F-7FFF 1
 BIGRAM FB-FF 1
 BIGRAM 338-7FF 1
 EEDATA F00000-F000FF 1
-MEDIUMCONST 5609-7FFF 1
+MEDIUMCONST 563F-7FFF 1
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
 # The beginning of the section is indicated by %LINETAB.
@@ -121,200 +121,211 @@ MEDIUMCONST 5609-7FFF 1
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\MBGRSD.X.production.o
-532E text55 CODE >13:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X/Errores.h
-532E text55 CODE >14:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X/Errores.h
-5332 text55 CODE >15:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X/Errores.h
-5336 text55 CODE >16:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X/Errores.h
-533C text55 CODE >17:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X/Errores.h
-5340 text55 CODE >18:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X/Errores.h
-5344 text55 CODE >19:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X/Errores.h
-5348 text55 CODE >21:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X/Errores.h
-535A text55 CODE >22:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X/Errores.h
-5364 text55 CODE >23:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X/Errores.h
-5374 text55 CODE >24:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X/Errores.h
-5378 text55 CODE >25:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X/Errores.h
-537A text55 CODE >26:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X/Errores.h
-537A text55 CODE >27:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X/Errores.h
-537E text55 CODE >28:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X/Errores.h
-5382 text55 CODE >30:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X/Errores.h
-55A8 text54 CODE >124:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/mcc.c
-55A8 text54 CODE >127:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/mcc.c
-55AC text54 CODE >129:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/mcc.c
-55B0 text54 CODE >131:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/mcc.c
-55B4 text54 CODE >133:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/mcc.c
-55B8 text54 CODE >136:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/mcc.c
-5512 text53 CODE >51:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/pin_manager.c
-5512 text53 CODE >58:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/pin_manager.c
-5516 text53 CODE >59:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/pin_manager.c
-551A text53 CODE >60:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/pin_manager.c
-551E text53 CODE >66:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/pin_manager.c
-5520 text53 CODE >67:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/pin_manager.c
-5524 text53 CODE >68:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/pin_manager.c
-5528 text53 CODE >74:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/pin_manager.c
-552E text53 CODE >75:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/pin_manager.c
-5532 text53 CODE >78:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/pin_manager.c
-5536 text53 CODE >83:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/pin_manager.c
-5538 text53 CODE >84:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/pin_manager.c
-553A text53 CODE >91:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/pin_manager.c
-55E6 text52 CODE >63:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/spi1.c
-55E6 text52 CODE >68:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/spi1.c
-55EA text52 CODE >71:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/spi1.c
-55EE text52 CODE >74:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/spi1.c
-55F2 text52 CODE >75:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/spi1.c
-55D8 text51 CODE >116:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/mcc.c
-55D8 text51 CODE >119:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/mcc.c
-55DC text51 CODE >120:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/mcc.c
-55E0 text51 CODE >121:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/mcc.c
-55E4 text51 CODE >122:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/mcc.c
-5484 text50 CODE >10:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\Main.c
-5486 text50 CODE >11:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\Main.c
-548C text50 CODE >12:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\Main.c
-549A text50 CODE >13:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\Main.c
-55BA text49 CODE >90:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/spi1.c
-55BC text49 CODE >93:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/spi1.c
-55BE text49 CODE >95:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/spi1.c
-55C2 text49 CODE >97:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/spi1.c
-55C2 text49 CODE >99:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/spi1.c
-55C6 text49 CODE >101:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/spi1.c
-55C8 text49 CODE >102:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/spi1.c
-51AA text48 CODE >123:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-51AA text48 CODE >132:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-51B4 text48 CODE >133:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-51BC text48 CODE >134:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-51C2 text48 CODE >135:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-51CA text48 CODE >136:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-51D8 text48 CODE >137:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-51E4 text48 CODE >140:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-5206 text48 CODE >142:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-520C text48 CODE >143:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-5212 text48 CODE >145:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-5214 text48 CODE >146:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-55FE text47 CODE >93:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-55FE text47 CODE >95:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-5600 text47 CODE >96:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-5606 text47 CODE >97:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-540E text46 CODE >74:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-540E text46 CODE >78:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-5418 text46 CODE >79:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-5424 text46 CODE >80:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-542C text46 CODE >81:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-543A text46 CODE >83:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-5448 text46 CODE >84:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-5562 text45 CODE >106:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-5562 text45 CODE >108:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-5564 text45 CODE >109:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-556A text45 CODE >110:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-5578 text45 CODE >112:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-557C text45 CODE >113:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-557E text45 CODE >114:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-502E text44 CODE >195:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-502E text44 CODE >196:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-5030 text44 CODE >203:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-5038 text44 CODE >204:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-503C text44 CODE >205:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-504A text44 CODE >209:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-5052 text44 CODE >210:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-5058 text44 CODE >211:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-505E text44 CODE >212:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-5064 text44 CODE >213:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-506A text44 CODE >214:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-506E text44 CODE >215:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-5078 text44 CODE >216:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-5084 text44 CODE >217:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-508A text44 CODE >220:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-5098 text44 CODE >221:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-509C text44 CODE >223:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-50AC text44 CODE >226:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-50AE text44 CODE >227:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-53CC text43 CODE >231:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-53CC text43 CODE >232:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-53CE text43 CODE >242:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-53D2 text43 CODE >243:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-53D4 text43 CODE >245:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-53EC text43 CODE >249:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-53F6 text43 CODE >253:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-540C text43 CODE >281:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-4B82 text42 CODE >370:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-4B82 text42 CODE >371:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-4B84 text42 CODE >380:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-4B96 text42 CODE >381:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-4BA0 text42 CODE >383:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-4BB4 text42 CODE >385:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-4BD4 text42 CODE >386:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-4BF0 text42 CODE >388:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-4C0A text42 CODE >389:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-4C0E text42 CODE >390:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-4C1C text42 CODE >391:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-4C3A text42 CODE >393:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-4C3E text42 CODE >395:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-4C4C text42 CODE >396:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-512E text41 CODE >156:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-512E text41 CODE >165:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-513C text41 CODE >167:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-5142 text41 CODE >168:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-514A text41 CODE >169:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-5152 text41 CODE >171:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-5188 text41 CODE >173:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-518E text41 CODE >174:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-5194 text41 CODE >175:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-519C text41 CODE >176:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-51A6 text41 CODE >180:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-51A8 text41 CODE >181:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-45F6 text40 CODE >405:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-45F6 text40 CODE >406:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-45F8 text40 CODE >412:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-460A text40 CODE >413:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-4614 text40 CODE >414:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-461C text40 CODE >416:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-4630 text40 CODE >418:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-4638 text40 CODE >419:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-466A text40 CODE >421:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-4672 text40 CODE >424:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-4690 text40 CODE >425:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-46AC text40 CODE >427:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-46C2 text40 CODE >428:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-46C6 text40 CODE >429:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-46D4 text40 CODE >430:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-46EA text40 CODE >431:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-46F2 text40 CODE >434:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-46F6 text40 CODE >436:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-4704 text40 CODE >437:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-40CC text39 CODE >700:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-40CC text39 CODE >706:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-40D0 text39 CODE >709:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-40E2 text39 CODE >710:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-40FE text39 CODE >711:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-413A text39 CODE >712:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-413E text39 CODE >713:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4140 text39 CODE >714:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4150 text39 CODE >715:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-41A4 text39 CODE >716:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-41C6 text39 CODE >717:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-41E2 text39 CODE >718:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4218 text39 CODE >719:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4220 text39 CODE >723:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4222 text39 CODE >724:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4E72 text38 CODE >729:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4E72 text38 CODE >734:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4E76 text38 CODE >737:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4E9C text38 CODE >739:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4EAA text38 CODE >741:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4EB0 text38 CODE >742:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4EEC text38 CODE >743:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4EF4 text38 CODE >744:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4EF8 text38 CODE >746:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4F14 text38 CODE >749:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4F16 text38 CODE >750:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-54E8 text37 CODE >1252:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-54E8 text37 CODE >1257:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-54FC text37 CODE >1258:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-5510 text37 CODE >1259:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-553C text36 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\Umul16.c
-553C text36 CODE >37:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\Umul16.c
-5548 text36 CODE >38:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\Umul16.c
-5550 text36 CODE >39:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\Umul16.c
-5558 text36 CODE >52:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\Umul16.c
-5560 text36 CODE >53:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\Umul16.c
+4D92 text55 CODE >13:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X/Errores.h
+4D92 text55 CODE >14:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X/Errores.h
+4D96 text55 CODE >15:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X/Errores.h
+4D9A text55 CODE >16:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X/Errores.h
+4DA0 text55 CODE >17:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X/Errores.h
+4DA4 text55 CODE >18:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X/Errores.h
+4DA8 text55 CODE >19:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X/Errores.h
+4DAC text55 CODE >21:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X/Errores.h
+4DBE text55 CODE >22:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X/Errores.h
+4DD2 text55 CODE >23:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X/Errores.h
+4DE2 text55 CODE >24:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X/Errores.h
+4DE6 text55 CODE >25:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X/Errores.h
+4DE8 text55 CODE >26:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X/Errores.h
+4DF2 text55 CODE >27:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X/Errores.h
+4DF6 text55 CODE >28:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X/Errores.h
+4DFA text55 CODE >29:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X/Errores.h
+4DFC text55 CODE >30:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X/Errores.h
+4DFC text55 CODE >31:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X/Errores.h
+4E00 text55 CODE >32:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X/Errores.h
+4E04 text55 CODE >33:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X/Errores.h
+4E12 text55 CODE >35:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X/Errores.h
+4E16 text55 CODE >36:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X/Errores.h
+4E1A text55 CODE >37:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X/Errores.h
+4E1E text55 CODE >38:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X/Errores.h
+4E2C text55 CODE >40:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X/Errores.h
+4E30 text55 CODE >41:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X/Errores.h
+4E34 text55 CODE >42:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X/Errores.h
+4E38 text55 CODE >43:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X/Errores.h
+4E46 text55 CODE >45:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X/Errores.h
+4E4A text55 CODE >47:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X/Errores.h
+55DE text54 CODE >124:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/mcc.c
+55DE text54 CODE >127:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/mcc.c
+55E2 text54 CODE >129:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/mcc.c
+55E6 text54 CODE >131:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/mcc.c
+55EA text54 CODE >133:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/mcc.c
+55EE text54 CODE >136:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/mcc.c
+558E text53 CODE >51:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/pin_manager.c
+558E text53 CODE >59:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/pin_manager.c
+5592 text53 CODE >60:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/pin_manager.c
+5596 text53 CODE >67:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/pin_manager.c
+559A text53 CODE >68:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/pin_manager.c
+559E text53 CODE >74:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/pin_manager.c
+55A4 text53 CODE >75:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/pin_manager.c
+55A8 text53 CODE >83:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/pin_manager.c
+55AA text53 CODE >84:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/pin_manager.c
+55AC text53 CODE >91:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/pin_manager.c
+561C text52 CODE >63:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/spi1.c
+561C text52 CODE >68:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/spi1.c
+5620 text52 CODE >71:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/spi1.c
+5624 text52 CODE >74:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/spi1.c
+5628 text52 CODE >75:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/spi1.c
+560E text51 CODE >116:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/mcc.c
+560E text51 CODE >119:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/mcc.c
+5612 text51 CODE >120:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/mcc.c
+5616 text51 CODE >121:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/mcc.c
+561A text51 CODE >122:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/mcc.c
+54B8 text50 CODE >10:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\Main.c
+54BA text50 CODE >11:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\Main.c
+54C0 text50 CODE >12:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\Main.c
+54CE text50 CODE >13:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\Main.c
+55F0 text49 CODE >90:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/spi1.c
+55F2 text49 CODE >93:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/spi1.c
+55F4 text49 CODE >95:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/spi1.c
+55F8 text49 CODE >97:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/spi1.c
+55F8 text49 CODE >99:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/spi1.c
+55FC text49 CODE >101:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/spi1.c
+55FE text49 CODE >102:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/spi1.c
+5234 text48 CODE >123:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+5234 text48 CODE >132:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+523E text48 CODE >133:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+5246 text48 CODE >134:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+524C text48 CODE >135:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+5254 text48 CODE >136:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+5262 text48 CODE >137:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+526E text48 CODE >140:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+5290 text48 CODE >142:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+5296 text48 CODE >143:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+529C text48 CODE >145:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+529E text48 CODE >146:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+5634 text47 CODE >93:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+5634 text47 CODE >95:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+5636 text47 CODE >96:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+563C text47 CODE >97:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+5442 text46 CODE >74:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+5442 text46 CODE >78:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+544C text46 CODE >79:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+5458 text46 CODE >80:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+5460 text46 CODE >81:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+546E text46 CODE >83:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+547C text46 CODE >84:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+55AE text45 CODE >106:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+55AE text45 CODE >108:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+55B0 text45 CODE >109:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+55B6 text45 CODE >110:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+55C4 text45 CODE >112:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+55C8 text45 CODE >113:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+55CA text45 CODE >114:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+50B8 text44 CODE >195:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+50B8 text44 CODE >196:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+50BA text44 CODE >203:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+50C2 text44 CODE >204:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+50C6 text44 CODE >205:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+50D4 text44 CODE >209:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+50DC text44 CODE >210:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+50E2 text44 CODE >211:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+50E8 text44 CODE >212:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+50EE text44 CODE >213:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+50F4 text44 CODE >214:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+50F8 text44 CODE >215:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+5102 text44 CODE >216:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+510E text44 CODE >217:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+5114 text44 CODE >220:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+5122 text44 CODE >221:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+5126 text44 CODE >223:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+5136 text44 CODE >226:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+5138 text44 CODE >227:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+5400 text43 CODE >231:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+5400 text43 CODE >232:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+5402 text43 CODE >242:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+5406 text43 CODE >243:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+5408 text43 CODE >245:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+5420 text43 CODE >249:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+542A text43 CODE >253:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+5440 text43 CODE >281:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+4B52 text42 CODE >370:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+4B52 text42 CODE >371:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+4B54 text42 CODE >380:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+4B66 text42 CODE >381:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+4B70 text42 CODE >383:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+4B84 text42 CODE >385:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+4BA4 text42 CODE >386:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+4BC0 text42 CODE >388:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+4BDA text42 CODE >389:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+4BDE text42 CODE >390:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+4BEC text42 CODE >391:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+4C0A text42 CODE >393:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+4C0E text42 CODE >395:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+4C1C text42 CODE >396:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+51B8 text41 CODE >156:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+51B8 text41 CODE >165:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+51C6 text41 CODE >167:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+51CC text41 CODE >168:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+51D4 text41 CODE >169:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+51DC text41 CODE >171:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+5212 text41 CODE >173:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+5218 text41 CODE >174:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+521E text41 CODE >175:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+5226 text41 CODE >176:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+5230 text41 CODE >180:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+5232 text41 CODE >181:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+45C6 text40 CODE >405:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+45C6 text40 CODE >406:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+45C8 text40 CODE >412:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+45DA text40 CODE >413:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+45E4 text40 CODE >414:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+45EC text40 CODE >416:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+4600 text40 CODE >418:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+4608 text40 CODE >419:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+463A text40 CODE >421:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+4642 text40 CODE >424:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+4660 text40 CODE >425:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+467C text40 CODE >427:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+4692 text40 CODE >428:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+4696 text40 CODE >429:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+46A4 text40 CODE >430:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+46BA text40 CODE >431:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+46C2 text40 CODE >434:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+46C6 text40 CODE >436:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+46D4 text40 CODE >437:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+409C text39 CODE >700:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+409C text39 CODE >706:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+40A0 text39 CODE >709:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+40B2 text39 CODE >710:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+40CE text39 CODE >711:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+410A text39 CODE >712:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+410E text39 CODE >713:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4110 text39 CODE >714:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4120 text39 CODE >715:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4174 text39 CODE >716:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4196 text39 CODE >717:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+41B2 text39 CODE >718:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+41E8 text39 CODE >719:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+41F0 text39 CODE >723:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+41F2 text39 CODE >724:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4EFC text38 CODE >729:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4EFC text38 CODE >734:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4F00 text38 CODE >737:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4F26 text38 CODE >739:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4F34 text38 CODE >741:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4F3A text38 CODE >742:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4F76 text38 CODE >743:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4F7E text38 CODE >744:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4F82 text38 CODE >746:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4F9E text38 CODE >749:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4FA0 text38 CODE >750:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+551C text37 CODE >1252:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+551C text37 CODE >1257:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+5530 text37 CODE >1258:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+5544 text37 CODE >1259:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+5546 text36 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\Umul16.c
+5546 text36 CODE >37:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\Umul16.c
+5552 text36 CODE >38:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\Umul16.c
+555A text36 CODE >39:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\Umul16.c
+5562 text36 CODE >52:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\Umul16.c
+556A text36 CODE >53:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\Umul16.c
 1F50 text35 CODE >446:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
 1F50 text35 CODE >447:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
 1F52 text35 CODE >453:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
@@ -354,11 +365,11 @@ $dist/default/production\MBGRSD.X.production.o
 23E6 text35 CODE >542:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
 23EA text35 CODE >544:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
 23EC text35 CODE >545:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-54BC text34 CODE >524:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-54BC text34 CODE >525:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-54C4 text34 CODE >527:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-54C6 text34 CODE >528:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-54D6 text34 CODE >527:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+54F0 text34 CODE >524:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+54F0 text34 CODE >525:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+54F8 text34 CODE >527:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+54FA text34 CODE >528:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+550A text34 CODE >527:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
 3D80 text33 CODE >760:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
 3D80 text33 CODE >767:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
 3D8E text33 CODE >768:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
@@ -377,72 +388,72 @@ $dist/default/production\MBGRSD.X.production.o
 3F3C text33 CODE >786:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
 3F3C text33 CODE >788:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
 3F3E text33 CODE >789:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-5596 text32 CODE >356:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-5596 text32 CODE >357:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-5598 text32 CODE >360:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-55A2 text32 CODE >361:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-55A6 text32 CODE >362:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-4F18 text31 CODE >2372:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4F18 text31 CODE >2376:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4F20 text31 CODE >2379:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4FA4 text31 CODE >2380:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4FA8 text31 CODE >2384:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4FAA text31 CODE >2385:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-44B4 text30 CODE >2813:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-44B4 text30 CODE >2822:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-44C2 text30 CODE >2823:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-44C8 text30 CODE >2824:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-44D8 text30 CODE >2833:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-450A text30 CODE >2834:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4510 text30 CODE >2835:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4524 text30 CODE >2836:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4534 text30 CODE >2837:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-455C text30 CODE >2838:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4584 text30 CODE >2840:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-45A0 text30 CODE >2841:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-45B4 text30 CODE >2842:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-45C4 text30 CODE >2843:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-45DC text30 CODE >2844:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-45F2 text30 CODE >2849:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-45F4 text30 CODE >2850:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-544A text29 CODE >2861:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-544A text29 CODE >2869:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-5458 text29 CODE >2870:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-545E text29 CODE >2873:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-546C text29 CODE >2874:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-5472 text29 CODE >2882:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-5482 text29 CODE >2889:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4FAC text28 CODE >7:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\__lldiv.c
-4FAC text28 CODE >13:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\__lldiv.c
-4FBC text28 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\__lldiv.c
-4FC8 text28 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\__lldiv.c
-4FCC text28 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\__lldiv.c
-4FCE text28 CODE >17:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\__lldiv.c
-4FD8 text28 CODE >18:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\__lldiv.c
-4FDA text28 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\__lldiv.c
-4FDE text28 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\__lldiv.c
-4FE8 text28 CODE >22:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\__lldiv.c
-4FFC text28 CODE >23:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\__lldiv.c
-500C text28 CODE >24:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\__lldiv.c
-500E text28 CODE >26:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\__lldiv.c
-5018 text28 CODE >27:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\__lldiv.c
-501C text28 CODE >28:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\__lldiv.c
-501C text28 CODE >29:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\__lldiv.c
-502C text28 CODE >30:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\__lldiv.c
-52D8 text27 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\Umul32.c
-52D8 text27 CODE >119:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\Umul32.c
-52E8 text27 CODE >121:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\Umul32.c
-52EC text27 CODE >122:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\Umul32.c
-52FC text27 CODE >123:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\Umul32.c
-5306 text27 CODE >124:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\Umul32.c
-5310 text27 CODE >125:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\Umul32.c
-531C text27 CODE >128:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\Umul32.c
-532C text27 CODE >129:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\Umul32.c
-4D08 text26 CODE >800:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4D08 text26 CODE >805:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4D14 text26 CODE >806:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4D5E text26 CODE >807:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4DC0 text26 CODE >808:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+55CC text32 CODE >356:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+55CC text32 CODE >357:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+55CE text32 CODE >360:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+55D8 text32 CODE >361:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+55DC text32 CODE >362:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
+4FA2 text31 CODE >2372:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4FA2 text31 CODE >2376:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4FAA text31 CODE >2379:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+502E text31 CODE >2380:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+5032 text31 CODE >2384:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+5034 text31 CODE >2385:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4484 text30 CODE >2813:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4484 text30 CODE >2822:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4492 text30 CODE >2823:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4498 text30 CODE >2824:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+44A8 text30 CODE >2833:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+44DA text30 CODE >2834:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+44E0 text30 CODE >2835:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+44F4 text30 CODE >2836:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4504 text30 CODE >2837:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+452C text30 CODE >2838:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4554 text30 CODE >2840:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4570 text30 CODE >2841:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4584 text30 CODE >2842:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4594 text30 CODE >2843:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+45AC text30 CODE >2844:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+45C2 text30 CODE >2849:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+45C4 text30 CODE >2850:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+547E text29 CODE >2861:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+547E text29 CODE >2869:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+548C text29 CODE >2870:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+5492 text29 CODE >2873:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+54A0 text29 CODE >2874:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+54A6 text29 CODE >2882:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+54B6 text29 CODE >2889:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+5036 text28 CODE >7:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\__lldiv.c
+5036 text28 CODE >13:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\__lldiv.c
+5046 text28 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\__lldiv.c
+5052 text28 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\__lldiv.c
+5056 text28 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\__lldiv.c
+5058 text28 CODE >17:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\__lldiv.c
+5062 text28 CODE >18:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\__lldiv.c
+5064 text28 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\__lldiv.c
+5068 text28 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\__lldiv.c
+5072 text28 CODE >22:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\__lldiv.c
+5086 text28 CODE >23:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\__lldiv.c
+5096 text28 CODE >24:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\__lldiv.c
+5098 text28 CODE >26:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\__lldiv.c
+50A2 text28 CODE >27:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\__lldiv.c
+50A6 text28 CODE >28:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\__lldiv.c
+50A6 text28 CODE >29:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\__lldiv.c
+50B6 text28 CODE >30:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\__lldiv.c
+5362 text27 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\Umul32.c
+5362 text27 CODE >119:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\Umul32.c
+5372 text27 CODE >121:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\Umul32.c
+5376 text27 CODE >122:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\Umul32.c
+5386 text27 CODE >123:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\Umul32.c
+5390 text27 CODE >124:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\Umul32.c
+539A text27 CODE >125:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\Umul32.c
+53A6 text27 CODE >128:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\Umul32.c
+53B6 text27 CODE >129:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\Umul32.c
+4CD8 text26 CODE >800:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4CD8 text26 CODE >805:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4CE4 text26 CODE >806:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4D2E text26 CODE >807:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4D90 text26 CODE >808:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
 2C1E text25 CODE >818:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
 2C1E text25 CODE >828:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
 2C4E text25 CODE >829:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
@@ -574,22 +585,22 @@ $dist/default/production\MBGRSD.X.production.o
 1EEA text22 CODE >3174:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
 1F16 text22 CODE >3175:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
 1F3E text22 CODE >3176:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-48E2 text21 CODE >2175:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-48E2 text21 CODE >2180:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-490E text21 CODE >2181:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4930 text21 CODE >2182:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4934 text21 CODE >2184:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-494E text21 CODE >2185:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4952 text21 CODE >2187:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-498C text21 CODE >2188:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4990 text21 CODE >2189:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-49CA text21 CODE >2192:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-49CC text21 CODE >2193:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-55CA text20 CODE >77:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/spi1.c
-55CA text20 CODE >81:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/spi1.c
-55CE text20 CODE >84:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/spi1.c
-55D2 text20 CODE >87:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/spi1.c
-55D6 text20 CODE >88:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/spi1.c
+48B2 text21 CODE >2175:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+48B2 text21 CODE >2180:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+48DE text21 CODE >2181:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4900 text21 CODE >2182:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4904 text21 CODE >2184:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+491E text21 CODE >2185:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4922 text21 CODE >2187:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+495C text21 CODE >2188:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4960 text21 CODE >2189:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+499A text21 CODE >2192:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+499C text21 CODE >2193:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+5600 text20 CODE >77:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/spi1.c
+5600 text20 CODE >81:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/spi1.c
+5604 text20 CODE >84:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/spi1.c
+5608 text20 CODE >87:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/spi1.c
+560C text20 CODE >88:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/spi1.c
 3B96 text19 CODE >296:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
 3B96 text19 CODE >297:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
 3B98 text19 CODE >304:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
@@ -623,19 +634,19 @@ $dist/default/production\MBGRSD.X.production.o
 3D70 text19 CODE >342:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
 3D76 text19 CODE >343:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
 3D7A text19 CODE >344:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
-49CE text18 CODE >2114:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-49CE text18 CODE >2120:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-49D2 text18 CODE >2129:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-49E2 text18 CODE >2130:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4A1A text18 CODE >2131:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4A2C text18 CODE >2132:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4A3C text18 CODE >2133:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4A5A text18 CODE >2134:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4A74 text18 CODE >2135:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4A7C text18 CODE >2136:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4A84 text18 CODE >2137:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4A98 text18 CODE >2156:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4AA2 text18 CODE >2161:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+499E text18 CODE >2114:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+499E text18 CODE >2120:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+49A2 text18 CODE >2129:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+49B2 text18 CODE >2130:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+49EA text18 CODE >2131:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+49FC text18 CODE >2132:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4A0C text18 CODE >2133:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4A2A text18 CODE >2134:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4A44 text18 CODE >2135:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4A4C text18 CODE >2136:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4A54 text18 CODE >2137:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4A68 text18 CODE >2156:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4A72 text18 CODE >2161:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
 830 text17 CODE >2203:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
 830 text17 CODE >2219:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
 840 text17 CODE >2220:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
@@ -714,20 +725,20 @@ F52 text17 CODE >2320:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
 118C text17 CODE >2346:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
 11B4 text17 CODE >2352:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
 11C0 text17 CODE >2353:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4DC2 text16 CODE >2402:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4DC2 text16 CODE >2411:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4DCA text16 CODE >2414:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4DDE text16 CODE >2415:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4DE6 text16 CODE >2416:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4E00 text16 CODE >2418:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4E08 text16 CODE >2425:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4E14 text16 CODE >2428:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4E1C text16 CODE >2429:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4E28 text16 CODE >2434:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4E42 text16 CODE >2436:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4E54 text16 CODE >2438:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4E6E text16 CODE >2439:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4E70 text16 CODE >2440:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4E4C text16 CODE >2402:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4E4C text16 CODE >2411:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4E54 text16 CODE >2414:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4E68 text16 CODE >2415:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4E70 text16 CODE >2416:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4E8A text16 CODE >2418:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4E92 text16 CODE >2425:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4E9E text16 CODE >2428:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4EA6 text16 CODE >2429:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4EB2 text16 CODE >2434:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4ECC text16 CODE >2436:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4EDE text16 CODE >2438:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4EF8 text16 CODE >2439:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4EFA text16 CODE >2440:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
 2818 text15 CODE >1128:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
 2818 text15 CODE >1140:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
 283A text15 CODE >1141:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
@@ -787,44 +798,44 @@ F52 text17 CODE >2320:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
 38C2 text14 CODE >1115:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
 390E text14 CODE >1117:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
 3910 text14 CODE >1118:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4706 text13 CODE >1199:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4706 text13 CODE >1208:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-471E text13 CODE >1209:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4724 text13 CODE >1210:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-472C text13 CODE >1212:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4760 text13 CODE >1213:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4766 text13 CODE >1214:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-47AC text13 CODE >1215:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-47C0 text13 CODE >1217:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-47C8 text13 CODE >1219:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-47E0 text13 CODE >1220:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-47E6 text13 CODE >1222:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-47F2 text13 CODE >1223:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-47F4 text13 CODE >1224:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4C4E text12 CODE >507:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4C4E text12 CODE >508:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4C56 text12 CODE >509:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4C5E text12 CODE >512:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4C60 text12 CODE >513:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4C9E text12 CODE >514:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4CAE text12 CODE >515:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4CB6 text12 CODE >512:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4CC4 text12 CODE >519:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4CF6 text12 CODE >518:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4AAC text11 CODE >1578:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4AAC text11 CODE >1629:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4AC6 text11 CODE >1632:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4ACC text11 CODE >1633:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4B00 text11 CODE >1634:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4B06 text11 CODE >1635:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4B2E text11 CODE >1636:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4B64 text11 CODE >1640:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4B7C text11 CODE >1644:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4B80 text11 CODE >1645:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-5384 text10 CODE >543:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-5384 text10 CODE >544:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-53BA text10 CODE >545:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-53CA text10 CODE >546:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+46D6 text13 CODE >1199:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+46D6 text13 CODE >1208:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+46EE text13 CODE >1209:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+46F4 text13 CODE >1210:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+46FC text13 CODE >1212:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4730 text13 CODE >1213:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4736 text13 CODE >1214:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+477C text13 CODE >1215:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4790 text13 CODE >1217:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4798 text13 CODE >1219:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+47B0 text13 CODE >1220:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+47B6 text13 CODE >1222:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+47C2 text13 CODE >1223:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+47C4 text13 CODE >1224:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4C1E text12 CODE >507:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4C1E text12 CODE >508:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4C26 text12 CODE >509:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4C2E text12 CODE >512:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4C30 text12 CODE >513:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4C6E text12 CODE >514:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4C7E text12 CODE >515:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4C86 text12 CODE >512:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4C94 text12 CODE >519:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4CC6 text12 CODE >518:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4A7C text11 CODE >1578:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4A7C text11 CODE >1629:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4A96 text11 CODE >1632:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4A9C text11 CODE >1633:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4AD0 text11 CODE >1634:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4AD6 text11 CODE >1635:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4AFE text11 CODE >1636:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4B34 text11 CODE >1640:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4B4C text11 CODE >1644:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4B50 text11 CODE >1645:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+53B8 text10 CODE >543:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+53B8 text10 CODE >544:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+53EE text10 CODE >545:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+53FE text10 CODE >546:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
 3912 text9 CODE >1843:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
 3912 text9 CODE >1974:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
 394C text9 CODE >1975:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
@@ -861,70 +872,70 @@ F52 text17 CODE >2320:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
 3B82 text9 CODE >2038:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
 3B92 text9 CODE >2040:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
 3B94 text9 CODE >2042:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-5216 text8 CODE >533:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-5216 text8 CODE >534:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-5226 text8 CODE >535:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-522E text8 CODE >537:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-5272 text8 CODE >538:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-527A text8 CODE >539:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-47F6 text7 CODE >1458:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-47F6 text7 CODE >1468:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-480E text7 CODE >1469:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-481A text7 CODE >1475:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-484E text7 CODE >1476:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4854 text7 CODE >1477:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4868 text7 CODE >1478:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4874 text7 CODE >1479:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4880 text7 CODE >1502:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-48C0 text7 CODE >1505:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-48DA text7 CODE >1506:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-50B0 text6 CODE >1235:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-50B0 text6 CODE >1242:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-50D0 text6 CODE >1243:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-50E0 text6 CODE >1244:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-511C text6 CODE >1246:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-512C text6 CODE >1247:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-436E text5 CODE >2052:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-436E text5 CODE >2068:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4392 text5 CODE >2069:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4398 text5 CODE >2070:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-43AE text5 CODE >2073:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-43BE text5 CODE >2074:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-43D6 text5 CODE >2075:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-43EA text5 CODE >2076:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-43EC text5 CODE >2078:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4404 text5 CODE >2079:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-440A text5 CODE >2080:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-441A text5 CODE >2081:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4436 text5 CODE >2082:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-443C text5 CODE >2083:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4442 text5 CODE >2089:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-444C text5 CODE >2093:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-444C text5 CODE >2094:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4450 text5 CODE >2095:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4464 text5 CODE >2096:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4474 text5 CODE >2099:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-44B0 text5 CODE >2103:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-44B2 text5 CODE >2104:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4224 text4 CODE >937:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4224 text4 CODE >948:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4254 text4 CODE >949:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-425A text4 CODE >952:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4260 text4 CODE >953:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4262 text4 CODE >954:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-428E text4 CODE >955:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-429C text4 CODE >956:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-42A8 text4 CODE >957:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-42C0 text4 CODE >958:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-42F0 text4 CODE >959:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-42F6 text4 CODE >960:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-4314 text4 CODE >961:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-432A text4 CODE >962:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-433A text4 CODE >974:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-434A text4 CODE >953:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-434A text4 CODE >975:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-436A text4 CODE >978:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
-436C text4 CODE >979:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+52A0 text8 CODE >533:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+52A0 text8 CODE >534:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+52B0 text8 CODE >535:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+52B8 text8 CODE >537:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+52FC text8 CODE >538:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+5304 text8 CODE >539:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+47C6 text7 CODE >1458:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+47C6 text7 CODE >1468:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+47DE text7 CODE >1469:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+47EA text7 CODE >1475:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+481E text7 CODE >1476:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4824 text7 CODE >1477:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4838 text7 CODE >1478:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4844 text7 CODE >1479:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4850 text7 CODE >1502:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4890 text7 CODE >1505:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+48AA text7 CODE >1506:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+513A text6 CODE >1235:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+513A text6 CODE >1242:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+515A text6 CODE >1243:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+516A text6 CODE >1244:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+51A6 text6 CODE >1246:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+51B6 text6 CODE >1247:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+433E text5 CODE >2052:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+433E text5 CODE >2068:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4362 text5 CODE >2069:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4368 text5 CODE >2070:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+437E text5 CODE >2073:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+438E text5 CODE >2074:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+43A6 text5 CODE >2075:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+43BA text5 CODE >2076:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+43BC text5 CODE >2078:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+43D4 text5 CODE >2079:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+43DA text5 CODE >2080:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+43EA text5 CODE >2081:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4406 text5 CODE >2082:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+440C text5 CODE >2083:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4412 text5 CODE >2089:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+441C text5 CODE >2093:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+441C text5 CODE >2094:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4420 text5 CODE >2095:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4434 text5 CODE >2096:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4444 text5 CODE >2099:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4480 text5 CODE >2103:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4482 text5 CODE >2104:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+41F4 text4 CODE >937:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+41F4 text4 CODE >948:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4224 text4 CODE >949:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+422A text4 CODE >952:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4230 text4 CODE >953:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4232 text4 CODE >954:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+425E text4 CODE >955:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+426C text4 CODE >956:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4278 text4 CODE >957:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+4290 text4 CODE >958:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+42C0 text4 CODE >959:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+42C6 text4 CODE >960:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+42E4 text4 CODE >961:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+42FA text4 CODE >962:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+430A text4 CODE >974:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+431A text4 CODE >953:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+431A text4 CODE >975:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+433A text4 CODE >978:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
+433C text4 CODE >979:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
 2FC0 text3 CODE >2449:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
 2FC0 text3 CODE >2464:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
 2FCE text3 CODE >2465:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
@@ -1047,78 +1058,73 @@ F52 text17 CODE >2320:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
 3F74 text1 CODE >23:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\Main.c
 3F92 text1 CODE >28:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\Main.c
 3F9E text1 CODE >29:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\Main.c
-3FA4 text1 CODE >30:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\Main.c
-3FB0 text1 CODE >32:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\Main.c
-3FD0 text1 CODE >33:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\Main.c
-3FDC text1 CODE >36:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\Main.c
-3FE2 text1 CODE >37:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\Main.c
-3FEE text1 CODE >39:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\Main.c
+3FA4 text1 CODE >31:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\Main.c
+3FC4 text1 CODE >32:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\Main.c
+3FD0 text1 CODE >35:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\Main.c
+3FD6 text1 CODE >36:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\Main.c
+3FE2 text1 CODE >38:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\Main.c
+4012 text1 CODE >39:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\Main.c
 401E text1 CODE >40:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\Main.c
-402A text1 CODE >41:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\Main.c
-4030 text1 CODE >43:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\Main.c
-403C text1 CODE >44:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\Main.c
-4062 text1 CODE >46:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\Main.c
-406E text1 CODE >47:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\Main.c
+4024 text1 CODE >42:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\Main.c
+404A text1 CODE >44:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\Main.c
+4056 text1 CODE >45:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\Main.c
+405C text1 CODE >46:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\Main.c
+4068 text1 CODE >47:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\Main.c
 4074 text1 CODE >48:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\Main.c
-4080 text1 CODE >49:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\Main.c
-408C text1 CODE >50:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\Main.c
-4098 text1 CODE >51:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\Main.c
-409E text1 CODE >53:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\Main.c
-40AA text1 CODE >54:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\Main.c
-40B0 text1 CODE >55:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\Main.c
-40BC text1 CODE >57:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\Main.c
-40BE text1 CODE >59:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\Main.c
-40CA text1 CODE >61:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\Main.c
-5580 text0 CODE >63:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\Main.c
-5580 text0 CODE >67:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\Main.c
-558E text0 CODE >68:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\Main.c
-5594 text0 CODE >69:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\Main.c
-5594 text0 CODE >72:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\Main.c
-527C cinit CODE >2544:C:\Users\eduar\AppData\Local\Temp\s7bo.
-527C cinit CODE >2546:C:\Users\eduar\AppData\Local\Temp\s7bo.
-527C cinit CODE >2549:C:\Users\eduar\AppData\Local\Temp\s7bo.
-527C cinit CODE >2592:C:\Users\eduar\AppData\Local\Temp\s7bo.
-527E cinit CODE >2593:C:\Users\eduar\AppData\Local\Temp\s7bo.
-5280 cinit CODE >2594:C:\Users\eduar\AppData\Local\Temp\s7bo.
-5282 cinit CODE >2595:C:\Users\eduar\AppData\Local\Temp\s7bo.
-5284 cinit CODE >2596:C:\Users\eduar\AppData\Local\Temp\s7bo.
-5286 cinit CODE >2597:C:\Users\eduar\AppData\Local\Temp\s7bo.
-5288 cinit CODE >2598:C:\Users\eduar\AppData\Local\Temp\s7bo.
-528C cinit CODE >2599:C:\Users\eduar\AppData\Local\Temp\s7bo.
-5290 cinit CODE >2600:C:\Users\eduar\AppData\Local\Temp\s7bo.
-5290 cinit CODE >2601:C:\Users\eduar\AppData\Local\Temp\s7bo.
-5292 cinit CODE >2602:C:\Users\eduar\AppData\Local\Temp\s7bo.
-5296 cinit CODE >2603:C:\Users\eduar\AppData\Local\Temp\s7bo.
-5298 cinit CODE >2604:C:\Users\eduar\AppData\Local\Temp\s7bo.
-529A cinit CODE >2605:C:\Users\eduar\AppData\Local\Temp\s7bo.
-529C cinit CODE >2609:C:\Users\eduar\AppData\Local\Temp\s7bo.
-529E cinit CODE >2610:C:\Users\eduar\AppData\Local\Temp\s7bo.
-52A0 cinit CODE >2611:C:\Users\eduar\AppData\Local\Temp\s7bo.
-52A2 cinit CODE >2612:C:\Users\eduar\AppData\Local\Temp\s7bo.
-52A4 cinit CODE >2613:C:\Users\eduar\AppData\Local\Temp\s7bo.
-52A6 cinit CODE >2614:C:\Users\eduar\AppData\Local\Temp\s7bo.
-52A8 cinit CODE >2615:C:\Users\eduar\AppData\Local\Temp\s7bo.
-52AA cinit CODE >2616:C:\Users\eduar\AppData\Local\Temp\s7bo.
-52AE cinit CODE >2620:C:\Users\eduar\AppData\Local\Temp\s7bo.
-52B2 cinit CODE >2621:C:\Users\eduar\AppData\Local\Temp\s7bo.
-52B6 cinit CODE >2622:C:\Users\eduar\AppData\Local\Temp\s7bo.
-52B6 cinit CODE >2623:C:\Users\eduar\AppData\Local\Temp\s7bo.
-52B8 cinit CODE >2624:C:\Users\eduar\AppData\Local\Temp\s7bo.
-52BA cinit CODE >2625:C:\Users\eduar\AppData\Local\Temp\s7bo.
-52BC cinit CODE >2626:C:\Users\eduar\AppData\Local\Temp\s7bo.
-52BE cinit CODE >2627:C:\Users\eduar\AppData\Local\Temp\s7bo.
-52C0 cinit CODE >2628:C:\Users\eduar\AppData\Local\Temp\s7bo.
-52C2 cinit CODE >2631:C:\Users\eduar\AppData\Local\Temp\s7bo.
-52C6 cinit CODE >2632:C:\Users\eduar\AppData\Local\Temp\s7bo.
-52C8 cinit CODE >2633:C:\Users\eduar\AppData\Local\Temp\s7bo.
-52C8 cinit CODE >2634:C:\Users\eduar\AppData\Local\Temp\s7bo.
-52CA cinit CODE >2635:C:\Users\eduar\AppData\Local\Temp\s7bo.
-52CC cinit CODE >2636:C:\Users\eduar\AppData\Local\Temp\s7bo.
-52CE cinit CODE >2642:C:\Users\eduar\AppData\Local\Temp\s7bo.
-52CE cinit CODE >2645:C:\Users\eduar\AppData\Local\Temp\s7bo.
-52D0 cinit CODE >2646:C:\Users\eduar\AppData\Local\Temp\s7bo.
-52D2 cinit CODE >2647:C:\Users\eduar\AppData\Local\Temp\s7bo.
-52D4 cinit CODE >2648:C:\Users\eduar\AppData\Local\Temp\s7bo.
+407A text1 CODE >50:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\Main.c
+4086 text1 CODE >51:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\Main.c
+408C text1 CODE >53:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\Main.c
+408E text1 CODE >55:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\Main.c
+409A text1 CODE >57:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\Main.c
+556C text0 CODE >59:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\Main.c
+556C text0 CODE >61:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\Main.c
+557A text0 CODE >62:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\Main.c
+5580 text0 CODE >65:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\Main.c
+5306 cinit CODE >2536:C:\Users\eduar\AppData\Local\Temp\shg0.
+5306 cinit CODE >2538:C:\Users\eduar\AppData\Local\Temp\shg0.
+5306 cinit CODE >2541:C:\Users\eduar\AppData\Local\Temp\shg0.
+5306 cinit CODE >2584:C:\Users\eduar\AppData\Local\Temp\shg0.
+5308 cinit CODE >2585:C:\Users\eduar\AppData\Local\Temp\shg0.
+530A cinit CODE >2586:C:\Users\eduar\AppData\Local\Temp\shg0.
+530C cinit CODE >2587:C:\Users\eduar\AppData\Local\Temp\shg0.
+530E cinit CODE >2588:C:\Users\eduar\AppData\Local\Temp\shg0.
+5310 cinit CODE >2589:C:\Users\eduar\AppData\Local\Temp\shg0.
+5312 cinit CODE >2590:C:\Users\eduar\AppData\Local\Temp\shg0.
+5316 cinit CODE >2591:C:\Users\eduar\AppData\Local\Temp\shg0.
+531A cinit CODE >2592:C:\Users\eduar\AppData\Local\Temp\shg0.
+531A cinit CODE >2593:C:\Users\eduar\AppData\Local\Temp\shg0.
+531C cinit CODE >2594:C:\Users\eduar\AppData\Local\Temp\shg0.
+5320 cinit CODE >2595:C:\Users\eduar\AppData\Local\Temp\shg0.
+5322 cinit CODE >2596:C:\Users\eduar\AppData\Local\Temp\shg0.
+5324 cinit CODE >2597:C:\Users\eduar\AppData\Local\Temp\shg0.
+5326 cinit CODE >2601:C:\Users\eduar\AppData\Local\Temp\shg0.
+5328 cinit CODE >2602:C:\Users\eduar\AppData\Local\Temp\shg0.
+532A cinit CODE >2603:C:\Users\eduar\AppData\Local\Temp\shg0.
+532C cinit CODE >2604:C:\Users\eduar\AppData\Local\Temp\shg0.
+532E cinit CODE >2605:C:\Users\eduar\AppData\Local\Temp\shg0.
+5330 cinit CODE >2606:C:\Users\eduar\AppData\Local\Temp\shg0.
+5332 cinit CODE >2607:C:\Users\eduar\AppData\Local\Temp\shg0.
+5334 cinit CODE >2608:C:\Users\eduar\AppData\Local\Temp\shg0.
+5338 cinit CODE >2612:C:\Users\eduar\AppData\Local\Temp\shg0.
+533C cinit CODE >2613:C:\Users\eduar\AppData\Local\Temp\shg0.
+5340 cinit CODE >2614:C:\Users\eduar\AppData\Local\Temp\shg0.
+5340 cinit CODE >2615:C:\Users\eduar\AppData\Local\Temp\shg0.
+5342 cinit CODE >2616:C:\Users\eduar\AppData\Local\Temp\shg0.
+5344 cinit CODE >2617:C:\Users\eduar\AppData\Local\Temp\shg0.
+5346 cinit CODE >2618:C:\Users\eduar\AppData\Local\Temp\shg0.
+5348 cinit CODE >2619:C:\Users\eduar\AppData\Local\Temp\shg0.
+534A cinit CODE >2620:C:\Users\eduar\AppData\Local\Temp\shg0.
+534C cinit CODE >2623:C:\Users\eduar\AppData\Local\Temp\shg0.
+5350 cinit CODE >2624:C:\Users\eduar\AppData\Local\Temp\shg0.
+5352 cinit CODE >2625:C:\Users\eduar\AppData\Local\Temp\shg0.
+5352 cinit CODE >2626:C:\Users\eduar\AppData\Local\Temp\shg0.
+5354 cinit CODE >2627:C:\Users\eduar\AppData\Local\Temp\shg0.
+5356 cinit CODE >2628:C:\Users\eduar\AppData\Local\Temp\shg0.
+5358 cinit CODE >2634:C:\Users\eduar\AppData\Local\Temp\shg0.
+5358 cinit CODE >2637:C:\Users\eduar\AppData\Local\Temp\shg0.
+535A cinit CODE >2638:C:\Users\eduar\AppData\Local\Temp\shg0.
+535C cinit CODE >2639:C:\Users\eduar\AppData\Local\Temp\shg0.
+535E cinit CODE >2640:C:\Users\eduar\AppData\Local\Temp\shg0.
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -1133,7 +1139,7 @@ F52 text17 CODE >2320:C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
 %SYMTAB
 __LdataBANK0 0 0 ABS 0 dataBANK0 dist/default/production\MBGRSD.X.production.o
 __LdataBANK1 0 0 ABS 0 dataBANK1 dist/default/production\MBGRSD.X.production.o
-__end_of___delay_sec 54BC 0 CODE 0 text50 dist/default/production\MBGRSD.X.production.o
+__end_of___delay_sec 54F0 0 CODE 0 text50 dist/default/production\MBGRSD.X.production.o
 __Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\MBGRSD.X.production.o
 __Hspace_0 30000E 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 __Hspace_1 338 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
@@ -1143,12 +1149,12 @@ __CFG_IESO$OFF 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 __HidataBANK0 0 0 ABS 0 idataBANK0 dist/default/production\MBGRSD.X.production.o
 __HidataBANK1 0 0 ABS 0 idataBANK1 dist/default/production\MBGRSD.X.production.o
 _SSP1STATbits FC7 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
-_get_ldnumber 49CE 0 CODE 0 text18 dist/default/production\MBGRSD.X.production.o
+_get_ldnumber 499E 0 CODE 0 text18 dist/default/production\MBGRSD.X.production.o
 __Hibigdata 0 0 CODE 0 ibigdata dist/default/production\MBGRSD.X.production.o
 follow_path@dir 8A 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
 follow_path@res 8D 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
-__end_of_move_window 4F18 0 CODE 0 text38 dist/default/production\MBGRSD.X.production.o
-__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\eduar\AppData\Local\Temp\s7bo.o
+__end_of_move_window 4FA2 0 CODE 0 text38 dist/default/production\MBGRSD.X.production.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\eduar\AppData\Local\Temp\shg0.o
 ?_chk_chr 1 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 __Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\MBGRSD.X.production.o
 __CFG_MCLRE$ON 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
@@ -1159,25 +1165,24 @@ disk_ioctl@ptr 38 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.produ
 disk_ioctl@res 36 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 __Lsmallconst 800 0 SMALLCONST 0 smallconst dist/default/production\MBGRSD.X.production.o
 _Fsid D4 0 BANK0 1 bssBANK0 dist/default/production\MBGRSD.X.production.o
-_LATA F89 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 _LATB F8A 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 _LATC F8B 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 _LATD F8C 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 _LATE F8D 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 _Stat FA 0 BANK0 1 dataBANK0 dist/default/production\MBGRSD.X.production.o
 _WPUB F85 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\eduar\AppData\Local\Temp\s7bo.o
+___sp 0 0 STACK 2 stack C:\Users\eduar\AppData\Local\Temp\shg0.o
 _data D9 0 BANK0 1 bssBANK0 dist/default/production\MBGRSD.X.production.o
-_main 5580 0 CODE 0 text0 dist/default/production\MBGRSD.X.production.o
+_main 556C 0 CODE 0 text0 dist/default/production\MBGRSD.X.production.o
 __HbssBIGRAM 0 0 ABS 0 bssBIGRAM dist/default/production\MBGRSD.X.production.o
-start 0 0 CODE 0 init C:\Users\eduar\AppData\Local\Temp\s7bo.o
+start 0 0 CODE 0 init C:\Users\eduar\AppData\Local\Temp\shg0.o
 ?_ld_clust 1 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 __size_of_main 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 __size_of___lldiv 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 __CFG_WDTEN$OFF 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
-__end_of_SPI1_Initialize 55F4 0 CODE 0 text52 dist/default/production\MBGRSD.X.production.o
+__end_of_SPI1_Initialize 562A 0 CODE 0 text52 dist/default/production\MBGRSD.X.production.o
 disk_ioctl@csize 32 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
-_st_clust 54E8 0 CODE 0 text37 dist/default/production\MBGRSD.X.production.o
+_st_clust 551C 0 CODE 0 text37 dist/default/production\MBGRSD.X.production.o
 _get_fat 2C1E 0 CODE 0 text25 dist/default/production\MBGRSD.X.production.o
 __CFG_DEBUG$OFF 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 ?___lmul 1 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
@@ -1189,7 +1194,7 @@ remove_chain@nxt 61 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.produ
 remove_chain@res 60 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
 __LidataBANK0 0 0 ABS 0 idataBANK0 dist/default/production\MBGRSD.X.production.o
 __LidataBANK1 0 0 ABS 0 idataBANK1 dist/default/production\MBGRSD.X.production.o
-_dir_find 47F6 0 CODE 0 text7 dist/default/production\MBGRSD.X.production.o
+_dir_find 47C6 0 CODE 0 text7 dist/default/production\MBGRSD.X.production.o
 _dir_next 2818 0 CODE 0 text15 dist/default/production\MBGRSD.X.production.o
 __end_of_disk_ioctl 23EE 0 CODE 0 text35 dist/default/production\MBGRSD.X.production.o
 dir_register@res 8C 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
@@ -1199,11 +1204,11 @@ create_chain@scl 61 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.produ
 mem_set@cnt 5 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 mem_set@dst 1 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 mem_set@val 3 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
-__end_of_follow_path 44B4 0 CODE 0 text5 dist/default/production\MBGRSD.X.production.o
-__end_of_disk_write 4706 0 CODE 0 text40 dist/default/production\MBGRSD.X.production.o
-_wait_ready 540E 0 CODE 0 text46 dist/default/production\MBGRSD.X.production.o
+__end_of_follow_path 4484 0 CODE 0 text5 dist/default/production\MBGRSD.X.production.o
+__end_of_disk_write 46D6 0 CODE 0 text40 dist/default/production\MBGRSD.X.production.o
+_wait_ready 5442 0 CODE 0 text46 dist/default/production\MBGRSD.X.production.o
 __Hpowerup 0 0 CODE 0 powerup dist/default/production\MBGRSD.X.production.o
-__end_of_st_clust 5512 0 CODE 0 text37 dist/default/production\MBGRSD.X.production.o
+__end_of_st_clust 5546 0 CODE 0 text37 dist/default/production\MBGRSD.X.production.o
 get_ldnumber@vol 9 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 __size_of___send_cmd 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 f_mount@fs 52 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
@@ -1214,15 +1219,15 @@ f_open@sfn A3 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.
 __size_of_get_ldnumber 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 __size_of_SYSTEM_Initialize 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 __LbssBIGRAM 0 0 ABS 0 bssBIGRAM dist/default/production\MBGRSD.X.production.o
-__end_of_dir_find 48E2 0 CODE 0 text7 dist/default/production\MBGRSD.X.production.o
+__end_of_dir_find 48B2 0 CODE 0 text7 dist/default/production\MBGRSD.X.production.o
 __end_of_dir_next 2C1E 0 CODE 0 text15 dist/default/production\MBGRSD.X.production.o
 __size_of_xmit_datablock 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 __size_of_validate 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
-__accesstop 60 0 ABS 0 - C:\Users\eduar\AppData\Local\Temp\s7bo.o
-intlevel0 0 0 CODE 0 text C:\Users\eduar\AppData\Local\Temp\s7bo.o
-intlevel1 0 0 CODE 0 text C:\Users\eduar\AppData\Local\Temp\s7bo.o
-intlevel2 0 0 CODE 0 text C:\Users\eduar\AppData\Local\Temp\s7bo.o
-intlevel3 0 0 CODE 0 text C:\Users\eduar\AppData\Local\Temp\s7bo.o
+__accesstop 60 0 ABS 0 - C:\Users\eduar\AppData\Local\Temp\shg0.o
+intlevel0 0 0 CODE 0 text C:\Users\eduar\AppData\Local\Temp\shg0.o
+intlevel1 0 0 CODE 0 text C:\Users\eduar\AppData\Local\Temp\shg0.o
+intlevel2 0 0 CODE 0 text C:\Users\eduar\AppData\Local\Temp\shg0.o
+intlevel3 0 0 CODE 0 text C:\Users\eduar\AppData\Local\Temp\shg0.o
 f_write@bw 73 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
 f_write@cc 85 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
 f_write@fp 6D 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
@@ -1249,19 +1254,18 @@ __size_of_f_close 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 __size_of_f_lseek 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 __size_of_f_mount 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 __size_of_f_write 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
-__end_of_get_ldnumber 4AAC 0 CODE 0 text18 dist/default/production\MBGRSD.X.production.o
+__end_of_get_ldnumber 4A7C 0 CODE 0 text18 dist/default/production\MBGRSD.X.production.o
 ___wmul@multiplicand 3 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 __size_of_clust2sect 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 _create_name 3912 0 CODE 0 text9 dist/default/production\MBGRSD.X.production.o
-_SPI1_Initialize 55E6 0 CODE 0 text52 dist/default/production\MBGRSD.X.production.o
+_SPI1_Initialize 561C 0 CODE 0 text52 dist/default/production\MBGRSD.X.production.o
 _ACTCON FB5 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
-_ANSELA F5B 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 _ANSELB F5C 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 _ANSELC F5D 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 _ANSELD F5E 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 _ANSELE F5F 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
-___inthi_sp 0 0 STACK 2 stack C:\Users\eduar\AppData\Local\Temp\s7bo.o
-___intlo_sp 0 0 STACK 2 stack C:\Users\eduar\AppData\Local\Temp\s7bo.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\eduar\AppData\Local\Temp\shg0.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\eduar\AppData\Local\Temp\shg0.o
 disk_initialize@ty 1A 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 dir_alloc@dp 80 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
 create_name@path B 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
@@ -1270,15 +1274,15 @@ get_fat@val 4C 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.producti
 _dir_sdi 3650 0 CODE 0 text14 dist/default/production\MBGRSD.X.production.o
 ?_clust2sect D 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 __Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\MBGRSD.X.production.o
-__end_of___lmul 532E 0 CODE 0 text27 dist/default/production\MBGRSD.X.production.o
-__end_of___wmul 5562 0 CODE 0 text36 dist/default/production\MBGRSD.X.production.o
+__end_of___lmul 53B8 0 CODE 0 text27 dist/default/production\MBGRSD.X.production.o
+__end_of___wmul 556C 0 CODE 0 text36 dist/default/production\MBGRSD.X.production.o
 ___delay_sec@sec 4 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 _guardar 3F40 0 CODE 0 text1 dist/default/production\MBGRSD.X.production.o
 ?_get_ldnumber 1 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
-__end_of_dir_alloc 47F6 0 CODE 0 text13 dist/default/production\MBGRSD.X.production.o
+__end_of_dir_alloc 47C6 0 CODE 0 text13 dist/default/production\MBGRSD.X.production.o
 __Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\MBGRSD.X.production.o
 __size_of_dir_alloc 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
-__end_of_wait_ready 544A 0 CODE 0 text46 dist/default/production\MBGRSD.X.production.o
+__end_of_wait_ready 547E 0 CODE 0 text46 dist/default/production\MBGRSD.X.production.o
 _CardType D8 0 BANK0 1 bssBANK0 dist/default/production\MBGRSD.X.production.o
 __Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\MBGRSD.X.production.o
 disk_read@count 17 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
@@ -1292,23 +1296,23 @@ _create_chain 3356 0 CODE 0 text23 dist/default/production\MBGRSD.X.production.o
 f_lseek@ifptr 83 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
 dir_next@dp 6D 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
 f_lseek@nsect 88 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
-_validate 4F18 0 CODE 0 text31 dist/default/production\MBGRSD.X.production.o
-__end_of___lldiv 502E 0 CODE 0 text28 dist/default/production\MBGRSD.X.production.o
+_validate 4FA2 0 CODE 0 text31 dist/default/production\MBGRSD.X.production.o
+__end_of___lldiv 50B8 0 CODE 0 text28 dist/default/production\MBGRSD.X.production.o
 find_volume@nrsv 82 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
 find_volume@path 47 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 find_volume@stat 8C 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
 sync_window@wsect 2C 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 sync_fs@fs 3A 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
-_dir_register 4AAC 0 CODE 0 text11 dist/default/production\MBGRSD.X.production.o
+_dir_register 4A7C 0 CODE 0 text11 dist/default/production\MBGRSD.X.production.o
 remove_chain@clst 58 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 __CFG_CCP2MX$RC1 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 __size_of___delay_sec 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
-__end_of_validate 4FAC 0 CODE 0 text31 dist/default/production\MBGRSD.X.production.o
+__end_of_validate 5036 0 CODE 0 text31 dist/default/production\MBGRSD.X.production.o
 check_fs@sect 3D 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 __size_of_Error 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 __end_of_f_open 3356 0 CODE 0 text3 dist/default/production\MBGRSD.X.production.o
-__end_of_f_sync 45F6 0 CODE 0 text30 dist/default/production\MBGRSD.X.production.o
-_dir_alloc 4706 0 CODE 0 text13 dist/default/production\MBGRSD.X.production.o
+__end_of_f_sync 45C6 0 CODE 0 text30 dist/default/production\MBGRSD.X.production.o
+_dir_alloc 46D6 0 CODE 0 text13 dist/default/production\MBGRSD.X.production.o
 ___delay_sec@i 5 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 dir_find@c 82 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
 __size_of_move_window 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
@@ -1317,8 +1321,8 @@ disk_initialize@n 1D 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.pr
 ___lldiv@counter D 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 __Lintcodelo 0 0 CODE 0 intcodelo dist/default/production\MBGRSD.X.production.o
 __CFG_FCMEN$OFF 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
-_PIN_MANAGER_Initialize 5512 0 CODE 0 text53 dist/default/production\MBGRSD.X.production.o
-start_initialization 527C 0 CODE 0 cinit dist/default/production\MBGRSD.X.production.o
+_PIN_MANAGER_Initialize 558E 0 CODE 0 text53 dist/default/production\MBGRSD.X.production.o
+start_initialization 5306 0 CODE 0 cinit dist/default/production\MBGRSD.X.production.o
 _find_volume 830 0 CODE 0 text17 dist/default/production\MBGRSD.X.production.o
 __end_of_disk_initialize 3D80 0 CODE 0 text19 dist/default/production\MBGRSD.X.production.o
 __size_of_sync_fs 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
@@ -1333,15 +1337,15 @@ ___lldiv@dividend 1 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.pro
 __CFG_nPWRTEN$OFF 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 __size_of_create_chain 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 ___rparam_used 1 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
-__end_of_SYSTEM_Initialize 55E6 0 CODE 0 text51 dist/default/production\MBGRSD.X.production.o
+__end_of_SYSTEM_Initialize 561C 0 CODE 0 text51 dist/default/production\MBGRSD.X.production.o
 __CFG_WDTPS$32768 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 __size_of_chk_chr 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 sync_window@fs 1B 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 sync_window@nf 2A 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
-__end_of_f_close 5484 0 CODE 0 text29 dist/default/production\MBGRSD.X.production.o
+__end_of_f_close 54B8 0 CODE 0 text29 dist/default/production\MBGRSD.X.production.o
 __pcstackBANK0 60 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
 __end_of_f_lseek 1F50 0 CODE 0 text22 dist/default/production\MBGRSD.X.production.o
-__end_of_f_mount 4E72 0 CODE 0 text16 dist/default/production\MBGRSD.X.production.o
+__end_of_f_mount 4EFC 0 CODE 0 text16 dist/default/production\MBGRSD.X.production.o
 mem_cmp@cnt 5 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 mem_cmp@dst 1 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 mem_cmp@src 3 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
@@ -1360,13 +1364,13 @@ __size_of_follow_path 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 __size_of_SPI1_Initialize 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 dir_next@stretch 6F 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
 __size_of_put_fat 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
-__end_of_disk_status 55A8 0 CODE 0 text32 dist/default/production\MBGRSD.X.production.o
+__end_of_disk_status 55DE 0 CODE 0 text32 dist/default/production\MBGRSD.X.production.o
 __CFG_CFGPLLEN$OFF 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 mem_cpy@cnt 5 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 mem_cpy@dst 1 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 mem_cpy@src 3 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 dir_alloc@n 87 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
-__end_of_select 5580 0 CODE 0 text45 dist/default/production\MBGRSD.X.production.o
+__end_of_select 55CC 0 CODE 0 text45 dist/default/production\MBGRSD.X.production.o
 __Hbank0 0 0 ABS 0 bank0 dist/default/production\MBGRSD.X.production.o
 __Hbank1 0 0 ABS 0 bank1 dist/default/production\MBGRSD.X.production.o
 __Hbank2 0 0 ABS 0 bank2 dist/default/production\MBGRSD.X.production.o
@@ -1402,18 +1406,18 @@ dir_sdi@dp 56 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.productio
 dir_sdi@ic 67 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
 __Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\MBGRSD.X.production.o
 __Hbigram 0 0 ABS 0 bigram dist/default/production\MBGRSD.X.production.o
-__smallconst 800 0 SMALLCONST 0 smallconst C:\Users\eduar\AppData\Local\Temp\s7bo.o
+__smallconst 800 0 SMALLCONST 0 smallconst C:\Users\eduar\AppData\Local\Temp\shg0.o
 mem_cmp@d 9 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 mem_cmp@r D 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 mem_cmp@s B 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 mem_cpy@d 9 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 mem_cpy@s B 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 mem_set@d 7 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
-_sync_window 40CC 0 CODE 0 text39 dist/default/production\MBGRSD.X.production.o
+_sync_window 409C 0 CODE 0 text39 dist/default/production\MBGRSD.X.production.o
 __Hcomram 0 0 ABS 0 comram dist/default/production\MBGRSD.X.production.o
 __Hconfig 30000E 0 CONFIG 0 config dist/default/production\MBGRSD.X.production.o
 _disk_read$294 1A 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
-__end_of_dir_register 4B82 0 CODE 0 text11 dist/default/production\MBGRSD.X.production.o
+__end_of_dir_register 4B52 0 CODE 0 text11 dist/default/production\MBGRSD.X.production.o
 _disk_initialize 3B96 0 CODE 0 text19 dist/default/production\MBGRSD.X.production.o
 move_window@fs 30 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 __Lbank0 0 0 ABS 0 bank0 dist/default/production\MBGRSD.X.production.o
@@ -1468,9 +1472,9 @@ __Ltext 0 0 ABS 0 text dist/default/production\MBGRSD.X.production.o
 __CFG_XINST$OFF 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 _SSP1CON1 FC6 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 _SSP1STAT FC7 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
-___lmul 52D8 0 CODE 0 text27 dist/default/production\MBGRSD.X.production.o
-___wmul 553C 0 CODE 0 text36 dist/default/production\MBGRSD.X.production.o
-__end_of_SPI1_Exchange8bit 55CA 0 CODE 0 text49 dist/default/production\MBGRSD.X.production.o
+___lmul 5362 0 CODE 0 text27 dist/default/production\MBGRSD.X.production.o
+___wmul 5546 0 CODE 0 text36 dist/default/production\MBGRSD.X.production.o
+__end_of_SPI1_Exchange8bit 5600 0 CODE 0 text49 dist/default/production\MBGRSD.X.production.o
 __LcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production\MBGRSD.X.production.o
 __HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 __Hintret 0 0 ABS 0 intret dist/default/production\MBGRSD.X.production.o
@@ -1483,9 +1487,9 @@ __S2 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 __end_of_sync_fs 3F40 0 CODE 0 text33 dist/default/production\MBGRSD.X.production.o
 disk_write@sector 13 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 __CFG_PBADEN$OFF 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
-__end_of_mem_cmp 527C 0 CODE 0 text8 dist/default/production\MBGRSD.X.production.o
-__end_of_mem_cpy 4D08 0 CODE 0 text12 dist/default/production\MBGRSD.X.production.o
-__end_of_mem_set 54E8 0 CODE 0 text34 dist/default/production\MBGRSD.X.production.o
+__end_of_mem_cmp 5306 0 CODE 0 text8 dist/default/production\MBGRSD.X.production.o
+__end_of_mem_cpy 4CD8 0 CODE 0 text12 dist/default/production\MBGRSD.X.production.o
+__end_of_mem_set 551C 0 CODE 0 text34 dist/default/production\MBGRSD.X.production.o
 check_fs@fs 3B 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 __Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production\MBGRSD.X.production.o
 find_volume@i 95 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
@@ -1493,12 +1497,12 @@ __size_of_get_fat 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 find_volume@sysect 7C 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
 __Hnvrram 0 0 COMRAM 1 nvrram dist/default/production\MBGRSD.X.production.o
 find_volume@szbfat 76 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
-_rcvr_datablock 51AA 0 CODE 0 text48 dist/default/production\MBGRSD.X.production.o
+_rcvr_datablock 5234 0 CODE 0 text48 dist/default/production\MBGRSD.X.production.o
 xmit_datablock@token 6 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
-_SYSTEM_Initialize 55D8 0 CODE 0 text51 dist/default/production\MBGRSD.X.production.o
+_SYSTEM_Initialize 560E 0 CODE 0 text51 dist/default/production\MBGRSD.X.production.o
 _f_open 2FC0 0 CODE 0 text3 dist/default/production\MBGRSD.X.production.o
-_f_sync 44B4 0 CODE 0 text30 dist/default/production\MBGRSD.X.production.o
-__end_of_chk_chr 53CC 0 CODE 0 text10 dist/default/production\MBGRSD.X.production.o
+_f_sync 4484 0 CODE 0 text30 dist/default/production\MBGRSD.X.production.o
+__end_of_chk_chr 5400 0 CODE 0 text10 dist/default/production\MBGRSD.X.production.o
 find_volume@br 60 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
 find_volume@fs 98 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
 find_volume@pt 7A 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
@@ -1521,7 +1525,7 @@ __activetblptr 2 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 __Hstruct 0 0 COMRAM 1 struct dist/default/production\MBGRSD.X.production.o
 __size_of___lmul 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 __size_of___wmul 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
-_xmit_datablock 512E 0 CODE 0 text41 dist/default/production\MBGRSD.X.production.o
+_xmit_datablock 51B8 0 CODE 0 text41 dist/default/production\MBGRSD.X.production.o
 __LbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\MBGRSD.X.production.o
 __size_of_send_cmd 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 __Htext10 0 0 ABS 0 text10 dist/default/production\MBGRSD.X.production.o
@@ -1583,68 +1587,68 @@ clust2sect@clst F 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.produ
 create_name@dp 9 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 create_name@ni 16 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 create_name@si 13 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
-___delay_sec 5484 0 CODE 0 text50 dist/default/production\MBGRSD.X.production.o
+___delay_sec 54B8 0 CODE 0 text50 dist/default/production\MBGRSD.X.production.o
 dir_register@dp 8A 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
-__ptext10 5384 0 CODE 0 text10 dist/default/production\MBGRSD.X.production.o
-__ptext11 4AAC 0 CODE 0 text11 dist/default/production\MBGRSD.X.production.o
-__ptext12 4C4E 0 CODE 0 text12 dist/default/production\MBGRSD.X.production.o
-__ptext13 4706 0 CODE 0 text13 dist/default/production\MBGRSD.X.production.o
+__ptext10 53B8 0 CODE 0 text10 dist/default/production\MBGRSD.X.production.o
+__ptext11 4A7C 0 CODE 0 text11 dist/default/production\MBGRSD.X.production.o
+__ptext12 4C1E 0 CODE 0 text12 dist/default/production\MBGRSD.X.production.o
+__ptext13 46D6 0 CODE 0 text13 dist/default/production\MBGRSD.X.production.o
 __ptext14 3650 0 CODE 0 text14 dist/default/production\MBGRSD.X.production.o
 __ptext15 2818 0 CODE 0 text15 dist/default/production\MBGRSD.X.production.o
-__ptext16 4DC2 0 CODE 0 text16 dist/default/production\MBGRSD.X.production.o
+__ptext16 4E4C 0 CODE 0 text16 dist/default/production\MBGRSD.X.production.o
 __ptext17 830 0 CODE 0 text17 dist/default/production\MBGRSD.X.production.o
-__ptext18 49CE 0 CODE 0 text18 dist/default/production\MBGRSD.X.production.o
+__ptext18 499E 0 CODE 0 text18 dist/default/production\MBGRSD.X.production.o
 __ptext19 3B96 0 CODE 0 text19 dist/default/production\MBGRSD.X.production.o
-__ptext20 55CA 0 CODE 0 text20 dist/default/production\MBGRSD.X.production.o
-__ptext21 48E2 0 CODE 0 text21 dist/default/production\MBGRSD.X.production.o
+__ptext20 5600 0 CODE 0 text20 dist/default/production\MBGRSD.X.production.o
+__ptext21 48B2 0 CODE 0 text21 dist/default/production\MBGRSD.X.production.o
 __ptext22 1942 0 CODE 0 text22 dist/default/production\MBGRSD.X.production.o
 __ptext23 3356 0 CODE 0 text23 dist/default/production\MBGRSD.X.production.o
 __ptext24 23EE 0 CODE 0 text24 dist/default/production\MBGRSD.X.production.o
 __ptext25 2C1E 0 CODE 0 text25 dist/default/production\MBGRSD.X.production.o
-__ptext26 4D08 0 CODE 0 text26 dist/default/production\MBGRSD.X.production.o
-__ptext27 52D8 0 CODE 0 text27 dist/default/production\MBGRSD.X.production.o
-__ptext28 4FAC 0 CODE 0 text28 dist/default/production\MBGRSD.X.production.o
-__ptext29 544A 0 CODE 0 text29 dist/default/production\MBGRSD.X.production.o
-__ptext30 44B4 0 CODE 0 text30 dist/default/production\MBGRSD.X.production.o
-__ptext31 4F18 0 CODE 0 text31 dist/default/production\MBGRSD.X.production.o
-__ptext32 5596 0 CODE 0 text32 dist/default/production\MBGRSD.X.production.o
+__ptext26 4CD8 0 CODE 0 text26 dist/default/production\MBGRSD.X.production.o
+__ptext27 5362 0 CODE 0 text27 dist/default/production\MBGRSD.X.production.o
+__ptext28 5036 0 CODE 0 text28 dist/default/production\MBGRSD.X.production.o
+__ptext29 547E 0 CODE 0 text29 dist/default/production\MBGRSD.X.production.o
+__ptext30 4484 0 CODE 0 text30 dist/default/production\MBGRSD.X.production.o
+__ptext31 4FA2 0 CODE 0 text31 dist/default/production\MBGRSD.X.production.o
+__ptext32 55CC 0 CODE 0 text32 dist/default/production\MBGRSD.X.production.o
 __ptext33 3D80 0 CODE 0 text33 dist/default/production\MBGRSD.X.production.o
-__ptext34 54BC 0 CODE 0 text34 dist/default/production\MBGRSD.X.production.o
+__ptext34 54F0 0 CODE 0 text34 dist/default/production\MBGRSD.X.production.o
 __ptext35 1F50 0 CODE 0 text35 dist/default/production\MBGRSD.X.production.o
-__ptext36 553C 0 CODE 0 text36 dist/default/production\MBGRSD.X.production.o
-__ptext37 54E8 0 CODE 0 text37 dist/default/production\MBGRSD.X.production.o
-__ptext38 4E72 0 CODE 0 text38 dist/default/production\MBGRSD.X.production.o
-__ptext39 40CC 0 CODE 0 text39 dist/default/production\MBGRSD.X.production.o
-__ptext40 45F6 0 CODE 0 text40 dist/default/production\MBGRSD.X.production.o
-__ptext41 512E 0 CODE 0 text41 dist/default/production\MBGRSD.X.production.o
-__ptext42 4B82 0 CODE 0 text42 dist/default/production\MBGRSD.X.production.o
-__ptext43 53CC 0 CODE 0 text43 dist/default/production\MBGRSD.X.production.o
-__ptext44 502E 0 CODE 0 text44 dist/default/production\MBGRSD.X.production.o
-__ptext45 5562 0 CODE 0 text45 dist/default/production\MBGRSD.X.production.o
-__ptext46 540E 0 CODE 0 text46 dist/default/production\MBGRSD.X.production.o
-__ptext47 55FE 0 CODE 0 text47 dist/default/production\MBGRSD.X.production.o
-__ptext48 51AA 0 CODE 0 text48 dist/default/production\MBGRSD.X.production.o
-__ptext49 55BA 0 CODE 0 text49 dist/default/production\MBGRSD.X.production.o
-__ptext50 5484 0 CODE 0 text50 dist/default/production\MBGRSD.X.production.o
-__ptext51 55D8 0 CODE 0 text51 dist/default/production\MBGRSD.X.production.o
-__ptext52 55E6 0 CODE 0 text52 dist/default/production\MBGRSD.X.production.o
-__ptext53 5512 0 CODE 0 text53 dist/default/production\MBGRSD.X.production.o
-__ptext54 55A8 0 CODE 0 text54 dist/default/production\MBGRSD.X.production.o
-__ptext55 532E 0 CODE 0 text55 dist/default/production\MBGRSD.X.production.o
+__ptext36 5546 0 CODE 0 text36 dist/default/production\MBGRSD.X.production.o
+__ptext37 551C 0 CODE 0 text37 dist/default/production\MBGRSD.X.production.o
+__ptext38 4EFC 0 CODE 0 text38 dist/default/production\MBGRSD.X.production.o
+__ptext39 409C 0 CODE 0 text39 dist/default/production\MBGRSD.X.production.o
+__ptext40 45C6 0 CODE 0 text40 dist/default/production\MBGRSD.X.production.o
+__ptext41 51B8 0 CODE 0 text41 dist/default/production\MBGRSD.X.production.o
+__ptext42 4B52 0 CODE 0 text42 dist/default/production\MBGRSD.X.production.o
+__ptext43 5400 0 CODE 0 text43 dist/default/production\MBGRSD.X.production.o
+__ptext44 50B8 0 CODE 0 text44 dist/default/production\MBGRSD.X.production.o
+__ptext45 55AE 0 CODE 0 text45 dist/default/production\MBGRSD.X.production.o
+__ptext46 5442 0 CODE 0 text46 dist/default/production\MBGRSD.X.production.o
+__ptext47 5634 0 CODE 0 text47 dist/default/production\MBGRSD.X.production.o
+__ptext48 5234 0 CODE 0 text48 dist/default/production\MBGRSD.X.production.o
+__ptext49 55F0 0 CODE 0 text49 dist/default/production\MBGRSD.X.production.o
+__ptext50 54B8 0 CODE 0 text50 dist/default/production\MBGRSD.X.production.o
+__ptext51 560E 0 CODE 0 text51 dist/default/production\MBGRSD.X.production.o
+__ptext52 561C 0 CODE 0 text52 dist/default/production\MBGRSD.X.production.o
+__ptext53 558E 0 CODE 0 text53 dist/default/production\MBGRSD.X.production.o
+__ptext54 55DE 0 CODE 0 text54 dist/default/production\MBGRSD.X.production.o
+__ptext55 4D92 0 CODE 0 text55 dist/default/production\MBGRSD.X.production.o
 __CFG_PCLKEN$ON 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
-__end_of_PIN_MANAGER_Initialize 553C 0 CODE 0 text53 dist/default/production\MBGRSD.X.production.o
+__end_of_PIN_MANAGER_Initialize 55AE 0 CODE 0 text53 dist/default/production\MBGRSD.X.production.o
 disk_status@pdrv 1 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 _create_name$775 11 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
-___lldiv 4FAC 0 CODE 0 text28 dist/default/production\MBGRSD.X.production.o
+___lldiv 5036 0 CODE 0 text28 dist/default/production\MBGRSD.X.production.o
 __Lbigbss 0 0 BIGRAM 1 bigbss dist/default/production\MBGRSD.X.production.o
 __Lbigram 0 0 ABS 0 bigram dist/default/production\MBGRSD.X.production.o
 ___lmul@multiplier 1 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 __size_of_disk_initialize 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
-_move_window 4E72 0 CODE 0 text38 dist/default/production\MBGRSD.X.production.o
+_move_window 4EFC 0 CODE 0 text38 dist/default/production\MBGRSD.X.production.o
 __Lcomram 0 0 ABS 0 comram dist/default/production\MBGRSD.X.production.o
 __Lconfig 300000 0 CONFIG 0 config dist/default/production\MBGRSD.X.production.o
 __size_of_check_fs 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
-__end_of_disk_read 4C4E 0 CODE 0 text42 dist/default/production\MBGRSD.X.production.o
+__end_of_disk_read 4C1E 0 CODE 0 text42 dist/default/production\MBGRSD.X.production.o
 ___wmul@multiplier 1 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 _LATBbits F8A 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 __size_of_f_open 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
@@ -1652,7 +1656,7 @@ __size_of_f_sync 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 find_volume@bsect 91 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
 __size_of_disk_read 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 find_volume@nclst 88 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
-__end_of_rcvr_datablock 5216 0 CODE 0 text48 dist/default/production\MBGRSD.X.production.o
+__end_of_rcvr_datablock 52A0 0 CODE 0 text48 dist/default/production\MBGRSD.X.production.o
 xmit_datablock@buff 4 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 xmit_datablock@resp 9 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 find_volume@tsect 84 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
@@ -1667,24 +1671,24 @@ create_name@i 1D 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.produc
 create_name@p 18 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 __size_of_disk_status 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 __Lfarbss 0 0 FARRAM 0 farbss dist/default/production\MBGRSD.X.production.o
-_select 5562 0 CODE 0 text45 dist/default/production\MBGRSD.X.production.o
-_SPI1_Exchange8bit 55BA 0 CODE 0 text49 dist/default/production\MBGRSD.X.production.o
+_select 55AE 0 CODE 0 text45 dist/default/production\MBGRSD.X.production.o
+_SPI1_Exchange8bit 55F0 0 CODE 0 text49 dist/default/production\MBGRSD.X.production.o
 put_fat@p 54 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 __Lfardata 0 0 FARRAM 0 fardata dist/default/production\MBGRSD.X.production.o
 __size_of_dir_sdi 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
-___send_cmd 502E 0 CODE 0 text44 dist/default/production\MBGRSD.X.production.o
+___send_cmd 50B8 0 CODE 0 text44 dist/default/production\MBGRSD.X.production.o
 __size_of_guardar 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
-__end_of_SPI1_Open 55D8 0 CODE 0 text20 dist/default/production\MBGRSD.X.production.o
+__end_of_SPI1_Open 560E 0 CODE 0 text20 dist/default/production\MBGRSD.X.production.o
 dir_alloc@nent 82 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
-stackhi 7FF 0 ABS 0 - C:\Users\eduar\AppData\Local\Temp\s7bo.o
-stacklo 338 0 ABS 0 - C:\Users\eduar\AppData\Local\Temp\s7bo.o
+stackhi 7FF 0 ABS 0 - C:\Users\eduar\AppData\Local\Temp\shg0.o
+stacklo 338 0 ABS 0 - C:\Users\eduar\AppData\Local\Temp\shg0.o
 SPI1_Exchange8bit@data 1 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 __Lintcode 0 0 CODE 0 intcode dist/default/production\MBGRSD.X.production.o
 __size_of_SPI1_Open 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 sync_fs@res 44 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 __CFG_PLLSEL$PLL4X 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 __size_of_ld_clust 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
-_remove_chain 4224 0 CODE 0 text4 dist/default/production\MBGRSD.X.production.o
+_remove_chain 41F4 0 CODE 0 text4 dist/default/production\MBGRSD.X.production.o
 _OSCCON2 FD2 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 _OSCTUNE F9B 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 __Lintret 0 0 ABS 0 intret dist/default/production\MBGRSD.X.production.o
@@ -1693,42 +1697,42 @@ disk_initialize@cmd 19 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.
 disk_initialize@ocr 13 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 disk_initialize@tmr 1B 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 __pbssBIGRAM 10A 0 BIGRAM 1 bssBIGRAM dist/default/production\MBGRSD.X.production.o
-_disk_read 4B82 0 CODE 0 text42 dist/default/production\MBGRSD.X.production.o
+_disk_read 4B52 0 CODE 0 text42 dist/default/production\MBGRSD.X.production.o
 f_mount@path 54 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
-__end_of_xmit_datablock 51AA 0 CODE 0 text41 dist/default/production\MBGRSD.X.production.o
+__end_of_xmit_datablock 5234 0 CODE 0 text41 dist/default/production\MBGRSD.X.production.o
 __CFG_ICPRT$OFF 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 disk_ioctl@buff 12 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 disk_ioctl@pdrv 31 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
-_follow_path 436E 0 CODE 0 text5 dist/default/production\MBGRSD.X.production.o
+_follow_path 433E 0 CODE 0 text5 dist/default/production\MBGRSD.X.production.o
 __Lspace_0 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 __Lspace_1 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 __Lspace_2 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
-_send_cmd 53CC 0 CODE 0 text43 dist/default/production\MBGRSD.X.production.o
+_send_cmd 5400 0 CODE 0 text43 dist/default/production\MBGRSD.X.production.o
 __HcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production\MBGRSD.X.production.o
 dir_alloc@res 89 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
 __end_of_find_volume 11DE 0 CODE 0 text17 dist/default/production\MBGRSD.X.production.o
 __CFG_LVP$ON 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 __end_of_get_fat 2FC0 0 CODE 0 text25 dist/default/production\MBGRSD.X.production.o
 __LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
-_f_close 544A 0 CODE 0 text29 dist/default/production\MBGRSD.X.production.o
+_f_close 547E 0 CODE 0 text29 dist/default/production\MBGRSD.X.production.o
 _f_lseek 1942 0 CODE 0 text22 dist/default/production\MBGRSD.X.production.o
-_f_mount 4DC2 0 CODE 0 text16 dist/default/production\MBGRSD.X.production.o
+_f_mount 4E4C 0 CODE 0 text16 dist/default/production\MBGRSD.X.production.o
 _f_write 11DE 0 CODE 0 text2 dist/default/production\MBGRSD.X.production.o
 f_close@res 50 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
-end_of_initialization 52CE 0 CODE 0 cinit dist/default/production\MBGRSD.X.production.o
-_SPI1_Open 55CA 0 CODE 0 text20 dist/default/production\MBGRSD.X.production.o
-__end_of_send_cmd 540E 0 CODE 0 text43 dist/default/production\MBGRSD.X.production.o
+end_of_initialization 5358 0 CODE 0 cinit dist/default/production\MBGRSD.X.production.o
+_SPI1_Open 5600 0 CODE 0 text20 dist/default/production\MBGRSD.X.production.o
+__end_of_send_cmd 5442 0 CODE 0 text43 dist/default/production\MBGRSD.X.production.o
 __Lnvrram 0 0 COMRAM 1 nvrram dist/default/production\MBGRSD.X.production.o
 __Hintentry 0 0 ABS 0 intentry dist/default/production\MBGRSD.X.production.o
 __CFG_STVREN$ON 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 dir_sdi@idx 58 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
-_clust2sect 4D08 0 CODE 0 text26 dist/default/production\MBGRSD.X.production.o
+_clust2sect 4CD8 0 CODE 0 text26 dist/default/production\MBGRSD.X.production.o
 f_sync@fp 45 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 _put_fat$551 4D 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 _put_fat$552 4F 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 ?___lldiv 1 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 __Hreset_vec 0 0 CODE 0 reset_vec dist/default/production\MBGRSD.X.production.o
-_check_fs 48E2 0 CODE 0 text21 dist/default/production\MBGRSD.X.production.o
+_check_fs 48B2 0 CODE 0 text21 dist/default/production\MBGRSD.X.production.o
 disk_write@buff 11 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 disk_write@pdrv 1A 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 __HbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\MBGRSD.X.production.o
@@ -1736,16 +1740,16 @@ __size_of_select 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 sync_window@res 29 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 __Lramtop 800 0 RAM 0 ramtop dist/default/production\MBGRSD.X.production.o
 __Lrparam 0 0 COMRAM 1 rparam dist/default/production\MBGRSD.X.production.o
-__pcinit 527C 0 CODE 0 cinit dist/default/production\MBGRSD.X.production.o
-__ptext0 5580 0 CODE 0 text0 dist/default/production\MBGRSD.X.production.o
+__pcinit 5306 0 CODE 0 cinit dist/default/production\MBGRSD.X.production.o
+__ptext0 556C 0 CODE 0 text0 dist/default/production\MBGRSD.X.production.o
 __ptext1 3F40 0 CODE 0 text1 dist/default/production\MBGRSD.X.production.o
 __ptext2 11DE 0 CODE 0 text2 dist/default/production\MBGRSD.X.production.o
 __ptext3 2FC0 0 CODE 0 text3 dist/default/production\MBGRSD.X.production.o
-__ptext4 4224 0 CODE 0 text4 dist/default/production\MBGRSD.X.production.o
-__ptext5 436E 0 CODE 0 text5 dist/default/production\MBGRSD.X.production.o
-__ptext6 50B0 0 CODE 0 text6 dist/default/production\MBGRSD.X.production.o
-__ptext7 47F6 0 CODE 0 text7 dist/default/production\MBGRSD.X.production.o
-__ptext8 5216 0 CODE 0 text8 dist/default/production\MBGRSD.X.production.o
+__ptext4 41F4 0 CODE 0 text4 dist/default/production\MBGRSD.X.production.o
+__ptext5 433E 0 CODE 0 text5 dist/default/production\MBGRSD.X.production.o
+__ptext6 513A 0 CODE 0 text6 dist/default/production\MBGRSD.X.production.o
+__ptext7 47C6 0 CODE 0 text7 dist/default/production\MBGRSD.X.production.o
+__ptext8 52A0 0 CODE 0 text8 dist/default/production\MBGRSD.X.production.o
 __ptext9 3912 0 CODE 0 text9 dist/default/production\MBGRSD.X.production.o
 __Lstruct 0 0 COMRAM 1 struct dist/default/production\MBGRSD.X.production.o
 __size_of_remove_chain 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
@@ -1797,9 +1801,9 @@ __Ltext52 0 0 ABS 0 text52 dist/default/production\MBGRSD.X.production.o
 __Ltext53 0 0 ABS 0 text53 dist/default/production\MBGRSD.X.production.o
 __Ltext54 0 0 ABS 0 text54 dist/default/production\MBGRSD.X.production.o
 __Ltext55 0 0 ABS 0 text55 dist/default/production\MBGRSD.X.production.o
-__end_of_check_fs 49CE 0 CODE 0 text21 dist/default/production\MBGRSD.X.production.o
+__end_of_check_fs 499E 0 CODE 0 text21 dist/default/production\MBGRSD.X.production.o
 ___send_cmd@n 9 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
-__ramtop 800 0 RAM 0 ramtop C:\Users\eduar\AppData\Local\Temp\s7bo.o
+__ramtop 800 0 RAM 0 ramtop C:\Users\eduar\AppData\Local\Temp\shg0.o
 create_chain@cs 69 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
 create_chain@fs 56 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 put_fat@bc 51 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
@@ -1808,9 +1812,9 @@ __Lpowerup 0 0 CODE 0 powerup dist/default/production\MBGRSD.X.production.o
 get_ldnumber@i B 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 get_fat@p 52 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 __Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\MBGRSD.X.production.o
-__end_of___send_cmd 50B0 0 CODE 0 text44 dist/default/production\MBGRSD.X.production.o
+__end_of___send_cmd 513A 0 CODE 0 text44 dist/default/production\MBGRSD.X.production.o
 _get_fat$525 4A 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
-_ld_clust 50B0 0 CODE 0 text6 dist/default/production\MBGRSD.X.production.o
+_ld_clust 513A 0 CODE 0 text6 dist/default/production\MBGRSD.X.production.o
 f_mount@cfs 58 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 f_mount@opt 56 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 f_mount@res 57 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
@@ -1830,60 +1834,59 @@ disk_read@cmd 1C 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.produc
 st_clust@cl 3 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 f_write@wbuff 82 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
 __CFG_SDOMX$RB3 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
-__end_of_sync_window 4224 0 CODE 0 text39 dist/default/production\MBGRSD.X.production.o
+__end_of_sync_window 41F4 0 CODE 0 text39 dist/default/production\MBGRSD.X.production.o
 xmit_datablock@i 7 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 Error@a 1 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
-__end_of_ld_clust 512E 0 CODE 0 text6 dist/default/production\MBGRSD.X.production.o
+__end_of_ld_clust 51B8 0 CODE 0 text6 dist/default/production\MBGRSD.X.production.o
 ___param_bank 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 __Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\MBGRSD.X.production.o
-__end_of__initialization 52CE 0 CODE 0 cinit dist/default/production\MBGRSD.X.production.o
+__end_of__initialization 5358 0 CODE 0 cinit dist/default/production\MBGRSD.X.production.o
 __CFG_WRT0$OFF 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 __CFG_WRT1$OFF 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 __CFG_WRT2$OFF 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 __CFG_WRT3$OFF 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
-__end_of_remove_chain 436E 0 CODE 0 text4 dist/default/production\MBGRSD.X.production.o
+__end_of_remove_chain 433E 0 CODE 0 text4 dist/default/production\MBGRSD.X.production.o
 __CFG_WRTB$OFF 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 __Libigdata 0 0 CODE 0 ibigdata dist/default/production\MBGRSD.X.production.o
 __CFG_WRTC$OFF 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 __CFG_WRTD$OFF 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 __end_of_dir_sdi 3912 0 CODE 0 text14 dist/default/production\MBGRSD.X.production.o
-__pidataBANK0 5608 0 CODE 0 idataBANK0 dist/default/production\MBGRSD.X.production.o
-__pidataBANK1 55F4 0 CODE 0 idataBANK1 dist/default/production\MBGRSD.X.production.o
+__pidataBANK0 563E 0 CODE 0 idataBANK0 dist/default/production\MBGRSD.X.production.o
+__pidataBANK1 562A 0 CODE 0 idataBANK1 dist/default/production\MBGRSD.X.production.o
 disk_initialize@pdrv 12 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 Error@F5051 100 0 BANK1 1 dataBANK1 dist/default/production\MBGRSD.X.production.o
 __size_of_create_name 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
-__end_of_guardar 40CC 0 CODE 0 text1 dist/default/production\MBGRSD.X.production.o
+__end_of_guardar 409C 0 CODE 0 text1 dist/default/production\MBGRSD.X.production.o
 __Lclrtext 0 0 ABS 0 clrtext dist/default/production\MBGRSD.X.production.o
 _SSP1CON1bits FC6 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 ___lmul@product 9 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 wait_ready@tmr 2 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 _sync_fs 3D80 0 CODE 0 text33 dist/default/production\MBGRSD.X.production.o
-Error@v_seg 3 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
-__end_of_clust2sect 4DC2 0 CODE 0 text26 dist/default/production\MBGRSD.X.production.o
+Error@v_seg 4 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+__end_of_clust2sect 4D92 0 CODE 0 text26 dist/default/production\MBGRSD.X.production.o
 dir_find@dp 80 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
 __CFG_nLPBOR$OFF 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 ___lmul@multiplicand 5 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 ___lldiv@quotient 9 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 __pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
-_mem_cmp 5216 0 CODE 0 text8 dist/default/production\MBGRSD.X.production.o
-_mem_cpy 4C4E 0 CODE 0 text12 dist/default/production\MBGRSD.X.production.o
-_mem_set 54BC 0 CODE 0 text34 dist/default/production\MBGRSD.X.production.o
+_mem_cmp 52A0 0 CODE 0 text8 dist/default/production\MBGRSD.X.production.o
+_mem_cpy 4C1E 0 CODE 0 text12 dist/default/production\MBGRSD.X.production.o
+_mem_set 54F0 0 CODE 0 text34 dist/default/production\MBGRSD.X.production.o
 ff@FatFs D6 0 BANK0 1 bssBANK0 dist/default/production\MBGRSD.X.production.o
 _SSP1ADD FC8 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 _SSP1BUF FC9 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 _disk_initialize$285 17 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 __CFG_BOREN$SBORDIS 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
-_chk_chr 5384 0 CODE 0 text10 dist/default/production\MBGRSD.X.production.o
-__end_of_main 5596 0 CODE 0 text0 dist/default/production\MBGRSD.X.production.o
-_deselect 55FE 0 CODE 0 text47 dist/default/production\MBGRSD.X.production.o
+_chk_chr 53B8 0 CODE 0 text10 dist/default/production\MBGRSD.X.production.o
+__end_of_main 558E 0 CODE 0 text0 dist/default/production\MBGRSD.X.production.o
+_deselect 5634 0 CODE 0 text47 dist/default/production\MBGRSD.X.production.o
 guardar@data D0 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
-__end_of_Error 5384 0 CODE 0 text55 dist/default/production\MBGRSD.X.production.o
-_Error 532E 0 CODE 0 text55 dist/default/production\MBGRSD.X.production.o
+__end_of_Error 4E4C 0 CODE 0 text55 dist/default/production\MBGRSD.X.production.o
+_Error 4D92 0 CODE 0 text55 dist/default/production\MBGRSD.X.production.o
 _FatFs 10A 0 BIGRAM 1 bssBIGRAM dist/default/production\MBGRSD.X.production.o
 find_volume@fmt 97 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
 find_volume@rfs 45 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 find_volume@vol 80 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
-_TRISA F92 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 _TRISB F93 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 _TRISC F94 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 _TRISD F95 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
@@ -1910,22 +1913,22 @@ dir_find@res 85 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.productio
 f_close@fp 4E 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 __size_of_PIN_MANAGER_Initialize 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 _put_fat 23EE 0 CODE 0 text24 dist/default/production\MBGRSD.X.production.o
-__end_of_deselect 5608 0 CODE 0 text47 dist/default/production\MBGRSD.X.production.o
+__end_of_deselect 563E 0 CODE 0 text47 dist/default/production\MBGRSD.X.production.o
 ___send_cmd@arg 4 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 ___send_cmd@cmd A 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 ___send_cmd@res 8 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 __HdataBANK0 0 0 ABS 0 dataBANK0 dist/default/production\MBGRSD.X.production.o
 __HdataBANK1 0 0 ABS 0 dataBANK1 dist/default/production\MBGRSD.X.production.o
 create_name@sfn 1B 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
-__end_of_OSCILLATOR_Initialize 55BA 0 CODE 0 text54 dist/default/production\MBGRSD.X.production.o
+__end_of_OSCILLATOR_Initialize 55F0 0 CODE 0 text54 dist/default/production\MBGRSD.X.production.o
 f_lseek@clst 90 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
-__initialization 527C 0 CODE 0 cinit dist/default/production\MBGRSD.X.production.o
+__initialization 5306 0 CODE 0 cinit dist/default/production\MBGRSD.X.production.o
 __size_of_st_clust 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 disk_ioctl@n 37 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 move_window@sector 32 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 __pbssBANK0 D4 0 BANK0 1 bssBANK0 dist/default/production\MBGRSD.X.production.o
 _disk_ioctl 1F50 0 CODE 0 text35 dist/default/production\MBGRSD.X.production.o
-_disk_write 45F6 0 CODE 0 text40 dist/default/production\MBGRSD.X.production.o
+_disk_write 45C6 0 CODE 0 text40 dist/default/production\MBGRSD.X.production.o
 __Hfardata 0 0 FARRAM 0 fardata dist/default/production\MBGRSD.X.production.o
 ___wmul@product 5 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
 __Hsmallconst 830 0 SMALLCONST 0 smallconst dist/default/production\MBGRSD.X.production.o
@@ -1933,12 +1936,12 @@ __size_of_dir_find 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 __size_of_dir_next 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 __Lifardata 0 0 CODE 0 ifardata dist/default/production\MBGRSD.X.production.o
 __CFG_T3CMX$RC0 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
-_disk_status 5596 0 CODE 0 text32 dist/default/production\MBGRSD.X.production.o
+_disk_status 55CC 0 CODE 0 text32 dist/default/production\MBGRSD.X.production.o
 __size_of_find_volume 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
 __Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\MBGRSD.X.production.o
 __Hintcode 0 0 CODE 0 intcode dist/default/production\MBGRSD.X.production.o
 clust2sect@fs D 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
-_OSCILLATOR_Initialize 55A8 0 CODE 0 text54 dist/default/production\MBGRSD.X.production.o
+_OSCILLATOR_Initialize 55DE 0 CODE 0 text54 dist/default/production\MBGRSD.X.production.o
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.
 # The beginning of the section is indicated by %SPLITSTAB.
@@ -1964,7 +1967,7 @@ _OSCILLATOR_Initialize 55A8 0 CODE 0 text54 dist/default/production\MBGRSD.X.pro
 # All other numeric quantities are in decimal.
 %SEGMENTS
 idloc 0 200000 200000 8 1
-text17 0 830 830 4DD9 1
+text17 0 830 830 4E0F 1
 cstackCOMRAM 1 1 1 5F 1
 cstackBANK0 1 60 60 9B 1
 reset_vec 0 0 0 4 1
