@@ -27,7 +27,6 @@ void guardar(char* data){
     
     Error(1);
     __delay_sec(2);
-    Error(2);
         
     if (f_open(&Fil, "BeeDev.txt", FA_OPEN_ALWAYS | FA_READ | FA_WRITE) == FR_OK) {	/* Abre o crea el archivo */
         Error(3);
@@ -40,19 +39,16 @@ void guardar(char* data){
                 Error(4);
                 __delay_sec(2);
                 
-                Error(0);
                 f_write(&Fil, data , 28 , &bw);	// DATA ARRAY, NUMERO DE CHAR
                 //f_printf(&fil, "%s", "String");  
                 Error(5);
                 __delay_sec(2);
-                 Error(0);
                 endSD: f_close(&Fil);								/* Cierra el archivo */
                 Error(6);
                 __delay_sec(1);
                 
                 Error(7);
                 __delay_sec(2);
-                 Error(0);
      
 	}
     else {
