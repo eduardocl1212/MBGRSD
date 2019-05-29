@@ -29,11 +29,105 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;./ff.h: 114: typedef struct {
 [s S637 `*S636 1 `us 1 `uc 1 `uc 1 `ul 1 `ul 1 `ul 1 `ul 1 `ul 1 `ul 1 `*uc 1 ]
 [n S637 . fs id flag err fptr fsize sclust clust dsect dir_sect dir_ptr ]
+[p mainexit ]
+"22 Main.c
+[; ;Main.c: 22: void Init8LEDs(void);
+[v _Init8LEDs `(v ~T0 @X0 0 ef ]
+"12356 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h: 12356: extern volatile unsigned char OSCCON __attribute__((address(0xFD3)));
+[v _OSCCON `Vuc ~T0 @X0 0 e@4051 ]
+"9636
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h: 9636: extern volatile unsigned char ADCON2 __attribute__((address(0xFC0)));
+[v _ADCON2 `Vuc ~T0 @X0 0 e@4032 ]
+"9707
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h: 9707: extern volatile unsigned char ADCON1 __attribute__((address(0xFC1)));
+[v _ADCON1 `Vuc ~T0 @X0 0 e@4033 ]
+"3779
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h: 3779: extern volatile unsigned char LATA __attribute__((address(0xF89)));
+[v _LATA `Vuc ~T0 @X0 0 e@3977 ]
+"4626
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h: 4626: extern volatile unsigned char TRISA __attribute__((address(0xF92)));
+[v _TRISA `Vuc ~T0 @X0 0 e@3986 ]
+"232
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h: 232: extern volatile unsigned char ANSELA __attribute__((address(0xF5B)));
+[v _ANSELA `Vuc ~T0 @X0 0 e@3931 ]
+"5070
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h: 5070: extern volatile unsigned char TRISC __attribute__((address(0xF94)));
+[v _TRISC `Vuc ~T0 @X0 0 e@3988 ]
+"327
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h: 327: extern volatile unsigned char ANSELC __attribute__((address(0xF5D)));
+[v _ANSELC `Vuc ~T0 @X0 0 e@3933 ]
+"9775
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h: 9775: extern volatile unsigned char ADCON0 __attribute__((address(0xFC2)));
+[v _ADCON0 `Vuc ~T0 @X0 0 e@4034 ]
+"14898
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h: 14898: extern volatile __bit GIE __attribute__((address(0x7F97)));
+[v _GIE `Vb ~T0 @X0 0 e@32663 ]
+"15552
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h: 15552: extern volatile __bit PEIE __attribute__((address(0x7F96)));
+[v _PEIE `Vb ~T0 @X0 0 e@32662 ]
+"13788
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h: 13788: extern volatile __bit ADIE __attribute__((address(0x7CEE)));
+[v _ADIE `Vb ~T0 @X0 0 e@31982 ]
+"9781
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h: 9781:     struct {
+[s S435 :1 `uc 1 :1 `uc 1 ]
+[n S435 . . GO_NOT_DONE ]
+"9785
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h: 9785:     struct {
+[s S436 :1 `uc 1 :1 `uc 1 :5 `uc 1 ]
+[n S436 . ADON GO_nDONE CHS ]
+"9790
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h: 9790:     struct {
+[s S437 :1 `uc 1 :1 `uc 1 ]
+[n S437 . . DONE ]
+"9794
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h: 9794:     struct {
+[s S438 :1 `uc 1 :1 `uc 1 ]
+[n S438 . . GO ]
+"9798
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h: 9798:     struct {
+[s S439 :1 `uc 1 :1 `uc 1 ]
+[n S439 . . NOT_DONE ]
+"9802
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h: 9802:     struct {
+[s S440 :1 `uc 1 :1 `uc 1 ]
+[n S440 . . nDONE ]
+"9806
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h: 9806:     struct {
+[s S441 :1 `uc 1 :1 `uc 1 ]
+[n S441 . . GODONE ]
+"9810
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h: 9810:     struct {
+[s S442 :1 `uc 1 :1 `uc 1 ]
+[n S442 . . GO_DONE ]
+"9780
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h: 9780: typedef union {
+[u S434 `S435 1 `S436 1 `S437 1 `S438 1 `S439 1 `S440 1 `S441 1 `S442 1 ]
+[n S434 . . . . . . . . . ]
+"9815
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h: 9815: extern volatile ADCON0bits_t ADCON0bits __attribute__((address(0xFC2)));
+[v _ADCON0bits `VS434 ~T0 @X0 0 e@4034 ]
+"23 Main.c
+[; ;Main.c: 23: int interruptadc(int);
+[v _interruptadc `(i ~T0 @X0 0 ef1`i ]
+"2901 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h: 2901: extern volatile unsigned char PORTA __attribute__((address(0xF80)));
+[v _PORTA `Vuc ~T0 @X0 0 e@3968 ]
+"13791
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h: 13791: extern volatile __bit ADIF __attribute__((address(0x7CF6)));
+[v _ADIF `Vb ~T0 @X0 0 e@31990 ]
+"9877
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h: 9877: extern volatile unsigned char ADRESH __attribute__((address(0xFC4)));
+[v _ADRESH `Vuc ~T0 @X0 0 e@4036 ]
+"9870
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h: 9870: extern volatile unsigned char ADRESL __attribute__((address(0xFC3)));
+[v _ADRESL `Vuc ~T0 @X0 0 e@4035 ]
 "68 ./mcc_generated_files/mcc.h
 [; ;./mcc_generated_files/mcc.h: 68: void SYSTEM_Initialize(void);
 [v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
-"19 Main.c
-[; ;Main.c: 19:     if (f_mount(&FatFs, "", 1) != FR_OK) {
+"104 Main.c
+[; ;Main.c: 104:     if (f_mount(&FatFs, "", 1) != FR_OK) {
 [c E4918 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 .. ]
 [n E4918 . FR_OK FR_DISK_ERR FR_INT_ERR FR_NOT_READY FR_NO_FILE FR_NO_PATH FR_INVALID_NAME FR_DENIED FR_EXIST FR_INVALID_OBJECT FR_WRITE_PROTECTED FR_INVALID_DRIVE FR_NOT_ENABLED FR_NO_FILESYSTEM FR_MKFS_ABORTED FR_TIMEOUT FR_LOCKED FR_NOT_ENOUGH_CORE FR_TOO_MANY_OPEN_FILES FR_INVALID_PARAMETER  ]
 "237 ./ff.h
@@ -51,7 +145,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 "213
 [; ;./ff.h: 213: FRESULT f_close (FIL* fp);
 [v _f_close `(E4918 ~T0 @X0 0 ef1`*S637 ]
-[p mainexit ]
 "54 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h: 54: __asm("SRCON1 equ 0F57h");
 [; <" SRCON1 equ 0F57h ;# ">
@@ -750,242 +843,395 @@ Version 4.0 HI-TECH Software Intermediate Code
 }
 [e $U 644  ]
 "30
-[; ;./Errores.h: 30:     else {
+[; ;./Errores.h: 30:     else if(a == 999){
 [e :U 643 ]
+[e $ ! == _a -> 999 `i 645  ]
 {
 "31
-[; ;./Errores.h: 31:     LATD = v_seg[0];
-[e = _LATD *U + &U _v_seg * -> -> -> 0 `i `ui `ux -> -> # *U &U _v_seg `ui `ux ]
+[; ;./Errores.h: 31:     LATE = 0x00;
+[e = _LATE -> -> 0 `i `uc ]
 "32
-[; ;./Errores.h: 32:     LATE = 0x01;
-[e = _LATE -> -> 1 `i `uc ]
-"33
-[; ;./Errores.h: 33:     _delay((unsigned long)((1)*(8000000/4000.0)));
-[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-"35
-[; ;./Errores.h: 35:     LATE = 0x00;
-[e = _LATE -> -> 0 `i `uc ]
-"36
-[; ;./Errores.h: 36:     LATD = v_seg[9];
-[e = _LATD *U + &U _v_seg * -> -> -> 9 `i `ui `ux -> -> # *U &U _v_seg `ui `ux ]
-"37
-[; ;./Errores.h: 37:     LATE = 0x02;
-[e = _LATE -> -> 2 `i `uc ]
-"38
-[; ;./Errores.h: 38:     _delay((unsigned long)((1)*(8000000/4000.0)));
-[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-"40
-[; ;./Errores.h: 40:     LATE = 0x00;
-[e = _LATE -> -> 0 `i `uc ]
-"41
-[; ;./Errores.h: 41:     LATD = v_seg[6];
-[e = _LATD *U + &U _v_seg * -> -> -> 6 `i `ui `ux -> -> # *U &U _v_seg `ui `ux ]
-"42
-[; ;./Errores.h: 42:     LATE = 0x04;
-[e = _LATE -> -> 4 `i `uc ]
-"43
-[; ;./Errores.h: 43:     _delay((unsigned long)((1)*(8000000/4000.0)));
-[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-"45
-[; ;./Errores.h: 45:     LATE = 0x00;
-[e = _LATE -> -> 0 `i `uc ]
-"46
-[; ;./Errores.h: 46:     }
+[; ;./Errores.h: 32:     }
 }
+[e $U 646  ]
+"33
+[; ;./Errores.h: 33:     else {
+[e :U 645 ]
+{
+"34
+[; ;./Errores.h: 34:     LATD = v_seg[0];
+[e = _LATD *U + &U _v_seg * -> -> -> 0 `i `ui `ux -> -> # *U &U _v_seg `ui `ux ]
+"35
+[; ;./Errores.h: 35:     LATE = 0x01;
+[e = _LATE -> -> 1 `i `uc ]
+"36
+[; ;./Errores.h: 36:     _delay((unsigned long)((1)*(8000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+"38
+[; ;./Errores.h: 38:     LATE = 0x00;
+[e = _LATE -> -> 0 `i `uc ]
+"39
+[; ;./Errores.h: 39:     LATD = v_seg[9];
+[e = _LATD *U + &U _v_seg * -> -> -> 9 `i `ui `ux -> -> # *U &U _v_seg `ui `ux ]
+"40
+[; ;./Errores.h: 40:     LATE = 0x02;
+[e = _LATE -> -> 2 `i `uc ]
+"41
+[; ;./Errores.h: 41:     _delay((unsigned long)((1)*(8000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+"43
+[; ;./Errores.h: 43:     LATE = 0x00;
+[e = _LATE -> -> 0 `i `uc ]
+"44
+[; ;./Errores.h: 44:     LATD = v_seg[6];
+[e = _LATD *U + &U _v_seg * -> -> -> 6 `i `ui `ux -> -> # *U &U _v_seg `ui `ux ]
+"45
+[; ;./Errores.h: 45:     LATE = 0x04;
+[e = _LATE -> -> 4 `i `uc ]
+"46
+[; ;./Errores.h: 46:     _delay((unsigned long)((1)*(8000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+"48
+[; ;./Errores.h: 48:     LATE = 0x00;
+[e = _LATE -> -> 0 `i `uc ]
+"49
+[; ;./Errores.h: 49:     }
+}
+[e :U 646 ]
 [e :U 644 ]
 [e :U 642 ]
-"47
-[; ;./Errores.h: 47: }
+"50
+[; ;./Errores.h: 50: }
 [e :UE 640 ]
 }
-"6 Main.c
-[; ;Main.c: 6: char data[];
+"14 Main.c
+[; ;Main.c: 14: float volt;
+[v _volt `f ~T0 @X0 1 e ]
+"15
+[; ;Main.c: 15: unsigned int adcin;
+[v _adcin `ui ~T0 @X0 1 e ]
+"17
+[; ;Main.c: 17: char data[];
 [v _data `uc ~T0 @X0 -> -> 1 `i `ux e ]
-"7
-[; ;Main.c: 7: FATFS FatFs;
+"18
+[; ;Main.c: 18: FATFS FatFs;
 [v _FatFs `S636 ~T0 @X0 1 e ]
-"8
-[; ;Main.c: 8: FIL Fil;
+"19
+[; ;Main.c: 19: FIL Fil;
 [v _Fil `S637 ~T0 @X0 1 e ]
-"10
-[; ;Main.c: 10: void __delay_sec(char sec) {
+[v $root$_main `(v ~T0 @X0 0 e ]
+"30
+[; ;Main.c: 30: void main(void)
+[v _main `(v ~T0 @X0 1 ef ]
+"31
+[; ;Main.c: 31: {
+{
+[e :U _main ]
+[f ]
+"32
+[; ;Main.c: 32:     volt = 0.0;
+[e = _volt -> .0.0 `f ]
+"33
+[; ;Main.c: 33:     adcin = 0;
+[e = _adcin -> -> 0 `i `ui ]
+"34
+[; ;Main.c: 34:     int a = 0;
+[v _a `i ~T0 @X0 1 a ]
+[e = _a -> 0 `i ]
+"35
+[; ;Main.c: 35:     int out;
+[v _out `i ~T0 @X0 1 a ]
+"37
+[; ;Main.c: 37:     Init8LEDs();
+[e ( _Init8LEDs ..  ]
+"39
+[; ;Main.c: 39:     OSCCON = 0x53;
+[e = _OSCCON -> -> 83 `i `uc ]
+"40
+[; ;Main.c: 40:     ADCON2 = 0x94;
+[e = _ADCON2 -> -> 148 `i `uc ]
+"41
+[; ;Main.c: 41:     ADCON1 = 0x00;
+[e = _ADCON1 -> -> 0 `i `uc ]
+"42
+[; ;Main.c: 42:     LATA = 0x00;
+[e = _LATA -> -> 0 `i `uc ]
+"43
+[; ;Main.c: 43:     TRISA = 0x00;
+[e = _TRISA -> -> 0 `i `uc ]
+"44
+[; ;Main.c: 44:     ANSELA = 0x00;
+[e = _ANSELA -> -> 0 `i `uc ]
+"45
+[; ;Main.c: 45:     TRISC = 0x04;
+[e = _TRISC -> -> 4 `i `uc ]
+"46
+[; ;Main.c: 46:     ANSELC = 0x04;
+[e = _ANSELC -> -> 4 `i `uc ]
+"47
+[; ;Main.c: 47:     ADCON0 = 0x39;
+[e = _ADCON0 -> -> 57 `i `uc ]
+"48
+[; ;Main.c: 48:     GIE = 1;
+[e = _GIE -> -> 1 `i `b ]
+"49
+[; ;Main.c: 49:     PEIE = 1;
+[e = _PEIE -> -> 1 `i `b ]
+"50
+[; ;Main.c: 50:     ADIE = 1;
+[e = _ADIE -> -> 1 `i `b ]
+"52
+[; ;Main.c: 52:     while(1){
+[e :U 651 ]
+{
+"53
+[; ;Main.c: 53:         ADCON0bits.GO=1;
+[e = . . _ADCON0bits 3 1 -> -> 1 `i `uc ]
+"54
+[; ;Main.c: 54:         adcin = interruptadc(adcin);
+[e = _adcin -> ( _interruptadc (1 -> _adcin `i `ui ]
+"55
+[; ;Main.c: 55:         PORTA = adcin/4;
+[e = _PORTA -> / _adcin -> -> 4 `i `ui `uc ]
+"56
+[; ;Main.c: 56:         volt = (adcin*5.0)/1023.0;
+[e = _volt -> / * -> _adcin `d .5.0 .1023.0 `f ]
+"57
+[; ;Main.c: 57:     }
+}
+[e :U 650 ]
+[e $U 651  ]
+[e :U 652 ]
+"58
+[; ;Main.c: 58:     return;
+[e $UE 649  ]
+"59
+[; ;Main.c: 59: }
+[e :UE 649 ]
+}
+"61
+[; ;Main.c: 61: int interruptadc(int adcin) {
+[v _interruptadc `(i ~T0 @X0 1 ef1`i ]
+{
+[e :U _interruptadc ]
+[v _adcin `i ~T0 @X0 1 r1 ]
+[f ]
+"62
+[; ;Main.c: 62:     if(ADIF==1) {
+[e $ ! == -> _ADIF `i -> 1 `i 654  ]
+{
+"63
+[; ;Main.c: 63:         ADIE=0;
+[e = _ADIE -> -> 0 `i `b ]
+"64
+[; ;Main.c: 64:         adcin = (ADRESH<<8)+ADRESL;
+[e = _adcin + << -> _ADRESH `i -> 8 `i -> _ADRESL `i ]
+"65
+[; ;Main.c: 65:     }
+}
+[e :U 654 ]
+"66
+[; ;Main.c: 66:     ADIE=1;
+[e = _ADIE -> -> 1 `i `b ]
+"67
+[; ;Main.c: 67:     ADIF=0;
+[e = _ADIF -> -> 0 `i `b ]
+"68
+[; ;Main.c: 68:     return adcin;
+[e ) _adcin ]
+[e $UE 653  ]
+"69
+[; ;Main.c: 69: }
+[e :UE 653 ]
+}
+"72
+[; ;Main.c: 72: void Init8LEDs(void)
+[v _Init8LEDs `(v ~T0 @X0 1 ef ]
+"73
+[; ;Main.c: 73: {
+{
+[e :U _Init8LEDs ]
+[f ]
+"74
+[; ;Main.c: 74:     LATA = 0x00;
+[e = _LATA -> -> 0 `i `uc ]
+"75
+[; ;Main.c: 75:     TRISA = 0x00;
+[e = _TRISA -> -> 0 `i `uc ]
+"76
+[; ;Main.c: 76:     ANSELA = 0x00;
+[e = _ANSELA -> -> 0 `i `uc ]
+"78
+[; ;Main.c: 78:     return;
+[e $UE 655  ]
+"79
+[; ;Main.c: 79: }
+[e :UE 655 ]
+}
+"81
+[; ;Main.c: 81: void grabador(void){
+[v _grabador `(v ~T0 @X0 1 ef ]
+{
+[e :U _grabador ]
+[f ]
+"85
+[; ;Main.c: 85: }
+[e :UE 656 ]
+}
+"87
+[; ;Main.c: 87: void reproductor(void){
+[v _reproductor `(v ~T0 @X0 1 ef ]
+{
+[e :U _reproductor ]
+[f ]
+"92
+[; ;Main.c: 92: }
+[e :UE 657 ]
+}
+"95
+[; ;Main.c: 95: void __delay_sec(char sec) {
 [v ___delay_sec `(v ~T0 @X0 1 ef1`uc ]
 {
 [e :U ___delay_sec ]
 [v _sec `uc ~T0 @X0 1 r1 ]
 [f ]
-"11
-[; ;Main.c: 11:     for(char i=0;i<=(50*sec);i++) {
+"96
+[; ;Main.c: 96:     for(char i=0;i<=(50*sec);i++) {
 {
 [v _i `uc ~T0 @X0 1 a ]
 [e = _i -> -> 0 `i `uc ]
-[e $U 649  ]
-[e :U 646 ]
+[e $U 662  ]
+[e :U 659 ]
 {
-"12
-[; ;Main.c: 12:         _delay((unsigned long)((20)*(8000000/4000.0)));
+"97
+[; ;Main.c: 97:         _delay((unsigned long)((20)*(8000000/4000.0)));
 [e ( __delay (1 -> * -> -> 20 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-"13
-[; ;Main.c: 13:     }
+"98
+[; ;Main.c: 98:     }
 }
 [e ++ _i -> -> 1 `i `uc ]
-[e :U 649 ]
-[e $ <= -> _i `i * -> 50 `i -> _sec `i 646  ]
-[e :U 647 ]
+[e :U 662 ]
+[e $ <= -> _i `i * -> 50 `i -> _sec `i 659  ]
+[e :U 660 ]
 }
-"14
-[; ;Main.c: 14: }
-[e :UE 645 ]
+"99
+[; ;Main.c: 99: }
+[e :UE 658 ]
 }
-"16
-[; ;Main.c: 16: void guardar(char* data){
+"101
+[; ;Main.c: 101: void guardar(char* data){
 [v _guardar `(v ~T0 @X0 1 ef1`*uc ]
 {
 [e :U _guardar ]
 [v _data `*uc ~T0 @X0 1 r1 ]
 [f ]
-"17
-[; ;Main.c: 17:     UINT bw;
+"102
+[; ;Main.c: 102:     UINT bw;
 [v _bw `us ~T0 @X0 1 a ]
-"18
-[; ;Main.c: 18:     SYSTEM_Initialize();
+"103
+[; ;Main.c: 103:     SYSTEM_Initialize();
 [e ( _SYSTEM_Initialize ..  ]
-"19
-[; ;Main.c: 19:     if (f_mount(&FatFs, "", 1) != FR_OK) {
-[e $ ! != -> ( _f_mount (3 , , &U _FatFs :s 1C -> -> 1 `i `uc `ui -> . `E4918 0 `ui 651  ]
+"104
+[; ;Main.c: 104:     if (f_mount(&FatFs, "", 1) != FR_OK) {
+[e $ ! != -> ( _f_mount (3 , , &U _FatFs :s 1C -> -> 1 `i `uc `ui -> . `E4918 0 `ui 664  ]
 {
-"21
-[; ;Main.c: 21:         Error(33);
+"106
+[; ;Main.c: 106:         Error(33);
 [e ( _Error (1 -> 33 `i ]
-"22
-[; ;Main.c: 22:         __delay_sec(2);
+"107
+[; ;Main.c: 107:         __delay_sec(2);
 [e ( ___delay_sec (1 -> -> 2 `i `uc ]
-"23
-[; ;Main.c: 23:         while(f_mount(&FatFs, "", 1) != FR_OK) {
-[e $U 652  ]
-[e :U 653 ]
+"108
+[; ;Main.c: 108:         while(f_mount(&FatFs, "", 1) != FR_OK) {
+[e $U 665  ]
+[e :U 666 ]
 {
-"25
-[; ;Main.c: 25:         }
+"110
+[; ;Main.c: 110:         }
 }
-[e :U 652 ]
-"23
-[; ;Main.c: 23:         while(f_mount(&FatFs, "", 1) != FR_OK) {
-[e $ != -> ( _f_mount (3 , , &U _FatFs :s 2C -> -> 1 `i `uc `ui -> . `E4918 0 `ui 653  ]
-[e :U 654 ]
-"26
-[; ;Main.c: 26:     }
+[e :U 665 ]
+"108
+[; ;Main.c: 108:         while(f_mount(&FatFs, "", 1) != FR_OK) {
+[e $ != -> ( _f_mount (3 , , &U _FatFs :s 2C -> -> 1 `i `uc `ui -> . `E4918 0 `ui 666  ]
+[e :U 667 ]
+"111
+[; ;Main.c: 111:     }
 }
-[e :U 651 ]
-"28
-[; ;Main.c: 28:     Error(1);
+[e :U 664 ]
+"113
+[; ;Main.c: 113:     Error(1);
 [e ( _Error (1 -> 1 `i ]
-"29
-[; ;Main.c: 29:     __delay_sec(2);
+"114
+[; ;Main.c: 114:     __delay_sec(2);
 [e ( ___delay_sec (1 -> -> 2 `i `uc ]
-"31
-[; ;Main.c: 31:     if (f_open(&Fil, "BeeDev.txt", 0x10 | 0x01 | 0x02) == FR_OK) {
-[e $ ! == -> ( _f_open (3 , , &U _Fil :s 3C -> | | -> 16 `i -> 1 `i -> 2 `i `uc `ui -> . `E4918 0 `ui 655  ]
+"116
+[; ;Main.c: 116:     if (f_open(&Fil, "BeeDev.txt", 0x10 | 0x01 | 0x02) == FR_OK) {
+[e $ ! == -> ( _f_open (3 , , &U _Fil :s 3C -> | | -> 16 `i -> 1 `i -> 2 `i `uc `ui -> . `E4918 0 `ui 668  ]
 {
-"32
-[; ;Main.c: 32:         Error(2);
+"117
+[; ;Main.c: 117:         Error(2);
 [e ( _Error (1 -> 2 `i ]
-"35
-[; ;Main.c: 35:         __delay_sec(2);
+"120
+[; ;Main.c: 120:         __delay_sec(2);
 [e ( ___delay_sec (1 -> -> 2 `i `uc ]
-"36
-[; ;Main.c: 36:          Error(3);
+"121
+[; ;Main.c: 121:          Error(3);
 [e ( _Error (1 -> 3 `i ]
-"38
-[; ;Main.c: 38:    if ((Fil.fsize != 0) && (f_lseek(&Fil, Fil.fsize) != FR_OK)) goto endSD;
-[e $ ! && != . _Fil 5 -> -> -> 0 `i `l `ul != -> ( _f_lseek (2 , &U _Fil . _Fil 5 `ui -> . `E4918 0 `ui 656  ]
-[e $U 657  ]
-[e :U 656 ]
-"39
-[; ;Main.c: 39:                 Error(4);
+"123
+[; ;Main.c: 123:    if ((Fil.fsize != 0) && (f_lseek(&Fil, Fil.fsize) != FR_OK)) goto endSD;
+[e $ ! && != . _Fil 5 -> -> -> 0 `i `l `ul != -> ( _f_lseek (2 , &U _Fil . _Fil 5 `ui -> . `E4918 0 `ui 669  ]
+[e $U 670  ]
+[e :U 669 ]
+"124
+[; ;Main.c: 124:                 Error(4);
 [e ( _Error (1 -> 4 `i ]
-"40
-[; ;Main.c: 40:                 __delay_sec(2);
+"125
+[; ;Main.c: 125:                 __delay_sec(2);
 [e ( ___delay_sec (1 -> -> 2 `i `uc ]
-"42
-[; ;Main.c: 42:                 f_write(&Fil, data , 28 , &bw);
+"127
+[; ;Main.c: 127:                 f_write(&Fil, data , 28 , &bw);
 [e ( _f_write (4 , , , &U _Fil -> _data `*Cv -> -> 28 `i `us &U _bw ]
-"44
-[; ;Main.c: 44:                 Error(5);
+"129
+[; ;Main.c: 129:                 Error(5);
 [e ( _Error (1 -> 5 `i ]
-"45
-[; ;Main.c: 45:                 __delay_sec(2);
+"130
+[; ;Main.c: 130:                 __delay_sec(2);
 [e ( ___delay_sec (1 -> -> 2 `i `uc ]
-"46
-[; ;Main.c: 46:                 endSD: f_close(&Fil);
-[e :U 657 ]
+"131
+[; ;Main.c: 131:                 endSD: f_close(&Fil);
+[e :U 670 ]
 [e ( _f_close (1 &U _Fil ]
-"47
-[; ;Main.c: 47:                 Error(6);
+"132
+[; ;Main.c: 132:                 Error(6);
 [e ( _Error (1 -> 6 `i ]
-"48
-[; ;Main.c: 48:                 __delay_sec(1);
+"133
+[; ;Main.c: 133:                 __delay_sec(1);
 [e ( ___delay_sec (1 -> -> 1 `i `uc ]
-"50
-[; ;Main.c: 50:                 Error(7);
+"135
+[; ;Main.c: 135:                 Error(7);
 [e ( _Error (1 -> 7 `i ]
-"51
-[; ;Main.c: 51:                 __delay_sec(2);
+"136
+[; ;Main.c: 136:                 __delay_sec(2);
 [e ( ___delay_sec (1 -> -> 2 `i `uc ]
-"53
-[; ;Main.c: 53:  }
+"138
+[; ;Main.c: 138:  }
 }
-[e $U 658  ]
-"54
-[; ;Main.c: 54:     else {
-[e :U 655 ]
+[e $U 671  ]
+"139
+[; ;Main.c: 139:     else {
+[e :U 668 ]
 {
-"55
-[; ;Main.c: 55:         Error(0);
+"140
+[; ;Main.c: 140:         Error(0);
 [e ( _Error (1 -> 0 `i ]
-"56
-[; ;Main.c: 56:     }
+"141
+[; ;Main.c: 141:     }
 }
-[e :U 658 ]
-"57
-[; ;Main.c: 57: }
-[e :UE 650 ]
-}
-[v $root$_main `(v ~T0 @X0 0 e ]
-"59
-[; ;Main.c: 59: void main(void)
-[v _main `(v ~T0 @X0 1 ef ]
-"60
-[; ;Main.c: 60: {
-{
-[e :U _main ]
-[f ]
-"61
-[; ;Main.c: 61:     guardar("Prueba por ARRAY.\r\n");
-[e ( _guardar (1 :s 4C ]
-"62
-[; ;Main.c: 62:     __delay_sec(1);
-[e ( ___delay_sec (1 -> -> 1 `i `uc ]
-"63
-[; ;Main.c: 63:     while (1)
-[e :U 661 ]
-"64
-[; ;Main.c: 64:     {
-{
-"65
-[; ;Main.c: 65:         Error(55);
-[e ( _Error (1 -> 55 `i ]
-"66
-[; ;Main.c: 66:     }
-}
-[e :U 660 ]
-[e $U 661  ]
-[e :U 662 ]
-"67
-[; ;Main.c: 67: }
-[e :UE 659 ]
+[e :U 671 ]
+"142
+[; ;Main.c: 142: }
+[e :UE 663 ]
 }
 [a 3C 66 101 101 68 101 118 46 116 120 116 0 ]
-[a 4C 80 114 117 101 98 97 32 112 111 114 32 65 82 82 65 89 46 13 10 0 ]
 [a 1C 0 ]
 [a 2C 0 ]

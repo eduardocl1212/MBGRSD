@@ -1,11 +1,96 @@
 #include "mcc_generated_files/mcc.h"
 #include "ff.h"
-//#include "lcd_lib.h"
 #include "Errores.h"
+
+#include <xc.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+
+#define _mSec 1
+#define _vin 5.0
+#define _base 1023.0
+
+float volt;
+unsigned int adcin;
 
 char data[];
 FATFS FatFs;
 FIL Fil;
+
+
+void Init8LEDs(void);           //Función Inicializa puerto A
+int interruptadc(int);
+void grabador(void);
+void reproductor(void);
+void guardar(char* data);
+void __delay_sec(char sec);
+
+
+void main(void)
+{
+    volt = 0.0;         //Se inicializa variables
+    adcin = 0;
+    int a = 0;
+    int out;
+    
+    Init8LEDs();        //Inicializa puerto A
+      
+    OSCCON = 0x53;      //Oscilador interno 4 MHz
+    ADCON2 = 0x94;      //ACQT = 4TAD, TAD de 1microS, Justificado derecha 
+    ADCON1 = 0x00;      //Vref- = GND, Vref+ = +5V
+    LATA = 0x00;        //Limpiamos A
+    TRISA = 0x00;       //bit RA1 como salida 
+    ANSELA = 0x00;      //RA1 como analógico
+    TRISC = 0x04;       //bit RC2 como entrada
+    ANSELC = 0x04;      //RC2 como analógico
+    ADCON0 = 0x39;      //Enciendo ADC, canal AN14
+    GIE = 1;            //Habilita interrupciones globales
+    PEIE = 1;           //Habilita interrupciones de periféricos
+    ADIE = 1;           //Habilita interrupción ADC
+
+    while(1){
+        ADCON0bits.GO=1;            //Inicia conversión ADC
+        adcin = interruptadc(adcin);
+        PORTA = adcin/4;            //Asigna valor adcin a puerto A
+        volt = (adcin*_vin)/_base;  //Conversión a flotante
+    }
+    return;
+}
+
+int interruptadc(int adcin) {                //Interrupción conversión                       
+    if(ADIF==1) {                     //verifica bandera conversión ADC
+        ADIE=0;                       //Deshabilita interrupción ADC
+        adcin = (ADRESH<<8)+ADRESL;   //Asigna valor ADRESH y ADRESL a adcin
+    }
+    ADIE=1;                           //Habilita interrupción ADC
+    ADIF=0;                           //Limpia bandera conversión ADC
+    return adcin;
+}
+
+
+void Init8LEDs(void)
+{
+    LATA = 0x00;
+    TRISA = 0x00;       //Todos como salida digital
+    ANSELA = 0x00;
+    
+    return;
+}
+
+void grabador(void){
+         //   __delay_ms(1);              //Retardo para conversión
+   
+     
+}
+
+void reproductor(void){
+        
+        //Display7Seg(volt);          //Llama a función desplegar en displays
+        //LA1=out;
+         //IO_RA1_SetLow();
+}
+
 
 void __delay_sec(char sec) {
     for(char i=0;i<=(50*sec);i++) {
@@ -55,16 +140,3 @@ void guardar(char* data){
         Error(0);
     }
 }
-
-void main(void)
-{
-    guardar("Prueba por ARRAY.\r\n");
-    __delay_sec(1);
-    while (1)
-    {
-        Error(55);
-    }
-}
-/**
- End of File
-*/

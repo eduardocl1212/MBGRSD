@@ -27,6 +27,9 @@ void Error(int a){
     LATD = v_seg[6];              //asigna valor Display a puerto D
     LATE = 0x02;  
     }
+    else if(a == 999){              //asigna valor Display a puerto D
+    LATE = 0x00;  
+    }
     else {
     LATD = v_seg[0];              //asigna valor Display a puerto D
     LATE = 0x01;                    //Enciende display 
