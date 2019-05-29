@@ -42,7 +42,7 @@ RES_WRPRT 2
 RES_NOTRDY 3
 RES_PARERR 4
 ]
-"112 C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\Main.c
+"92 C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\Main.c
 [e E4918 . `uc
 FR_OK 0
 FR_DISK_ERR 1
@@ -73,8 +73,6 @@ FR_INVALID_PARAMETER 19
 [v ___fleq __fleq `(b  1 e 0 0 ]
 "62 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\float.c
 [v ___ftpack __ftpack `(f  1 e 4 0 ]
-"43 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\fltol.c
-[v ___fltol __fltol `(l  1 e 4 0 ]
 "86 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\ftadd.c
 [v ___ftadd __ftadd `(f  1 e 4 0 ]
 "54 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\ftdiv.c
@@ -185,13 +183,15 @@ FR_INVALID_PARAMETER 19
 [v _f_close f_close `(E93  1 e 1 0 ]
 "3033
 [v _f_lseek f_lseek `(E93  1 e 1 0 ]
-"31 C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\Main.c
+"37 C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\Main.c
 [v _main main `(v  1 e 1 0 ]
-"66
+"62
 [v _interruptadc interruptadc `(i  1 e 2 0 ]
-"78
+"74
 [v _Init8LEDs Init8LEDs `(v  1 e 1 0 ]
-"107
+"83
+[v _grabador grabador `(v  1 e 1 0 ]
+"111
 [v _guardar guardar `(v  1 e 1 0 ]
 "116 C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
@@ -270,34 +270,34 @@ FR_INVALID_PARAMETER 19
 [v _ADCON1 ADCON1 `VEuc  1 e 1 @4033 ]
 "9775
 [v _ADCON0 ADCON0 `VEuc  1 e 1 @4034 ]
-[s S1428 . 1 `uc 1 . 1 0 :1:0 
+[s S1435 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 GO_NOT_DONE 1 0 :1:1 
 ]
 "9815
-[s S1431 . 1 `uc 1 ADON 1 0 :1:0 
+[s S1438 . 1 `uc 1 ADON 1 0 :1:0 
 `uc 1 GO_nDONE 1 0 :1:1 
 `uc 1 CHS 1 0 :5:2 
 ]
-[s S1435 . 1 `uc 1 . 1 0 :1:0 
+[s S1442 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 DONE 1 0 :1:1 
 ]
-[s S1438 . 1 `uc 1 . 1 0 :1:0 
+[s S1445 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 GO 1 0 :1:1 
 ]
-[s S1441 . 1 `uc 1 . 1 0 :1:0 
+[s S1448 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 NOT_DONE 1 0 :1:1 
 ]
-[s S1444 . 1 `uc 1 . 1 0 :1:0 
+[s S1451 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 nDONE 1 0 :1:1 
 ]
-[s S1447 . 1 `uc 1 . 1 0 :1:0 
+[s S1454 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 GODONE 1 0 :1:1 
 ]
-[s S1450 . 1 `uc 1 . 1 0 :1:0 
+[s S1457 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 GO_DONE 1 0 :1:1 
 ]
-[u S1453 . 1 `S1428 1 . 1 0 `S1431 1 . 1 0 `S1435 1 . 1 0 `S1438 1 . 1 0 `S1441 1 . 1 0 `S1444 1 . 1 0 `S1447 1 . 1 0 `S1450 1 . 1 0 ]
-[v _ADCON0bits ADCON0bits `VES1453  1 e 1 @4034 ]
+[u S1460 . 1 `S1435 1 . 1 0 `S1438 1 . 1 0 `S1442 1 . 1 0 `S1445 1 . 1 0 `S1448 1 . 1 0 `S1451 1 . 1 0 `S1454 1 . 1 0 `S1457 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES1460  1 e 1 @4034 ]
 "9870
 [v _ADRESL ADRESL `VEuc  1 e 1 @4035 ]
 "9877
@@ -454,65 +454,128 @@ FR_INVALID_PARAMETER 19
 [v _volt volt `f  1 e 4 0 ]
 "15
 [v _adcin adcin `ui  1 e 2 0 ]
+"17
+[v _bw bw `us  1 e 2 0 ]
+"21
+[v _ND ND `i  1 e 2 0 ]
 [s S161 . 558 `uc 1 fs_type 1 0 `uc 1 drv 1 1 `uc 1 csize 1 2 `uc 1 n_fats 1 3 `uc 1 wflag 1 4 `uc 1 fsi_flag 1 5 `us 1 id 2 6 `us 1 n_rootdir 2 8 `ul 1 last_clust 4 10 `ul 1 free_clust 4 14 `ul 1 n_fatent 4 18 `ul 1 fsize 4 22 `ul 1 volbase 4 26 `ul 1 fatbase 4 30 `ul 1 dirbase 4 34 `ul 1 database 4 38 `ul 1 winsect 4 42 `[512]uc 1 win 512 46 ]
-"18
+"24
 [v _FatFs FatFs `S161  1 e 558 0 ]
-"19
+"25
 [s S221 . 32 `*.39S161 1 fs 2 0 `us 1 id 2 2 `uc 1 flag 1 4 `uc 1 err 1 5 `ul 1 fptr 4 6 `ul 1 fsize 4 10 `ul 1 sclust 4 14 `ul 1 clust 4 18 `ul 1 dsect 4 22 `ul 1 dir_sect 4 26 `*.39uc 1 dir_ptr 2 30 ]
 [v _Fil Fil `S221  1 e 32 0 ]
-"20
+"26
 [v _i i `i  1 e 2 0 ]
-"31
+"37
 [v _main main `(v  1 e 1 0 ]
 {
-"37
-[v main@ND ND `i  1 a 2 120 ]
-"64
+"60
 } 0
-"66
+"111
+[v _guardar guardar `(v  1 e 1 0 ]
+{
+"135
+} 0
+"83
+[v _grabador grabador `(v  1 e 1 0 ]
+{
+"95
+} 0
+"62
 [v _interruptadc interruptadc `(i  1 e 2 0 ]
 {
 [v interruptadc@adcin adcin `i  1 p 2 0 ]
 [v interruptadc@a a `i  1 p 2 2 ]
-"75
-} 0
-"107
-[v _guardar guardar `(v  1 e 1 0 ]
-{
-"109
-[v guardar@bw bw `us  1 a 2 114 ]
-"107
-[v guardar@data data `*.39uc  1 p 2 112 ]
-"125
+"71
 } 0
 "2691 C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
 [v _f_write f_write `(E93  1 e 1 0 ]
 {
 "2699
-[v f_write@clst clst `ul  1 a 4 43 ]
-[v f_write@sect sect `ul  1 a 4 39 ]
-"2700
-[v f_write@wcnt wcnt `us  1 a 2 47 ]
-[v f_write@cc cc `us  1 a 2 37 ]
+[v f_write@clst clst `ul  1 a 4 49 ]
+[v f_write@sect sect `ul  1 a 4 45 ]
 "2701
-[v f_write@wbuff wbuff `*.39Cuc  1 a 2 34 ]
+[v f_write@wbuff wbuff `*.33Cuc  1 a 3 39 ]
+"2700
+[v f_write@wcnt wcnt `us  1 a 2 53 ]
+[v f_write@cc cc `us  1 a 2 43 ]
 "2702
-[v f_write@csect csect `uc  1 a 1 36 ]
+[v f_write@csect csect `uc  1 a 1 42 ]
 "2698
-[v f_write@res res `E93  1 a 1 33 ]
+[v f_write@res res `E93  1 a 1 38 ]
 [s S161 . 558 `uc 1 fs_type 1 0 `uc 1 drv 1 1 `uc 1 csize 1 2 `uc 1 n_fats 1 3 `uc 1 wflag 1 4 `uc 1 fsi_flag 1 5 `us 1 id 2 6 `us 1 n_rootdir 2 8 `ul 1 last_clust 4 10 `ul 1 free_clust 4 14 `ul 1 n_fatent 4 18 `ul 1 fsize 4 22 `ul 1 volbase 4 26 `ul 1 fatbase 4 30 `ul 1 dirbase 4 34 `ul 1 database 4 38 `ul 1 winsect 4 42 `[512]uc 1 win 512 46 ]
 "2692
 [s S221 . 32 `*.39S161 1 fs 2 0 `us 1 id 2 2 `uc 1 flag 1 4 `uc 1 err 1 5 `ul 1 fptr 4 6 `ul 1 fsize 4 10 `ul 1 sclust 4 14 `ul 1 clust 4 18 `ul 1 dsect 4 22 `ul 1 dir_sect 4 26 `*.39uc 1 dir_ptr 2 30 ]
-[v f_write@fp fp `*.39S221  1 p 2 13 ]
+[v f_write@fp fp `*.39S221  1 p 2 17 ]
 "2693
-[v f_write@buff buff `*.39Cv  1 p 2 15 ]
+[v f_write@buff buff `*.33Cv  1 p 3 19 ]
 "2694
-[v f_write@btw btw `us  1 p 2 17 ]
+[v f_write@btw btw `us  1 p 2 22 ]
 "2695
-[v f_write@bw bw `*.39us  1 p 2 19 ]
+[v f_write@bw bw `*.39us  1 p 2 24 ]
 "2804
 } 0
-"2449
+"10 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+{
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+"13
+[v ___xxtofl@arg arg `ul  1 a 4 10 ]
+"12
+[v ___xxtofl@exp exp `uc  1 a 1 9 ]
+"10
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+[v ___xxtofl@val val `l  1 p 4 0 ]
+"15
+[v ___xxtofl@sign sign `uc  1 a 1 8 ]
+"44
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+{
+[s S1898 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+"13
+[s S1903 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
+[u S1906 . 4 `l 1 i 4 0 `d 1 f 4 0 `S1898 1 fAsBytes 4 0 `S1903 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S1906  1 a 4 33 ]
+"12
+[v ___flmul@grs grs `ul  1 a 4 27 ]
+[s S1974 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+"14
+[u S1977 . 2 `s 1 i 2 0 `us 1 n 2 0 `S1974 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S1977  1 a 2 37 ]
+"10
+[v ___flmul@bexp bexp `uc  1 a 1 32 ]
+"11
+[v ___flmul@aexp aexp `uc  1 a 1 31 ]
+"9
+[v ___flmul@sign sign `uc  1 a 1 26 ]
+"8
+[v ___flmul@b b `d  1 p 4 14 ]
+[v ___flmul@a a `d  1 p 4 18 ]
+"205
+} 0
+"11 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+{
+"21
+[v ___fldiv@grs grs `ul  1 a 4 58 ]
+"22
+[v ___fldiv@rem rem `ul  1 a 4 51 ]
+"20
+[v ___fldiv@new_exp new_exp `s  1 a 2 56 ]
+"19
+[v ___fldiv@aexp aexp `uc  1 a 1 63 ]
+"18
+[v ___fldiv@bexp bexp `uc  1 a 1 62 ]
+"16
+[v ___fldiv@sign sign `uc  1 a 1 55 ]
+"11
+[v ___fldiv@b b `d  1 p 4 39 ]
+[v ___fldiv@a a `d  1 p 4 43 ]
+"185
+} 0
+"2449 C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\ff.c
 [v _f_open f_open `(E93  1 e 1 0 ]
 {
 [s S161 . 558 `uc 1 fs_type 1 0 `uc 1 drv 1 1 `uc 1 csize 1 2 `uc 1 n_fats 1 3 `uc 1 wflag 1 4 `uc 1 fsi_flag 1 5 `us 1 id 2 6 `us 1 n_rootdir 2 8 `ul 1 last_clust 4 10 `ul 1 free_clust 4 14 `ul 1 n_fatent 4 18 `ul 1 fsize 4 22 `ul 1 volbase 4 26 `ul 1 fatbase 4 30 `ul 1 dirbase 4 34 `ul 1 database 4 38 `ul 1 winsect 4 42 `[512]uc 1 win 512 46 ]
@@ -532,7 +595,7 @@ FR_INVALID_PARAMETER 19
 [s S221 . 32 `*.39S161 1 fs 2 0 `us 1 id 2 2 `uc 1 flag 1 4 `uc 1 err 1 5 `ul 1 fptr 4 6 `ul 1 fsize 4 10 `ul 1 sclust 4 14 `ul 1 clust 4 18 `ul 1 dsect 4 22 `ul 1 dir_sect 4 26 `*.39uc 1 dir_ptr 2 30 ]
 [v f_open@fp fp `*.39S221  1 p 2 58 ]
 "2451
-[v f_open@path path `*.25Cuc  1 p 2 60 ]
+[v f_open@path path `*.32Cuc  1 p 2 60 ]
 "2452
 [v f_open@mode mode `uc  1 p 1 62 ]
 "2581
@@ -541,31 +604,31 @@ FR_INVALID_PARAMETER 19
 [v _remove_chain remove_chain `(E93  1 s 1 remove_chain ]
 {
 "943
-[v remove_chain@nxt nxt `ul  1 a 4 1 ]
+[v remove_chain@nxt nxt `ul  1 a 4 5 ]
 "942
-[v remove_chain@res res `E93  1 a 1 0 ]
+[v remove_chain@res res `E93  1 a 1 4 ]
 [s S161 . 558 `uc 1 fs_type 1 0 `uc 1 drv 1 1 `uc 1 csize 1 2 `uc 1 n_fats 1 3 `uc 1 wflag 1 4 `uc 1 fsi_flag 1 5 `us 1 id 2 6 `us 1 n_rootdir 2 8 `ul 1 last_clust 4 10 `ul 1 free_clust 4 14 `ul 1 n_fatent 4 18 `ul 1 fsize 4 22 `ul 1 volbase 4 26 `ul 1 fatbase 4 30 `ul 1 dirbase 4 34 `ul 1 database 4 38 `ul 1 winsect 4 42 `[512]uc 1 win 512 46 ]
 "938
-[v remove_chain@fs fs `*.39S161  1 p 2 85 ]
+[v remove_chain@fs fs `*.39S161  1 p 2 86 ]
 "939
-[v remove_chain@clst clst `ul  1 p 4 87 ]
+[v remove_chain@clst clst `ul  1 p 4 88 ]
 "979
 } 0
 "2052
 [v _follow_path follow_path `(E93  1 s 1 follow_path ]
 {
 "2058
-[v follow_path@dir dir `*.39uc  1 a 2 42 ]
+[v follow_path@dir dir `*.39uc  1 a 2 44 ]
 "2057
-[v follow_path@res res `E93  1 a 1 45 ]
+[v follow_path@res res `E93  1 a 1 47 ]
 "2058
-[v follow_path@ns ns `uc  1 a 1 44 ]
+[v follow_path@ns ns `uc  1 a 1 46 ]
 [s S161 . 558 `uc 1 fs_type 1 0 `uc 1 drv 1 1 `uc 1 csize 1 2 `uc 1 n_fats 1 3 `uc 1 wflag 1 4 `uc 1 fsi_flag 1 5 `us 1 id 2 6 `us 1 n_rootdir 2 8 `ul 1 last_clust 4 10 `ul 1 free_clust 4 14 `ul 1 n_fatent 4 18 `ul 1 fsize 4 22 `ul 1 volbase 4 26 `ul 1 fatbase 4 30 `ul 1 dirbase 4 34 `ul 1 database 4 38 `ul 1 winsect 4 42 `[512]uc 1 win 512 46 ]
 "2053
 [s S210 . 22 `*.39S161 1 fs 2 0 `us 1 id 2 2 `us 1 index 2 4 `ul 1 sclust 4 6 `ul 1 clust 4 10 `ul 1 sect 4 14 `*.39uc 1 dir 2 18 `*.39uc 1 fn 2 20 ]
-[v follow_path@dp dp `*.39S210  1 p 2 38 ]
+[v follow_path@dp dp `*.39S210  1 p 2 40 ]
 "2054
-[v follow_path@path path `*.25Cuc  1 p 2 40 ]
+[v follow_path@path path `*.32Cuc  1 p 2 42 ]
 "2104
 } 0
 "1235
@@ -584,15 +647,15 @@ FR_INVALID_PARAMETER 19
 [v _dir_find dir_find `(E93  1 s 1 dir_find ]
 {
 "1463
-[v dir_find@dir dir `*.39uc  1 a 2 35 ]
+[v dir_find@dir dir `*.39uc  1 a 2 37 ]
 "1462
-[v dir_find@res res `E93  1 a 1 37 ]
+[v dir_find@res res `E93  1 a 1 39 ]
 "1463
-[v dir_find@c c `uc  1 a 1 34 ]
+[v dir_find@c c `uc  1 a 1 36 ]
 [s S161 . 558 `uc 1 fs_type 1 0 `uc 1 drv 1 1 `uc 1 csize 1 2 `uc 1 n_fats 1 3 `uc 1 wflag 1 4 `uc 1 fsi_flag 1 5 `us 1 id 2 6 `us 1 n_rootdir 2 8 `ul 1 last_clust 4 10 `ul 1 free_clust 4 14 `ul 1 n_fatent 4 18 `ul 1 fsize 4 22 `ul 1 volbase 4 26 `ul 1 fatbase 4 30 `ul 1 dirbase 4 34 `ul 1 database 4 38 `ul 1 winsect 4 42 `[512]uc 1 win 512 46 ]
 "1459
 [s S210 . 22 `*.39S161 1 fs 2 0 `us 1 id 2 2 `us 1 index 2 4 `ul 1 sclust 4 6 `ul 1 clust 4 10 `ul 1 sect 4 14 `*.39uc 1 dir 2 18 `*.39uc 1 fn 2 20 ]
-[v dir_find@dp dp `*.39S210  1 p 2 32 ]
+[v dir_find@dp dp `*.39S210  1 p 2 92 ]
 "1509
 } 0
 "533
@@ -617,7 +680,7 @@ FR_INVALID_PARAMETER 19
 "1969
 [v create_name@sfn sfn `*.39uc  1 a 2 26 ]
 "1971
-[v create_name@p p `*.25Cuc  1 a 2 23 ]
+[v create_name@p p `*.32Cuc  1 a 2 23 ]
 "1970
 [v create_name@ni ni `us  1 a 2 21 ]
 [v create_name@si si `us  1 a 2 18 ]
@@ -630,13 +693,13 @@ FR_INVALID_PARAMETER 19
 [s S210 . 22 `*.39S161 1 fs 2 0 `us 1 id 2 2 `us 1 index 2 4 `ul 1 sclust 4 6 `ul 1 clust 4 10 `ul 1 sect 4 14 `*.39uc 1 dir 2 18 `*.39uc 1 fn 2 20 ]
 [v create_name@dp dp `*.39S210  1 p 2 8 ]
 "1845
-[v create_name@path path `*.39*.25Cuc  1 p 2 10 ]
+[v create_name@path path `*.39*.32Cuc  1 p 2 10 ]
 "2042
 } 0
 "543
 [v _chk_chr chk_chr `(i  1 s 2 chk_chr ]
 {
-[v chk_chr@str str `*.25Cuc  1 p 2 0 ]
+[v chk_chr@str str `*.32Cuc  1 p 2 0 ]
 [v chk_chr@chr chr `i  1 p 2 2 ]
 "546
 } 0
@@ -644,39 +707,39 @@ FR_INVALID_PARAMETER 19
 [v _dir_register dir_register `(E93  1 s 1 dir_register ]
 {
 "1582
-[v dir_register@res res `E93  1 a 1 44 ]
+[v dir_register@res res `E93  1 a 1 47 ]
 [s S161 . 558 `uc 1 fs_type 1 0 `uc 1 drv 1 1 `uc 1 csize 1 2 `uc 1 n_fats 1 3 `uc 1 wflag 1 4 `uc 1 fsi_flag 1 5 `us 1 id 2 6 `us 1 n_rootdir 2 8 `ul 1 last_clust 4 10 `ul 1 free_clust 4 14 `ul 1 n_fatent 4 18 `ul 1 fsize 4 22 `ul 1 volbase 4 26 `ul 1 fatbase 4 30 `ul 1 dirbase 4 34 `ul 1 database 4 38 `ul 1 winsect 4 42 `[512]uc 1 win 512 46 ]
 "1579
 [s S210 . 22 `*.39S161 1 fs 2 0 `us 1 id 2 2 `us 1 index 2 4 `ul 1 sclust 4 6 `ul 1 clust 4 10 `ul 1 sect 4 14 `*.39uc 1 dir 2 18 `*.39uc 1 fn 2 20 ]
-[v dir_register@dp dp `*.39S210  1 p 2 42 ]
+[v dir_register@dp dp `*.39S210  1 p 2 43 ]
 "1645
 } 0
 "507
 [v _mem_cpy mem_cpy `(v  1 s 1 mem_cpy ]
 {
 "509
-[v mem_cpy@s s `*.39Cuc  1 a 2 8 ]
+[v mem_cpy@s s `*.36Cuc  1 a 3 9 ]
 "508
-[v mem_cpy@d d `*.39uc  1 a 2 6 ]
+[v mem_cpy@d d `*.39uc  1 a 2 12 ]
 "507
 [v mem_cpy@dst dst `*.39v  1 p 2 0 ]
-[v mem_cpy@src src `*.39Cv  1 p 2 2 ]
-[v mem_cpy@cnt cnt `us  1 p 2 4 ]
+[v mem_cpy@src src `*.36Cv  1 p 3 2 ]
+[v mem_cpy@cnt cnt `us  1 p 2 5 ]
 "520
 } 0
 "1199
 [v _dir_alloc dir_alloc `(E93  1 s 1 dir_alloc ]
 {
 "1205
-[v dir_alloc@n n `us  1 a 2 39 ]
+[v dir_alloc@n n `us  1 a 2 40 ]
 "1204
-[v dir_alloc@res res `E93  1 a 1 41 ]
+[v dir_alloc@res res `E93  1 a 1 42 ]
 [s S161 . 558 `uc 1 fs_type 1 0 `uc 1 drv 1 1 `uc 1 csize 1 2 `uc 1 n_fats 1 3 `uc 1 wflag 1 4 `uc 1 fsi_flag 1 5 `us 1 id 2 6 `us 1 n_rootdir 2 8 `ul 1 last_clust 4 10 `ul 1 free_clust 4 14 `ul 1 n_fatent 4 18 `ul 1 fsize 4 22 `ul 1 volbase 4 26 `ul 1 fatbase 4 30 `ul 1 dirbase 4 34 `ul 1 database 4 38 `ul 1 winsect 4 42 `[512]uc 1 win 512 46 ]
 "1200
 [s S210 . 22 `*.39S161 1 fs 2 0 `us 1 id 2 2 `us 1 index 2 4 `ul 1 sclust 4 6 `ul 1 clust 4 10 `ul 1 sect 4 14 `*.39uc 1 dir 2 18 `*.39uc 1 fn 2 20 ]
-[v dir_alloc@dp dp `*.39S210  1 p 2 32 ]
+[v dir_alloc@dp dp `*.39S210  1 p 2 36 ]
 "1201
-[v dir_alloc@nent nent `us  1 p 2 34 ]
+[v dir_alloc@nent nent `us  1 p 2 38 ]
 "1224
 } 0
 "1080
@@ -690,46 +753,46 @@ FR_INVALID_PARAMETER 19
 [s S161 . 558 `uc 1 fs_type 1 0 `uc 1 drv 1 1 `uc 1 csize 1 2 `uc 1 n_fats 1 3 `uc 1 wflag 1 4 `uc 1 fsi_flag 1 5 `us 1 id 2 6 `us 1 n_rootdir 2 8 `ul 1 last_clust 4 10 `ul 1 free_clust 4 14 `ul 1 n_fatent 4 18 `ul 1 fsize 4 22 `ul 1 volbase 4 26 `ul 1 fatbase 4 30 `ul 1 dirbase 4 34 `ul 1 database 4 38 `ul 1 winsect 4 42 `[512]uc 1 win 512 46 ]
 "1081
 [s S210 . 22 `*.39S161 1 fs 2 0 `us 1 id 2 2 `us 1 index 2 4 `ul 1 sclust 4 6 `ul 1 clust 4 10 `ul 1 sect 4 14 `*.39uc 1 dir 2 18 `*.39uc 1 fn 2 20 ]
-[v dir_sdi@dp dp `*.39S210  1 p 2 85 ]
+[v dir_sdi@dp dp `*.39S210  1 p 2 86 ]
 "1082
-[v dir_sdi@idx idx `us  1 p 2 87 ]
+[v dir_sdi@idx idx `us  1 p 2 88 ]
 "1118
 } 0
 "1128
 [v _dir_next dir_next `(E93  1 s 1 dir_next ]
 {
 "1133
-[v dir_next@clst clst `ul  1 a 4 28 ]
+[v dir_next@clst clst `ul  1 a 4 32 ]
 "1134
-[v dir_next@i i `us  1 a 2 26 ]
+[v dir_next@i i `us  1 a 2 30 ]
 "1136
-[v dir_next@c c `us  1 a 2 24 ]
+[v dir_next@c c `us  1 a 2 28 ]
 [s S161 . 558 `uc 1 fs_type 1 0 `uc 1 drv 1 1 `uc 1 csize 1 2 `uc 1 n_fats 1 3 `uc 1 wflag 1 4 `uc 1 fsi_flag 1 5 `us 1 id 2 6 `us 1 n_rootdir 2 8 `ul 1 last_clust 4 10 `ul 1 free_clust 4 14 `ul 1 n_fatent 4 18 `ul 1 fsize 4 22 `ul 1 volbase 4 26 `ul 1 fatbase 4 30 `ul 1 dirbase 4 34 `ul 1 database 4 38 `ul 1 winsect 4 42 `[512]uc 1 win 512 46 ]
 "1129
 [s S210 . 22 `*.39S161 1 fs 2 0 `us 1 id 2 2 `us 1 index 2 4 `ul 1 sclust 4 6 `ul 1 clust 4 10 `ul 1 sect 4 14 `*.39uc 1 dir 2 18 `*.39uc 1 fn 2 20 ]
-[v dir_next@dp dp `*.39S210  1 p 2 13 ]
+[v dir_next@dp dp `*.39S210  1 p 2 17 ]
 "1130
-[v dir_next@stretch stretch `i  1 p 2 15 ]
+[v dir_next@stretch stretch `i  1 p 2 19 ]
 "1188
 } 0
 "2402
 [v _f_mount f_mount `(E93  1 e 1 0 ]
 {
 "2409
-[v f_mount@vol vol `i  1 a 2 91 ]
+[v f_mount@vol vol `i  1 a 2 92 ]
 "2411
-[v f_mount@rp rp `*.25Cuc  1 a 2 89 ]
+[v f_mount@rp rp `*.32Cuc  1 a 2 90 ]
 [s S161 . 558 `uc 1 fs_type 1 0 `uc 1 drv 1 1 `uc 1 csize 1 2 `uc 1 n_fats 1 3 `uc 1 wflag 1 4 `uc 1 fsi_flag 1 5 `us 1 id 2 6 `us 1 n_rootdir 2 8 `ul 1 last_clust 4 10 `ul 1 free_clust 4 14 `ul 1 n_fatent 4 18 `ul 1 fsize 4 22 `ul 1 volbase 4 26 `ul 1 fatbase 4 30 `ul 1 dirbase 4 34 `ul 1 database 4 38 `ul 1 winsect 4 42 `[512]uc 1 win 512 46 ]
 "2408
-[v f_mount@cfs cfs `*.39S161  1 a 2 87 ]
+[v f_mount@cfs cfs `*.39S161  1 a 2 88 ]
 "2410
-[v f_mount@res res `E93  1 a 1 86 ]
+[v f_mount@res res `E93  1 a 1 87 ]
 "2403
-[v f_mount@fs fs `*.39S161  1 p 2 81 ]
+[v f_mount@fs fs `*.39S161  1 p 2 82 ]
 "2404
-[v f_mount@path path `*.25Cuc  1 p 2 83 ]
+[v f_mount@path path `*.32Cuc  1 p 2 84 ]
 "2405
-[v f_mount@opt opt `uc  1 p 1 85 ]
+[v f_mount@opt opt `uc  1 p 1 86 ]
 "2440
 } 0
 "2203
@@ -758,26 +821,26 @@ FR_INVALID_PARAMETER 19
 "2211
 [v find_volume@stat stat `uc  1 a 1 44 ]
 "2204
-[v find_volume@rfs rfs `*.39*.39S161  1 p 2 68 ]
+[v find_volume@rfs rfs `*.39*.39S161  1 p 2 69 ]
 "2205
-[v find_volume@path path `*.39*.25Cuc  1 p 2 70 ]
+[v find_volume@path path `*.39*.32Cuc  1 p 2 71 ]
 "2206
-[v find_volume@wmode wmode `uc  1 p 1 72 ]
+[v find_volume@wmode wmode `uc  1 p 1 73 ]
 "2362
 } 0
 "2114
 [v _get_ldnumber get_ldnumber `(i  1 s 2 get_ldnumber ]
 {
 "2118
-[v get_ldnumber@tt tt `*.25Cuc  1 a 2 12 ]
+[v get_ldnumber@tt tt `*.32Cuc  1 a 2 12 ]
 "2119
 [v get_ldnumber@i i `us  1 a 2 10 ]
 "2120
 [v get_ldnumber@vol vol `i  1 a 2 8 ]
 "2118
-[v get_ldnumber@tp tp `*.25Cuc  1 a 2 6 ]
+[v get_ldnumber@tp tp `*.32Cuc  1 a 2 6 ]
 "2115
-[v get_ldnumber@path path `*.39*.25Cuc  1 p 2 0 ]
+[v get_ldnumber@path path `*.39*.32Cuc  1 p 2 0 ]
 "2165
 } 0
 "296 C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
@@ -809,79 +872,79 @@ FR_INVALID_PARAMETER 19
 {
 [s S161 . 558 `uc 1 fs_type 1 0 `uc 1 drv 1 1 `uc 1 csize 1 2 `uc 1 n_fats 1 3 `uc 1 wflag 1 4 `uc 1 fsi_flag 1 5 `us 1 id 2 6 `us 1 n_rootdir 2 8 `ul 1 last_clust 4 10 `ul 1 free_clust 4 14 `ul 1 n_fatent 4 18 `ul 1 fsize 4 22 `ul 1 volbase 4 26 `ul 1 fatbase 4 30 `ul 1 dirbase 4 34 `ul 1 database 4 38 `ul 1 winsect 4 42 `[512]uc 1 win 512 46 ]
 "2176
-[v check_fs@fs fs `*.39S161  1 p 2 58 ]
+[v check_fs@fs fs `*.39S161  1 p 2 59 ]
 "2177
-[v check_fs@sect sect `ul  1 p 4 60 ]
+[v check_fs@sect sect `ul  1 p 4 61 ]
 "2193
 } 0
 "3033
 [v _f_lseek f_lseek `(E93  1 e 1 0 ]
 {
 "3039
-[v f_lseek@clst clst `ul  1 a 4 48 ]
-[v f_lseek@bcs bcs `ul  1 a 4 44 ]
-[v f_lseek@nsect nsect `ul  1 a 4 40 ]
-[v f_lseek@ifptr ifptr `ul  1 a 4 35 ]
+[v f_lseek@clst clst `ul  1 a 4 52 ]
+[v f_lseek@bcs bcs `ul  1 a 4 48 ]
+[v f_lseek@nsect nsect `ul  1 a 4 44 ]
+[v f_lseek@ifptr ifptr `ul  1 a 4 39 ]
 "3038
-[v f_lseek@res res `E93  1 a 1 39 ]
+[v f_lseek@res res `E93  1 a 1 43 ]
 [s S161 . 558 `uc 1 fs_type 1 0 `uc 1 drv 1 1 `uc 1 csize 1 2 `uc 1 n_fats 1 3 `uc 1 wflag 1 4 `uc 1 fsi_flag 1 5 `us 1 id 2 6 `us 1 n_rootdir 2 8 `ul 1 last_clust 4 10 `ul 1 free_clust 4 14 `ul 1 n_fatent 4 18 `ul 1 fsize 4 22 `ul 1 volbase 4 26 `ul 1 fatbase 4 30 `ul 1 dirbase 4 34 `ul 1 database 4 38 `ul 1 winsect 4 42 `[512]uc 1 win 512 46 ]
 "3034
 [s S221 . 32 `*.39S161 1 fs 2 0 `us 1 id 2 2 `uc 1 flag 1 4 `uc 1 err 1 5 `ul 1 fptr 4 6 `ul 1 fsize 4 10 `ul 1 sclust 4 14 `ul 1 clust 4 18 `ul 1 dsect 4 22 `ul 1 dir_sect 4 26 `*.39uc 1 dir_ptr 2 30 ]
-[v f_lseek@fp fp `*.39S221  1 p 2 13 ]
+[v f_lseek@fp fp `*.39S221  1 p 2 17 ]
 "3035
-[v f_lseek@ofs ofs `ul  1 p 4 15 ]
+[v f_lseek@ofs ofs `ul  1 p 4 19 ]
 "3182
 } 0
 "990
 [v _create_chain create_chain `(ul  1 s 4 create_chain ]
 {
 "995
-[v create_chain@cs cs `ul  1 a 4 9 ]
-[v create_chain@ncl ncl `ul  1 a 4 5 ]
-[v create_chain@scl scl `ul  1 a 4 1 ]
+[v create_chain@cs cs `ul  1 a 4 13 ]
+[v create_chain@ncl ncl `ul  1 a 4 9 ]
+[v create_chain@scl scl `ul  1 a 4 5 ]
 "996
-[v create_chain@res res `E93  1 a 1 0 ]
+[v create_chain@res res `E93  1 a 1 4 ]
 [s S161 . 558 `uc 1 fs_type 1 0 `uc 1 drv 1 1 `uc 1 csize 1 2 `uc 1 n_fats 1 3 `uc 1 wflag 1 4 `uc 1 fsi_flag 1 5 `us 1 id 2 6 `us 1 n_rootdir 2 8 `ul 1 last_clust 4 10 `ul 1 free_clust 4 14 `ul 1 n_fatent 4 18 `ul 1 fsize 4 22 `ul 1 volbase 4 26 `ul 1 fatbase 4 30 `ul 1 dirbase 4 34 `ul 1 database 4 38 `ul 1 winsect 4 42 `[512]uc 1 win 512 46 ]
 "991
-[v create_chain@fs fs `*.39S161  1 p 2 85 ]
+[v create_chain@fs fs `*.39S161  1 p 2 86 ]
 "992
-[v create_chain@clst clst `ul  1 p 4 87 ]
+[v create_chain@clst clst `ul  1 p 4 88 ]
 "1040
 } 0
 "873
 [v _put_fat put_fat `(E93  1 e 1 0 ]
 {
 "880
-[v put_fat@p p `*.39uc  1 a 2 83 ]
+[v put_fat@p p `*.39uc  1 a 2 84 ]
 "879
-[v put_fat@bc bc `us  1 a 2 80 ]
+[v put_fat@bc bc `us  1 a 2 81 ]
 "881
-[v put_fat@res res `E93  1 a 1 82 ]
+[v put_fat@res res `E93  1 a 1 83 ]
 [s S161 . 558 `uc 1 fs_type 1 0 `uc 1 drv 1 1 `uc 1 csize 1 2 `uc 1 n_fats 1 3 `uc 1 wflag 1 4 `uc 1 fsi_flag 1 5 `us 1 id 2 6 `us 1 n_rootdir 2 8 `ul 1 last_clust 4 10 `ul 1 free_clust 4 14 `ul 1 n_fatent 4 18 `ul 1 fsize 4 22 `ul 1 volbase 4 26 `ul 1 fatbase 4 30 `ul 1 dirbase 4 34 `ul 1 database 4 38 `ul 1 winsect 4 42 `[512]uc 1 win 512 46 ]
 "874
-[v put_fat@fs fs `*.39S161  1 p 2 58 ]
+[v put_fat@fs fs `*.39S161  1 p 2 59 ]
 "875
-[v put_fat@clst clst `ul  1 p 4 60 ]
+[v put_fat@clst clst `ul  1 p 4 61 ]
 "876
-[v put_fat@val val `ul  1 p 4 64 ]
+[v put_fat@val val `ul  1 p 4 65 ]
 "926
 } 0
 "818
 [v _get_fat get_fat `(ul  1 e 4 0 ]
 {
 "825
-[v get_fat@val val `ul  1 a 4 75 ]
+[v get_fat@val val `ul  1 a 4 76 ]
 "823
-[v get_fat@bc bc `us  1 a 2 83 ]
+[v get_fat@bc bc `us  1 a 2 84 ]
 "824
-[v get_fat@p p `*.39uc  1 a 2 81 ]
+[v get_fat@p p `*.39uc  1 a 2 82 ]
 "823
-[v get_fat@wc wc `us  1 a 2 79 ]
+[v get_fat@wc wc `us  1 a 2 80 ]
 [s S161 . 558 `uc 1 fs_type 1 0 `uc 1 drv 1 1 `uc 1 csize 1 2 `uc 1 n_fats 1 3 `uc 1 wflag 1 4 `uc 1 fsi_flag 1 5 `us 1 id 2 6 `us 1 n_rootdir 2 8 `ul 1 last_clust 4 10 `ul 1 free_clust 4 14 `ul 1 n_fatent 4 18 `ul 1 fsize 4 22 `ul 1 volbase 4 26 `ul 1 fatbase 4 30 `ul 1 dirbase 4 34 `ul 1 database 4 38 `ul 1 winsect 4 42 `[512]uc 1 win 512 46 ]
 "819
-[v get_fat@fs fs `*.39S161  1 p 2 58 ]
+[v get_fat@fs fs `*.39S161  1 p 2 59 ]
 "820
-[v get_fat@clst clst `ul  1 p 4 60 ]
+[v get_fat@clst clst `ul  1 p 4 61 ]
 "862
 } 0
 "800
@@ -1029,26 +1092,26 @@ FR_INVALID_PARAMETER 19
 [v _move_window move_window `(E93  1 s 1 move_window ]
 {
 "734
-[v move_window@res res `E93  1 a 1 57 ]
+[v move_window@res res `E93  1 a 1 58 ]
 [s S161 . 558 `uc 1 fs_type 1 0 `uc 1 drv 1 1 `uc 1 csize 1 2 `uc 1 n_fats 1 3 `uc 1 wflag 1 4 `uc 1 fsi_flag 1 5 `us 1 id 2 6 `us 1 n_rootdir 2 8 `ul 1 last_clust 4 10 `ul 1 free_clust 4 14 `ul 1 n_fatent 4 18 `ul 1 fsize 4 22 `ul 1 volbase 4 26 `ul 1 fatbase 4 30 `ul 1 dirbase 4 34 `ul 1 database 4 38 `ul 1 winsect 4 42 `[512]uc 1 win 512 46 ]
 "730
-[v move_window@fs fs `*.39S161  1 p 2 47 ]
+[v move_window@fs fs `*.39S161  1 p 2 48 ]
 "731
-[v move_window@sector sector `ul  1 p 4 49 ]
+[v move_window@sector sector `ul  1 p 4 50 ]
 "750
 } 0
 "700
 [v _sync_window sync_window `(E93  1 s 1 sync_window ]
 {
 "704
-[v sync_window@wsect wsect `ul  1 a 4 43 ]
+[v sync_window@wsect wsect `ul  1 a 4 44 ]
 "705
-[v sync_window@nf nf `us  1 a 2 41 ]
+[v sync_window@nf nf `us  1 a 2 42 ]
 "706
-[v sync_window@res res `E93  1 a 1 40 ]
+[v sync_window@res res `E93  1 a 1 41 ]
 [s S161 . 558 `uc 1 fs_type 1 0 `uc 1 drv 1 1 `uc 1 csize 1 2 `uc 1 n_fats 1 3 `uc 1 wflag 1 4 `uc 1 fsi_flag 1 5 `us 1 id 2 6 `us 1 n_rootdir 2 8 `ul 1 last_clust 4 10 `ul 1 free_clust 4 14 `ul 1 n_fatent 4 18 `ul 1 fsize 4 22 `ul 1 volbase 4 26 `ul 1 fatbase 4 30 `ul 1 dirbase 4 34 `ul 1 database 4 38 `ul 1 winsect 4 42 `[512]uc 1 win 512 46 ]
 "701
-[v sync_window@fs fs `*.39S161  1 p 2 26 ]
+[v sync_window@fs fs `*.39S161  1 p 2 27 ]
 "724
 } 0
 "405 C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\diskio.c
@@ -1058,26 +1121,26 @@ FR_INVALID_PARAMETER 19
 [v disk_write@pdrv pdrv `uc  1 a 1 wreg ]
 [v disk_write@pdrv pdrv `uc  1 a 1 wreg ]
 "407
-[v disk_write@buff buff `*.39Cuc  1 p 2 16 ]
+[v disk_write@buff buff `*.36Cuc  1 p 3 16 ]
 "408
-[v disk_write@sector sector `ul  1 p 4 18 ]
+[v disk_write@sector sector `ul  1 p 4 19 ]
 "409
-[v disk_write@count count `us  1 p 2 22 ]
+[v disk_write@count count `us  1 p 2 23 ]
 "412
-[v disk_write@pdrv pdrv `uc  1 a 1 25 ]
+[v disk_write@pdrv pdrv `uc  1 a 1 26 ]
 "437
 } 0
 "156
 [v _xmit_datablock xmit_datablock `(uc  1 s 1 xmit_datablock ]
 {
 "162
-[v xmit_datablock@i i `us  1 a 2 6 ]
+[v xmit_datablock@i i `us  1 a 2 7 ]
 "161
-[v xmit_datablock@resp resp `uc  1 a 1 8 ]
+[v xmit_datablock@resp resp `uc  1 a 1 9 ]
 "157
-[v xmit_datablock@buff buff `*.39Cuc  1 p 2 3 ]
+[v xmit_datablock@buff buff `*.36Cuc  1 p 3 3 ]
 "158
-[v xmit_datablock@token token `uc  1 p 1 5 ]
+[v xmit_datablock@token token `uc  1 p 1 6 ]
 "181
 } 0
 "370
@@ -1200,78 +1263,8 @@ FR_INVALID_PARAMETER 19
 [v Error@F5051 F5051 `[10]uc  1 s 10 F5051 ]
 "50
 } 0
-"10 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\xxtofl.c
-[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
-{
-[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
-"13
-[v ___xxtofl@arg arg `ul  1 a 4 10 ]
-"12
-[v ___xxtofl@exp exp `uc  1 a 1 9 ]
-"10
-[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
-[v ___xxtofl@val val `l  1 p 4 0 ]
-"15
-[v ___xxtofl@sign sign `uc  1 a 1 8 ]
-"44
-} 0
-"43 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\fltol.c
-[v ___fltol __fltol `(l  1 e 4 0 ]
-{
-"45
-[v ___fltol@exp1 exp1 `uc  1 a 1 9 ]
-[v ___fltol@sign1 sign1 `uc  1 a 1 8 ]
-"43
-[v ___fltol@f1 f1 `d  1 p 4 0 ]
-"70
-} 0
-"8 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\sprcmul.c
-[v ___flmul __flmul `(d  1 e 4 0 ]
-{
-[s S1903 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
-"13
-[s S1908 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
-[u S1911 . 4 `l 1 i 4 0 `d 1 f 4 0 `S1903 1 fAsBytes 4 0 `S1908 1 fAsWords 4 0 ]
-[v ___flmul@prod prod `S1911  1 a 4 33 ]
-"12
-[v ___flmul@grs grs `ul  1 a 4 27 ]
-[s S1979 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
-"14
-[u S1982 . 2 `s 1 i 2 0 `us 1 n 2 0 `S1979 1 nAsBytes 2 0 ]
-[v ___flmul@temp temp `S1982  1 a 2 37 ]
-"10
-[v ___flmul@bexp bexp `uc  1 a 1 32 ]
-"11
-[v ___flmul@aexp aexp `uc  1 a 1 31 ]
-"9
-[v ___flmul@sign sign `uc  1 a 1 26 ]
-"8
-[v ___flmul@b b `d  1 p 4 14 ]
-[v ___flmul@a a `d  1 p 4 18 ]
-"205
-} 0
-"11 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\sprcdiv.c
-[v ___fldiv __fldiv `(d  1 e 4 0 ]
-{
-"21
-[v ___fldiv@grs grs `ul  1 a 4 58 ]
-"22
-[v ___fldiv@rem rem `ul  1 a 4 51 ]
-"20
-[v ___fldiv@new_exp new_exp `s  1 a 2 56 ]
-"19
-[v ___fldiv@aexp aexp `uc  1 a 1 63 ]
-"18
-[v ___fldiv@bexp bexp `uc  1 a 1 62 ]
-"16
-[v ___fldiv@sign sign `uc  1 a 1 55 ]
-"11
-[v ___fldiv@b b `d  1 p 4 39 ]
-[v ___fldiv@a a `d  1 p 4 43 ]
-"185
-} 0
-"78 C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\Main.c
+"74 C:\Users\eduar\Documents\GitHub\MBGRSD\MBGRSD.X\Main.c
 [v _Init8LEDs Init8LEDs `(v  1 e 1 0 ]
 {
-"85
+"81
 } 0

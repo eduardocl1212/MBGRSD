@@ -8497,6 +8497,12 @@ char *tempnam(const char *, const char *);
 float volt;
 unsigned int adcin;
 
+    UINT bw;
+
+    int a = 0;
+    int out;
+    int ND = 12;
+
 char data[2];
 FATFS FatFs;
 FIL Fil;
@@ -8507,17 +8513,13 @@ void Init8LEDs(void);
 int interruptadc(int,int);
 void grabador(void);
 void reproductor(void);
-void guardar(char* data);
+void guardar(void);
 void __delay_sec(char sec);
 
 
 void main(void)
 {
-    volt = 0.0;
-    adcin = 0;
-    int a = 0;
-    int out;
-    int ND;
+
 
     Init8LEDs();
 
@@ -8535,13 +8537,7 @@ void main(void)
     ADIE = 1;
 
     while(1){
-        i++;
-        ADCON0bits.GO=1;
-        adcin = interruptadc(adcin, i);
-        PORTA = adcin/4;
-        volt = (adcin*5.0)/1023.0;
-        ND = (char) volt;
-        guardar(ND);
+        guardar();
     }
     return;
 }
@@ -8569,8 +8565,16 @@ void Init8LEDs(void)
 
 void grabador(void){
 
-
-
+    do{
+        i++;
+        ADCON0bits.GO=1;
+        adcin = interruptadc(adcin, i);
+        PORTA = adcin/4;
+        volt = (adcin*5.0)/1023.0;
+        ND = (char) adcin;
+        f_write(&Fil, ND , 2 , &bw);
+        }while(i!=1000);
+       return;
 }
 
 void reproductor(void){
@@ -8587,21 +8591,27 @@ void __delay_sec(char sec) {
     }
 }
 
-void guardar(char* data){
-
-    UINT bw;
-    Error(2);
+void guardar(void){
     SYSTEM_Initialize();
     if (f_mount(&FatFs, "", 1) != FR_OK) {
-           if (f_open(&Fil, "Beee.txt", 0x10 | 0x01 | 0x02) == FR_OK) {
 
-                if ((Fil.fsize != 0) && (f_lseek(&Fil, Fil.fsize) != FR_OK)) goto endSD;
-                   f_write(&Fil, data , 14 , &bw);
-
-                   endSD: f_close(&Fil);
-
+        while(f_mount(&FatFs, "", 1) != FR_OK) {
+            ;
         }
     }
+
+    Error(1);
+
+
+    if (f_open(&Fil, "BeeDev.txt", 0x10 | 0x01 | 0x02) == FR_OK) {
+
+
+   if ((Fil.fsize != 0) && (f_lseek(&Fil, Fil.fsize) != FR_OK)) goto endSD;
+
+                grabador();
+                endSD: f_close(&Fil);
+                Error(55);
+ }
     else {
         Error(0);
     }

@@ -5,7 +5,7 @@ Linker command line:
 -W-3 --edf=C:\Program Files (x86)\Microchip\xc8\v2.05\pic\dat\en_msgs.txt \
   -cs -h+dist/default/production\MBGRSD.X.production.sym \
   --cmf=dist/default/production\MBGRSD.X.production.cmf -z -Q18F45K50 \
-  -oC:\Users\eduar\AppData\Local\Temp\s8c4.2 --defsym=__MPLAB_BUILD=1 \
+  -oC:\Users\eduar\AppData\Local\Temp\s6bk.2 --defsym=__MPLAB_BUILD=1 \
   -Mdist/default/production/MBGRSD.X.production.map -E1 -ver=XC8 \
   --acfsm=1493 -ASTACK=034Eh-07FFh -pstack=STACK -ACODE=00h-07FFFh \
   -ACONST=00h-07FFFh -ASMALLCONST=0800h-08FFhx120 \
@@ -23,7 +23,7 @@ Linker command line:
   -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
   -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
   -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE -prparam=COMRAM \
-  C:\Users\eduar\AppData\Local\Temp\s8c4.o \
+  C:\Users\eduar\AppData\Local\Temp\s6bk.o \
   dist/default/production\MBGRSD.X.production.o 
 
 Object code version is 3.11
@@ -36,156 +36,155 @@ Call graph: (short form)
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\eduar\AppData\Local\Temp\s8c4.o
+C:\Users\eduar\AppData\Local\Temp\s6bk.o
                 init                                  0        0        4        0       0
                 idloc                            200000   200000        8   200000       0
                 config                           300000   300000        E   300000       0
 dist/default/production\MBGRSD.X.production.o
-                smallconst                          800      800       1A      400       0
-                text60                             5DC4     5DC4       10      40D       0
-                text59                             3C4E     3C4E      288      40D       0
-                text58                             3340     3340      352      40D       0
-                text57                             5528     5528       BA      40D       0
-                text56                             4A2E     4A2E      140      40D       0
-                text55                             52E2     52E2       CA      40D       0
-                text54                             5DA2     5DA2       12      40D       0
-                text53                             5D52     5D52       20      40D       0
-                text52                             5DF0     5DF0        E      40D       0
-                text51                             5DE2     5DE2        E      40D       0
-                text50                             5DB4     5DB4       10      40D       0
-                text49                             59CC     59CC       6C      40D       0
-                text48                             5E0A     5E0A        A     2F05       0
-                text47                             5C3A     5C3A       3C      40D       0
-                text46                             5D72     5D72       1E      40D       0
-                text45                             584E     584E       82      40D       0
-                text44                             5BF8     5BF8       42      40D       0
-                text43                             5216     5216       CC      40D       0
-                text42                             5A9E     5A9E       66      40D       0
-                text41                             4C8A     4C8A      110      40D       0
-                text40                             4504     4504      158      40D       0
-                text39                             5692     5692       A6      40D       0
-                text38                             5CDC     5CDC       2A      40D       0
-                text37                             5D2C     5D2C       26      40D       0
-                text36                             1F3A     1F3A      49E      40D       0
-                text35                             5CB0     5CB0       2C      40D       0
-                text34                             4344     4344      1C0      40D       0
-                text33                             5D90     5D90       12      40D       0
-                text32                             5738     5738       94      40D       0
-                text31                             48EC     48EC      142      40D       0
-                text30                             5C76     5C76       3A      40D       0
-                text29                             57CC     57CC       82      40D       0
-                text28                             5B5A     5B5A       56      40D       0
-                text27                             546E     546E       BA      40D       0
-                text26                             2C08     2C08      3A2      40D       0
-                text25                             23D8     23D8      42A      40D       0
-                text24                             3692     3692      2FA      40D       0
-                text23                             192C     192C      60E      40D       0
-                text22                             4F76     4F76       EC      40D       0
-                text21                             5DD4     5DD4        E      40D       0
-                text20                             415A     415A      1EA      40D       0
-                text19                             5062     5062       DE      40D       0
-                text18                              81A      81A      9AE      40D       0
-                text17                             55E2     55E2       B0      40D       0
-                text16                             2802     2802      406      40D       0
-                text15                             398C     398C      2C2      40D       0
-                text14                             4D9A     4D9A       F0      40D       0
-                text13                             594E     594E       7E      40D       0
-                text12                             5140     5140       D6      40D       0
-                text11                             5BB0     5BB0       48      40D       0
-                text10                             3ED6     3ED6      284      40D       0
-                text9                              5A38     5A38       66      40D       0
-                text8                              4E8A     4E8A       EC      40D       0
-                text7                              58D0     58D0       7E      40D       0
-                text6                              47A6     47A6      146      40D       0
-                text5                              465C     465C      14A      40D       0
-                text4                              2FAA     2FAA      396      40D       0
-                text3                              11C8     11C8      764      40D       0
-                text2                              53AC     53AC       C2      40D       0
-                text1                              5D06     5D06       26      40D       0
-                text0                              4B6E     4B6E      11C      40D       0
+                smallconst                          800      800       1C      400       0
+                text60                             5E18     5E18       10      40E       0
+                text59                             5412     5412       CA      40E       0
+                text58                             5DF6     5DF6       12      40E       0
+                text57                             5DA6     5DA6       20      40E       0
+                text56                             5E44     5E44        E      40E       0
+                text55                             5E36     5E36        E      40E       0
+                text54                             5E08     5E08       10      40E       0
+                text53                             5A4E     5A4E       6C      40E       0
+                text52                             5E60     5E60        A     2F30       0
+                text51                             5C58     5C58       3C      40E       0
+                text50                             5DC6     5DC6       1E      40E       0
+                text49                             594E     594E       82      40E       0
+                text48                             5C16     5C16       42      40E       0
+                text47                             527C     527C       CC      40E       0
+                text46                             5848     5848       84      40E       0
+                text45                             4BCE     4BCE      122      40E       0
+                text44                             453A     453A      17C      40E       0
+                text43                             570E     570E       A6      40E       0
+                text42                             5D30     5D30       2A      40E       0
+                text41                             5D80     5D80       26      40E       0
+                text40                             1F56     1F56      49E      40E       0
+                text39                             5D04     5D04       2C      40E       0
+                text38                             4368     4368      1D2      40E       0
+                text37                             5DE4     5DE4       12      40E       0
+                text36                             57B4     57B4       94      40E       0
+                text35                             494C     494C      142      40E       0
+                text34                             5C94     5C94       3A      40E       0
+                text33                             58CC     58CC       82      40E       0
+                text32                             5B20     5B20       56      40E       0
+                text31                             55A4     55A4       BA      40E       0
+                text30                             2C24     2C24      3A2      40E       0
+                text29                             23F4     23F4      42A      40E       0
+                text28                             36AE     36AE      2FA      40E       0
+                text27                             1948     1948      60E      40E       0
+                text26                             4FC2     4FC2       EC      40E       0
+                text25                             5E28     5E28        E      40E       0
+                text24                             417E     417E      1EA      40E       0
+                text23                             5196     5196       E6      40E       0
+                text22                              81C      81C      9AE      40E       0
+                text21                             565E     565E       B0      40E       0
+                text20                             281E     281E      406      40E       0
+                text19                             39A8     39A8      2C2      40E       0
+                text18                             4DE6     4DE6       F0      40E       0
+                text17                             5348     5348       CA      40E       0
+                text16                             50AE     50AE       E8      40E       0
+                text15                             5BC8     5BC8       4E      40E       0
+                text14                             3C6A     3C6A      28C      40E       0
+                text13                             5ABA     5ABA       66      40E       0
+                text12                             4ED6     4ED6       EC      40E       0
+                text11                             59D0     59D0       7E      40E       0
+                text10                             46B6     46B6      14C      40E       0
+                text9                              4802     4802      14A      40E       0
+                text8                              2FC6     2FC6      396      40E       0
+                text7                              3EF6     3EF6      288      40E       0
+                text6                              335C     335C      352      40E       0
+                text5                              4A8E     4A8E      140      40E       0
+                text4                              11CA     11CA      77E      40E       0
+                text3                              5D5A     5D5A       26      40E       0
+                text2                              4CF0     4CF0       F6      40E       0
+                text1                              54DC     54DC       C8      40E       0
+                text0                              5CCE     5CCE       36      40E       0
                 cstackCOMRAM                          1        1       5F        1       1
-                cstackBANK0                          60       60       7A       60       1
+                cstackBANK0                          60       60       70       60       1
                 bssBIGRAM                           120      120      22E      120       1
                 bssBANK1                            100      100       20      100       1
-                dataBANK0                            DA       DA        B       60       1
-                bssBANK0                             E5       E5        9       60       1
-                cinit                              5B04     5B04       56      40D       0
-                nvBANK0                              EE       EE        6       60       1
-                idataBANK0                         5DFE     5DFE        B      40D       0
+                dataBANK0                            E5       E5        D       60       1
+                bssBANK0                             D0       D0       15       60       1
+                cinit                              5B76     5B76       52      40E       0
+                idataBANK0                         5E52     5E52        D      40E       0
 
 TOTAL           Name                               Link     Load   Length     Space
         CLASS   STACK          
 
         CLASS   CODE           
                 init                                  0        0        4         0
-                text60                             5DC4     5DC4       10         0
-                text59                             3C4E     3C4E      288         0
-                text58                             3340     3340      352         0
-                text57                             5528     5528       BA         0
-                text56                             4A2E     4A2E      140         0
-                text55                             52E2     52E2       CA         0
-                text54                             5DA2     5DA2       12         0
-                text53                             5D52     5D52       20         0
-                text52                             5DF0     5DF0        E         0
-                text51                             5DE2     5DE2        E         0
-                text50                             5DB4     5DB4       10         0
-                text49                             59CC     59CC       6C         0
-                text48                             5E0A     5E0A        A         0
-                text47                             5C3A     5C3A       3C         0
-                text46                             5D72     5D72       1E         0
-                text45                             584E     584E       82         0
-                text44                             5BF8     5BF8       42         0
-                text43                             5216     5216       CC         0
-                text42                             5A9E     5A9E       66         0
-                text41                             4C8A     4C8A      110         0
-                text40                             4504     4504      158         0
-                text39                             5692     5692       A6         0
-                text38                             5CDC     5CDC       2A         0
-                text37                             5D2C     5D2C       26         0
-                text36                             1F3A     1F3A      49E         0
-                text35                             5CB0     5CB0       2C         0
-                text34                             4344     4344      1C0         0
-                text33                             5D90     5D90       12         0
-                text32                             5738     5738       94         0
-                text31                             48EC     48EC      142         0
-                text30                             5C76     5C76       3A         0
-                text29                             57CC     57CC       82         0
-                text28                             5B5A     5B5A       56         0
-                text27                             546E     546E       BA         0
-                text26                             2C08     2C08      3A2         0
-                text25                             23D8     23D8      42A         0
-                text24                             3692     3692      2FA         0
-                text23                             192C     192C      60E         0
-                text22                             4F76     4F76       EC         0
-                text21                             5DD4     5DD4        E         0
-                text20                             415A     415A      1EA         0
-                text19                             5062     5062       DE         0
-                text18                              81A      81A      9AE         0
-                text17                             55E2     55E2       B0         0
-                text16                             2802     2802      406         0
-                text15                             398C     398C      2C2         0
-                text14                             4D9A     4D9A       F0         0
-                text13                             594E     594E       7E         0
-                text12                             5140     5140       D6         0
-                text11                             5BB0     5BB0       48         0
-                text10                             3ED6     3ED6      284         0
-                text9                              5A38     5A38       66         0
-                text8                              4E8A     4E8A       EC         0
-                text7                              58D0     58D0       7E         0
-                text6                              47A6     47A6      146         0
-                text5                              465C     465C      14A         0
-                text4                              2FAA     2FAA      396         0
-                text3                              11C8     11C8      764         0
-                text2                              53AC     53AC       C2         0
-                text1                              5D06     5D06       26         0
-                text0                              4B6E     4B6E      11C         0
-                cinit                              5B04     5B04       56         0
-                idataBANK0                         5DFE     5DFE        B         0
+                text60                             5E18     5E18       10         0
+                text59                             5412     5412       CA         0
+                text58                             5DF6     5DF6       12         0
+                text57                             5DA6     5DA6       20         0
+                text56                             5E44     5E44        E         0
+                text55                             5E36     5E36        E         0
+                text54                             5E08     5E08       10         0
+                text53                             5A4E     5A4E       6C         0
+                text52                             5E60     5E60        A         0
+                text51                             5C58     5C58       3C         0
+                text50                             5DC6     5DC6       1E         0
+                text49                             594E     594E       82         0
+                text48                             5C16     5C16       42         0
+                text47                             527C     527C       CC         0
+                text46                             5848     5848       84         0
+                text45                             4BCE     4BCE      122         0
+                text44                             453A     453A      17C         0
+                text43                             570E     570E       A6         0
+                text42                             5D30     5D30       2A         0
+                text41                             5D80     5D80       26         0
+                text40                             1F56     1F56      49E         0
+                text39                             5D04     5D04       2C         0
+                text38                             4368     4368      1D2         0
+                text37                             5DE4     5DE4       12         0
+                text36                             57B4     57B4       94         0
+                text35                             494C     494C      142         0
+                text34                             5C94     5C94       3A         0
+                text33                             58CC     58CC       82         0
+                text32                             5B20     5B20       56         0
+                text31                             55A4     55A4       BA         0
+                text30                             2C24     2C24      3A2         0
+                text29                             23F4     23F4      42A         0
+                text28                             36AE     36AE      2FA         0
+                text27                             1948     1948      60E         0
+                text26                             4FC2     4FC2       EC         0
+                text25                             5E28     5E28        E         0
+                text24                             417E     417E      1EA         0
+                text23                             5196     5196       E6         0
+                text22                              81C      81C      9AE         0
+                text21                             565E     565E       B0         0
+                text20                             281E     281E      406         0
+                text19                             39A8     39A8      2C2         0
+                text18                             4DE6     4DE6       F0         0
+                text17                             5348     5348       CA         0
+                text16                             50AE     50AE       E8         0
+                text15                             5BC8     5BC8       4E         0
+                text14                             3C6A     3C6A      28C         0
+                text13                             5ABA     5ABA       66         0
+                text12                             4ED6     4ED6       EC         0
+                text11                             59D0     59D0       7E         0
+                text10                             46B6     46B6      14C         0
+                text9                              4802     4802      14A         0
+                text8                              2FC6     2FC6      396         0
+                text7                              3EF6     3EF6      288         0
+                text6                              335C     335C      352         0
+                text5                              4A8E     4A8E      140         0
+                text4                              11CA     11CA      77E         0
+                text3                              5D5A     5D5A       26         0
+                text2                              4CF0     4CF0       F6         0
+                text1                              54DC     54DC       C8         0
+                text0                              5CCE     5CCE       36         0
+                cinit                              5B76     5B76       52         0
+                idataBANK0                         5E52     5E52        D         0
 
         CLASS   CONST          
 
         CLASS   SMALLCONST     
-                smallconst                          800      800       1A         0
+                smallconst                          800      800       1C         0
 
         CLASS   MEDIUMCONST    
 
@@ -200,10 +199,9 @@ TOTAL           Name                               Link     Load   Length     Sp
         CLASS   RAM            
 
         CLASS   BANK0          
-                cstackBANK0                          60       60       7A         1
-                dataBANK0                            DA       DA        B         1
-                bssBANK0                             E5       E5        9         1
-                nvBANK0                              EE       EE        6         1
+                cstackBANK0                          60       60       70         1
+                dataBANK0                            E5       E5        D         1
+                bssBANK0                             D0       D0       15         1
 
         CLASS   BANK1          
                 bssBANK1                            100      100       20         1
@@ -238,12 +236,12 @@ SEGMENTS        Name                           Load    Length   Top    Selector 
 
                 reset_vec                      000000  000004  000004         0       0  CODE    
                 cstackCOMRAM                   000001  00005F  000060         1       1  COMRAM  
-                cstackBANK0                    000060  000094  0000F4        60       1  BANK0   
+                cstackBANK0                    000060  000092  0000F2        60       1  BANK0   
                 bssBANK1                       000100  000020  000120       100       1  BANK1   
                 bssBIGRAM                      000120  00022E  00034E       120       1  BIGRAM  
-                smallconst                     000800  00001A  00081A       400       0  SMALLCON
-                text18                         00081A  0055EF  005E09       40D       0  CODE    
-                text48                         005E0A  00000A  005E14      2F05       0  CODE    
+                smallconst                     000800  00001C  00081C       400       0  SMALLCON
+                text22                         00081C  005643  005E5F       40E       0  CODE    
+                text52                         005E60  00000A  005E6A      2F30       0  CODE    
                 idloc                          200000  000008  200008    200000       0  IDLOC   
                 config                         300000  00000E  30000E    300000       0  CONFIG  
 
@@ -251,48 +249,47 @@ SEGMENTS        Name                           Load    Length   Top    Selector 
 UNUSED ADDRESS RANGES
 
         Name                Unused          Largest block    Delta
-        BANK0            0000F4-0000FF                C
+        BANK0            0000F2-0000FF                E
         BANK3            00034E-0003FF               B2
         BANK4            000400-0004FF              100
         BANK5            000500-0005FF              100
         BANK6            000600-0006FF              100
         BANK7            000700-0007FF              100
-        BIGRAM           0000F4-0000FF                C
+        BIGRAM           0000F2-0000FF                E
                          00034E-0007FF              4B2
         CODE             000004-0007FF              7FC
-                         005E09-005E09                1
-                         005E14-007FFF             21EC
+                         005E5F-005E5F                1
+                         005E6A-007FFF             2196
         CONST            000004-0007FF              7FC
-                         005E09-005E09                1
-                         005E14-007FFF             21EC
+                         005E5F-005E5F                1
+                         005E6A-007FFF             2196
         EEDATA           F00000-F000FF              100
-        MEDIUMCONST      005E09-005E09                1
-                         005E14-007FFF             21EC
-        RAM              0000F4-0000FF                C
+        MEDIUMCONST      005E5F-005E5F                1
+                         005E6A-007FFF             2196
+        RAM              0000F2-0000FF                E
                          00034E-0007FF              100
         SFR              000F53-000FFF                D
-        SMALLCONST       005E09-005E09                1
-                         005E14-007FFF              100
+        SMALLCONST       005E5F-005E5F                1
+                         005E6A-007FFF              100
         STACK            00034E-0007FF              4B2
 
                                   Symbol Table
 
 ?___fldiv                        cstackCOMRAM 000028
 ?___flmul                        cstackCOMRAM 00000F
-?___fltol                        cstackCOMRAM 000001
 ?___lldiv                        cstackCOMRAM 000001
 ?___lmul                         cstackCOMRAM 000001
 ?___wmul                         cstackCOMRAM 000001
 ?___xxtofl                       cstackCOMRAM 000001
 ?_chk_chr                        cstackCOMRAM 000001
 ?_clust2sect                     cstackCOMRAM 00000D
-?_create_chain                   cstackCOMRAM 000056
-?_get_fat                        cstackCOMRAM 00003B
+?_create_chain                   cstackCOMRAM 000057
+?_get_fat                        cstackCOMRAM 00003C
 ?_get_ldnumber                   cstackCOMRAM 000001
 ?_interruptadc                   cstackCOMRAM 000001
 ?_ld_clust                       cstackCOMRAM 000001
 ?_mem_cmp                        cstackCOMRAM 000001
-Error@F5051                      dataBANK0    0000DA
+Error@F5051                      dataBANK0    0000E5
 Error@a                          cstackCOMRAM 000001
 Error@v_seg                      cstackCOMRAM 000004
 SPI1_Exchange8bit@data           cstackCOMRAM 000001
@@ -310,38 +307,39 @@ _ANSELB                          (abs)        000F5C
 _ANSELC                          (abs)        000F5D
 _ANSELD                          (abs)        000F5E
 _ANSELE                          (abs)        000F5F
-_CardType                        bssBANK0     0000ED
-_Error                           text55       0052E2
+_CardType                        bssBANK0     0000E2
+_Error                           text59       005412
 _FatFs                           bssBIGRAM    000120
 _Fil                             bssBANK1     000100
-_Fsid                            bssBANK0     0000E9
+_Fsid                            bssBANK0     0000DE
 _GIE                             (abs)        007F97
 _INTCON2bits                     (abs)        000FF1
-_Init8LEDs                       text60       005DC4
+_Init8LEDs                       text60       005E18
 _LATA                            (abs)        000F89
 _LATB                            (abs)        000F8A
 _LATBbits                        (abs)        000F8A
 _LATC                            (abs)        000F8B
 _LATD                            (abs)        000F8C
 _LATE                            (abs)        000F8D
+_ND                              dataBANK0    0000EF
 _OSCCON                          (abs)        000FD3
 _OSCCON2                         (abs)        000FD2
-_OSCILLATOR_Initialize           text54       005DA2
+_OSCILLATOR_Initialize           text58       005DF6
 _OSCTUNE                         (abs)        000F9B
 _PEIE                            (abs)        007F96
-_PIN_MANAGER_Initialize          text53       005D52
+_PIN_MANAGER_Initialize          text57       005DA6
 _PORTA                           (abs)        000F80
-_SPI1_Exchange8bit               text50       005DB4
-_SPI1_Initialize                 text52       005DF0
-_SPI1_Open                       text21       005DD4
+_SPI1_Exchange8bit               text54       005E08
+_SPI1_Initialize                 text56       005E44
+_SPI1_Open                       text25       005E28
 _SSP1ADD                         (abs)        000FC8
 _SSP1BUF                         (abs)        000FC9
 _SSP1CON1                        (abs)        000FC6
 _SSP1CON1bits                    (abs)        000FC6
 _SSP1STAT                        (abs)        000FC7
 _SSP1STATbits                    (abs)        000FC7
-_SYSTEM_Initialize               text51       005DE2
-_Stat                            dataBANK0    0000E4
+_SYSTEM_Initialize               text55       005E36
+_Stat                            dataBANK0    0000F1
 _TRISA                           (abs)        000F92
 _TRISB                           (abs)        000F93
 _TRISC                           (abs)        000F94
@@ -433,7 +431,6 @@ __Hintret                        intret       000000
 __Hintsave_regs                  intsave_regs 000000
 __Hirdata                        irdata       000000
 __Hmediumconst                   mediumconst  000000
-__HnvBANK0                       nvBANK0      000000
 __HnvFARRAM                      nvFARRAM     000000
 __Hnvbit                         nvbit        000000
 __Hnvrram                        nvrram       000000
@@ -447,7 +444,7 @@ __Hrdata                         rdata        000000
 __Hreset_vec                     reset_vec    000000
 __Hrparam                        rparam       000000
 __Hsfr                           sfr          000000
-__Hsmallconst                    smallconst   00081A
+__Hsmallconst                    smallconst   00081C
 __Hspace_0                       (abs)        30000E
 __Hspace_1                       (abs)        00034E
 __Hspace_2                       (abs)        000000
@@ -559,7 +556,6 @@ __Lintret                        intret       000000
 __Lintsave_regs                  intsave_regs 000000
 __Lirdata                        irdata       000000
 __Lmediumconst                   mediumconst  000000
-__LnvBANK0                       nvBANK0      000000
 __LnvFARRAM                      nvFARRAM     000000
 __Lnvbit                         nvbit        000000
 __Lnvrram                        nvrram       000000
@@ -645,7 +641,7 @@ __Ltext9                         text9        000000
 __S0                             (abs)        30000E
 __S1                             (abs)        00034E
 __S2                             (abs)        000000
-___fldiv                         text59       003C4E
+___fldiv                         text7        003EF6
 ___fldiv@a                       cstackCOMRAM 00002C
 ___fldiv@aexp                    cstackCOMRAM 000040
 ___fldiv@b                       cstackCOMRAM 000028
@@ -654,7 +650,7 @@ ___fldiv@grs                     cstackCOMRAM 00003B
 ___fldiv@new_exp                 cstackCOMRAM 000039
 ___fldiv@rem                     cstackCOMRAM 000034
 ___fldiv@sign                    cstackCOMRAM 000038
-___flmul                         text58       003340
+___flmul                         text6        00335C
 ___flmul@a                       cstackCOMRAM 000013
 ___flmul@aexp                    cstackCOMRAM 000020
 ___flmul@b                       cstackCOMRAM 00000F
@@ -663,175 +659,170 @@ ___flmul@grs                     cstackCOMRAM 00001C
 ___flmul@prod                    cstackCOMRAM 000022
 ___flmul@sign                    cstackCOMRAM 00001B
 ___flmul@temp                    cstackCOMRAM 000026
-___fltol                         text57       005528
-___fltol@exp1                    cstackCOMRAM 00000A
-___fltol@f1                      cstackCOMRAM 000001
-___fltol@sign1                   cstackCOMRAM 000009
 ___inthi_sp                      stack        000000
 ___intlo_sp                      stack        000000
-___lldiv                         text29       0057CC
+___lldiv                         text33       0058CC
 ___lldiv@counter                 cstackCOMRAM 00000D
 ___lldiv@dividend                cstackCOMRAM 000001
 ___lldiv@divisor                 cstackCOMRAM 000005
 ___lldiv@quotient                cstackCOMRAM 000009
-___lmul                          text28       005B5A
+___lmul                          text32       005B20
 ___lmul@multiplicand             cstackCOMRAM 000005
 ___lmul@multiplier               cstackCOMRAM 000001
 ___lmul@product                  cstackCOMRAM 000009
 ___param_bank                    (abs)        000000
 ___rparam_used                   (abs)        000001
-___send_cmd                      text45       00584E
+___send_cmd                      text49       00594E
 ___send_cmd@arg                  cstackCOMRAM 000004
 ___send_cmd@cmd                  cstackCOMRAM 00000A
 ___send_cmd@n                    cstackCOMRAM 000009
 ___send_cmd@res                  cstackCOMRAM 000008
 ___sp                            stack        000000
-___wmul                          text37       005D2C
+___wmul                          text41       005D80
 ___wmul@multiplicand             cstackCOMRAM 000003
 ___wmul@multiplier               cstackCOMRAM 000001
 ___wmul@product                  cstackCOMRAM 000005
-___xxtofl                        text56       004A2E
+___xxtofl                        text5        004A8E
 ___xxtofl@arg                    cstackCOMRAM 00000B
 ___xxtofl@exp                    cstackCOMRAM 00000A
 ___xxtofl@sign                   cstackCOMRAM 000009
 ___xxtofl@val                    cstackCOMRAM 000001
 __accesstop                      (abs)        000060
-__activetblptr                   (abs)        000002
-__end_of_Error                   text55       0053AC
-__end_of_Init8LEDs               text60       005DD4
-__end_of_OSCILLATOR_Initialize   text54       005DB4
-__end_of_PIN_MANAGER_Initialize  text53       005D72
-__end_of_SPI1_Exchange8bit       text50       005DC4
-__end_of_SPI1_Initialize         text52       005DFE
-__end_of_SPI1_Open               text21       005DE2
-__end_of_SYSTEM_Initialize       text51       005DF0
-__end_of___fldiv                 text59       003ED6
-__end_of___flmul                 text58       003692
-__end_of___fltol                 text57       0055E2
-__end_of___lldiv                 text29       00584E
-__end_of___lmul                  text28       005BB0
-__end_of___send_cmd              text45       0058D0
-__end_of___wmul                  text37       005D52
-__end_of___xxtofl                text56       004B6E
-__end_of__initialization         cinit        005B50
-__end_of_check_fs                text22       005062
-__end_of_chk_chr                 text11       005BF8
-__end_of_clust2sect              text27       005528
-__end_of_create_chain            text24       00398C
-__end_of_create_name             text10       00415A
-__end_of_deselect                text48       005E14
-__end_of_dir_alloc               text14       004E8A
-__end_of_dir_find                text8        004F76
-__end_of_dir_next                text16       002C08
-__end_of_dir_register            text12       005216
-__end_of_dir_sdi                 text15       003C4E
-__end_of_disk_initialize         text20       004344
-__end_of_disk_ioctl              text36       0023D8
-__end_of_disk_read               text43       0052E2
-__end_of_disk_status             text33       005DA2
-__end_of_disk_write              text41       004D9A
-__end_of_f_close                 text30       005CB0
-__end_of_f_lseek                 text23       001F3A
-__end_of_f_mount                 text17       005692
-__end_of_f_open                  text4        003340
-__end_of_f_sync                  text31       004A2E
-__end_of_f_write                 text3        00192C
-__end_of_find_volume             text18       0011C8
-__end_of_follow_path             text6        0048EC
-__end_of_get_fat                 text26       002FAA
-__end_of_get_ldnumber            text19       005140
-__end_of_guardar                 text2        00546E
-__end_of_interruptadc            text1        005D2C
-__end_of_ld_clust                text7        00594E
-__end_of_main                    text0        004C8A
-__end_of_mem_cmp                 text9        005A9E
-__end_of_mem_cpy                 text13       0059CC
-__end_of_mem_set                 text35       005CDC
-__end_of_move_window             text39       005738
-__end_of_put_fat                 text25       002802
-__end_of_rcvr_datablock          text49       005A38
-__end_of_remove_chain            text5        0047A6
-__end_of_select                  text46       005D90
-__end_of_send_cmd                text44       005C3A
-__end_of_st_clust                text38       005D06
-__end_of_sync_fs                 text34       004504
-__end_of_sync_window             text40       00465C
-__end_of_validate                text32       0057CC
-__end_of_wait_ready              text47       005C76
-__end_of_xmit_datablock          text42       005B04
-__initialization                 cinit        005B04
+__activetblptr                   (abs)        000003
+__end_of_Error                   text59       0054DC
+__end_of_Init8LEDs               text60       005E28
+__end_of_OSCILLATOR_Initialize   text58       005E08
+__end_of_PIN_MANAGER_Initialize  text57       005DC6
+__end_of_SPI1_Exchange8bit       text54       005E18
+__end_of_SPI1_Initialize         text56       005E52
+__end_of_SPI1_Open               text25       005E36
+__end_of_SYSTEM_Initialize       text55       005E44
+__end_of___fldiv                 text7        00417E
+__end_of___flmul                 text6        0036AE
+__end_of___lldiv                 text33       00594E
+__end_of___lmul                  text32       005B76
+__end_of___send_cmd              text49       0059D0
+__end_of___wmul                  text41       005DA6
+__end_of___xxtofl                text5        004BCE
+__end_of__initialization         cinit        005BC2
+__end_of_check_fs                text26       0050AE
+__end_of_chk_chr                 text15       005C16
+__end_of_clust2sect              text31       00565E
+__end_of_create_chain            text28       0039A8
+__end_of_create_name             text14       003EF6
+__end_of_deselect                text52       005E6A
+__end_of_dir_alloc               text18       004ED6
+__end_of_dir_find                text12       004FC2
+__end_of_dir_next                text20       002C24
+__end_of_dir_register            text16       005196
+__end_of_dir_sdi                 text19       003C6A
+__end_of_disk_initialize         text24       004368
+__end_of_disk_ioctl              text40       0023F4
+__end_of_disk_read               text47       005348
+__end_of_disk_status             text37       005DF6
+__end_of_disk_write              text45       004CF0
+__end_of_f_close                 text34       005CCE
+__end_of_f_lseek                 text27       001F56
+__end_of_f_mount                 text21       00570E
+__end_of_f_open                  text8        00335C
+__end_of_f_sync                  text35       004A8E
+__end_of_f_write                 text4        001948
+__end_of_find_volume             text22       0011CA
+__end_of_follow_path             text10       004802
+__end_of_get_fat                 text30       002FC6
+__end_of_get_ldnumber            text23       00527C
+__end_of_grabador                text2        004DE6
+__end_of_guardar                 text1        0055A4
+__end_of_interruptadc            text3        005D80
+__end_of_ld_clust                text11       005A4E
+__end_of_main                    text0        005D04
+__end_of_mem_cmp                 text13       005B20
+__end_of_mem_cpy                 text17       005412
+__end_of_mem_set                 text39       005D30
+__end_of_move_window             text43       0057B4
+__end_of_put_fat                 text29       00281E
+__end_of_rcvr_datablock          text53       005ABA
+__end_of_remove_chain            text9        00494C
+__end_of_select                  text50       005DE4
+__end_of_send_cmd                text48       005C58
+__end_of_st_clust                text42       005D5A
+__end_of_sync_fs                 text38       00453A
+__end_of_sync_window             text44       0046B6
+__end_of_validate                text36       005848
+__end_of_wait_ready              text51       005C94
+__end_of_xmit_datablock          text46       0058CC
+__initialization                 cinit        005B76
 __mediumconst                    mediumconst  000000
-__pbssBANK0                      bssBANK0     0000E5
+__pbssBANK0                      bssBANK0     0000D0
 __pbssBANK1                      bssBANK1     000100
 __pbssBIGRAM                     bssBIGRAM    000120
-__pcinit                         cinit        005B04
+__pcinit                         cinit        005B76
 __pcstackBANK0                   cstackBANK0  000060
 __pcstackCOMRAM                  cstackCOMRAM 000001
-__pdataBANK0                     dataBANK0    0000DA
-__pidataBANK0                    idataBANK0   005DFE
-__pnvBANK0                       nvBANK0      0000EE
+__pdataBANK0                     dataBANK0    0000E5
+__pidataBANK0                    idataBANK0   005E52
 __psmallconst                    smallconst   000800
-__ptext0                         text0        004B6E
-__ptext1                         text1        005D06
-__ptext10                        text10       003ED6
-__ptext11                        text11       005BB0
-__ptext12                        text12       005140
-__ptext13                        text13       00594E
-__ptext14                        text14       004D9A
-__ptext15                        text15       00398C
-__ptext16                        text16       002802
-__ptext17                        text17       0055E2
-__ptext18                        text18       00081A
-__ptext19                        text19       005062
-__ptext2                         text2        0053AC
-__ptext20                        text20       00415A
-__ptext21                        text21       005DD4
-__ptext22                        text22       004F76
-__ptext23                        text23       00192C
-__ptext24                        text24       003692
-__ptext25                        text25       0023D8
-__ptext26                        text26       002C08
-__ptext27                        text27       00546E
-__ptext28                        text28       005B5A
-__ptext29                        text29       0057CC
-__ptext3                         text3        0011C8
-__ptext30                        text30       005C76
-__ptext31                        text31       0048EC
-__ptext32                        text32       005738
-__ptext33                        text33       005D90
-__ptext34                        text34       004344
-__ptext35                        text35       005CB0
-__ptext36                        text36       001F3A
-__ptext37                        text37       005D2C
-__ptext38                        text38       005CDC
-__ptext39                        text39       005692
-__ptext4                         text4        002FAA
-__ptext40                        text40       004504
-__ptext41                        text41       004C8A
-__ptext42                        text42       005A9E
-__ptext43                        text43       005216
-__ptext44                        text44       005BF8
-__ptext45                        text45       00584E
-__ptext46                        text46       005D72
-__ptext47                        text47       005C3A
-__ptext48                        text48       005E0A
-__ptext49                        text49       0059CC
-__ptext5                         text5        00465C
-__ptext50                        text50       005DB4
-__ptext51                        text51       005DE2
-__ptext52                        text52       005DF0
-__ptext53                        text53       005D52
-__ptext54                        text54       005DA2
-__ptext55                        text55       0052E2
-__ptext56                        text56       004A2E
-__ptext57                        text57       005528
-__ptext58                        text58       003340
-__ptext59                        text59       003C4E
-__ptext6                         text6        0047A6
-__ptext60                        text60       005DC4
-__ptext7                         text7        0058D0
-__ptext8                         text8        004E8A
-__ptext9                         text9        005A38
+__ptext0                         text0        005CCE
+__ptext1                         text1        0054DC
+__ptext10                        text10       0046B6
+__ptext11                        text11       0059D0
+__ptext12                        text12       004ED6
+__ptext13                        text13       005ABA
+__ptext14                        text14       003C6A
+__ptext15                        text15       005BC8
+__ptext16                        text16       0050AE
+__ptext17                        text17       005348
+__ptext18                        text18       004DE6
+__ptext19                        text19       0039A8
+__ptext2                         text2        004CF0
+__ptext20                        text20       00281E
+__ptext21                        text21       00565E
+__ptext22                        text22       00081C
+__ptext23                        text23       005196
+__ptext24                        text24       00417E
+__ptext25                        text25       005E28
+__ptext26                        text26       004FC2
+__ptext27                        text27       001948
+__ptext28                        text28       0036AE
+__ptext29                        text29       0023F4
+__ptext3                         text3        005D5A
+__ptext30                        text30       002C24
+__ptext31                        text31       0055A4
+__ptext32                        text32       005B20
+__ptext33                        text33       0058CC
+__ptext34                        text34       005C94
+__ptext35                        text35       00494C
+__ptext36                        text36       0057B4
+__ptext37                        text37       005DE4
+__ptext38                        text38       004368
+__ptext39                        text39       005D04
+__ptext4                         text4        0011CA
+__ptext40                        text40       001F56
+__ptext41                        text41       005D80
+__ptext42                        text42       005D30
+__ptext43                        text43       00570E
+__ptext44                        text44       00453A
+__ptext45                        text45       004BCE
+__ptext46                        text46       005848
+__ptext47                        text47       00527C
+__ptext48                        text48       005C16
+__ptext49                        text49       00594E
+__ptext5                         text5        004A8E
+__ptext50                        text50       005DC6
+__ptext51                        text51       005C58
+__ptext52                        text52       005E60
+__ptext53                        text53       005A4E
+__ptext54                        text54       005E08
+__ptext55                        text55       005E36
+__ptext56                        text56       005E44
+__ptext57                        text57       005DA6
+__ptext58                        text58       005DF6
+__ptext59                        text59       005412
+__ptext6                         text6        00335C
+__ptext60                        text60       005E18
+__ptext7                         text7        003EF6
+__ptext8                         text8        002FC6
+__ptext9                         text9        004802
 __ramtop                         ramtop       000800
 __size_of_Error                  (abs)        000000
 __size_of_Init8LEDs              (abs)        000000
@@ -843,7 +834,6 @@ __size_of_SPI1_Open              (abs)        000000
 __size_of_SYSTEM_Initialize      (abs)        000000
 __size_of___fldiv                (abs)        000000
 __size_of___flmul                (abs)        000000
-__size_of___fltol                (abs)        000000
 __size_of___lldiv                (abs)        000000
 __size_of___lmul                 (abs)        000000
 __size_of___send_cmd             (abs)        000000
@@ -875,6 +865,7 @@ __size_of_find_volume            (abs)        000000
 __size_of_follow_path            (abs)        000000
 __size_of_get_fat                (abs)        000000
 __size_of_get_ldnumber           (abs)        000000
+__size_of_grabador               (abs)        000000
 __size_of_guardar                (abs)        000000
 __size_of_interruptadc           (abs)        000000
 __size_of_ld_clust               (abs)        000000
@@ -895,75 +886,79 @@ __size_of_validate               (abs)        000000
 __size_of_wait_ready             (abs)        000000
 __size_of_xmit_datablock         (abs)        000000
 __smallconst                     smallconst   000800
-_adcin                           nvBANK0      0000F2
-_check_fs                        text22       004F76
-_chk_chr                         text11       005BB0
-_clust2sect                      text27       00546E
-_create_chain                    text24       003692
-_create_name                     text10       003ED6
+_a                               bssBANK0     0000DA
+_adcin                           bssBANK0     0000DC
+_bw                              bssBANK0     0000E3
+_check_fs                        text26       004FC2
+_chk_chr                         text15       005BC8
+_clust2sect                      text31       0055A4
+_create_chain                    text28       0036AE
+_create_name                     text14       003C6A
 _create_name$624                 cstackCOMRAM 000011
-_data                            bssBANK0     0000E7
-_deselect                        text48       005E0A
-_dir_alloc                       text14       004D9A
-_dir_find                        text8        004E8A
-_dir_next                        text16       002802
-_dir_register                    text12       005140
-_dir_sdi                         text15       00398C
-_disk_initialize                 text20       00415A
+_data                            bssBANK0     0000D6
+_deselect                        text52       005E60
+_dir_alloc                       text18       004DE6
+_dir_find                        text12       004ED6
+_dir_next                        text20       00281E
+_dir_register                    text16       0050AE
+_dir_sdi                         text19       0039A8
+_disk_initialize                 text24       00417E
 _disk_initialize$134             cstackCOMRAM 000017
-_disk_ioctl                      text36       001F3A
-_disk_read                       text43       005216
+_disk_ioctl                      text40       001F56
+_disk_read                       text47       00527C
 _disk_read$143                   cstackCOMRAM 00001A
-_disk_status                     text33       005D90
-_disk_write                      text41       004C8A
-_f_close                         text30       005C76
-_f_lseek                         text23       00192C
-_f_mount                         text17       0055E2
-_f_open                          text4        002FAA
-_f_sync                          text31       0048EC
-_f_write                         text3        0011C8
-_find_volume                     text18       00081A
+_disk_status                     text37       005DE4
+_disk_write                      text45       004BCE
+_f_close                         text34       005C94
+_f_lseek                         text27       001948
+_f_mount                         text21       00565E
+_f_open                          text8        002FC6
+_f_sync                          text35       00494C
+_f_write                         text4        0011CA
+_find_volume                     text22       00081C
 _find_volume$728                 cstackBANK0  000070
 _find_volume$729                 cstackBANK0  000074
-_follow_path                     text6        0047A6
-_get_fat                         text26       002C08
-_get_fat$374                     cstackCOMRAM 00004A
-_get_ldnumber                    text19       005062
-_guardar                         text2        0053AC
-_i                               bssBANK0     0000E5
-_interruptadc                    text1        005D06
-_ld_clust                        text7        0058D0
-_main                            text0        004B6E
-_mem_cmp                         text9        005A38
-_mem_cpy                         text13       00594E
-_mem_set                         text35       005CB0
-_move_window                     text39       005692
-_put_fat                         text25       0023D8
-_put_fat$400                     cstackCOMRAM 00004D
-_put_fat$401                     cstackCOMRAM 00004F
-_rcvr_datablock                  text49       0059CC
-_remove_chain                    text5        00465C
-_select                          text46       005D72
-_send_cmd                        text44       005BF8
-_st_clust                        text38       005CDC
-_sync_fs                         text34       004344
-_sync_window                     text40       004504
-_validate                        text32       005738
-_volt                            nvBANK0      0000EE
-_wait_ready                      text47       005C3A
-_xmit_datablock                  text42       005A9E
-check_fs@fs                      cstackCOMRAM 00003B
-check_fs@sect                    cstackCOMRAM 00003D
+_follow_path                     text10       0046B6
+_get_fat                         text30       002C24
+_get_fat$374                     cstackCOMRAM 00004B
+_get_ldnumber                    text23       005196
+_grabador                        text2        004CF0
+_guardar                         text1        0054DC
+_i                               bssBANK0     0000D4
+_interruptadc                    text3        005D5A
+_ld_clust                        text11       0059D0
+_main                            text0        005CCE
+_mem_cmp                         text13       005ABA
+_mem_cpy                         text17       005348
+_mem_set                         text39       005D04
+_move_window                     text43       00570E
+_out                             bssBANK0     0000D8
+_put_fat                         text29       0023F4
+_put_fat$400                     cstackCOMRAM 00004E
+_put_fat$401                     cstackCOMRAM 000050
+_rcvr_datablock                  text53       005A4E
+_remove_chain                    text9        004802
+_select                          text50       005DC6
+_send_cmd                        text48       005C16
+_st_clust                        text42       005D30
+_sync_fs                         text38       004368
+_sync_window                     text44       00453A
+_validate                        text36       0057B4
+_volt                            bssBANK0     0000D0
+_wait_ready                      text51       005C58
+_xmit_datablock                  text46       005848
+check_fs@fs                      cstackCOMRAM 00003C
+check_fs@sect                    cstackCOMRAM 00003E
 chk_chr@chr                      cstackCOMRAM 000003
 chk_chr@str                      cstackCOMRAM 000001
 clust2sect@clst                  cstackCOMRAM 00000F
 clust2sect@fs                    cstackCOMRAM 00000D
-create_chain@clst                cstackCOMRAM 000058
-create_chain@cs                  cstackBANK0  000069
-create_chain@fs                  cstackCOMRAM 000056
-create_chain@ncl                 cstackBANK0  000065
-create_chain@res                 cstackBANK0  000060
-create_chain@scl                 cstackBANK0  000061
+create_chain@clst                cstackCOMRAM 000059
+create_chain@cs                  cstackBANK0  00006D
+create_chain@fs                  cstackCOMRAM 000057
+create_chain@ncl                 cstackBANK0  000069
+create_chain@res                 cstackBANK0  000064
+create_chain@scl                 cstackBANK0  000065
 create_name@b                    cstackCOMRAM 000015
 create_name@c                    cstackCOMRAM 00001F
 create_name@d                    cstackCOMRAM 00001A
@@ -974,25 +969,25 @@ create_name@p                    cstackCOMRAM 000018
 create_name@path                 cstackCOMRAM 00000B
 create_name@sfn                  cstackCOMRAM 00001B
 create_name@si                   cstackCOMRAM 000013
-dir_alloc@dp                     cstackBANK0  000080
-dir_alloc@n                      cstackBANK0  000087
-dir_alloc@nent                   cstackBANK0  000082
-dir_alloc@res                    cstackBANK0  000089
-dir_find@c                       cstackBANK0  000082
-dir_find@dir                     cstackBANK0  000083
-dir_find@dp                      cstackBANK0  000080
-dir_find@res                     cstackBANK0  000085
-dir_next@c                       cstackBANK0  000078
-dir_next@clst                    cstackBANK0  00007C
-dir_next@dp                      cstackBANK0  00006D
-dir_next@i                       cstackBANK0  00007A
-dir_next@stretch                 cstackBANK0  00006F
-dir_register@dp                  cstackBANK0  00008A
-dir_register@res                 cstackBANK0  00008C
+dir_alloc@dp                     cstackBANK0  000084
+dir_alloc@n                      cstackBANK0  000088
+dir_alloc@nent                   cstackBANK0  000086
+dir_alloc@res                    cstackBANK0  00008A
+dir_find@c                       cstackBANK0  000084
+dir_find@dir                     cstackBANK0  000085
+dir_find@dp                      cstackCOMRAM 00005D
+dir_find@res                     cstackBANK0  000087
+dir_next@c                       cstackBANK0  00007C
+dir_next@clst                    cstackBANK0  000080
+dir_next@dp                      cstackBANK0  000071
+dir_next@i                       cstackBANK0  00007E
+dir_next@stretch                 cstackBANK0  000073
+dir_register@dp                  cstackBANK0  00008B
+dir_register@res                 cstackBANK0  00008F
 dir_sdi@clst                     cstackBANK0  00006D
-dir_sdi@dp                       cstackCOMRAM 000056
+dir_sdi@dp                       cstackCOMRAM 000057
 dir_sdi@ic                       cstackBANK0  000067
-dir_sdi@idx                      cstackCOMRAM 000058
+dir_sdi@idx                      cstackCOMRAM 000059
 dir_sdi@sect                     cstackBANK0  000069
 disk_initialize@cmd              cstackCOMRAM 000019
 disk_initialize@n                cstackCOMRAM 00001D
@@ -1015,26 +1010,26 @@ disk_read@pdrv                   cstackCOMRAM 000019
 disk_read@sector                 cstackCOMRAM 000013
 disk_status@pdrv                 cstackCOMRAM 000001
 disk_write@buff                  cstackCOMRAM 000011
-disk_write@count                 cstackCOMRAM 000017
-disk_write@pdrv                  cstackCOMRAM 00001A
-disk_write@sector                cstackCOMRAM 000013
-end_of_initialization            cinit        005B50
+disk_write@count                 cstackCOMRAM 000018
+disk_write@pdrv                  cstackCOMRAM 00001B
+disk_write@sector                cstackCOMRAM 000014
+end_of_initialization            cinit        005BC2
 f_close@fp                       cstackCOMRAM 00004E
 f_close@res                      cstackCOMRAM 000050
-f_lseek@bcs                      cstackBANK0  00008C
-f_lseek@clst                     cstackBANK0  000090
-f_lseek@fp                       cstackBANK0  00006D
-f_lseek@ifptr                    cstackBANK0  000083
-f_lseek@nsect                    cstackBANK0  000088
-f_lseek@ofs                      cstackBANK0  00006F
-f_lseek@res                      cstackBANK0  000087
-f_mount@cfs                      cstackCOMRAM 000058
-f_mount@fs                       cstackCOMRAM 000052
-f_mount@opt                      cstackCOMRAM 000056
-f_mount@path                     cstackCOMRAM 000054
-f_mount@res                      cstackCOMRAM 000057
-f_mount@rp                       cstackCOMRAM 00005A
-f_mount@vol                      cstackCOMRAM 00005C
+f_lseek@bcs                      cstackBANK0  000090
+f_lseek@clst                     cstackBANK0  000094
+f_lseek@fp                       cstackBANK0  000071
+f_lseek@ifptr                    cstackBANK0  000087
+f_lseek@nsect                    cstackBANK0  00008C
+f_lseek@ofs                      cstackBANK0  000073
+f_lseek@res                      cstackBANK0  00008B
+f_mount@cfs                      cstackCOMRAM 000059
+f_mount@fs                       cstackCOMRAM 000053
+f_mount@opt                      cstackCOMRAM 000057
+f_mount@path                     cstackCOMRAM 000055
+f_mount@res                      cstackCOMRAM 000058
+f_mount@rp                       cstackCOMRAM 00005B
+f_mount@vol                      cstackCOMRAM 00005D
 f_open@cl                        cstackBANK0  0000AF
 f_open@dir                       cstackBANK0  0000B8
 f_open@dj                        cstackBANK0  0000BA
@@ -1047,18 +1042,18 @@ f_open@sfn                       cstackBANK0  0000A3
 f_sync@dir                       cstackCOMRAM 00004C
 f_sync@fp                        cstackCOMRAM 000045
 f_sync@res                       cstackCOMRAM 00004B
-f_write@btw                      cstackBANK0  000071
-f_write@buff                     cstackBANK0  00006F
-f_write@bw                       cstackBANK0  000073
-f_write@cc                       cstackBANK0  000085
-f_write@clst                     cstackBANK0  00008B
-f_write@csect                    cstackBANK0  000084
-f_write@fp                       cstackBANK0  00006D
-f_write@res                      cstackBANK0  000081
-f_write@sect                     cstackBANK0  000087
-f_write@wbuff                    cstackBANK0  000082
-f_write@wcnt                     cstackBANK0  00008F
-ff@FatFs                         bssBANK0     0000EB
+f_write@btw                      cstackBANK0  000076
+f_write@buff                     cstackBANK0  000073
+f_write@bw                       cstackBANK0  000078
+f_write@cc                       cstackBANK0  00008B
+f_write@clst                     cstackBANK0  000091
+f_write@csect                    cstackBANK0  00008A
+f_write@fp                       cstackBANK0  000071
+f_write@res                      cstackBANK0  000086
+f_write@sect                     cstackBANK0  00008D
+f_write@wbuff                    cstackBANK0  000087
+f_write@wcnt                     cstackBANK0  000095
+ff@FatFs                         bssBANK0     0000E0
 find_volume@br                   cstackBANK0  000060
 find_volume@bsect                cstackBANK0  000091
 find_volume@fasize               cstackBANK0  00008D
@@ -1067,33 +1062,31 @@ find_volume@fs                   cstackBANK0  000098
 find_volume@i                    cstackBANK0  000095
 find_volume@nclst                cstackBANK0  000088
 find_volume@nrsv                 cstackBANK0  000082
-find_volume@path                 cstackCOMRAM 000047
+find_volume@path                 cstackCOMRAM 000048
 find_volume@pt                   cstackBANK0  00007A
-find_volume@rfs                  cstackCOMRAM 000045
+find_volume@rfs                  cstackCOMRAM 000046
 find_volume@stat                 cstackBANK0  00008C
 find_volume@sysect               cstackBANK0  00007C
 find_volume@szbfat               cstackBANK0  000076
 find_volume@tsect                cstackBANK0  000084
 find_volume@vol                  cstackBANK0  000080
-find_volume@wmode                cstackCOMRAM 000049
-follow_path@dir                  cstackBANK0  00008A
-follow_path@dp                   cstackBANK0  000086
-follow_path@ns                   cstackBANK0  00008C
-follow_path@path                 cstackBANK0  000088
-follow_path@res                  cstackBANK0  00008D
-get_fat@bc                       cstackCOMRAM 000054
-get_fat@clst                     cstackCOMRAM 00003D
-get_fat@fs                       cstackCOMRAM 00003B
-get_fat@p                        cstackCOMRAM 000052
-get_fat@val                      cstackCOMRAM 00004C
-get_fat@wc                       cstackCOMRAM 000050
+find_volume@wmode                cstackCOMRAM 00004A
+follow_path@dir                  cstackBANK0  00008C
+follow_path@dp                   cstackBANK0  000088
+follow_path@ns                   cstackBANK0  00008E
+follow_path@path                 cstackBANK0  00008A
+follow_path@res                  cstackBANK0  00008F
+get_fat@bc                       cstackCOMRAM 000055
+get_fat@clst                     cstackCOMRAM 00003E
+get_fat@fs                       cstackCOMRAM 00003C
+get_fat@p                        cstackCOMRAM 000053
+get_fat@val                      cstackCOMRAM 00004D
+get_fat@wc                       cstackCOMRAM 000051
 get_ldnumber@i                   cstackCOMRAM 00000B
 get_ldnumber@path                cstackCOMRAM 000001
 get_ldnumber@tp                  cstackCOMRAM 000007
 get_ldnumber@tt                  cstackCOMRAM 00000D
 get_ldnumber@vol                 cstackCOMRAM 000009
-guardar@bw                       cstackBANK0  0000D2
-guardar@data                     cstackBANK0  0000D0
 interruptadc@a                   cstackCOMRAM 000003
 interruptadc@adcin               cstackCOMRAM 000001
 intlevel0                        text         000000
@@ -1103,39 +1096,38 @@ intlevel3                        text         000000
 ld_clust@cl                      cstackCOMRAM 00000B
 ld_clust@dir                     cstackCOMRAM 000003
 ld_clust@fs                      cstackCOMRAM 000001
-main@ND                          cstackBANK0  0000D8
 mem_cmp@cnt                      cstackCOMRAM 000005
 mem_cmp@d                        cstackCOMRAM 000009
 mem_cmp@dst                      cstackCOMRAM 000001
 mem_cmp@r                        cstackCOMRAM 00000D
 mem_cmp@s                        cstackCOMRAM 00000B
 mem_cmp@src                      cstackCOMRAM 000003
-mem_cpy@cnt                      cstackCOMRAM 000005
-mem_cpy@d                        cstackCOMRAM 000007
+mem_cpy@cnt                      cstackCOMRAM 000006
+mem_cpy@d                        cstackCOMRAM 00000D
 mem_cpy@dst                      cstackCOMRAM 000001
-mem_cpy@s                        cstackCOMRAM 000009
+mem_cpy@s                        cstackCOMRAM 00000A
 mem_cpy@src                      cstackCOMRAM 000003
 mem_set@cnt                      cstackCOMRAM 000005
 mem_set@d                        cstackCOMRAM 000007
 mem_set@dst                      cstackCOMRAM 000001
 mem_set@val                      cstackCOMRAM 000003
-move_window@fs                   cstackCOMRAM 000030
-move_window@res                  cstackCOMRAM 00003A
-move_window@sector               cstackCOMRAM 000032
-put_fat@bc                       cstackCOMRAM 000051
-put_fat@clst                     cstackCOMRAM 00003D
-put_fat@fs                       cstackCOMRAM 00003B
-put_fat@p                        cstackCOMRAM 000054
-put_fat@res                      cstackCOMRAM 000053
-put_fat@val                      cstackCOMRAM 000041
+move_window@fs                   cstackCOMRAM 000031
+move_window@res                  cstackCOMRAM 00003B
+move_window@sector               cstackCOMRAM 000033
+put_fat@bc                       cstackCOMRAM 000052
+put_fat@clst                     cstackCOMRAM 00003E
+put_fat@fs                       cstackCOMRAM 00003C
+put_fat@p                        cstackCOMRAM 000055
+put_fat@res                      cstackCOMRAM 000054
+put_fat@val                      cstackCOMRAM 000042
 rcvr_datablock@btr               cstackCOMRAM 000004
 rcvr_datablock@buff              cstackCOMRAM 000002
 rcvr_datablock@tmr               cstackCOMRAM 000006
 rcvr_datablock@token             cstackCOMRAM 000008
-remove_chain@clst                cstackCOMRAM 000058
-remove_chain@fs                  cstackCOMRAM 000056
-remove_chain@nxt                 cstackBANK0  000061
-remove_chain@res                 cstackBANK0  000060
+remove_chain@clst                cstackCOMRAM 000059
+remove_chain@fs                  cstackCOMRAM 000057
+remove_chain@nxt                 cstackBANK0  000065
+remove_chain@res                 cstackBANK0  000064
 send_cmd@arg                     cstackCOMRAM 00000B
 send_cmd@cmd                     cstackCOMRAM 00000F
 send_cmd@res                     cstackCOMRAM 000010
@@ -1144,33 +1136,31 @@ st_clust@dir                     cstackCOMRAM 000001
 stackhi                          (abs)        0007FF
 stacklo                          (abs)        00034E
 start                            init         000000
-start_initialization             cinit        005B04
+start_initialization             cinit        005B76
 sync_fs@fs                       cstackCOMRAM 00003A
 sync_fs@res                      cstackCOMRAM 000044
-sync_window@fs                   cstackCOMRAM 00001B
-sync_window@nf                   cstackCOMRAM 00002A
-sync_window@res                  cstackCOMRAM 000029
-sync_window@wsect                cstackCOMRAM 00002C
+sync_window@fs                   cstackCOMRAM 00001C
+sync_window@nf                   cstackCOMRAM 00002B
+sync_window@res                  cstackCOMRAM 00002A
+sync_window@wsect                cstackCOMRAM 00002D
 validate@fil                     cstackCOMRAM 000008
 validate@obj                     cstackCOMRAM 000002
 wait_ready@tmr                   cstackCOMRAM 000002
 xmit_datablock@buff              cstackCOMRAM 000004
-xmit_datablock@i                 cstackCOMRAM 000007
-xmit_datablock@resp              cstackCOMRAM 000009
-xmit_datablock@token             cstackCOMRAM 000006
+xmit_datablock@i                 cstackCOMRAM 000008
+xmit_datablock@resp              cstackCOMRAM 00000A
+xmit_datablock@token             cstackCOMRAM 000007
 
 
 FUNCTION INFORMATION:
 
  *************** function _main *****************
  Defined at:
-		line 31 in file "Main.c"
+		line 37 in file "Main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
-  ND              2  120[BANK0 ] int 
-  a               2    0        int 
-  out             2    0        int 
+		None
  Return value:  Size  Location     Type
                   1    wreg      void 
  Registers used:
@@ -1181,27 +1171,92 @@ FUNCTION INFORMATION:
 		Unchanged: 
  Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
       Params:         0       0       0       0       0       0       0       0       0
-      Locals:         0       4       0       0       0       0       0       0       0
-      Temps:          0       2       0       0       0       0       0       0       0
-      Totals:         0       6       0       0       0       0       0       0       0
-Total ram usage:        6 bytes
+      Locals:         0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
  Hardware stack levels required when called:   15
  This function calls:
 		_Init8LEDs
-		___fldiv
-		___flmul
-		___fltol
-		___xxtofl
 		_guardar
-		_interruptadc
  This function is called by:
 		Startup code after reset
  This function uses a non-reentrant model
 
 
+ *************** function _guardar *****************
+ Defined at:
+		line 111 in file "Main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:   14
+ This function calls:
+		_Error
+		_SYSTEM_Initialize
+		_f_close
+		_f_lseek
+		_f_mount
+		_f_open
+		_grabador
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _grabador *****************
+ Defined at:
+		line 83 in file "Main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0
+      Temps:          3       0       0       0       0       0       0       0       0
+      Totals:         3       0       0       0       0       0       0       0       0
+Total ram usage:        3 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:   11
+ This function calls:
+		___fldiv
+		___flmul
+		___xxtofl
+		_f_write
+		_interruptadc
+ This function is called by:
+		_guardar
+ This function uses a non-reentrant model
+
+
  *************** function _interruptadc *****************
  Defined at:
-		line 66 in file "Main.c"
+		line 62 in file "Main.c"
  Parameters:    Size  Location     Type
   adcin           2    0[COMRAM] int 
   a               2    2[COMRAM] int 
@@ -1225,44 +1280,7 @@ Total ram usage:        6 bytes
  This function calls:
 		Nothing
  This function is called by:
-		_main
- This function uses a non-reentrant model
-
-
- *************** function _guardar *****************
- Defined at:
-		line 107 in file "Main.c"
- Parameters:    Size  Location     Type
-  data            2  112[BANK0 ] PTR unsigned char 
-		 -> RAM(2047), 
- Auto vars:     Size  Location     Type
-  bw              2  114[BANK0 ] unsigned short 
- Return value:  Size  Location     Type
-                  1    wreg      void 
- Registers used:
-		wreg, fsr0l, fsr0h, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
- Tracked objects:
-		On entry : 
-		On exit  : 
-		Unchanged: 
- Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
-      Params:         0       2       0       0       0       0       0       0       0
-      Locals:         0       2       0       0       0       0       0       0       0
-      Temps:          0       0       0       0       0       0       0       0       0
-      Totals:         0       4       0       0       0       0       0       0       0
-Total ram usage:        4 bytes
- Hardware stack levels used:    1
- Hardware stack levels required when called:   14
- This function calls:
-		_Error
-		_SYSTEM_Initialize
-		_f_close
-		_f_lseek
-		_f_mount
-		_f_open
-		_f_write
- This function is called by:
-		_main
+		_grabador
  This function uses a non-reentrant model
 
 
@@ -1270,36 +1288,36 @@ Total ram usage:        4 bytes
  Defined at:
 		line 2691 in file "ff.c"
  Parameters:    Size  Location     Type
-  fp              2   13[BANK0 ] PTR struct .
+  fp              2   17[BANK0 ] PTR struct .
 		 -> Fil(32), 
-  buff            2   15[BANK0 ] PTR const void 
-		 -> RAM(2047), 
-  btw             2   17[BANK0 ] unsigned short 
-  bw              2   19[BANK0 ] PTR unsigned short 
-		 -> guardar@bw(2), 
+  buff            3   19[BANK0 ] PTR const void 
+		 -> ROM(32767), 
+  btw             2   22[BANK0 ] unsigned short 
+  bw              2   24[BANK0 ] PTR unsigned short 
+		 -> bw(2), 
  Auto vars:     Size  Location     Type
-  clst            4   43[BANK0 ] unsigned long 
-  sect            4   39[BANK0 ] unsigned long 
-  wcnt            2   47[BANK0 ] unsigned short 
-  cc              2   37[BANK0 ] unsigned short 
-  wbuff           2   34[BANK0 ] PTR const unsigned char 
-		 -> RAM(2047), 
-  csect           1   36[BANK0 ] unsigned char 
-  res             1   33[BANK0 ] enum E93
+  clst            4   49[BANK0 ] unsigned long 
+  sect            4   45[BANK0 ] unsigned long 
+  wbuff           3   39[BANK0 ] PTR const unsigned char 
+		 -> ROM(32767), 
+  wcnt            2   53[BANK0 ] unsigned short 
+  cc              2   43[BANK0 ] unsigned short 
+  csect           1   42[BANK0 ] unsigned char 
+  res             1   38[BANK0 ] enum E93
  Return value:  Size  Location     Type
                   1    wreg      enum E93
  Registers used:
-		wreg, fsr0l, fsr0h, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, cstack
+		wreg, fsr0l, fsr0h, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
  Tracked objects:
 		On entry : 
 		On exit  : 
 		Unchanged: 
  Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
-      Params:         0       8       0       0       0       0       0       0       0
-      Locals:         0      16       0       0       0       0       0       0       0
+      Params:         0       9       0       0       0       0       0       0       0
+      Locals:         0      17       0       0       0       0       0       0       0
       Temps:          0      12       0       0       0       0       0       0       0
-      Totals:         0      36       0       0       0       0       0       0       0
-Total ram usage:       36 bytes
+      Totals:         0      38       0       0       0       0       0       0       0
+Total ram usage:       38 bytes
  Hardware stack levels used:    1
  Hardware stack levels required when called:   10
  This function calls:
@@ -1311,7 +1329,109 @@ Total ram usage:       36 bytes
 		_sync_window
 		_validate
  This function is called by:
-		_guardar
+		_grabador
+ This function uses a non-reentrant model
+
+
+ *************** function ___xxtofl *****************
+ Defined at:
+		line 10 in file "C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\xxtofl.c"
+ Parameters:    Size  Location     Type
+  sign            1    wreg     unsigned char 
+  val             4    0[COMRAM] long 
+ Auto vars:     Size  Location     Type
+  sign            1    8[COMRAM] unsigned char 
+  arg             4   10[COMRAM] unsigned long 
+  exp             1    9[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  4    0[COMRAM] unsigned char 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         4       0       0       0       0       0       0       0       0
+      Locals:         6       0       0       0       0       0       0       0       0
+      Temps:          4       0       0       0       0       0       0       0       0
+      Totals:        14       0       0       0       0       0       0       0       0
+Total ram usage:       14 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_grabador
+ This function uses a non-reentrant model
+
+
+ *************** function ___flmul *****************
+ Defined at:
+		line 8 in file "C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\sprcmul.c"
+ Parameters:    Size  Location     Type
+  b               4   14[COMRAM] unsigned char 
+  a               4   18[COMRAM] unsigned char 
+ Auto vars:     Size  Location     Type
+  prod            4   33[COMRAM] struct .
+  grs             4   27[COMRAM] unsigned long 
+  temp            2   37[COMRAM] struct .
+  bexp            1   32[COMRAM] unsigned char 
+  aexp            1   31[COMRAM] unsigned char 
+  sign            1   26[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  4   14[COMRAM] unsigned char 
+ Registers used:
+		wreg, status,2, status,0, prodl, prodh
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         8       0       0       0       0       0       0       0       0
+      Locals:        13       0       0       0       0       0       0       0       0
+      Temps:          4       0       0       0       0       0       0       0       0
+      Totals:        25       0       0       0       0       0       0       0       0
+Total ram usage:       25 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_grabador
+ This function uses a non-reentrant model
+
+
+ *************** function ___fldiv *****************
+ Defined at:
+		line 11 in file "C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\sprcdiv.c"
+ Parameters:    Size  Location     Type
+  b               4   39[COMRAM] unsigned char 
+  a               4   43[COMRAM] unsigned char 
+ Auto vars:     Size  Location     Type
+  grs             4   58[COMRAM] unsigned long 
+  rem             4   51[COMRAM] unsigned long 
+  new_exp         2   56[COMRAM] short 
+  aexp            1   63[COMRAM] unsigned char 
+  bexp            1   62[COMRAM] unsigned char 
+  sign            1   55[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  4   39[COMRAM] unsigned char 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         8       0       0       0       0       0       0       0       0
+      Locals:        13       0       0       0       0       0       0       0       0
+      Temps:          4       0       0       0       0       0       0       0       0
+      Totals:        25       0       0       0       0       0       0       0       0
+Total ram usage:       25 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_grabador
  This function uses a non-reentrant model
 
 
@@ -1322,7 +1442,7 @@ Total ram usage:       36 bytes
   fp              2   58[BANK0 ] PTR struct .
 		 -> Fil(32), 
   path            2   60[BANK0 ] PTR const unsigned char 
-		 -> STR_4(9), STR_3(1), 
+		 -> STR_5(11), STR_4(1), STR_3(1), 
   mode            1   62[BANK0 ] unsigned char 
  Auto vars:     Size  Location     Type
   dj             22   90[BANK0 ] struct .
@@ -1335,7 +1455,7 @@ Total ram usage:       36 bytes
  Return value:  Size  Location     Type
                   1    wreg      enum E93
  Registers used:
-		wreg, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+		wreg, fsr0l, fsr0h, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
  Tracked objects:
 		On entry : 
 		On exit  : 
@@ -1365,16 +1485,16 @@ Total ram usage:       54 bytes
  Defined at:
 		line 937 in file "ff.c"
  Parameters:    Size  Location     Type
-  fs              2   85[COMRAM] PTR struct .
+  fs              2   86[COMRAM] PTR struct .
 		 -> FatFs(558), NULL(0), 
-  clst            4   87[COMRAM] unsigned long 
+  clst            4   88[COMRAM] unsigned long 
  Auto vars:     Size  Location     Type
-  nxt             4    1[BANK0 ] unsigned long 
-  res             1    0[BANK0 ] enum E93
+  nxt             4    5[BANK0 ] unsigned long 
+  res             1    4[BANK0 ] enum E93
  Return value:  Size  Location     Type
                   1    wreg      enum E93
  Registers used:
-		wreg, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, cstack
+		wreg, fsr0l, fsr0h, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
  Tracked objects:
 		On entry : 
 		On exit  : 
@@ -1382,8 +1502,8 @@ Total ram usage:       54 bytes
  Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
       Params:         6       0       0       0       0       0       0       0       0
       Locals:         0       5       0       0       0       0       0       0       0
-      Temps:          4       0       0       0       0       0       0       0       0
-      Totals:        10       5       0       0       0       0       0       0       0
+      Temps:          0       4       0       0       0       0       0       0       0
+      Totals:         6       9       0       0       0       0       0       0       0
 Total ram usage:       15 bytes
  Hardware stack levels used:    1
  Hardware stack levels required when called:    9
@@ -1399,19 +1519,19 @@ Total ram usage:       15 bytes
  Defined at:
 		line 2052 in file "ff.c"
  Parameters:    Size  Location     Type
-  dp              2   38[BANK0 ] PTR struct .
+  dp              2   40[BANK0 ] PTR struct .
 		 -> f_open@dj(22), 
-  path            2   40[BANK0 ] PTR const unsigned char 
-		 -> STR_4(9), STR_3(1), 
+  path            2   42[BANK0 ] PTR const unsigned char 
+		 -> STR_5(11), STR_4(1), STR_3(1), 
  Auto vars:     Size  Location     Type
-  dir             2   42[BANK0 ] PTR unsigned char 
+  dir             2   44[BANK0 ] PTR unsigned char 
 		 -> FatFs(558), NULL(0), 
-  res             1   45[BANK0 ] enum E93
-  ns              1   44[BANK0 ] unsigned char 
+  res             1   47[BANK0 ] enum E93
+  ns              1   46[BANK0 ] unsigned char 
  Return value:  Size  Location     Type
                   1    wreg      enum E93
  Registers used:
-		wreg, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+		wreg, fsr0l, fsr0h, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
  Tracked objects:
 		On entry : 
 		On exit  : 
@@ -1471,26 +1591,26 @@ Total ram usage:       14 bytes
  Defined at:
 		line 1458 in file "ff.c"
  Parameters:    Size  Location     Type
-  dp              2   32[BANK0 ] PTR struct .
+  dp              2   92[COMRAM] PTR struct .
 		 -> f_open@dj(22), 
  Auto vars:     Size  Location     Type
-  dir             2   35[BANK0 ] PTR unsigned char 
+  dir             2   37[BANK0 ] PTR unsigned char 
 		 -> FatFs(558), NULL(0), 
-  res             1   37[BANK0 ] enum E93
-  c               1   34[BANK0 ] unsigned char 
+  res             1   39[BANK0 ] enum E93
+  c               1   36[BANK0 ] unsigned char 
  Return value:  Size  Location     Type
                   1    wreg      enum E93
  Registers used:
-		wreg, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, prodl, prodh, cstack
+		wreg, fsr0l, fsr0h, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
  Tracked objects:
 		On entry : 
 		On exit  : 
 		Unchanged: 
  Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
-      Params:         0       2       0       0       0       0       0       0       0
+      Params:         2       0       0       0       0       0       0       0       0
       Locals:         0       4       0       0       0       0       0       0       0
       Temps:          0       0       0       0       0       0       0       0       0
-      Totals:         0       6       0       0       0       0       0       0       0
+      Totals:         2       4       0       0       0       0       0       0       0
 Total ram usage:        6 bytes
  Hardware stack levels used:    1
  Hardware stack levels required when called:   11
@@ -1554,7 +1674,7 @@ Total ram usage:       14 bytes
   sfn             2   26[COMRAM] PTR unsigned char 
 		 -> f_open@sfn(12), 
   p               2   23[COMRAM] PTR const unsigned char 
-		 -> STR_4(9), STR_3(1), 
+		 -> STR_5(11), STR_4(1), STR_3(1), 
   ni              2   21[COMRAM] unsigned short 
   si              2   18[COMRAM] unsigned short 
   c               1   30[COMRAM] unsigned char 
@@ -1619,14 +1739,14 @@ Total ram usage:        6 bytes
  Defined at:
 		line 1578 in file "ff.c"
  Parameters:    Size  Location     Type
-  dp              2   42[BANK0 ] PTR struct .
+  dp              2   43[BANK0 ] PTR struct .
 		 -> f_open@dj(22), 
  Auto vars:     Size  Location     Type
-  res             1   44[BANK0 ] enum E93
+  res             1   47[BANK0 ] enum E93
  Return value:  Size  Location     Type
                   1    wreg      enum E93
  Registers used:
-		wreg, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, prodl, prodh, cstack
+		wreg, fsr0l, fsr0h, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
  Tracked objects:
 		On entry : 
 		On exit  : 
@@ -1634,9 +1754,9 @@ Total ram usage:        6 bytes
  Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
       Params:         0       2       0       0       0       0       0       0       0
       Locals:         0       1       0       0       0       0       0       0       0
-      Temps:          0       0       0       0       0       0       0       0       0
-      Totals:         0       3       0       0       0       0       0       0       0
-Total ram usage:        3 bytes
+      Temps:          0       2       0       0       0       0       0       0       0
+      Totals:         0       5       0       0       0       0       0       0       0
+Total ram usage:        5 bytes
  Hardware stack levels used:    1
  Hardware stack levels required when called:   12
  This function calls:
@@ -1655,28 +1775,28 @@ Total ram usage:        3 bytes
  Parameters:    Size  Location     Type
   dst             2    0[COMRAM] PTR void 
 		 -> FatFs.win(512), FatFs(558), NULL(0), 
-  src             2    2[COMRAM] PTR const void 
-		 -> FatFs(558), RAM(2047), f_open@sfn(12), NULL(0), 
-  cnt             2    4[COMRAM] unsigned short 
+  src             3    2[COMRAM] PTR const void 
+		 -> FatFs(558), ROM(32767), f_open@sfn(12), NULL(0), 
+  cnt             2    5[COMRAM] unsigned short 
  Auto vars:     Size  Location     Type
-  s               2    8[COMRAM] PTR const unsigned char 
-		 -> FatFs(558), RAM(2047), f_open@sfn(12), NULL(0), 
-  d               2    6[COMRAM] PTR unsigned char 
+  s               3    9[COMRAM] PTR const unsigned char 
+		 -> FatFs(558), ROM(32767), f_open@sfn(12), NULL(0), 
+  d               2   12[COMRAM] PTR unsigned char 
 		 -> FatFs.win(512), FatFs(558), NULL(0), 
  Return value:  Size  Location     Type
                   1    wreg      void 
  Registers used:
-		wreg, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0
+		wreg, fsr0l, fsr0h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru
  Tracked objects:
 		On entry : 
 		On exit  : 
 		Unchanged: 
  Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
-      Params:         6       0       0       0       0       0       0       0       0
-      Locals:         4       0       0       0       0       0       0       0       0
-      Temps:          0       0       0       0       0       0       0       0       0
-      Totals:        10       0       0       0       0       0       0       0       0
-Total ram usage:       10 bytes
+      Params:         7       0       0       0       0       0       0       0       0
+      Locals:         5       0       0       0       0       0       0       0       0
+      Temps:          2       0       0       0       0       0       0       0       0
+      Totals:        14       0       0       0       0       0       0       0       0
+Total ram usage:       14 bytes
  Hardware stack levels used:    1
  This function calls:
 		Nothing
@@ -1691,16 +1811,16 @@ Total ram usage:       10 bytes
  Defined at:
 		line 1199 in file "ff.c"
  Parameters:    Size  Location     Type
-  dp              2   32[BANK0 ] PTR struct .
+  dp              2   36[BANK0 ] PTR struct .
 		 -> f_open@dj(22), 
-  nent            2   34[BANK0 ] unsigned short 
+  nent            2   38[BANK0 ] unsigned short 
  Auto vars:     Size  Location     Type
-  n               2   39[BANK0 ] unsigned short 
-  res             1   41[BANK0 ] enum E93
+  n               2   40[BANK0 ] unsigned short 
+  res             1   42[BANK0 ] enum E93
  Return value:  Size  Location     Type
                   1    wreg      enum E93
  Registers used:
-		wreg, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, prodl, prodh, cstack
+		wreg, fsr0l, fsr0h, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
  Tracked objects:
 		On entry : 
 		On exit  : 
@@ -1708,8 +1828,8 @@ Total ram usage:       10 bytes
  Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
       Params:         0       4       0       0       0       0       0       0       0
       Locals:         0       3       0       0       0       0       0       0       0
-      Temps:          0       3       0       0       0       0       0       0       0
-      Totals:         0      10       0       0       0       0       0       0       0
+      Temps:          3       0       0       0       0       0       0       0       0
+      Totals:         3       7       0       0       0       0       0       0       0
 Total ram usage:       10 bytes
  Hardware stack levels used:    1
  Hardware stack levels required when called:   11
@@ -1726,9 +1846,9 @@ Total ram usage:       10 bytes
  Defined at:
 		line 1080 in file "ff.c"
  Parameters:    Size  Location     Type
-  dp              2   85[COMRAM] PTR struct .
+  dp              2   86[COMRAM] PTR struct .
 		 -> f_open@dj(22), 
-  idx             2   87[COMRAM] unsigned short 
+  idx             2   88[COMRAM] unsigned short 
  Auto vars:     Size  Location     Type
   clst            4   13[BANK0 ] unsigned long 
   sect            4    9[BANK0 ] unsigned long 
@@ -1736,7 +1856,7 @@ Total ram usage:       10 bytes
  Return value:  Size  Location     Type
                   1    wreg      enum E93
  Registers used:
-		wreg, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, prodl, prodh, cstack
+		wreg, fsr0l, fsr0h, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
  Tracked objects:
 		On entry : 
 		On exit  : 
@@ -1763,17 +1883,17 @@ Total ram usage:       21 bytes
  Defined at:
 		line 1128 in file "ff.c"
  Parameters:    Size  Location     Type
-  dp              2   13[BANK0 ] PTR struct .
+  dp              2   17[BANK0 ] PTR struct .
 		 -> f_open@dj(22), 
-  stretch         2   15[BANK0 ] int 
+  stretch         2   19[BANK0 ] int 
  Auto vars:     Size  Location     Type
-  clst            4   28[BANK0 ] unsigned long 
-  i               2   26[BANK0 ] unsigned short 
-  c               2   24[BANK0 ] unsigned short 
+  clst            4   32[BANK0 ] unsigned long 
+  i               2   30[BANK0 ] unsigned short 
+  c               2   28[BANK0 ] unsigned short 
  Return value:  Size  Location     Type
                   1    wreg      enum E93
  Registers used:
-		wreg, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, cstack
+		wreg, fsr0l, fsr0h, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
  Tracked objects:
 		On entry : 
 		On exit  : 
@@ -1802,22 +1922,22 @@ Total ram usage:       19 bytes
  Defined at:
 		line 2402 in file "ff.c"
  Parameters:    Size  Location     Type
-  fs              2   81[COMRAM] PTR struct .
+  fs              2   82[COMRAM] PTR struct .
 		 -> FatFs(558), NULL(0), 
-  path            2   83[COMRAM] PTR const unsigned char 
-		 -> STR_4(9), STR_3(1), 
-  opt             1   85[COMRAM] unsigned char 
+  path            2   84[COMRAM] PTR const unsigned char 
+		 -> STR_5(11), STR_4(1), STR_3(1), 
+  opt             1   86[COMRAM] unsigned char 
  Auto vars:     Size  Location     Type
-  vol             2   91[COMRAM] int 
-  rp              2   89[COMRAM] PTR const unsigned char 
-		 -> STR_4(9), STR_3(1), 
-  cfs             2   87[COMRAM] PTR struct .
+  vol             2   92[COMRAM] int 
+  rp              2   90[COMRAM] PTR const unsigned char 
+		 -> STR_5(11), STR_4(1), STR_3(1), 
+  cfs             2   88[COMRAM] PTR struct .
 		 -> FatFs(558), NULL(0), 
-  res             1   86[COMRAM] enum E93
+  res             1   87[COMRAM] enum E93
  Return value:  Size  Location     Type
                   1    wreg      enum E93
  Registers used:
-		wreg, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
+		wreg, fsr0l, fsr0h, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
  Tracked objects:
 		On entry : 
 		On exit  : 
@@ -1842,11 +1962,11 @@ Total ram usage:       12 bytes
  Defined at:
 		line 2203 in file "ff.c"
  Parameters:    Size  Location     Type
-  rfs             2   68[COMRAM] PTR PTR struct .
+  rfs             2   69[COMRAM] PTR PTR struct .
 		 -> f_open@dj(22), f_mount@fs(2), 
-  path            2   70[COMRAM] PTR PTR const unsigned c
+  path            2   71[COMRAM] PTR PTR const unsigned c
 		 -> f_open@path(2), f_mount@path(2), 
-  wmode           1   72[COMRAM] unsigned char 
+  wmode           1   73[COMRAM] unsigned char 
  Auto vars:     Size  Location     Type
   br             16    0[BANK0 ] unsigned long [4]
   bsect           4   49[BANK0 ] unsigned long 
@@ -1867,7 +1987,7 @@ Total ram usage:       12 bytes
  Return value:  Size  Location     Type
                   1    wreg      enum E93
  Registers used:
-		wreg, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
+		wreg, fsr0l, fsr0h, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
  Tracked objects:
 		On entry : 
 		On exit  : 
@@ -1902,11 +2022,11 @@ Total ram usage:       71 bytes
 		 -> f_open@path(2), f_mount@path(2), f_mount@rp(2), 
  Auto vars:     Size  Location     Type
   tt              2   12[COMRAM] PTR const unsigned char 
-		 -> STR_4(9), STR_3(1), 
+		 -> STR_5(11), STR_4(1), STR_3(1), 
   i               2   10[COMRAM] unsigned short 
   vol             2    8[COMRAM] int 
   tp              2    6[COMRAM] PTR const unsigned char 
-		 -> STR_4(9), STR_3(1), 
+		 -> STR_5(11), STR_4(1), STR_3(1), 
  Return value:  Size  Location     Type
                   2    0[COMRAM] int 
  Registers used:
@@ -2002,15 +2122,15 @@ Total ram usage:        0 bytes
  Defined at:
 		line 2175 in file "ff.c"
  Parameters:    Size  Location     Type
-  fs              2   58[COMRAM] PTR struct .
+  fs              2   59[COMRAM] PTR struct .
 		 -> FatFs(558), NULL(0), 
-  sect            4   60[COMRAM] unsigned long 
+  sect            4   61[COMRAM] unsigned long 
  Auto vars:     Size  Location     Type
 		None
  Return value:  Size  Location     Type
                   1    wreg      unsigned char 
  Registers used:
-		wreg, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, cstack
+		wreg, fsr0l, fsr0h, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
  Tracked objects:
 		On entry : 
 		On exit  : 
@@ -2034,19 +2154,19 @@ Total ram usage:       10 bytes
  Defined at:
 		line 3033 in file "ff.c"
  Parameters:    Size  Location     Type
-  fp              2   13[BANK0 ] PTR struct .
+  fp              2   17[BANK0 ] PTR struct .
 		 -> Fil(32), 
-  ofs             4   15[BANK0 ] unsigned long 
+  ofs             4   19[BANK0 ] unsigned long 
  Auto vars:     Size  Location     Type
-  clst            4   48[BANK0 ] unsigned long 
-  bcs             4   44[BANK0 ] unsigned long 
-  nsect           4   40[BANK0 ] unsigned long 
-  ifptr           4   35[BANK0 ] unsigned long 
-  res             1   39[BANK0 ] enum E93
+  clst            4   52[BANK0 ] unsigned long 
+  bcs             4   48[BANK0 ] unsigned long 
+  nsect           4   44[BANK0 ] unsigned long 
+  ifptr           4   39[BANK0 ] unsigned long 
+  res             1   43[BANK0 ] enum E93
  Return value:  Size  Location     Type
                   1    wreg      enum E93
  Registers used:
-		wreg, fsr0l, fsr0h, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, cstack
+		wreg, fsr0l, fsr0h, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
  Tracked objects:
 		On entry : 
 		On exit  : 
@@ -2074,18 +2194,18 @@ Total ram usage:       39 bytes
  Defined at:
 		line 990 in file "ff.c"
  Parameters:    Size  Location     Type
-  fs              2   85[COMRAM] PTR struct .
+  fs              2   86[COMRAM] PTR struct .
 		 -> FatFs(558), NULL(0), 
-  clst            4   87[COMRAM] unsigned long 
+  clst            4   88[COMRAM] unsigned long 
  Auto vars:     Size  Location     Type
-  cs              4    9[BANK0 ] unsigned long 
-  ncl             4    5[BANK0 ] unsigned long 
-  scl             4    1[BANK0 ] unsigned long 
-  res             1    0[BANK0 ] enum E93
+  cs              4   13[BANK0 ] unsigned long 
+  ncl             4    9[BANK0 ] unsigned long 
+  scl             4    5[BANK0 ] unsigned long 
+  res             1    4[BANK0 ] enum E93
  Return value:  Size  Location     Type
-                  4   85[COMRAM] unsigned long 
+                  4   86[COMRAM] unsigned long 
  Registers used:
-		wreg, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, cstack
+		wreg, fsr0l, fsr0h, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
  Tracked objects:
 		On entry : 
 		On exit  : 
@@ -2093,8 +2213,8 @@ Total ram usage:       39 bytes
  Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
       Params:         6       0       0       0       0       0       0       0       0
       Locals:         0      13       0       0       0       0       0       0       0
-      Temps:          4       0       0       0       0       0       0       0       0
-      Totals:        10      13       0       0       0       0       0       0       0
+      Temps:          0       4       0       0       0       0       0       0       0
+      Totals:         6      17       0       0       0       0       0       0       0
 Total ram usage:       23 bytes
  Hardware stack levels used:    1
  Hardware stack levels required when called:    9
@@ -2112,19 +2232,19 @@ Total ram usage:       23 bytes
  Defined at:
 		line 873 in file "ff.c"
  Parameters:    Size  Location     Type
-  fs              2   58[COMRAM] PTR struct .
+  fs              2   59[COMRAM] PTR struct .
 		 -> FatFs(558), NULL(0), 
-  clst            4   60[COMRAM] unsigned long 
-  val             4   64[COMRAM] unsigned long 
+  clst            4   61[COMRAM] unsigned long 
+  val             4   65[COMRAM] unsigned long 
  Auto vars:     Size  Location     Type
-  p               2   83[COMRAM] PTR unsigned char 
+  p               2   84[COMRAM] PTR unsigned char 
 		 -> FatFs.win(512), FatFs(558), NULL(0), 
-  bc              2   80[COMRAM] unsigned short 
-  res             1   82[COMRAM] enum E93
+  bc              2   81[COMRAM] unsigned short 
+  res             1   83[COMRAM] enum E93
  Return value:  Size  Location     Type
                   1    wreg      enum E93
  Registers used:
-		wreg, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, cstack
+		wreg, fsr0l, fsr0h, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
  Tracked objects:
 		On entry : 
 		On exit  : 
@@ -2149,19 +2269,19 @@ Total ram usage:       27 bytes
  Defined at:
 		line 818 in file "ff.c"
  Parameters:    Size  Location     Type
-  fs              2   58[COMRAM] PTR struct .
+  fs              2   59[COMRAM] PTR struct .
 		 -> FatFs(558), NULL(0), 
-  clst            4   60[COMRAM] unsigned long 
+  clst            4   61[COMRAM] unsigned long 
  Auto vars:     Size  Location     Type
-  val             4   75[COMRAM] unsigned long 
-  bc              2   83[COMRAM] unsigned short 
-  p               2   81[COMRAM] PTR unsigned char 
+  val             4   76[COMRAM] unsigned long 
+  bc              2   84[COMRAM] unsigned short 
+  p               2   82[COMRAM] PTR unsigned char 
 		 -> FatFs.win(512), FatFs(558), NULL(0), 
-  wc              2   79[COMRAM] unsigned short 
+  wc              2   80[COMRAM] unsigned short 
  Return value:  Size  Location     Type
-                  4   58[COMRAM] unsigned long 
+                  4   59[COMRAM] unsigned long 
  Registers used:
-		wreg, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, cstack
+		wreg, fsr0l, fsr0h, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
  Tracked objects:
 		On entry : 
 		On exit  : 
@@ -2296,7 +2416,7 @@ Total ram usage:       13 bytes
  Return value:  Size  Location     Type
                   1    wreg      enum E93
  Registers used:
-		wreg, fsr0l, fsr0h, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, prodl, prodh, cstack
+		wreg, fsr0l, fsr0h, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
  Tracked objects:
 		On entry : 
 		On exit  : 
@@ -2331,7 +2451,7 @@ Total ram usage:        3 bytes
  Return value:  Size  Location     Type
                   1    wreg      enum E93
  Registers used:
-		wreg, fsr0l, fsr0h, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, prodl, prodh, cstack
+		wreg, fsr0l, fsr0h, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
  Tracked objects:
 		On entry : 
 		On exit  : 
@@ -2431,7 +2551,7 @@ Total ram usage:        1 bytes
  Return value:  Size  Location     Type
                   1    wreg      enum E93
  Registers used:
-		wreg, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, prodl, prodh, cstack
+		wreg, fsr0l, fsr0h, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
  Tracked objects:
 		On entry : 
 		On exit  : 
@@ -2600,15 +2720,15 @@ Total ram usage:        6 bytes
  Defined at:
 		line 729 in file "ff.c"
  Parameters:    Size  Location     Type
-  fs              2   47[COMRAM] PTR struct .
+  fs              2   48[COMRAM] PTR struct .
 		 -> FatFs(558), NULL(0), 
-  sector          4   49[COMRAM] unsigned long 
+  sector          4   50[COMRAM] unsigned long 
  Auto vars:     Size  Location     Type
-  res             1   57[COMRAM] enum E93
+  res             1   58[COMRAM] enum E93
  Return value:  Size  Location     Type
                   1    wreg      enum E93
  Registers used:
-		wreg, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, cstack
+		wreg, fsr0l, fsr0h, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
  Tracked objects:
 		On entry : 
 		On exit  : 
@@ -2643,16 +2763,16 @@ Total ram usage:       11 bytes
  Defined at:
 		line 700 in file "ff.c"
  Parameters:    Size  Location     Type
-  fs              2   26[COMRAM] PTR struct .
+  fs              2   27[COMRAM] PTR struct .
 		 -> FatFs(558), NULL(0), 
  Auto vars:     Size  Location     Type
-  wsect           4   43[COMRAM] unsigned long 
-  nf              2   41[COMRAM] unsigned short 
-  res             1   40[COMRAM] enum E93
+  wsect           4   44[COMRAM] unsigned long 
+  nf              2   42[COMRAM] unsigned short 
+  res             1   41[COMRAM] enum E93
  Return value:  Size  Location     Type
                   1    wreg      enum E93
  Registers used:
-		wreg, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, cstack
+		wreg, fsr0l, fsr0h, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
  Tracked objects:
 		On entry : 
 		On exit  : 
@@ -2680,26 +2800,26 @@ Total ram usage:       21 bytes
 		line 405 in file "diskio.c"
  Parameters:    Size  Location     Type
   pdrv            1    wreg     unsigned char 
-  buff            2   16[COMRAM] PTR const unsigned char 
-		 -> FatFs.win(512), FatFs(558), RAM(2047), NULL(0), 
-  sector          4   18[COMRAM] unsigned long 
-  count           2   22[COMRAM] unsigned short 
+  buff            3   16[COMRAM] PTR const unsigned char 
+		 -> FatFs.win(512), FatFs(558), ROM(32767), NULL(0), 
+  sector          4   19[COMRAM] unsigned long 
+  count           2   23[COMRAM] unsigned short 
  Auto vars:     Size  Location     Type
-  pdrv            1   25[COMRAM] unsigned char 
+  pdrv            1   26[COMRAM] unsigned char 
  Return value:  Size  Location     Type
                   1    wreg      enum E43
  Registers used:
-		wreg, fsr2l, fsr2h, status,2, status,0, cstack
+		wreg, fsr0l, fsr0h, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
  Tracked objects:
 		On entry : 
 		On exit  : 
 		Unchanged: 
  Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
-      Params:         8       0       0       0       0       0       0       0       0
+      Params:         9       0       0       0       0       0       0       0       0
       Locals:         1       0       0       0       0       0       0       0       0
       Temps:          1       0       0       0       0       0       0       0       0
-      Totals:        10       0       0       0       0       0       0       0       0
-Total ram usage:       10 bytes
+      Totals:        11       0       0       0       0       0       0       0       0
+Total ram usage:       11 bytes
  Hardware stack levels used:    1
  Hardware stack levels required when called:    5
  This function calls:
@@ -2717,26 +2837,26 @@ Total ram usage:       10 bytes
  Defined at:
 		line 156 in file "diskio.c"
  Parameters:    Size  Location     Type
-  buff            2    3[COMRAM] PTR const unsigned char 
-		 -> FatFs.win(512), FatFs(558), RAM(2047), NULL(0), 
-  token           1    5[COMRAM] unsigned char 
+  buff            3    3[COMRAM] PTR const unsigned char 
+		 -> FatFs.win(512), FatFs(558), ROM(32767), NULL(0), 
+  token           1    6[COMRAM] unsigned char 
  Auto vars:     Size  Location     Type
-  i               2    6[COMRAM] unsigned short 
-  resp            1    8[COMRAM] unsigned char 
+  i               2    7[COMRAM] unsigned short 
+  resp            1    9[COMRAM] unsigned char 
  Return value:  Size  Location     Type
                   1    wreg      unsigned char 
  Registers used:
-		wreg, fsr2l, fsr2h, status,2, status,0, cstack
+		wreg, fsr0l, fsr0h, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
  Tracked objects:
 		On entry : 
 		On exit  : 
 		Unchanged: 
  Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
-      Params:         3       0       0       0       0       0       0       0       0
+      Params:         4       0       0       0       0       0       0       0       0
       Locals:         3       0       0       0       0       0       0       0       0
       Temps:          0       0       0       0       0       0       0       0       0
-      Totals:         6       0       0       0       0       0       0       0       0
-Total ram usage:        6 bytes
+      Totals:         7       0       0       0       0       0       0       0       0
+Total ram usage:        7 bytes
  Hardware stack levels used:    1
  Hardware stack levels required when called:    2
  This function calls:
@@ -3174,141 +3294,9 @@ Total ram usage:       13 bytes
  This function uses a non-reentrant model
 
 
- *************** function ___xxtofl *****************
- Defined at:
-		line 10 in file "C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\xxtofl.c"
- Parameters:    Size  Location     Type
-  sign            1    wreg     unsigned char 
-  val             4    0[COMRAM] long 
- Auto vars:     Size  Location     Type
-  sign            1    8[COMRAM] unsigned char 
-  arg             4   10[COMRAM] unsigned long 
-  exp             1    9[COMRAM] unsigned char 
- Return value:  Size  Location     Type
-                  4    0[COMRAM] unsigned char 
- Registers used:
-		wreg, status,2, status,0
- Tracked objects:
-		On entry : 
-		On exit  : 
-		Unchanged: 
- Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
-      Params:         4       0       0       0       0       0       0       0       0
-      Locals:         6       0       0       0       0       0       0       0       0
-      Temps:          4       0       0       0       0       0       0       0       0
-      Totals:        14       0       0       0       0       0       0       0       0
-Total ram usage:       14 bytes
- Hardware stack levels used:    1
- This function calls:
-		Nothing
- This function is called by:
-		_main
- This function uses a non-reentrant model
-
-
- *************** function ___fltol *****************
- Defined at:
-		line 43 in file "C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\fltol.c"
- Parameters:    Size  Location     Type
-  f1              4    0[COMRAM] unsigned char 
- Auto vars:     Size  Location     Type
-  exp1            1    9[COMRAM] unsigned char 
-  sign1           1    8[COMRAM] unsigned char 
- Return value:  Size  Location     Type
-                  4    0[COMRAM] long 
- Registers used:
-		wreg, status,2, status,0
- Tracked objects:
-		On entry : 
-		On exit  : 
-		Unchanged: 
- Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
-      Params:         4       0       0       0       0       0       0       0       0
-      Locals:         2       0       0       0       0       0       0       0       0
-      Temps:          4       0       0       0       0       0       0       0       0
-      Totals:        10       0       0       0       0       0       0       0       0
-Total ram usage:       10 bytes
- Hardware stack levels used:    1
- This function calls:
-		Nothing
- This function is called by:
-		_main
- This function uses a non-reentrant model
-
-
- *************** function ___flmul *****************
- Defined at:
-		line 8 in file "C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\sprcmul.c"
- Parameters:    Size  Location     Type
-  b               4   14[COMRAM] long 
-  a               4   18[COMRAM] long 
- Auto vars:     Size  Location     Type
-  prod            4   33[COMRAM] struct .
-  grs             4   27[COMRAM] unsigned long 
-  temp            2   37[COMRAM] struct .
-  bexp            1   32[COMRAM] unsigned char 
-  aexp            1   31[COMRAM] unsigned char 
-  sign            1   26[COMRAM] unsigned char 
- Return value:  Size  Location     Type
-                  4   14[COMRAM] unsigned char 
- Registers used:
-		wreg, status,2, status,0, prodl, prodh
- Tracked objects:
-		On entry : 
-		On exit  : 
-		Unchanged: 
- Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
-      Params:         8       0       0       0       0       0       0       0       0
-      Locals:        13       0       0       0       0       0       0       0       0
-      Temps:          4       0       0       0       0       0       0       0       0
-      Totals:        25       0       0       0       0       0       0       0       0
-Total ram usage:       25 bytes
- Hardware stack levels used:    1
- This function calls:
-		Nothing
- This function is called by:
-		_main
- This function uses a non-reentrant model
-
-
- *************** function ___fldiv *****************
- Defined at:
-		line 11 in file "C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\sprcdiv.c"
- Parameters:    Size  Location     Type
-  b               4   39[COMRAM] unsigned char 
-  a               4   43[COMRAM] unsigned char 
- Auto vars:     Size  Location     Type
-  grs             4   58[COMRAM] unsigned long 
-  rem             4   51[COMRAM] unsigned long 
-  new_exp         2   56[COMRAM] short 
-  aexp            1   63[COMRAM] unsigned char 
-  bexp            1   62[COMRAM] unsigned char 
-  sign            1   55[COMRAM] unsigned char 
- Return value:  Size  Location     Type
-                  4   39[COMRAM] unsigned char 
- Registers used:
-		wreg, status,2, status,0
- Tracked objects:
-		On entry : 
-		On exit  : 
-		Unchanged: 
- Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
-      Params:         8       0       0       0       0       0       0       0       0
-      Locals:        13       0       0       0       0       0       0       0       0
-      Temps:          4       0       0       0       0       0       0       0       0
-      Totals:        25       0       0       0       0       0       0       0       0
-Total ram usage:       25 bytes
- Hardware stack levels used:    1
- This function calls:
-		Nothing
- This function is called by:
-		_main
- This function uses a non-reentrant model
-
-
  *************** function _Init8LEDs *****************
  Defined at:
-		line 78 in file "Main.c"
+		line 74 in file "Main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -3340,124 +3328,120 @@ MODULE INFORMATION
 
 Module		Function		Class		Link	Load	Size
 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\Umul32.c
-		___lmul        		CODE           	5B5A	0000	87
+		___lmul        		CODE           	5B20	0000	87
 
 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\Umul32.c estimated size: 87
 
 diskio.c
-		_rcvr_datablock		CODE           	59CC	0000	109
-		_send_cmd      		CODE           	5BF8	0000	67
-		_disk_initialize		CODE           	415A	0000	491
-		_disk_write    		CODE           	4C8A	0000	273
-		_disk_status   		CODE           	5D90	0000	19
-		_deselect      		CODE           	5E0A	0000	11
-		_disk_ioctl    		CODE           	1F3A	0000	1183
-		___send_cmd    		CODE           	584E	0000	131
-		_disk_read     		CODE           	5216	0000	205
-		_select        		CODE           	5D72	0000	31
-		_xmit_datablock		CODE           	5A9E	0000	103
-		_wait_ready    		CODE           	5C3A	0000	61
+		_rcvr_datablock		CODE           	5A4E	0000	109
+		_send_cmd      		CODE           	5C16	0000	67
+		_disk_initialize		CODE           	417E	0000	491
+		_disk_write    		CODE           	4BCE	0000	291
+		_disk_status   		CODE           	5DE4	0000	19
+		_deselect      		CODE           	5E60	0000	11
+		_disk_ioctl    		CODE           	1F56	0000	1183
+		___send_cmd    		CODE           	594E	0000	131
+		_disk_read     		CODE           	527C	0000	205
+		_select        		CODE           	5DC6	0000	31
+		_xmit_datablock		CODE           	5848	0000	133
+		_wait_ready    		CODE           	5C58	0000	61
 
-diskio.c estimated size: 2684
+diskio.c estimated size: 2732
 
 ff.c
-		_mem_cpy       		CODE           	594E	0000	127
-		_find_volume   		CODE           	081A	0000	2479
-		_remove_chain  		CODE           	465C	0000	331
-		_f_mount       		CODE           	55E2	0000	177
-		_get_fat       		CODE           	2C08	0000	931
-		_get_ldnumber  		CODE           	5062	0000	223
-		_st_clust      		CODE           	5CDC	0000	43
-		_create_name   		CODE           	3ED6	0000	645
-		_chk_chr       		CODE           	5BB0	0000	73
-		_create_chain  		CODE           	3692	0000	763
-		_f_lseek       		CODE           	192C	0000	1551
-		_validate      		CODE           	5738	0000	149
-		_check_fs      		CODE           	4F76	0000	237
-		_f_sync        		CODE           	48EC	0000	323
-		_f_write       		CODE           	11C8	0000	1893
-		_mem_set       		CODE           	5CB0	0000	45
-		_dir_alloc     		CODE           	4D9A	0000	241
-		_clust2sect    		CODE           	546E	0000	187
-		_put_fat       		CODE           	23D8	0000	1067
-		_sync_fs       		CODE           	4344	0000	449
-		_dir_next      		CODE           	2802	0000	1031
-		_sync_window   		CODE           	4504	0000	345
-		_dir_register  		CODE           	5140	0000	215
-		_dir_find      		CODE           	4E8A	0000	237
-		_f_open        		CODE           	2FAA	0000	919
-		_mem_cmp       		CODE           	5A38	0000	103
-		_f_close       		CODE           	5C76	0000	59
-		_dir_sdi       		CODE           	398C	0000	707
-		_follow_path   		CODE           	47A6	0000	327
-		_ld_clust      		CODE           	58D0	0000	127
-		_move_window   		CODE           	5692	0000	167
+		_mem_cpy       		CODE           	5348	0000	203
+		_find_volume   		CODE           	081C	0000	2479
+		_remove_chain  		CODE           	4802	0000	331
+		_f_mount       		CODE           	565E	0000	177
+		_get_fat       		CODE           	2C24	0000	931
+		_get_ldnumber  		CODE           	5196	0000	231
+		_st_clust      		CODE           	5D30	0000	43
+		_create_name   		CODE           	3C6A	0000	653
+		_chk_chr       		CODE           	5BC8	0000	79
+		_create_chain  		CODE           	36AE	0000	763
+		_f_lseek       		CODE           	1948	0000	1551
+		_validate      		CODE           	57B4	0000	149
+		_check_fs      		CODE           	4FC2	0000	237
+		_f_sync        		CODE           	494C	0000	323
+		_f_write       		CODE           	11CA	0000	1919
+		_mem_set       		CODE           	5D04	0000	45
+		_dir_alloc     		CODE           	4DE6	0000	241
+		_clust2sect    		CODE           	55A4	0000	187
+		_put_fat       		CODE           	23F4	0000	1067
+		_sync_fs       		CODE           	4368	0000	467
+		_dir_next      		CODE           	281E	0000	1031
+		_sync_window   		CODE           	453A	0000	381
+		_dir_register  		CODE           	50AE	0000	233
+		_dir_find      		CODE           	4ED6	0000	237
+		_f_open        		CODE           	2FC6	0000	919
+		_mem_cmp       		CODE           	5ABA	0000	103
+		_f_close       		CODE           	5C94	0000	59
+		_dir_sdi       		CODE           	39A8	0000	707
+		_follow_path   		CODE           	46B6	0000	333
+		_ld_clust      		CODE           	59D0	0000	127
+		_move_window   		CODE           	570E	0000	167
 
-ff.c estimated size: 16171
+ff.c estimated size: 16373
 
 mcc_generated_files/pin_manager.c
-		_PIN_MANAGER_Initialize		CODE           	5D52	0000	33
+		_PIN_MANAGER_Initialize		CODE           	5DA6	0000	33
 
 mcc_generated_files/pin_manager.c estimated size: 33
 
 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\xxtofl.c
-		___xxtofl      		CODE           	4A2E	0000	321
+		___xxtofl      		CODE           	4A8E	0000	321
 
 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\xxtofl.c estimated size: 321
 
 mcc_generated_files/spi1.c
-		_SPI1_Open     		CODE           	5DD4	0000	15
-		_SPI1_Initialize		CODE           	5DF0	0000	15
-		_SPI1_Exchange8bit		CODE           	5DB4	0000	17
+		_SPI1_Open     		CODE           	5E28	0000	15
+		_SPI1_Initialize		CODE           	5E44	0000	15
+		_SPI1_Exchange8bit		CODE           	5E08	0000	17
 
 mcc_generated_files/spi1.c estimated size: 47
 
-C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\fltol.c
-		___fltol       		CODE           	5528	0000	187
-
-C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\fltol.c estimated size: 187
-
 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\sprcmul.c
-		___flmul       		CODE           	3340	0000	851
+		___flmul       		CODE           	335C	0000	851
 
 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\sprcmul.c estimated size: 851
 
 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\__lldiv.c
-		___lldiv       		CODE           	57CC	0000	131
+		___lldiv       		CODE           	58CC	0000	131
 
 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\__lldiv.c estimated size: 131
 
 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\sprcdiv.c
-		___fldiv       		CODE           	3C4E	0000	649
+		___fldiv       		CODE           	3EF6	0000	649
 
 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\sprcdiv.c estimated size: 649
 
 Main.c
-		_main          		CODE           	4B6E	0000	285
-		_interruptadc  		CODE           	5D06	0000	39
-		_guardar       		CODE           	53AC	0000	195
-		_Init8LEDs     		CODE           	5DC4	0000	17
+		_main          		CODE           	5CCE	0000	55
+		_interruptadc  		CODE           	5D5A	0000	39
+		_guardar       		CODE           	54DC	0000	201
+		_grabador      		CODE           	4CF0	0000	247
+		_Init8LEDs     		CODE           	5E18	0000	17
 
-Main.c estimated size: 536
+Main.c estimated size: 559
 
 shared
-		__initialization		CODE           	5B04	0000	77
+		__initialization		CODE           	5B76	0000	77
 
 shared estimated size: 77
 
 mcc_generated_files/mcc.c
-		_OSCILLATOR_Initialize		CODE           	5DA2	0000	19
-		_SYSTEM_Initialize		CODE           	5DE2	0000	15
+		_OSCILLATOR_Initialize		CODE           	5DF6	0000	19
+		_SYSTEM_Initialize		CODE           	5E36	0000	15
 
 mcc_generated_files/mcc.c estimated size: 34
 
 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\Umul16.c
-		___wmul        		CODE           	5D2C	0000	39
+		___wmul        		CODE           	5D80	0000	39
 
 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\Umul16.c estimated size: 39
 
 ./Errores.h
-		_Error         		CODE           	52E2	0000	203
+		_Error         		CODE           	5412	0000	203
 
 ./Errores.h estimated size: 203
 
