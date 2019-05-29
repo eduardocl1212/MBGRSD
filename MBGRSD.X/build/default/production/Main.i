@@ -8497,13 +8497,14 @@ char *tempnam(const char *, const char *);
 float volt;
 unsigned int adcin;
 
-char data[];
+char data[2];
 FATFS FatFs;
 FIL Fil;
+int i = 0;
 
 
 void Init8LEDs(void);
-int interruptadc(int);
+int interruptadc(int,int);
 void grabador(void);
 void reproductor(void);
 void guardar(char* data);
@@ -8516,6 +8517,7 @@ void main(void)
     adcin = 0;
     int a = 0;
     int out;
+    int ND;
 
     Init8LEDs();
 
@@ -8533,21 +8535,25 @@ void main(void)
     ADIE = 1;
 
     while(1){
+        i++;
         ADCON0bits.GO=1;
-        adcin = interruptadc(adcin);
+        adcin = interruptadc(adcin, i);
         PORTA = adcin/4;
         volt = (adcin*5.0)/1023.0;
+        ND = (char) volt;
+        guardar(ND);
     }
     return;
 }
 
-int interruptadc(int adcin) {
+int interruptadc(int adcin, int a) {
     if(ADIF==1) {
         ADIE=0;
         adcin = (ADRESH<<8)+ADRESL;
     }
     ADIE=1;
     ADIF=0;
+
     return adcin;
 }
 
@@ -8582,43 +8588,20 @@ void __delay_sec(char sec) {
 }
 
 void guardar(char* data){
+
     UINT bw;
+    Error(2);
     SYSTEM_Initialize();
     if (f_mount(&FatFs, "", 1) != FR_OK) {
+           if (f_open(&Fil, "Beee.txt", 0x10 | 0x01 | 0x02) == FR_OK) {
 
-        Error(33);
-        __delay_sec(2);
-        while(f_mount(&FatFs, "", 1) != FR_OK) {
-            ;
+                if ((Fil.fsize != 0) && (f_lseek(&Fil, Fil.fsize) != FR_OK)) goto endSD;
+                   f_write(&Fil, data , 14 , &bw);
+
+                   endSD: f_close(&Fil);
+
         }
     }
-
-    Error(1);
-    __delay_sec(2);
-
-    if (f_open(&Fil, "BeeDev.txt", 0x10 | 0x01 | 0x02) == FR_OK) {
-        Error(2);
-
-
-        __delay_sec(2);
-         Error(3);
-
-   if ((Fil.fsize != 0) && (f_lseek(&Fil, Fil.fsize) != FR_OK)) goto endSD;
-                Error(4);
-                __delay_sec(2);
-
-                f_write(&Fil, data , 28 , &bw);
-
-                Error(5);
-                __delay_sec(2);
-                endSD: f_close(&Fil);
-                Error(6);
-                __delay_sec(1);
-
-                Error(7);
-                __delay_sec(2);
-
- }
     else {
         Error(0);
     }

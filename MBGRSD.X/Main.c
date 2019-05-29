@@ -14,13 +14,14 @@
 float volt;
 unsigned int adcin;
 
-char data[];
+char data[2];
 FATFS FatFs;
 FIL Fil;
+int i = 0;
 
 
 void Init8LEDs(void);           //Función Inicializa puerto A
-int interruptadc(int);
+int interruptadc(int,int);
 void grabador(void);
 void reproductor(void);
 void guardar(char* data);
@@ -33,6 +34,7 @@ void main(void)
     adcin = 0;
     int a = 0;
     int out;
+    int ND;
     
     Init8LEDs();        //Inicializa puerto A
       
@@ -50,21 +52,25 @@ void main(void)
     ADIE = 1;           //Habilita interrupción ADC
 
     while(1){
+        i++;
         ADCON0bits.GO=1;            //Inicia conversión ADC
-        adcin = interruptadc(adcin);
+        adcin = interruptadc(adcin, i);
         PORTA = adcin/4;            //Asigna valor adcin a puerto A
         volt = (adcin*_vin)/_base;  //Conversión a flotante
+        ND = (char) volt;
+        guardar(ND);                
     }
     return;
 }
 
-int interruptadc(int adcin) {                //Interrupción conversión                       
+int interruptadc(int adcin, int a) {                //Interrupción conversión                       
     if(ADIF==1) {                     //verifica bandera conversión ADC
         ADIE=0;                       //Deshabilita interrupción ADC
         adcin = (ADRESH<<8)+ADRESL;   //Asigna valor ADRESH y ADRESL a adcin
     }
     ADIE=1;                           //Habilita interrupción ADC
-    ADIF=0;                           //Limpia bandera conversión ADC
+    ADIF=0; //Limpia bandera conversión ADC
+    //data[a] = adcin/4;
     return adcin;
 }
 
@@ -99,43 +105,20 @@ void __delay_sec(char sec) {
 }
 
 void guardar(char* data){
+   
     UINT bw;   
+    Error(2);
     SYSTEM_Initialize();
-    if (f_mount(&FatFs, "", 1) != FR_OK) {	/* Inicializa SD */
-        
-        Error(33);
-        __delay_sec(2);
-        while(f_mount(&FatFs, "", 1) != FR_OK) {
-            ;
-        }
-    }    
-    
-    Error(1);
-    __delay_sec(2);
-        
-    if (f_open(&Fil, "BeeDev.txt", FA_OPEN_ALWAYS | FA_READ | FA_WRITE) == FR_OK) {	/* Abre o crea el archivo */
-        Error(2);
-        
-       
-        __delay_sec(2);
-         Error(3);
-            
-			if ((Fil.fsize != 0) && (f_lseek(&Fil, Fil.fsize) != FR_OK)) goto endSD;	/* Salta al final del archivo */
-                Error(4);
-                __delay_sec(2);
+    if (f_mount(&FatFs, "", 1) != FR_OK) {	/* Inicializa SD */   
+           if (f_open(&Fil, "Beee.txt", FA_OPEN_ALWAYS | FA_READ | FA_WRITE) == FR_OK) {	/* Abre o crea el archivo */
                 
-                f_write(&Fil, data , 28 , &bw);	// DATA ARRAY, NUMERO DE CHAR
+                if ((Fil.fsize != 0) && (f_lseek(&Fil, Fil.fsize) != FR_OK)) goto endSD;/* Salta al final del archivo */
+                   f_write(&Fil, data , 14 , &bw);	// DATA ARRAY, NUMERO DE CHAR
                 //f_printf(&fil, "%s", "String");  
-                Error(5);
-                __delay_sec(2);
-                endSD: f_close(&Fil);								/* Cierra el archivo */
-                Error(6);
-                __delay_sec(1);
-                
-                Error(7);
-                __delay_sec(2);
+                   endSD: f_close(&Fil);	
      
-	}
+        }
+    }
     else {
         Error(0);
     }
