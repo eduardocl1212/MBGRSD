@@ -8501,12 +8501,12 @@ unsigned int adcin;
 
     int a = 0;
     int out;
-    int ND = 12;
+    char ND[2];
 
-char data[2];
+char data[2] = "da";
 FATFS FatFs;
 FIL Fil;
-int i = 0;
+int i = -5000;
 
 
 void Init8LEDs(void);
@@ -8520,7 +8520,7 @@ void __delay_sec(char sec);
 void main(void)
 {
 
-
+    SYSTEM_Initialize();
     Init8LEDs();
 
     OSCCON = 0x53;
@@ -8535,9 +8535,9 @@ void main(void)
     GIE = 1;
     PEIE = 1;
     ADIE = 1;
-
+       guardar();
     while(1){
-        guardar();
+        Error(55);
     }
     return;
 }
@@ -8571,9 +8571,10 @@ void grabador(void){
         adcin = interruptadc(adcin, i);
         PORTA = adcin/4;
         volt = (adcin*5.0)/1023.0;
-        ND = (char) adcin;
+        ND[0] = (char) adcin;
+
         f_write(&Fil, ND , 2 , &bw);
-        }while(i!=1000);
+        }while(i!=5000);
        return;
 }
 
@@ -8592,7 +8593,7 @@ void __delay_sec(char sec) {
 }
 
 void guardar(void){
-    SYSTEM_Initialize();
+    Error(5);
     if (f_mount(&FatFs, "", 1) != FR_OK) {
 
         while(f_mount(&FatFs, "", 1) != FR_OK) {

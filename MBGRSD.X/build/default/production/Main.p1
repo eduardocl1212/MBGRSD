@@ -30,6 +30,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 [s S637 `*S636 1 `us 1 `uc 1 `uc 1 `ul 1 `ul 1 `ul 1 `ul 1 `ul 1 `ul 1 `*uc 1 ]
 [n S637 . fs id flag err fptr fsize sclust clust dsect dir_sect dir_ptr ]
 [p mainexit ]
+"68 ./mcc_generated_files/mcc.h
+[; ;./mcc_generated_files/mcc.h: 68: void SYSTEM_Initialize(void);
+[v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
 "29 Main.c
 [; ;Main.c: 29: void Init8LEDs(void);
 [v _Init8LEDs `(v ~T0 @X0 0 ef ]
@@ -123,17 +126,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 "2901
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h: 2901: extern volatile unsigned char PORTA __attribute__((address(0xF80)));
 [v _PORTA `Vuc ~T0 @X0 0 e@3968 ]
-"92 Main.c
-[; ;Main.c: 92:         f_write(&Fil, ND , 2 , &bw);
+"93 Main.c
+[; ;Main.c: 93:         f_write(&Fil, ND , 2 , &bw);
 [c E4918 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 .. ]
 [n E4918 . FR_OK FR_DISK_ERR FR_INT_ERR FR_NOT_READY FR_NO_FILE FR_NO_PATH FR_INVALID_NAME FR_DENIED FR_EXIST FR_INVALID_OBJECT FR_WRITE_PROTECTED FR_INVALID_DRIVE FR_NOT_ENABLED FR_NO_FILESYSTEM FR_MKFS_ABORTED FR_TIMEOUT FR_LOCKED FR_NOT_ENOUGH_CORE FR_TOO_MANY_OPEN_FILES FR_INVALID_PARAMETER  ]
 "215 ./ff.h
 [; ;./ff.h: 215: FRESULT f_write (FIL* fp, const void* buff, UINT btw, UINT* bw);
 [v _f_write `(E4918 ~T0 @X0 0 ef4`*S637`*Cv`us`*us ]
-"68 ./mcc_generated_files/mcc.h
-[; ;./mcc_generated_files/mcc.h: 68: void SYSTEM_Initialize(void);
-[v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
-"237 ./ff.h
+"237
 [; ;./ff.h: 237: FRESULT f_mount (FATFS* fs, const TCHAR* path, BYTE opt);
 [v _f_mount `(E4918 ~T0 @X0 0 ef3`*S636`*Cuc`uc ]
 "212
@@ -923,14 +923,17 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;Main.c: 20:     int out;
 [v _out `i ~T0 @X0 1 e ]
 "21
-[; ;Main.c: 21:     int ND = 12;
-[v _ND `i ~T0 @X0 1 e ]
-[i _ND
--> 12 `i
-]
+[; ;Main.c: 21:     char ND[2];
+[v _ND `uc ~T0 @X0 -> 2 `i e ]
 "23
-[; ;Main.c: 23: char data[2];
+[; ;Main.c: 23: char data[2] = "da";
 [v _data `uc ~T0 @X0 -> 2 `i e ]
+[i _data
+:U ..
+-> 100 `c
+-> 97 `c
+..
+]
 "24
 [; ;Main.c: 24: FATFS FatFs;
 [v _FatFs `S636 ~T0 @X0 1 e ]
@@ -938,10 +941,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;Main.c: 25: FIL Fil;
 [v _Fil `S637 ~T0 @X0 1 e ]
 "26
-[; ;Main.c: 26: int i = 0;
+[; ;Main.c: 26: int i = -5000;
 [v _i `i ~T0 @X0 1 e ]
 [i _i
--> 0 `i
+-U -> 5000 `i
 ]
 [v $root$_main `(v ~T0 @X0 0 e ]
 "37
@@ -952,6 +955,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 {
 [e :U _main ]
 [f ]
+"40
+[; ;Main.c: 40:     SYSTEM_Initialize();
+[e ( _SYSTEM_Initialize ..  ]
 "41
 [; ;Main.c: 41:     Init8LEDs();
 [e ( _Init8LEDs ..  ]
@@ -991,13 +997,16 @@ Version 4.0 HI-TECH Software Intermediate Code
 "54
 [; ;Main.c: 54:     ADIE = 1;
 [e = _ADIE -> -> 1 `i `b ]
+"55
+[; ;Main.c: 55:        guardar();
+[e ( _guardar ..  ]
 "56
 [; ;Main.c: 56:     while(1){
 [e :U 651 ]
 {
 "57
-[; ;Main.c: 57:         guardar();
-[e ( _guardar ..  ]
+[; ;Main.c: 57:         Error(55);
+[e ( _Error (1 -> 55 `i ]
 "58
 [; ;Main.c: 58:     }
 }
@@ -1097,132 +1106,132 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;Main.c: 90:         volt = (adcin*5.0)/1023.0;
 [e = _volt -> / * -> _adcin `d .5.0 .1023.0 `f ]
 "91
-[; ;Main.c: 91:         ND = (char) adcin;
-[e = _ND -> -> _adcin `uc `i ]
-"92
-[; ;Main.c: 92:         f_write(&Fil, ND , 2 , &bw);
-[e ( _f_write (4 , , , &U _Fil -> _ND `*Cv -> -> 2 `i `us &U _bw ]
+[; ;Main.c: 91:         ND[0] = (char) adcin;
+[e = *U + &U _ND * -> -> -> 0 `i `ui `ux -> -> # *U &U _ND `ui `ux -> _adcin `uc ]
 "93
-[; ;Main.c: 93:         }while(i!=1000);
-}
-[e $ != _i -> 1000 `i 659  ]
-[e :U 658 ]
+[; ;Main.c: 93:         f_write(&Fil, ND , 2 , &bw);
+[e ( _f_write (4 , , , &U _Fil -> &U _ND `*Cv -> -> 2 `i `us &U _bw ]
 "94
-[; ;Main.c: 94:        return;
-[e $UE 656  ]
+[; ;Main.c: 94:         }while(i!=5000);
+}
+[e $ != _i -> 5000 `i 659  ]
+[e :U 658 ]
 "95
-[; ;Main.c: 95: }
+[; ;Main.c: 95:        return;
+[e $UE 656  ]
+"96
+[; ;Main.c: 96: }
 [e :UE 656 ]
 }
-"97
-[; ;Main.c: 97: void reproductor(void){
+"98
+[; ;Main.c: 98: void reproductor(void){
 [v _reproductor `(v ~T0 @X0 1 ef ]
 {
 [e :U _reproductor ]
 [f ]
-"102
-[; ;Main.c: 102: }
+"103
+[; ;Main.c: 103: }
 [e :UE 660 ]
 }
-"105
-[; ;Main.c: 105: void __delay_sec(char sec) {
+"106
+[; ;Main.c: 106: void __delay_sec(char sec) {
 [v ___delay_sec `(v ~T0 @X0 1 ef1`uc ]
 {
 [e :U ___delay_sec ]
 [v _sec `uc ~T0 @X0 1 r1 ]
 [f ]
-"106
-[; ;Main.c: 106:     for(char i=0;i<=(50*sec);i++) {
+"107
+[; ;Main.c: 107:     for(char i=0;i<=(50*sec);i++) {
 {
 [v _i `uc ~T0 @X0 1 a ]
 [e = _i -> -> 0 `i `uc ]
 [e $U 665  ]
 [e :U 662 ]
 {
-"107
-[; ;Main.c: 107:         _delay((unsigned long)((20)*(8000000/4000.0)));
-[e ( __delay (1 -> * -> -> 20 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
 "108
-[; ;Main.c: 108:     }
+[; ;Main.c: 108:         _delay((unsigned long)((20)*(8000000/4000.0)));
+[e ( __delay (1 -> * -> -> 20 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+"109
+[; ;Main.c: 109:     }
 }
 [e ++ _i -> -> 1 `i `uc ]
 [e :U 665 ]
 [e $ <= -> _i `i * -> 50 `i -> _sec `i 662  ]
 [e :U 663 ]
 }
-"109
-[; ;Main.c: 109: }
+"110
+[; ;Main.c: 110: }
 [e :UE 661 ]
 }
-"111
-[; ;Main.c: 111: void guardar(void){
+"112
+[; ;Main.c: 112: void guardar(void){
 [v _guardar `(v ~T0 @X0 1 ef ]
 {
 [e :U _guardar ]
 [f ]
-"112
-[; ;Main.c: 112:     SYSTEM_Initialize();
-[e ( _SYSTEM_Initialize ..  ]
 "113
-[; ;Main.c: 113:     if (f_mount(&FatFs, "", 1) != FR_OK) {
+[; ;Main.c: 113:     Error(5);
+[e ( _Error (1 -> 5 `i ]
+"114
+[; ;Main.c: 114:     if (f_mount(&FatFs, "", 1) != FR_OK) {
 [e $ ! != -> ( _f_mount (3 , , &U _FatFs :s 1C -> -> 1 `i `uc `ui -> . `E4918 0 `ui 667  ]
 {
-"115
-[; ;Main.c: 115:         while(f_mount(&FatFs, "", 1) != FR_OK) {
+"116
+[; ;Main.c: 116:         while(f_mount(&FatFs, "", 1) != FR_OK) {
 [e $U 668  ]
 [e :U 669 ]
 {
-"117
-[; ;Main.c: 117:         }
+"118
+[; ;Main.c: 118:         }
 }
 [e :U 668 ]
-"115
-[; ;Main.c: 115:         while(f_mount(&FatFs, "", 1) != FR_OK) {
+"116
+[; ;Main.c: 116:         while(f_mount(&FatFs, "", 1) != FR_OK) {
 [e $ != -> ( _f_mount (3 , , &U _FatFs :s 2C -> -> 1 `i `uc `ui -> . `E4918 0 `ui 669  ]
 [e :U 670 ]
-"118
-[; ;Main.c: 118:     }
+"119
+[; ;Main.c: 119:     }
 }
 [e :U 667 ]
-"120
-[; ;Main.c: 120:     Error(1);
+"121
+[; ;Main.c: 121:     Error(1);
 [e ( _Error (1 -> 1 `i ]
-"123
-[; ;Main.c: 123:     if (f_open(&Fil, "BeeDev.txt", 0x10 | 0x01 | 0x02) == FR_OK) {
+"124
+[; ;Main.c: 124:     if (f_open(&Fil, "BeeDev.txt", 0x10 | 0x01 | 0x02) == FR_OK) {
 [e $ ! == -> ( _f_open (3 , , &U _Fil :s 3C -> | | -> 16 `i -> 1 `i -> 2 `i `uc `ui -> . `E4918 0 `ui 671  ]
 {
-"126
-[; ;Main.c: 126:    if ((Fil.fsize != 0) && (f_lseek(&Fil, Fil.fsize) != FR_OK)) goto endSD;
+"127
+[; ;Main.c: 127:    if ((Fil.fsize != 0) && (f_lseek(&Fil, Fil.fsize) != FR_OK)) goto endSD;
 [e $ ! && != . _Fil 5 -> -> -> 0 `i `l `ul != -> ( _f_lseek (2 , &U _Fil . _Fil 5 `ui -> . `E4918 0 `ui 672  ]
 [e $U 673  ]
 [e :U 672 ]
-"128
-[; ;Main.c: 128:                 grabador();
-[e ( _grabador ..  ]
 "129
-[; ;Main.c: 129:                 endSD: f_close(&Fil);
+[; ;Main.c: 129:                 grabador();
+[e ( _grabador ..  ]
+"130
+[; ;Main.c: 130:                 endSD: f_close(&Fil);
 [e :U 673 ]
 [e ( _f_close (1 &U _Fil ]
-"130
-[; ;Main.c: 130:                 Error(55);
-[e ( _Error (1 -> 55 `i ]
 "131
-[; ;Main.c: 131:  }
+[; ;Main.c: 131:                 Error(55);
+[e ( _Error (1 -> 55 `i ]
+"132
+[; ;Main.c: 132:  }
 }
 [e $U 674  ]
-"132
-[; ;Main.c: 132:     else {
+"133
+[; ;Main.c: 133:     else {
 [e :U 671 ]
 {
-"133
-[; ;Main.c: 133:         Error(0);
-[e ( _Error (1 -> 0 `i ]
 "134
-[; ;Main.c: 134:     }
+[; ;Main.c: 134:         Error(0);
+[e ( _Error (1 -> 0 `i ]
+"135
+[; ;Main.c: 135:     }
 }
 [e :U 674 ]
-"135
-[; ;Main.c: 135: }
+"136
+[; ;Main.c: 136: }
 [e :UE 666 ]
 }
 [a 3C 66 101 101 68 101 118 46 116 120 116 0 ]
