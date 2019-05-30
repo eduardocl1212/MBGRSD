@@ -20,7 +20,13 @@ unsigned int adcin;
     int out;
     char ND[2];
 
-char data[2] = "da";
+char data;
+void send_string(const char *x){
+    while(*x){
+        __delay_ms(1);
+        EUSART1_Write(*x++);
+    }
+}
 FATFS FatFs;
 FIL Fil;
 int i = -5000;
@@ -36,8 +42,10 @@ void __delay_sec(char sec);
 
 void main(void)
 {
-
+    // Initialize the device
     SYSTEM_Initialize();
+
+    
     Init8LEDs();        //Inicializa puerto A
       
     OSCCON = 0x53;      //Oscilador interno 4 MHz
@@ -54,6 +62,7 @@ void main(void)
     ADIE = 1;           //Habilita interrupción ADC
        guardar();
     while(1){
+       // grabador();
         Error(55);
     }
     return;
@@ -81,7 +90,7 @@ void Init8LEDs(void)
 }
 
 void grabador(void){
-                   //Inicia conversión ADC
+       Error(3);            //Inicia conversión ADC
     do{
         i++;        
         ADCON0bits.GO=1;
@@ -91,6 +100,7 @@ void grabador(void){
         ND[0] = (char) adcin;
         //ND[1] = (char) adcin;
         f_write(&Fil, ND , 2 , &bw);
+        send_string(ND);
         }while(i!=5000);
        return; 
 }
@@ -110,25 +120,41 @@ void __delay_sec(char sec) {
 }
 
 void guardar(void){
-    Error(5);
+    SYSTEM_Initialize();
     if (f_mount(&FatFs, "", 1) != FR_OK) {	/* Inicializa SD */
-          
+        
+        Error(33);
+        __delay_sec(2);
         while(f_mount(&FatFs, "", 1) != FR_OK) {
             ;
         }
     }    
     
     Error(1);
-
+    __delay_sec(2);
         
     if (f_open(&Fil, "BeeDev.txt", FA_OPEN_ALWAYS | FA_READ | FA_WRITE) == FR_OK) {	/* Abre o crea el archivo */
-
+        Error(2);
+        
+       
+        __delay_sec(2);
+         Error(3);
             
 			if ((Fil.fsize != 0) && (f_lseek(&Fil, Fil.fsize) != FR_OK)) goto endSD;	/* Salta al final del archivo */
+                Error(4);
+                __delay_sec(2);
                 
-                grabador();
-                endSD: f_close(&Fil);	
-                Error(55);/* Cierra el archivo */
+                grabador();	// DATA ARRAY, NUMERO DE CHAR
+                //f_printf(&fil, "%s", "String");  
+                Error(5);
+                __delay_sec(2);
+                endSD: f_close(&Fil);								/* Cierra el archivo */
+                Error(6);
+                __delay_sec(1);
+                
+                Error(7);
+                __delay_sec(2);
+     
 	}
     else {
         Error(0);

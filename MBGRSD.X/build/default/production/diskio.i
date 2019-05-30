@@ -8147,15 +8147,24 @@ extern __attribute__((nonreentrant)) void _delay3(unsigned char);
 # 48 "./mcc_generated_files/mcc.h" 2
 
 # 1 "./mcc_generated_files/pin_manager.h" 1
-# 237 "./mcc_generated_files/pin_manager.h"
+# 272 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
-# 249 "./mcc_generated_files/pin_manager.h"
+# 284 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
 # 49 "./mcc_generated_files/mcc.h" 2
 
 
 # 1 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.05\\pic\\include\\c99\\stdbool.h" 1 3
 # 51 "./mcc_generated_files/mcc.h" 2
+
+# 1 "./mcc_generated_files/eusart1.h" 1
+# 94 "./mcc_generated_files/eusart1.h"
+void EUSART1_Initialize(void);
+# 114 "./mcc_generated_files/eusart1.h"
+uint8_t EUSART1_Read(void);
+# 134 "./mcc_generated_files/eusart1.h"
+void EUSART1_Write(uint8_t txData);
+# 52 "./mcc_generated_files/mcc.h" 2
 
 # 1 "./mcc_generated_files/spi1.h" 1
 # 54 "./mcc_generated_files/spi1.h"
@@ -8180,10 +8189,10 @@ _Bool SPI1_IsBufferFull(void);
 _Bool SPI1_HasWriteCollisionOccured(void);
 # 265 "./mcc_generated_files/spi1.h"
 void SPI1_ClearWriteCollisionStatus(void);
-# 52 "./mcc_generated_files/mcc.h" 2
-# 68 "./mcc_generated_files/mcc.h"
+# 53 "./mcc_generated_files/mcc.h" 2
+# 69 "./mcc_generated_files/mcc.h"
 void SYSTEM_Initialize(void);
-# 81 "./mcc_generated_files/mcc.h"
+# 82 "./mcc_generated_files/mcc.h"
 void OSCILLATOR_Initialize(void);
 # 15 "diskio.c" 2
 # 61 "diskio.c"

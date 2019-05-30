@@ -8006,9 +8006,9 @@ extern __attribute__((nonreentrant)) void _delay3(unsigned char);
 # 48 "./mcc_generated_files/mcc.h" 2
 
 # 1 "./mcc_generated_files/pin_manager.h" 1
-# 237 "./mcc_generated_files/pin_manager.h"
+# 272 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
-# 249 "./mcc_generated_files/pin_manager.h"
+# 284 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
 # 49 "./mcc_generated_files/mcc.h" 2
 
@@ -8100,6 +8100,15 @@ typedef uint32_t uint_fast32_t;
 # 1 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.05\\pic\\include\\c99\\stdbool.h" 1 3
 # 51 "./mcc_generated_files/mcc.h" 2
 
+# 1 "./mcc_generated_files/eusart1.h" 1
+# 94 "./mcc_generated_files/eusart1.h"
+void EUSART1_Initialize(void);
+# 114 "./mcc_generated_files/eusart1.h"
+uint8_t EUSART1_Read(void);
+# 134 "./mcc_generated_files/eusart1.h"
+void EUSART1_Write(uint8_t txData);
+# 52 "./mcc_generated_files/mcc.h" 2
+
 # 1 "./mcc_generated_files/spi1.h" 1
 # 54 "./mcc_generated_files/spi1.h"
 # 1 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.05\\pic\\include\\c99\\stddef.h" 1 3
@@ -8123,10 +8132,10 @@ _Bool SPI1_IsBufferFull(void);
 _Bool SPI1_HasWriteCollisionOccured(void);
 # 265 "./mcc_generated_files/spi1.h"
 void SPI1_ClearWriteCollisionStatus(void);
-# 52 "./mcc_generated_files/mcc.h" 2
-# 68 "./mcc_generated_files/mcc.h"
+# 53 "./mcc_generated_files/mcc.h" 2
+# 69 "./mcc_generated_files/mcc.h"
 void SYSTEM_Initialize(void);
-# 81 "./mcc_generated_files/mcc.h"
+# 82 "./mcc_generated_files/mcc.h"
 void OSCILLATOR_Initialize(void);
 # 1 "Main.c" 2
 
@@ -8503,7 +8512,13 @@ unsigned int adcin;
     int out;
     char ND[2];
 
-char data[2] = "da";
+char data;
+void send_string(const char *x){
+    while(*x){
+        _delay((unsigned long)((1)*(8000000/4000.0)));
+        EUSART1_Write(*x++);
+    }
+}
 FATFS FatFs;
 FIL Fil;
 int i = -5000;
@@ -8521,6 +8536,8 @@ void main(void)
 {
 
     SYSTEM_Initialize();
+
+
     Init8LEDs();
 
     OSCCON = 0x53;
@@ -8537,6 +8554,7 @@ void main(void)
     ADIE = 1;
        guardar();
     while(1){
+
         Error(55);
     }
     return;
@@ -8564,7 +8582,7 @@ void Init8LEDs(void)
 }
 
 void grabador(void){
-
+       Error(3);
     do{
         i++;
         ADCON0bits.GO=1;
@@ -8574,6 +8592,7 @@ void grabador(void){
         ND[0] = (char) adcin;
 
         f_write(&Fil, ND , 2 , &bw);
+        send_string(ND);
         }while(i!=5000);
        return;
 }
@@ -8593,25 +8612,41 @@ void __delay_sec(char sec) {
 }
 
 void guardar(void){
-    Error(5);
+    SYSTEM_Initialize();
     if (f_mount(&FatFs, "", 1) != FR_OK) {
 
+        Error(33);
+        __delay_sec(2);
         while(f_mount(&FatFs, "", 1) != FR_OK) {
             ;
         }
     }
 
     Error(1);
-
+    __delay_sec(2);
 
     if (f_open(&Fil, "BeeDev.txt", 0x10 | 0x01 | 0x02) == FR_OK) {
+        Error(2);
 
+
+        __delay_sec(2);
+         Error(3);
 
    if ((Fil.fsize != 0) && (f_lseek(&Fil, Fil.fsize) != FR_OK)) goto endSD;
+                Error(4);
+                __delay_sec(2);
 
                 grabador();
+
+                Error(5);
+                __delay_sec(2);
                 endSD: f_close(&Fil);
-                Error(55);
+                Error(6);
+                __delay_sec(1);
+
+                Error(7);
+                __delay_sec(2);
+
  }
     else {
         Error(0);

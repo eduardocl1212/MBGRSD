@@ -1,5 +1,5 @@
 /**
-  @Generated MPLAB(c) Code Configurator Source File
+  @Generated PIC10 / PIC12 / PIC16 / PIC18 MCUs  Source File
 
   @Company:
     Microchip Technology Inc.
@@ -8,12 +8,12 @@
     mcc.c
 
   @Summary:
-    This is the mcc.c file generated using MPLAB(c) Code Configurator
+    This is the mcc.c file generated using PIC10 / PIC12 / PIC16 / PIC18 MCUs 
 
   @Description:
     This header file provides implementations for driver APIs for all modules selected in the GUI.
     Generation Information :
-        Product Revision  :  MPLAB(c) Code Configurator - 4.15
+        Product Revision  :  PIC10 / PIC12 / PIC16 / PIC18 MCUs  - 1.26.1
         Device            :  PIC18F45K50
         Driver Version    :  1.02
     The generated drivers are tested against the following:
@@ -119,6 +119,7 @@ void SYSTEM_Initialize(void)
     PIN_MANAGER_Initialize();
     OSCILLATOR_Initialize();
     SPI1_Initialize();
+    EUSART1_Initialize();
 }
 
 void OSCILLATOR_Initialize(void)

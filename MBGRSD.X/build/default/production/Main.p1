@@ -21,6 +21,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "183 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18.h
 [v __delay `JF4805 ~T0 @X0 0 e ]
 [p i __delay ]
+"134 ./mcc_generated_files/eusart1.h
+[; ;./mcc_generated_files/eusart1.h: 134: void EUSART1_Write(uint8_t txData);
+[v _EUSART1_Write `(v ~T0 @X0 0 ef1`uc ]
 "78 ./ff.h
 [; ;./ff.h: 78: typedef struct {
 [s S636 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `us 1 `us 1 `ul 1 `ul 1 `ul 1 `ul 1 `ul 1 `ul 1 `ul 1 `ul 1 `ul 1 `uc -> 512 `i ]
@@ -30,11 +33,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 [s S637 `*S636 1 `us 1 `uc 1 `uc 1 `ul 1 `ul 1 `ul 1 `ul 1 `ul 1 `ul 1 `*uc 1 ]
 [n S637 . fs id flag err fptr fsize sclust clust dsect dir_sect dir_ptr ]
 [p mainexit ]
-"68 ./mcc_generated_files/mcc.h
-[; ;./mcc_generated_files/mcc.h: 68: void SYSTEM_Initialize(void);
+"69 ./mcc_generated_files/mcc.h
+[; ;./mcc_generated_files/mcc.h: 69: void SYSTEM_Initialize(void);
 [v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
-"29 Main.c
-[; ;Main.c: 29: void Init8LEDs(void);
+"35 Main.c
+[; ;Main.c: 35: void Init8LEDs(void);
 [v _Init8LEDs `(v ~T0 @X0 0 ef ]
 "12356 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h: 12356: extern volatile unsigned char OSCCON __attribute__((address(0xFD3)));
@@ -72,8 +75,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "13788
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h: 13788: extern volatile __bit ADIE __attribute__((address(0x7CEE)));
 [v _ADIE `Vb ~T0 @X0 0 e@31982 ]
-"33 Main.c
-[; ;Main.c: 33: void guardar(void);
+"39 Main.c
+[; ;Main.c: 39: void guardar(void);
 [v _guardar `(v ~T0 @X0 0 ef ]
 "13791 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h: 13791: extern volatile __bit ADIF __attribute__((address(0x7CF6)));
@@ -126,25 +129,25 @@ Version 4.0 HI-TECH Software Intermediate Code
 "2901
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h: 2901: extern volatile unsigned char PORTA __attribute__((address(0xF80)));
 [v _PORTA `Vuc ~T0 @X0 0 e@3968 ]
-"93 Main.c
-[; ;Main.c: 93:         f_write(&Fil, ND , 2 , &bw);
-[c E4918 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 .. ]
-[n E4918 . FR_OK FR_DISK_ERR FR_INT_ERR FR_NOT_READY FR_NO_FILE FR_NO_PATH FR_INVALID_NAME FR_DENIED FR_EXIST FR_INVALID_OBJECT FR_WRITE_PROTECTED FR_INVALID_DRIVE FR_NOT_ENABLED FR_NO_FILESYSTEM FR_MKFS_ABORTED FR_TIMEOUT FR_LOCKED FR_NOT_ENOUGH_CORE FR_TOO_MANY_OPEN_FILES FR_INVALID_PARAMETER  ]
+"102 Main.c
+[; ;Main.c: 102:         f_write(&Fil, ND , 2 , &bw);
+[c E4922 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 .. ]
+[n E4922 . FR_OK FR_DISK_ERR FR_INT_ERR FR_NOT_READY FR_NO_FILE FR_NO_PATH FR_INVALID_NAME FR_DENIED FR_EXIST FR_INVALID_OBJECT FR_WRITE_PROTECTED FR_INVALID_DRIVE FR_NOT_ENABLED FR_NO_FILESYSTEM FR_MKFS_ABORTED FR_TIMEOUT FR_LOCKED FR_NOT_ENOUGH_CORE FR_TOO_MANY_OPEN_FILES FR_INVALID_PARAMETER  ]
 "215 ./ff.h
 [; ;./ff.h: 215: FRESULT f_write (FIL* fp, const void* buff, UINT btw, UINT* bw);
-[v _f_write `(E4918 ~T0 @X0 0 ef4`*S637`*Cv`us`*us ]
+[v _f_write `(E4922 ~T0 @X0 0 ef4`*S637`*Cv`us`*us ]
 "237
 [; ;./ff.h: 237: FRESULT f_mount (FATFS* fs, const TCHAR* path, BYTE opt);
-[v _f_mount `(E4918 ~T0 @X0 0 ef3`*S636`*Cuc`uc ]
+[v _f_mount `(E4922 ~T0 @X0 0 ef3`*S636`*Cuc`uc ]
 "212
 [; ;./ff.h: 212: FRESULT f_open (FIL* fp, const TCHAR* path, BYTE mode);
-[v _f_open `(E4918 ~T0 @X0 0 ef3`*S637`*Cuc`uc ]
+[v _f_open `(E4922 ~T0 @X0 0 ef3`*S637`*Cuc`uc ]
 "217
 [; ;./ff.h: 217: FRESULT f_lseek (FIL* fp, DWORD ofs);
-[v _f_lseek `(E4918 ~T0 @X0 0 ef2`*S637`ul ]
+[v _f_lseek `(E4922 ~T0 @X0 0 ef2`*S637`ul ]
 "213
 [; ;./ff.h: 213: FRESULT f_close (FIL* fp);
-[v _f_close `(E4918 ~T0 @X0 0 ef1`*S637 ]
+[v _f_close `(E4922 ~T0 @X0 0 ef1`*S637 ]
 "54 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h: 54: __asm("SRCON1 equ 0F57h");
 [; <" SRCON1 equ 0F57h ;# ">
@@ -794,8 +797,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "19
 [; ;./Errores.h: 19:     ANSELE = 0x00;
 [e = _ANSELE -> -> 0 `i `uc ]
-[v F5051 `uc ~T0 @X0 -> 10 `i s ]
-[i F5051
+[v F5055 `uc ~T0 @X0 -> 10 `i s ]
+[i F5055
 :U ..
 "21
 [; ;./Errores.h: 21:     unsigned char v_seg[10]={0x7E,0x30,0x6D,0x79,0x33,0x5B,0x5F,0x70,0x7F,0x73};
@@ -812,7 +815,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 ..
 ]
 [v _v_seg `uc ~T0 @X0 -> 10 `i a ]
-[e = _v_seg F5051 ]
+[e = _v_seg F5055 ]
 "22
 [; ;./Errores.h: 22:     if(a != 33 && a != 55){
 [e $ ! && != _a -> 33 `i != _a -> 55 `i 641  ]
@@ -926,313 +929,382 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;Main.c: 21:     char ND[2];
 [v _ND `uc ~T0 @X0 -> 2 `i e ]
 "23
-[; ;Main.c: 23: char data[2] = "da";
-[v _data `uc ~T0 @X0 -> 2 `i e ]
-[i _data
-:U ..
--> 100 `c
--> 97 `c
-..
-]
+[; ;Main.c: 23: char data;
+[v _data `uc ~T0 @X0 1 e ]
 "24
-[; ;Main.c: 24: FATFS FatFs;
-[v _FatFs `S636 ~T0 @X0 1 e ]
+[; ;Main.c: 24: void send_string(const char *x){
+[v _send_string `(v ~T0 @X0 1 ef1`*Cuc ]
+{
+[e :U _send_string ]
+[v _x `*Cuc ~T0 @X0 1 r1 ]
+[f ]
 "25
-[; ;Main.c: 25: FIL Fil;
-[v _Fil `S637 ~T0 @X0 1 e ]
+[; ;Main.c: 25:     while(*x){
+[e $U 650  ]
+[e :U 651 ]
+{
 "26
-[; ;Main.c: 26: int i = -5000;
+[; ;Main.c: 26:         _delay((unsigned long)((1)*(8000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+"27
+[; ;Main.c: 27:         EUSART1_Write(*x++);
+[e ( _EUSART1_Write (1 -> *U ++ _x * -> -> 1 `i `x -> -> # *U _x `i `x `uc ]
+"28
+[; ;Main.c: 28:     }
+}
+[e :U 650 ]
+"25
+[; ;Main.c: 25:     while(*x){
+[e $ != -> *U _x `i -> 0 `i 651  ]
+[e :U 652 ]
+"29
+[; ;Main.c: 29: }
+[e :UE 649 ]
+}
+"30
+[; ;Main.c: 30: FATFS FatFs;
+[v _FatFs `S636 ~T0 @X0 1 e ]
+"31
+[; ;Main.c: 31: FIL Fil;
+[v _Fil `S637 ~T0 @X0 1 e ]
+"32
+[; ;Main.c: 32: int i = -5000;
 [v _i `i ~T0 @X0 1 e ]
 [i _i
 -U -> 5000 `i
 ]
 [v $root$_main `(v ~T0 @X0 0 e ]
-"37
-[; ;Main.c: 37: void main(void)
+"43
+[; ;Main.c: 43: void main(void)
 [v _main `(v ~T0 @X0 1 ef ]
-"38
-[; ;Main.c: 38: {
+"44
+[; ;Main.c: 44: {
 {
 [e :U _main ]
 [f ]
-"40
-[; ;Main.c: 40:     SYSTEM_Initialize();
-[e ( _SYSTEM_Initialize ..  ]
-"41
-[; ;Main.c: 41:     Init8LEDs();
-[e ( _Init8LEDs ..  ]
-"43
-[; ;Main.c: 43:     OSCCON = 0x53;
-[e = _OSCCON -> -> 83 `i `uc ]
-"44
-[; ;Main.c: 44:     ADCON2 = 0x94;
-[e = _ADCON2 -> -> 148 `i `uc ]
-"45
-[; ;Main.c: 45:     ADCON1 = 0x00;
-[e = _ADCON1 -> -> 0 `i `uc ]
 "46
-[; ;Main.c: 46:     LATA = 0x00;
-[e = _LATA -> -> 0 `i `uc ]
-"47
-[; ;Main.c: 47:     TRISA = 0x00;
-[e = _TRISA -> -> 0 `i `uc ]
-"48
-[; ;Main.c: 48:     ANSELA = 0x00;
-[e = _ANSELA -> -> 0 `i `uc ]
+[; ;Main.c: 46:     SYSTEM_Initialize();
+[e ( _SYSTEM_Initialize ..  ]
 "49
-[; ;Main.c: 49:     TRISC = 0x04;
-[e = _TRISC -> -> 4 `i `uc ]
-"50
-[; ;Main.c: 50:     ANSELC = 0x04;
-[e = _ANSELC -> -> 4 `i `uc ]
+[; ;Main.c: 49:     Init8LEDs();
+[e ( _Init8LEDs ..  ]
 "51
-[; ;Main.c: 51:     ADCON0 = 0x39;
-[e = _ADCON0 -> -> 57 `i `uc ]
+[; ;Main.c: 51:     OSCCON = 0x53;
+[e = _OSCCON -> -> 83 `i `uc ]
 "52
-[; ;Main.c: 52:     GIE = 1;
-[e = _GIE -> -> 1 `i `b ]
+[; ;Main.c: 52:     ADCON2 = 0x94;
+[e = _ADCON2 -> -> 148 `i `uc ]
 "53
-[; ;Main.c: 53:     PEIE = 1;
-[e = _PEIE -> -> 1 `i `b ]
+[; ;Main.c: 53:     ADCON1 = 0x00;
+[e = _ADCON1 -> -> 0 `i `uc ]
 "54
-[; ;Main.c: 54:     ADIE = 1;
-[e = _ADIE -> -> 1 `i `b ]
+[; ;Main.c: 54:     LATA = 0x00;
+[e = _LATA -> -> 0 `i `uc ]
 "55
-[; ;Main.c: 55:        guardar();
-[e ( _guardar ..  ]
+[; ;Main.c: 55:     TRISA = 0x00;
+[e = _TRISA -> -> 0 `i `uc ]
 "56
-[; ;Main.c: 56:     while(1){
-[e :U 651 ]
-{
+[; ;Main.c: 56:     ANSELA = 0x00;
+[e = _ANSELA -> -> 0 `i `uc ]
 "57
-[; ;Main.c: 57:         Error(55);
-[e ( _Error (1 -> 55 `i ]
+[; ;Main.c: 57:     TRISC = 0x04;
+[e = _TRISC -> -> 4 `i `uc ]
 "58
-[; ;Main.c: 58:     }
-}
-[e :U 650 ]
-[e $U 651  ]
-[e :U 652 ]
+[; ;Main.c: 58:     ANSELC = 0x04;
+[e = _ANSELC -> -> 4 `i `uc ]
 "59
-[; ;Main.c: 59:     return;
-[e $UE 649  ]
+[; ;Main.c: 59:     ADCON0 = 0x39;
+[e = _ADCON0 -> -> 57 `i `uc ]
 "60
-[; ;Main.c: 60: }
-[e :UE 649 ]
-}
+[; ;Main.c: 60:     GIE = 1;
+[e = _GIE -> -> 1 `i `b ]
+"61
+[; ;Main.c: 61:     PEIE = 1;
+[e = _PEIE -> -> 1 `i `b ]
 "62
-[; ;Main.c: 62: int interruptadc(int adcin, int a) {
+[; ;Main.c: 62:     ADIE = 1;
+[e = _ADIE -> -> 1 `i `b ]
+"63
+[; ;Main.c: 63:        guardar();
+[e ( _guardar ..  ]
+"64
+[; ;Main.c: 64:     while(1){
+[e :U 655 ]
+{
+"66
+[; ;Main.c: 66:         Error(55);
+[e ( _Error (1 -> 55 `i ]
+"67
+[; ;Main.c: 67:     }
+}
+[e :U 654 ]
+[e $U 655  ]
+[e :U 656 ]
+"68
+[; ;Main.c: 68:     return;
+[e $UE 653  ]
+"69
+[; ;Main.c: 69: }
+[e :UE 653 ]
+}
+"71
+[; ;Main.c: 71: int interruptadc(int adcin, int a) {
 [v _interruptadc `(i ~T0 @X0 1 ef2`i`i ]
 {
 [e :U _interruptadc ]
 [v _adcin `i ~T0 @X0 1 r1 ]
 [v _a `i ~T0 @X0 1 r2 ]
 [f ]
-"63
-[; ;Main.c: 63:     if(ADIF==1) {
-[e $ ! == -> _ADIF `i -> 1 `i 654  ]
+"72
+[; ;Main.c: 72:     if(ADIF==1) {
+[e $ ! == -> _ADIF `i -> 1 `i 658  ]
 {
-"64
-[; ;Main.c: 64:         ADIE=0;
+"73
+[; ;Main.c: 73:         ADIE=0;
 [e = _ADIE -> -> 0 `i `b ]
-"65
-[; ;Main.c: 65:         adcin = (ADRESH<<8)+ADRESL;
-[e = _adcin + << -> _ADRESH `i -> 8 `i -> _ADRESL `i ]
-"66
-[; ;Main.c: 66:     }
-}
-[e :U 654 ]
-"67
-[; ;Main.c: 67:     ADIE=1;
-[e = _ADIE -> -> 1 `i `b ]
-"68
-[; ;Main.c: 68:     ADIF=0;
-[e = _ADIF -> -> 0 `i `b ]
-"70
-[; ;Main.c: 70:     return adcin;
-[e ) _adcin ]
-[e $UE 653  ]
-"71
-[; ;Main.c: 71: }
-[e :UE 653 ]
-}
 "74
-[; ;Main.c: 74: void Init8LEDs(void)
-[v _Init8LEDs `(v ~T0 @X0 1 ef ]
+[; ;Main.c: 74:         adcin = (ADRESH<<8)+ADRESL;
+[e = _adcin + << -> _ADRESH `i -> 8 `i -> _ADRESL `i ]
 "75
-[; ;Main.c: 75: {
+[; ;Main.c: 75:     }
+}
+[e :U 658 ]
+"76
+[; ;Main.c: 76:     ADIE=1;
+[e = _ADIE -> -> 1 `i `b ]
+"77
+[; ;Main.c: 77:     ADIF=0;
+[e = _ADIF -> -> 0 `i `b ]
+"79
+[; ;Main.c: 79:     return adcin;
+[e ) _adcin ]
+[e $UE 657  ]
+"80
+[; ;Main.c: 80: }
+[e :UE 657 ]
+}
+"83
+[; ;Main.c: 83: void Init8LEDs(void)
+[v _Init8LEDs `(v ~T0 @X0 1 ef ]
+"84
+[; ;Main.c: 84: {
 {
 [e :U _Init8LEDs ]
 [f ]
-"76
-[; ;Main.c: 76:     LATA = 0x00;
+"85
+[; ;Main.c: 85:     LATA = 0x00;
 [e = _LATA -> -> 0 `i `uc ]
-"77
-[; ;Main.c: 77:     TRISA = 0x00;
+"86
+[; ;Main.c: 86:     TRISA = 0x00;
 [e = _TRISA -> -> 0 `i `uc ]
-"78
-[; ;Main.c: 78:     ANSELA = 0x00;
+"87
+[; ;Main.c: 87:     ANSELA = 0x00;
 [e = _ANSELA -> -> 0 `i `uc ]
-"80
-[; ;Main.c: 80:     return;
-[e $UE 655  ]
-"81
-[; ;Main.c: 81: }
-[e :UE 655 ]
+"89
+[; ;Main.c: 89:     return;
+[e $UE 659  ]
+"90
+[; ;Main.c: 90: }
+[e :UE 659 ]
 }
-"83
-[; ;Main.c: 83: void grabador(void){
+"92
+[; ;Main.c: 92: void grabador(void){
 [v _grabador `(v ~T0 @X0 1 ef ]
 {
 [e :U _grabador ]
 [f ]
-"85
-[; ;Main.c: 85:     do{
-[e :U 659 ]
-{
-"86
-[; ;Main.c: 86:         i++;
-[e ++ _i -> 1 `i ]
-"87
-[; ;Main.c: 87:         ADCON0bits.GO=1;
-[e = . . _ADCON0bits 3 1 -> -> 1 `i `uc ]
-"88
-[; ;Main.c: 88:         adcin = interruptadc(adcin, i);
-[e = _adcin -> ( _interruptadc (2 , -> _adcin `i _i `ui ]
-"89
-[; ;Main.c: 89:         PORTA = adcin/4;
-[e = _PORTA -> / _adcin -> -> 4 `i `ui `uc ]
-"90
-[; ;Main.c: 90:         volt = (adcin*5.0)/1023.0;
-[e = _volt -> / * -> _adcin `d .5.0 .1023.0 `f ]
-"91
-[; ;Main.c: 91:         ND[0] = (char) adcin;
-[e = *U + &U _ND * -> -> -> 0 `i `ui `ux -> -> # *U &U _ND `ui `ux -> _adcin `uc ]
 "93
-[; ;Main.c: 93:         f_write(&Fil, ND , 2 , &bw);
-[e ( _f_write (4 , , , &U _Fil -> &U _ND `*Cv -> -> 2 `i `us &U _bw ]
+[; ;Main.c: 93:        Error(3);
+[e ( _Error (1 -> 3 `i ]
 "94
-[; ;Main.c: 94:         }while(i!=5000);
-}
-[e $ != _i -> 5000 `i 659  ]
-[e :U 658 ]
+[; ;Main.c: 94:     do{
+[e :U 663 ]
+{
 "95
-[; ;Main.c: 95:        return;
-[e $UE 656  ]
+[; ;Main.c: 95:         i++;
+[e ++ _i -> 1 `i ]
 "96
-[; ;Main.c: 96: }
-[e :UE 656 ]
-}
+[; ;Main.c: 96:         ADCON0bits.GO=1;
+[e = . . _ADCON0bits 3 1 -> -> 1 `i `uc ]
+"97
+[; ;Main.c: 97:         adcin = interruptadc(adcin, i);
+[e = _adcin -> ( _interruptadc (2 , -> _adcin `i _i `ui ]
 "98
-[; ;Main.c: 98: void reproductor(void){
+[; ;Main.c: 98:         PORTA = adcin/4;
+[e = _PORTA -> / _adcin -> -> 4 `i `ui `uc ]
+"99
+[; ;Main.c: 99:         volt = (adcin*5.0)/1023.0;
+[e = _volt -> / * -> _adcin `d .5.0 .1023.0 `f ]
+"100
+[; ;Main.c: 100:         ND[0] = (char) adcin;
+[e = *U + &U _ND * -> -> -> 0 `i `ui `ux -> -> # *U &U _ND `ui `ux -> _adcin `uc ]
+"102
+[; ;Main.c: 102:         f_write(&Fil, ND , 2 , &bw);
+[e ( _f_write (4 , , , &U _Fil -> &U _ND `*Cv -> -> 2 `i `us &U _bw ]
+"103
+[; ;Main.c: 103:         send_string(ND);
+[e ( _send_string (1 -> &U _ND `*Cuc ]
+"104
+[; ;Main.c: 104:         }while(i!=5000);
+}
+[e $ != _i -> 5000 `i 663  ]
+[e :U 662 ]
+"105
+[; ;Main.c: 105:        return;
+[e $UE 660  ]
+"106
+[; ;Main.c: 106: }
+[e :UE 660 ]
+}
+"108
+[; ;Main.c: 108: void reproductor(void){
 [v _reproductor `(v ~T0 @X0 1 ef ]
 {
 [e :U _reproductor ]
 [f ]
-"103
-[; ;Main.c: 103: }
-[e :UE 660 ]
+"113
+[; ;Main.c: 113: }
+[e :UE 664 ]
 }
-"106
-[; ;Main.c: 106: void __delay_sec(char sec) {
+"116
+[; ;Main.c: 116: void __delay_sec(char sec) {
 [v ___delay_sec `(v ~T0 @X0 1 ef1`uc ]
 {
 [e :U ___delay_sec ]
 [v _sec `uc ~T0 @X0 1 r1 ]
 [f ]
-"107
-[; ;Main.c: 107:     for(char i=0;i<=(50*sec);i++) {
+"117
+[; ;Main.c: 117:     for(char i=0;i<=(50*sec);i++) {
 {
 [v _i `uc ~T0 @X0 1 a ]
 [e = _i -> -> 0 `i `uc ]
-[e $U 665  ]
-[e :U 662 ]
+[e $U 669  ]
+[e :U 666 ]
 {
-"108
-[; ;Main.c: 108:         _delay((unsigned long)((20)*(8000000/4000.0)));
+"118
+[; ;Main.c: 118:         _delay((unsigned long)((20)*(8000000/4000.0)));
 [e ( __delay (1 -> * -> -> 20 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-"109
-[; ;Main.c: 109:     }
+"119
+[; ;Main.c: 119:     }
 }
 [e ++ _i -> -> 1 `i `uc ]
-[e :U 665 ]
-[e $ <= -> _i `i * -> 50 `i -> _sec `i 662  ]
-[e :U 663 ]
+[e :U 669 ]
+[e $ <= -> _i `i * -> 50 `i -> _sec `i 666  ]
+[e :U 667 ]
 }
-"110
-[; ;Main.c: 110: }
-[e :UE 661 ]
+"120
+[; ;Main.c: 120: }
+[e :UE 665 ]
 }
-"112
-[; ;Main.c: 112: void guardar(void){
+"122
+[; ;Main.c: 122: void guardar(void){
 [v _guardar `(v ~T0 @X0 1 ef ]
 {
 [e :U _guardar ]
 [f ]
-"113
-[; ;Main.c: 113:     Error(5);
-[e ( _Error (1 -> 5 `i ]
-"114
-[; ;Main.c: 114:     if (f_mount(&FatFs, "", 1) != FR_OK) {
-[e $ ! != -> ( _f_mount (3 , , &U _FatFs :s 1C -> -> 1 `i `uc `ui -> . `E4918 0 `ui 667  ]
-{
-"116
-[; ;Main.c: 116:         while(f_mount(&FatFs, "", 1) != FR_OK) {
-[e $U 668  ]
-[e :U 669 ]
-{
-"118
-[; ;Main.c: 118:         }
-}
-[e :U 668 ]
-"116
-[; ;Main.c: 116:         while(f_mount(&FatFs, "", 1) != FR_OK) {
-[e $ != -> ( _f_mount (3 , , &U _FatFs :s 2C -> -> 1 `i `uc `ui -> . `E4918 0 `ui 669  ]
-[e :U 670 ]
-"119
-[; ;Main.c: 119:     }
-}
-[e :U 667 ]
-"121
-[; ;Main.c: 121:     Error(1);
-[e ( _Error (1 -> 1 `i ]
+"123
+[; ;Main.c: 123:     SYSTEM_Initialize();
+[e ( _SYSTEM_Initialize ..  ]
 "124
-[; ;Main.c: 124:     if (f_open(&Fil, "BeeDev.txt", 0x10 | 0x01 | 0x02) == FR_OK) {
-[e $ ! == -> ( _f_open (3 , , &U _Fil :s 3C -> | | -> 16 `i -> 1 `i -> 2 `i `uc `ui -> . `E4918 0 `ui 671  ]
+[; ;Main.c: 124:     if (f_mount(&FatFs, "", 1) != FR_OK) {
+[e $ ! != -> ( _f_mount (3 , , &U _FatFs :s 1C -> -> 1 `i `uc `ui -> . `E4922 0 `ui 671  ]
 {
+"126
+[; ;Main.c: 126:         Error(33);
+[e ( _Error (1 -> 33 `i ]
 "127
-[; ;Main.c: 127:    if ((Fil.fsize != 0) && (f_lseek(&Fil, Fil.fsize) != FR_OK)) goto endSD;
-[e $ ! && != . _Fil 5 -> -> -> 0 `i `l `ul != -> ( _f_lseek (2 , &U _Fil . _Fil 5 `ui -> . `E4918 0 `ui 672  ]
-[e $U 673  ]
-[e :U 672 ]
-"129
-[; ;Main.c: 129:                 grabador();
-[e ( _grabador ..  ]
-"130
-[; ;Main.c: 130:                 endSD: f_close(&Fil);
+[; ;Main.c: 127:         __delay_sec(2);
+[e ( ___delay_sec (1 -> -> 2 `i `uc ]
+"128
+[; ;Main.c: 128:         while(f_mount(&FatFs, "", 1) != FR_OK) {
+[e $U 672  ]
 [e :U 673 ]
-[e ( _f_close (1 &U _Fil ]
-"131
-[; ;Main.c: 131:                 Error(55);
-[e ( _Error (1 -> 55 `i ]
-"132
-[; ;Main.c: 132:  }
-}
-[e $U 674  ]
-"133
-[; ;Main.c: 133:     else {
-[e :U 671 ]
 {
-"134
-[; ;Main.c: 134:         Error(0);
-[e ( _Error (1 -> 0 `i ]
-"135
-[; ;Main.c: 135:     }
+"130
+[; ;Main.c: 130:         }
 }
+[e :U 672 ]
+"128
+[; ;Main.c: 128:         while(f_mount(&FatFs, "", 1) != FR_OK) {
+[e $ != -> ( _f_mount (3 , , &U _FatFs :s 2C -> -> 1 `i `uc `ui -> . `E4922 0 `ui 673  ]
 [e :U 674 ]
+"131
+[; ;Main.c: 131:     }
+}
+[e :U 671 ]
+"133
+[; ;Main.c: 133:     Error(1);
+[e ( _Error (1 -> 1 `i ]
+"134
+[; ;Main.c: 134:     __delay_sec(2);
+[e ( ___delay_sec (1 -> -> 2 `i `uc ]
 "136
-[; ;Main.c: 136: }
-[e :UE 666 ]
+[; ;Main.c: 136:     if (f_open(&Fil, "BeeDev.txt", 0x10 | 0x01 | 0x02) == FR_OK) {
+[e $ ! == -> ( _f_open (3 , , &U _Fil :s 3C -> | | -> 16 `i -> 1 `i -> 2 `i `uc `ui -> . `E4922 0 `ui 675  ]
+{
+"137
+[; ;Main.c: 137:         Error(2);
+[e ( _Error (1 -> 2 `i ]
+"140
+[; ;Main.c: 140:         __delay_sec(2);
+[e ( ___delay_sec (1 -> -> 2 `i `uc ]
+"141
+[; ;Main.c: 141:          Error(3);
+[e ( _Error (1 -> 3 `i ]
+"143
+[; ;Main.c: 143:    if ((Fil.fsize != 0) && (f_lseek(&Fil, Fil.fsize) != FR_OK)) goto endSD;
+[e $ ! && != . _Fil 5 -> -> -> 0 `i `l `ul != -> ( _f_lseek (2 , &U _Fil . _Fil 5 `ui -> . `E4922 0 `ui 676  ]
+[e $U 677  ]
+[e :U 676 ]
+"144
+[; ;Main.c: 144:                 Error(4);
+[e ( _Error (1 -> 4 `i ]
+"145
+[; ;Main.c: 145:                 __delay_sec(2);
+[e ( ___delay_sec (1 -> -> 2 `i `uc ]
+"147
+[; ;Main.c: 147:                 grabador();
+[e ( _grabador ..  ]
+"149
+[; ;Main.c: 149:                 Error(5);
+[e ( _Error (1 -> 5 `i ]
+"150
+[; ;Main.c: 150:                 __delay_sec(2);
+[e ( ___delay_sec (1 -> -> 2 `i `uc ]
+"151
+[; ;Main.c: 151:                 endSD: f_close(&Fil);
+[e :U 677 ]
+[e ( _f_close (1 &U _Fil ]
+"152
+[; ;Main.c: 152:                 Error(6);
+[e ( _Error (1 -> 6 `i ]
+"153
+[; ;Main.c: 153:                 __delay_sec(1);
+[e ( ___delay_sec (1 -> -> 1 `i `uc ]
+"155
+[; ;Main.c: 155:                 Error(7);
+[e ( _Error (1 -> 7 `i ]
+"156
+[; ;Main.c: 156:                 __delay_sec(2);
+[e ( ___delay_sec (1 -> -> 2 `i `uc ]
+"158
+[; ;Main.c: 158:  }
+}
+[e $U 678  ]
+"159
+[; ;Main.c: 159:     else {
+[e :U 675 ]
+{
+"160
+[; ;Main.c: 160:         Error(0);
+[e ( _Error (1 -> 0 `i ]
+"161
+[; ;Main.c: 161:     }
+}
+[e :U 678 ]
+"162
+[; ;Main.c: 162: }
+[e :UE 670 ]
 }
 [a 3C 66 101 101 68 101 118 46 116 120 116 0 ]
 [a 1C 0 ]

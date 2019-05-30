@@ -1,5 +1,5 @@
 /**
-  @Generated MPLAB(c) Code Configurator Header File
+  @Generated PIC10 / PIC12 / PIC16 / PIC18 MCUs  Header File
 
   @Company:
     Microchip Technology Inc.
@@ -8,12 +8,12 @@
     mcc.h
 
   @Summary:
-    This is the mcc.h file generated using MPLAB(c) Code Configurator
+    This is the mcc.h file generated using PIC10 / PIC12 / PIC16 / PIC18 MCUs 
 
   @Description:
     This header file provides implementations for driver APIs for all modules selected in the GUI.
     Generation Information :
-        Product Revision  :  MPLAB(c) Code Configurator - 4.15
+        Product Revision  :  PIC10 / PIC12 / PIC16 / PIC18 MCUs  - 1.26.1
         Device            :  PIC18F45K50
         Version           :  1.02
     The generated drivers are tested against the following:
@@ -49,6 +49,7 @@
 #include "pin_manager.h"
 #include <stdint.h>
 #include <stdbool.h>
+#include "eusart1.h"
 #include "spi1.h"
 
 #define _XTAL_FREQ  8000000
