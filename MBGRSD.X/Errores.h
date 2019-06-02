@@ -24,7 +24,7 @@ void Error(int a){
     LATE = 0x01;                    //Enciende display     
     }
     else if(a == 33){
-    LATD = v_seg[6];              //asigna valor Display a puerto D
+    LATD = v_seg[0];              //asigna valor Display a puerto D
     LATE = 0x02;  
     }
     else if(a == 999){              //asigna valor Display a puerto D

@@ -14,14 +14,15 @@
 float volt;
 unsigned int adcin;
 
-    UINT bw;
+UINT bw;
 
-    int a = 0;
-    int out;
-    char ND[2];
+int a = 0;
+int out;
+char ND[2];
+char * data;
+char * buffor = "!\"#$%&\'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~¹¶ñÑã \r\n"; //Pues necesitamos un buffer o mas bien un arreglo con el tamaño adecuado para la lectura de la tarjeta SD
 
-char data;
-void send_string(const char *x){
+void send_string(const char *x){       //Pues crei que al hacer uso del puerto serial podria leer que contiene la tarjeta SD pero pues no fue asi, pero pronto encontrare la utilidad
     while(*x){
         __delay_ms(1);
         EUSART1_Write(*x++);
@@ -44,10 +45,7 @@ void main(void)
 {
     // Initialize the device
     SYSTEM_Initialize();
-
-    
-    Init8LEDs();        //Inicializa puerto A
-      
+   
     OSCCON = 0x53;      //Oscilador interno 4 MHz
     ADCON2 = 0x94;      //ACQT = 4TAD, TAD de 1microS, Justificado derecha 
     ADCON1 = 0x00;      //Vref- = GND, Vref+ = +5V
@@ -62,7 +60,8 @@ void main(void)
     ADIE = 1;           //Habilita interrupción ADC
        guardar();
     while(1){
-       // grabador();
+        //grabador();
+       LATA = 0x00;
         Error(55);
     }
     return;
@@ -78,17 +77,6 @@ int interruptadc(int adcin, int a) {                //Interrupción conversión
     //data[a] = adcin/4;
     return adcin;
 }
-
-
-void Init8LEDs(void)
-{
-    LATA = 0x00;
-    TRISA = 0x00;       //Todos como salida digital
-    ANSELA = 0x00;
-    
-    return;
-}
-
 void grabador(void){
        Error(3);            //Inicia conversión ADC
     do{
@@ -106,7 +94,14 @@ void grabador(void){
 }
 
 void reproductor(void){
-        
+    i = 0;
+    f_read(&Fil, data, 2 , &bw);
+    do{
+        i++;
+        adcin =  data[i];
+        PORTA = adcin;        
+        __delay_ms(10);
+    }while(i!=5000);
         //Display7Seg(volt);          //Llama a función desplegar en displays
         //LA1=out;
          //IO_RA1_SetLow();
@@ -144,7 +139,8 @@ void guardar(void){
                 Error(4);
                 __delay_sec(2);
                 
-                grabador();	// DATA ARRAY, NUMERO DE CHAR
+                //grabador();	// DATA ARRAY, NUMERO DE CHAR
+                reproductor();
                 //f_printf(&fil, "%s", "String");  
                 Error(5);
                 __delay_sec(2);

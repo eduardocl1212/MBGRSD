@@ -8330,7 +8330,7 @@ void Error(int a){
     LATE = 0x01;
     }
     else if(a == 33){
-    LATD = v_seg[6];
+    LATD = v_seg[0];
     LATE = 0x02;
     }
     else if(a == 999){
@@ -8506,13 +8506,14 @@ char *tempnam(const char *, const char *);
 float volt;
 unsigned int adcin;
 
-    UINT bw;
+UINT bw;
 
-    int a = 0;
-    int out;
-    char ND[2];
+int a = 0;
+int out;
+char ND[2];
+char * data;
+char * buffor = "!\"#$%&\'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~π∂Ò—„ \r\n";
 
-char data;
 void send_string(const char *x){
     while(*x){
         _delay((unsigned long)((1)*(8000000/4000.0)));
@@ -8537,9 +8538,6 @@ void main(void)
 
     SYSTEM_Initialize();
 
-
-    Init8LEDs();
-
     OSCCON = 0x53;
     ADCON2 = 0x94;
     ADCON1 = 0x00;
@@ -8555,6 +8553,7 @@ void main(void)
        guardar();
     while(1){
 
+       LATA = 0x00;
         Error(55);
     }
     return;
@@ -8570,17 +8569,6 @@ int interruptadc(int adcin, int a) {
 
     return adcin;
 }
-
-
-void Init8LEDs(void)
-{
-    LATA = 0x00;
-    TRISA = 0x00;
-    ANSELA = 0x00;
-
-    return;
-}
-
 void grabador(void){
        Error(3);
     do{
@@ -8598,7 +8586,14 @@ void grabador(void){
 }
 
 void reproductor(void){
-
+    i = 0;
+    f_read(&Fil, data, 2 , &bw);
+    do{
+        i++;
+        adcin = data[i];
+        PORTA = adcin;
+        _delay((unsigned long)((10)*(8000000/4000.0)));
+    }while(i!=5000);
 
 
 
@@ -8636,7 +8631,8 @@ void guardar(void){
                 Error(4);
                 __delay_sec(2);
 
-                grabador();
+
+                reproductor();
 
                 Error(5);
                 __delay_sec(2);
