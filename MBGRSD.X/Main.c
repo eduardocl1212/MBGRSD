@@ -31,7 +31,7 @@ int b = 0;
 int push;
 
 char data;
-void send_string(const char *x){
+void send_string(const char *x){ //Lo ocupe para saber que estaba haciendo el PIC, este puede eliminarse
     while(*x){
         __delay_ms(1);
         EUSART1_Write(*x++);
