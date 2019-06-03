@@ -1,11 +1,3 @@
-/*
- * File:   main.c
- * Author: big_m
- *
- * Created on 25 de mayo de 2019, 06:32 PM
- */
-
-
 #include "mcc_generated_files/mcc.h"
 #include "ff.h"
 #include "Errores.h"
