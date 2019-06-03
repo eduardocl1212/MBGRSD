@@ -59,14 +59,14 @@ void main(void)
     ADCON1 = 0x00;      //Vref- = GND, Vref+ = +5V
     LATA = 0x00;        //Limpiamos A
     TRISA = 0x00;       //bit RA1 como salida 
-    ANSELA = 0x00;      //RA1 como anal骻ico
+    ANSELA = 0x00;      //RA1 como anal贸gico
     TRISC = 0x07;       //bit RC2, RC1, RC0 como entrada
-    ANSELC = 0x04;      //RC2 como anal骻ico
+    ANSELC = 0x04;      //RC2 como anal贸gico
     ADCON0 = 0x39;      //Enciendo ADC, canal AN14
     
     GIE = 1;            //Habilita interrupciones globales
-    PEIE = 1;           //Habilita interrupciones de perif閞icos
-    ADIE = 1;           //Habilita interrupci髇 ADC
+    PEIE = 1;           //Habilita interrupciones de perif茅ricos
+    ADIE = 1;           //Habilita interrupci贸n ADC
    
     //initSD(); //Inicializa MicroSD
     while(1){
@@ -109,7 +109,7 @@ void grabadorSD(void){
 }
 
 void reproductorSD(void){
-    Error(8); //Inicia conversi髇 ADC
+    Error(8); //Inicia conversi贸n ADC
     int j = 0;
     char c;    
     do{
@@ -159,7 +159,7 @@ void initSD(void){
 
 void guardado(void){
     initSD();
-    if ((Fil.fsize != 0) && (f_lseek(&Fil, Fil.fsize) != FR_OK))	/* Salta al final del archivo */
+    if ((Fil.fsize != 0) && (f_lseek(&Fil, Fil.fsize) != FR_OK))	//Esta linea puede ser comentada, Si se comenta sobreescribe, si se deja esta agragara mas al texto
     Error(3);
     __delay_sec(1);
     //Error(999);
