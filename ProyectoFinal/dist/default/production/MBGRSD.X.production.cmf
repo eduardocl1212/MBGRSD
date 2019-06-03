@@ -1,0 +1,2179 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\Eula\AppData\Local\Temp\s7bo.o
+idloc IDLOC 0 200000 200000 8 1
+init CODE 0 0 0 4 1
+config CONFIG 0 300000 300000 E 1
+$dist/default/production\MBGRSD.X.production.o
+cinit CODE 0 5A6C 5A6C 56 1
+text0 CODE 0 5866 5866 6C 1
+text1 CODE 0 4FD6 4FD6 DA 1
+text2 CODE 0 5486 5486 A6 1
+text3 CODE 0 1F3C 1F3C 5AC 1
+text4 CODE 0 4A02 4A02 11E 1
+text5 CODE 0 5A0A 5A0A 62 1
+text6 CODE 0 11CA 11CA 764 1
+text7 CODE 0 5252 5252 CA 1
+text8 CODE 0 3558 3558 396 1
+text9 CODE 0 4630 4630 14A 1
+text10 CODE 0 477A 477A 146 1
+text11 CODE 0 576A 576A 7E 1
+text12 CODE 0 4D20 4D20 EC 1
+text13 CODE 0 593E 593E 66 1
+text14 CODE 0 3EAA 3EAA 284 1
+text15 CODE 0 5B18 5B18 48 1
+text16 CODE 0 50B0 50B0 D6 1
+text17 CODE 0 57E8 57E8 7E 1
+text18 CODE 0 4C30 4C30 F0 1
+text19 CODE 0 3BE8 3BE8 2C2 1
+text20 CODE 0 2DB0 2DB0 406 1
+text21 CODE 0 53D6 53D6 B0 1
+text22 CODE 0 81C 81C 9AE 1
+text23 CODE 0 4EF8 4EF8 DE 1
+text24 CODE 0 412E 412E 1EA 1
+text25 CODE 0 5D76 5D76 E 1
+text26 CODE 0 4E0C 4E0C EC 1
+text27 CODE 0 192E 192E 60E 1
+text28 CODE 0 38EE 38EE 2FA 1
+text29 CODE 0 2986 2986 42A 1
+text30 CODE 0 31B6 31B6 3A2 1
+text31 CODE 0 531C 531C BA 1
+text32 CODE 0 5AC2 5AC2 56 1
+text33 CODE 0 5666 5666 82 1
+text34 CODE 0 5BDE 5BDE 3A 1
+text35 CODE 0 48C0 48C0 142 1
+text36 CODE 0 55D2 55D2 94 1
+text37 CODE 0 5D20 5D20 12 1
+text38 CODE 0 4318 4318 1C0 1
+text39 CODE 0 5C50 5C50 2C 1
+text40 CODE 0 24E8 24E8 49E 1
+text41 CODE 0 5CA6 5CA6 26 1
+text42 CODE 0 5C7C 5C7C 2A 1
+text43 CODE 0 552C 552C A6 1
+text44 CODE 0 44D8 44D8 158 1
+text45 CODE 0 4B20 4B20 110 1
+text46 CODE 0 59A4 59A4 66 1
+text47 CODE 0 5186 5186 CC 1
+text48 CODE 0 5B60 5B60 42 1
+text49 CODE 0 56E8 56E8 82 1
+text50 CODE 0 5CEC 5CEC 1E 1
+text51 CODE 0 5BA2 5BA2 3C 1
+text52 CODE 0 5D9E 5D9E A 1
+text53 CODE 0 58D2 58D2 6C 1
+text54 CODE 0 5D56 5D56 10 1
+text55 CODE 0 5C18 5C18 38 1
+text56 CODE 0 5D32 5D32 12 1
+text57 CODE 0 5D84 5D84 E 1
+text58 CODE 0 5CCC 5CCC 20 1
+text59 CODE 0 5D44 5D44 12 1
+text60 CODE 0 5D0A 5D0A 16 1
+text61 CODE 0 5D66 5D66 10 1
+cstackCOMRAM COMRAM 1 1 1 5F 1
+cstackBANK0 BANK0 1 60 60 70 1
+bssBANK0 BANK0 1 D0 D0 18 1
+bssBANK1 BANK1 1 100 100 20 1
+smallconst SMALLCONST 0 800 800 1C 1
+idataBANK0 CODE 0 5D92 5D92 B 1
+dataBANK0 BANK0 1 E8 E8 B 1
+bssBIGRAM BIGRAM 1 120 120 22E 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM F3-FF 1
+RAM 34E-7FF 1
+SFR F53-FFF 1
+BANK0 F3-FF 1
+BANK3 34E-3FF 1
+BANK4 400-4FF 1
+BANK5 500-5FF 1
+BANK6 600-6FF 1
+BANK7 700-7FF 1
+CONST 4-7FF 1
+CONST 5D9D-5D9D 1
+CONST 5DA8-7FFF 1
+STACK 34E-7FF 1
+SMALLCONST 5D9D-5D9D 1
+SMALLCONST 5DA8-7FFF 1
+CODE 4-7FF 1
+CODE 5D9D-5D9D 1
+CODE 5DA8-7FFF 1
+BIGRAM F3-FF 1
+BIGRAM 34E-7FF 1
+EEDATA F00000-F000FF 1
+MEDIUMCONST 5D9D-5D9D 1
+MEDIUMCONST 5DA8-7FFF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\MBGRSD.X.production.o
+5D66 text61 CODE >161:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+5D66 text61 CODE >163:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+5D6A text61 CODE >164:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+5D6E text61 CODE >165:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+5D74 text61 CODE >168:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+5D0A text60 CODE >55:C:\Users\Eula\Desktop\MBGRSD.X\mcc_generated_files/eusart1.c
+5D0A text60 CODE >60:C:\Users\Eula\Desktop\MBGRSD.X\mcc_generated_files/eusart1.c
+5D0E text60 CODE >63:C:\Users\Eula\Desktop\MBGRSD.X\mcc_generated_files/eusart1.c
+5D12 text60 CODE >66:C:\Users\Eula\Desktop\MBGRSD.X\mcc_generated_files/eusart1.c
+5D16 text60 CODE >69:C:\Users\Eula\Desktop\MBGRSD.X\mcc_generated_files/eusart1.c
+5D1A text60 CODE >72:C:\Users\Eula\Desktop\MBGRSD.X\mcc_generated_files/eusart1.c
+5D1E text60 CODE >74:C:\Users\Eula\Desktop\MBGRSD.X\mcc_generated_files/eusart1.c
+5D44 text59 CODE >125:C:\Users\Eula\Desktop\MBGRSD.X\mcc_generated_files/mcc.c
+5D44 text59 CODE >128:C:\Users\Eula\Desktop\MBGRSD.X\mcc_generated_files/mcc.c
+5D48 text59 CODE >130:C:\Users\Eula\Desktop\MBGRSD.X\mcc_generated_files/mcc.c
+5D4C text59 CODE >132:C:\Users\Eula\Desktop\MBGRSD.X\mcc_generated_files/mcc.c
+5D50 text59 CODE >134:C:\Users\Eula\Desktop\MBGRSD.X\mcc_generated_files/mcc.c
+5D54 text59 CODE >137:C:\Users\Eula\Desktop\MBGRSD.X\mcc_generated_files/mcc.c
+5CCC text58 CODE >51:C:\Users\Eula\Desktop\MBGRSD.X\mcc_generated_files/pin_manager.c
+5CCC text58 CODE >59:C:\Users\Eula\Desktop\MBGRSD.X\mcc_generated_files/pin_manager.c
+5CD0 text58 CODE >60:C:\Users\Eula\Desktop\MBGRSD.X\mcc_generated_files/pin_manager.c
+5CD4 text58 CODE >67:C:\Users\Eula\Desktop\MBGRSD.X\mcc_generated_files/pin_manager.c
+5CD8 text58 CODE >68:C:\Users\Eula\Desktop\MBGRSD.X\mcc_generated_files/pin_manager.c
+5CDC text58 CODE >74:C:\Users\Eula\Desktop\MBGRSD.X\mcc_generated_files/pin_manager.c
+5CE2 text58 CODE >75:C:\Users\Eula\Desktop\MBGRSD.X\mcc_generated_files/pin_manager.c
+5CE6 text58 CODE >83:C:\Users\Eula\Desktop\MBGRSD.X\mcc_generated_files/pin_manager.c
+5CE8 text58 CODE >84:C:\Users\Eula\Desktop\MBGRSD.X\mcc_generated_files/pin_manager.c
+5CEA text58 CODE >91:C:\Users\Eula\Desktop\MBGRSD.X\mcc_generated_files/pin_manager.c
+5D84 text57 CODE >63:C:\Users\Eula\Desktop\MBGRSD.X\mcc_generated_files/spi1.c
+5D84 text57 CODE >68:C:\Users\Eula\Desktop\MBGRSD.X\mcc_generated_files/spi1.c
+5D88 text57 CODE >71:C:\Users\Eula\Desktop\MBGRSD.X\mcc_generated_files/spi1.c
+5D8C text57 CODE >74:C:\Users\Eula\Desktop\MBGRSD.X\mcc_generated_files/spi1.c
+5D90 text57 CODE >75:C:\Users\Eula\Desktop\MBGRSD.X\mcc_generated_files/spi1.c
+5D32 text56 CODE >116:C:\Users\Eula\Desktop\MBGRSD.X\mcc_generated_files/mcc.c
+5D32 text56 CODE >119:C:\Users\Eula\Desktop\MBGRSD.X\mcc_generated_files/mcc.c
+5D36 text56 CODE >120:C:\Users\Eula\Desktop\MBGRSD.X\mcc_generated_files/mcc.c
+5D3A text56 CODE >121:C:\Users\Eula\Desktop\MBGRSD.X\mcc_generated_files/mcc.c
+5D3E text56 CODE >122:C:\Users\Eula\Desktop\MBGRSD.X\mcc_generated_files/mcc.c
+5D42 text56 CODE >123:C:\Users\Eula\Desktop\MBGRSD.X\mcc_generated_files/mcc.c
+5C18 text55 CODE >223:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+5C1A text55 CODE >224:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+5C20 text55 CODE >225:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+5C2E text55 CODE >226:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+5D56 text54 CODE >90:C:\Users\Eula\Desktop\MBGRSD.X\mcc_generated_files/spi1.c
+5D58 text54 CODE >93:C:\Users\Eula\Desktop\MBGRSD.X\mcc_generated_files/spi1.c
+5D5A text54 CODE >95:C:\Users\Eula\Desktop\MBGRSD.X\mcc_generated_files/spi1.c
+5D5E text54 CODE >97:C:\Users\Eula\Desktop\MBGRSD.X\mcc_generated_files/spi1.c
+5D5E text54 CODE >99:C:\Users\Eula\Desktop\MBGRSD.X\mcc_generated_files/spi1.c
+5D62 text54 CODE >101:C:\Users\Eula\Desktop\MBGRSD.X\mcc_generated_files/spi1.c
+5D64 text54 CODE >102:C:\Users\Eula\Desktop\MBGRSD.X\mcc_generated_files/spi1.c
+58D2 text53 CODE >123:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+58D2 text53 CODE >132:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+58DC text53 CODE >133:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+58E4 text53 CODE >134:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+58EA text53 CODE >135:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+58F2 text53 CODE >136:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+5900 text53 CODE >137:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+590C text53 CODE >140:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+592E text53 CODE >142:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+5934 text53 CODE >143:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+593A text53 CODE >145:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+593C text53 CODE >146:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+5D9E text52 CODE >93:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+5D9E text52 CODE >95:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+5DA0 text52 CODE >96:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+5DA6 text52 CODE >97:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+5BA2 text51 CODE >74:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+5BA2 text51 CODE >78:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+5BAC text51 CODE >79:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+5BB8 text51 CODE >80:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+5BC0 text51 CODE >81:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+5BCE text51 CODE >83:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+5BDC text51 CODE >84:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+5CEC text50 CODE >106:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+5CEC text50 CODE >108:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+5CEE text50 CODE >109:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+5CF4 text50 CODE >110:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+5D02 text50 CODE >112:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+5D06 text50 CODE >113:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+5D08 text50 CODE >114:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+56E8 text49 CODE >195:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+56E8 text49 CODE >196:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+56EA text49 CODE >203:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+56F2 text49 CODE >204:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+56F6 text49 CODE >205:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+5704 text49 CODE >209:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+570C text49 CODE >210:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+5712 text49 CODE >211:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+5718 text49 CODE >212:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+571E text49 CODE >213:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+5724 text49 CODE >214:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+5728 text49 CODE >215:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+5732 text49 CODE >216:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+573E text49 CODE >217:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+5744 text49 CODE >220:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+5752 text49 CODE >221:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+5756 text49 CODE >223:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+5766 text49 CODE >226:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+5768 text49 CODE >227:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+5B60 text48 CODE >231:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+5B60 text48 CODE >232:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+5B62 text48 CODE >242:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+5B66 text48 CODE >243:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+5B68 text48 CODE >245:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+5B80 text48 CODE >249:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+5B8A text48 CODE >253:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+5BA0 text48 CODE >281:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+5186 text47 CODE >370:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+5186 text47 CODE >371:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+5188 text47 CODE >380:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+519A text47 CODE >381:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+51A4 text47 CODE >383:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+51B8 text47 CODE >385:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+51D8 text47 CODE >386:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+51F4 text47 CODE >388:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+520E text47 CODE >389:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+5212 text47 CODE >390:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+5220 text47 CODE >391:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+523E text47 CODE >393:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+5242 text47 CODE >395:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+5250 text47 CODE >396:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+59A4 text46 CODE >156:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+59A4 text46 CODE >165:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+59B2 text46 CODE >167:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+59B8 text46 CODE >168:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+59C0 text46 CODE >169:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+59C8 text46 CODE >171:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+59E8 text46 CODE >173:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+59EE text46 CODE >174:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+59F4 text46 CODE >175:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+59FC text46 CODE >176:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+5A06 text46 CODE >180:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+5A08 text46 CODE >181:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+4B20 text45 CODE >405:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+4B20 text45 CODE >406:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+4B22 text45 CODE >412:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+4B34 text45 CODE >413:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+4B3E text45 CODE >414:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+4B46 text45 CODE >416:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+4B5A text45 CODE >418:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+4B62 text45 CODE >419:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+4B94 text45 CODE >421:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+4B9C text45 CODE >424:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+4BBA text45 CODE >425:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+4BD6 text45 CODE >427:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+4BEC text45 CODE >428:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+4BF0 text45 CODE >429:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+4BFE text45 CODE >430:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+4C14 text45 CODE >431:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+4C1C text45 CODE >434:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+4C20 text45 CODE >436:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+4C2E text45 CODE >437:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+44D8 text44 CODE >700:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+44D8 text44 CODE >706:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+44DC text44 CODE >709:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+44EE text44 CODE >710:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+450A text44 CODE >711:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4546 text44 CODE >712:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+454A text44 CODE >713:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+454C text44 CODE >714:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+455C text44 CODE >715:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+45B0 text44 CODE >716:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+45D2 text44 CODE >717:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+45EE text44 CODE >718:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4624 text44 CODE >719:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+462C text44 CODE >723:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+462E text44 CODE >724:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+552C text43 CODE >729:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+552C text43 CODE >734:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+5530 text43 CODE >737:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+5556 text43 CODE >739:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+5564 text43 CODE >741:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+556A text43 CODE >742:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+55A6 text43 CODE >743:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+55AE text43 CODE >744:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+55B2 text43 CODE >746:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+55CE text43 CODE >749:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+55D0 text43 CODE >750:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+5C7C text42 CODE >1252:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+5C7C text42 CODE >1257:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+5C90 text42 CODE >1258:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+5CA4 text42 CODE >1259:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+5CA6 text41 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\Umul16.c
+5CA6 text41 CODE >37:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\Umul16.c
+5CB2 text41 CODE >38:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\Umul16.c
+5CBA text41 CODE >39:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\Umul16.c
+5CC2 text41 CODE >52:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\Umul16.c
+5CCA text41 CODE >53:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\Umul16.c
+24E8 text40 CODE >446:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+24E8 text40 CODE >447:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+24EA text40 CODE >453:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+24F2 text40 CODE >457:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+24FC text40 CODE >459:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+2500 text40 CODE >461:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+250A text40 CODE >465:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+2518 text40 CODE >469:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+254E text40 CODE >470:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+255A text40 CODE >471:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+25BC text40 CODE >472:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+25F4 text40 CODE >473:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+25F6 text40 CODE >474:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+261A text40 CODE >475:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+266E text40 CODE >476:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+269A text40 CODE >482:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+269A text40 CODE >483:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+269E text40 CODE >484:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+26BA text40 CODE >485:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+26C0 text40 CODE >486:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+26DA text40 CODE >487:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+26EE text40 CODE >488:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+272E text40 CODE >493:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+2764 text40 CODE >494:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+276A text40 CODE >495:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+27BE text40 CODE >497:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+2846 text40 CODE >507:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+2854 text40 CODE >512:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+288C text40 CODE >518:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+28BE text40 CODE >524:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+28DA text40 CODE >525:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+28FE text40 CODE >531:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+291A text40 CODE >532:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+2920 text40 CODE >533:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+2936 text40 CODE >539:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+293A text40 CODE >540:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+297E text40 CODE >542:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+2982 text40 CODE >544:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+2984 text40 CODE >545:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+5C50 text39 CODE >524:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+5C50 text39 CODE >525:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+5C58 text39 CODE >527:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+5C5A text39 CODE >528:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+5C6A text39 CODE >527:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4318 text38 CODE >760:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4318 text38 CODE >767:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4326 text38 CODE >768:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+432C text38 CODE >770:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+434E text38 CODE >772:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+436E text38 CODE >773:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4382 text38 CODE >774:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+439E text38 CODE >775:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+43BA text38 CODE >776:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+43E2 text38 CODE >777:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+440A text38 CODE >779:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+445A text38 CODE >780:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+449C text38 CODE >781:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+44AC text38 CODE >784:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+44D0 text38 CODE >785:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+44D4 text38 CODE >786:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+44D4 text38 CODE >788:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+44D6 text38 CODE >789:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+5D20 text37 CODE >356:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+5D20 text37 CODE >357:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+5D22 text37 CODE >360:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+5D2C text37 CODE >361:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+5D30 text37 CODE >362:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+55D2 text36 CODE >2372:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+55D2 text36 CODE >2376:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+55DA text36 CODE >2379:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+565E text36 CODE >2380:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+5662 text36 CODE >2384:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+5664 text36 CODE >2385:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+48C0 text35 CODE >2813:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+48C0 text35 CODE >2822:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+48CE text35 CODE >2823:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+48D4 text35 CODE >2824:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+48E4 text35 CODE >2833:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4916 text35 CODE >2834:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+491C text35 CODE >2835:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4930 text35 CODE >2836:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4940 text35 CODE >2837:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4968 text35 CODE >2838:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4990 text35 CODE >2840:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+49AC text35 CODE >2841:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+49C0 text35 CODE >2842:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+49D0 text35 CODE >2843:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+49E8 text35 CODE >2844:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+49FE text35 CODE >2849:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4A00 text35 CODE >2850:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+5BDE text34 CODE >2861:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+5BDE text34 CODE >2869:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+5BEC text34 CODE >2870:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+5BF2 text34 CODE >2873:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+5C00 text34 CODE >2874:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+5C06 text34 CODE >2882:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+5C16 text34 CODE >2889:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+5666 text33 CODE >7:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\__lldiv.c
+5666 text33 CODE >13:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\__lldiv.c
+5676 text33 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\__lldiv.c
+5682 text33 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\__lldiv.c
+5686 text33 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\__lldiv.c
+5688 text33 CODE >17:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\__lldiv.c
+5692 text33 CODE >18:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\__lldiv.c
+5694 text33 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\__lldiv.c
+5698 text33 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\__lldiv.c
+56A2 text33 CODE >22:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\__lldiv.c
+56B6 text33 CODE >23:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\__lldiv.c
+56C6 text33 CODE >24:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\__lldiv.c
+56C8 text33 CODE >26:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\__lldiv.c
+56D2 text33 CODE >27:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\__lldiv.c
+56D6 text33 CODE >28:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\__lldiv.c
+56D6 text33 CODE >29:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\__lldiv.c
+56E6 text33 CODE >30:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\__lldiv.c
+5AC2 text32 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\Umul32.c
+5AC2 text32 CODE >119:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\Umul32.c
+5AD2 text32 CODE >121:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\Umul32.c
+5AD6 text32 CODE >122:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\Umul32.c
+5AE6 text32 CODE >123:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\Umul32.c
+5AF0 text32 CODE >124:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\Umul32.c
+5AFA text32 CODE >125:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\Umul32.c
+5B06 text32 CODE >128:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\Umul32.c
+5B16 text32 CODE >129:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\Umul32.c
+531C text31 CODE >800:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+531C text31 CODE >805:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+5328 text31 CODE >806:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+5372 text31 CODE >807:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+53D4 text31 CODE >808:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+31B6 text30 CODE >818:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+31B6 text30 CODE >828:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+31E6 text30 CODE >829:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+31F6 text30 CODE >831:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+31F6 text30 CODE >832:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+31FE text30 CODE >834:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3200 text30 CODE >835:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3200 text30 CODE >836:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+321A text30 CODE >837:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3276 text30 CODE >838:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+32B8 text30 CODE >839:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3314 text30 CODE >840:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+335A text30 CODE >841:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3394 text30 CODE >845:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+33F8 text30 CODE >846:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3432 text30 CODE >847:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+344E text30 CODE >848:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3450 text30 CODE >851:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+34B8 text30 CODE >852:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+34F8 text30 CODE >853:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3518 text30 CODE >854:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+351A text30 CODE >858:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3546 text30 CODE >859:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3546 text30 CODE >861:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3556 text30 CODE >862:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+2986 text29 CODE >873:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+2986 text29 CODE >884:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+29B6 text29 CODE >885:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+29BA text29 CODE >887:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+29BC text29 CODE >889:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+29BC text29 CODE >890:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+29D6 text29 CODE >891:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+2A2E text29 CODE >892:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+2A34 text29 CODE >893:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+2A6C text29 CODE >894:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+2AB8 text29 CODE >895:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+2AC8 text29 CODE >896:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+2B20 text29 CODE >897:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+2B26 text29 CODE >898:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+2B5A text29 CODE >899:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+2BCA text29 CODE >904:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+2C2A text29 CODE >905:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+2C30 text29 CODE >906:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+2C6A text29 CODE >907:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+2C7C text29 CODE >912:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+2CE0 text29 CODE >913:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+2CE6 text29 CODE >914:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+2D26 text29 CODE >915:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+2D56 text29 CODE >916:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+2D6E text29 CODE >917:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+2D7E text29 CODE >918:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+2D80 text29 CODE >922:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+2DAC text29 CODE >925:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+2DAE text29 CODE >926:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+38EE text28 CODE >990:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+38EE text28 CODE >999:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+38FA text28 CODE >1000:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3916 text28 CODE >1001:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3956 text28 CODE >1004:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3982 text28 CODE >1005:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+39A6 text28 CODE >1006:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+39CA text28 CODE >1007:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+39EA text28 CODE >1008:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+39FA text28 CODE >1009:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+39FA text28 CODE >1011:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3A0A text28 CODE >1013:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3A16 text28 CODE >1014:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3A36 text28 CODE >1015:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3A46 text28 CODE >1016:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3A68 text28 CODE >1018:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3A94 text28 CODE >1019:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3AA2 text28 CODE >1020:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3AC0 text28 CODE >1022:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3ADC text28 CODE >1025:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3B0C text28 CODE >1026:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3B1E text28 CODE >1027:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3B4E text28 CODE >1029:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3B54 text28 CODE >1030:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3B70 text28 CODE >1031:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3B8E text28 CODE >1032:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3BA4 text28 CODE >1033:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3BB6 text28 CODE >1036:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3BD6 text28 CODE >1037:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3BD6 text28 CODE >1039:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3BE6 text28 CODE >1040:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+192E text27 CODE >3033:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+192E text27 CODE >3045:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+193E text27 CODE >3046:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+1948 text27 CODE >3047:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+195A text27 CODE >3048:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+196A text27 CODE >3107:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+199A text27 CODE >3111:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+19B6 text27 CODE >3113:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+19D2 text27 CODE >3114:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+19FE text27 CODE >3115:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+1A0A text27 CODE >3116:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+1A4C text27 CODE >3117:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+1AD8 text27 CODE >3119:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+1B4C text27 CODE >3120:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+1B68 text27 CODE >3121:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+1B84 text27 CODE >3122:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+1B86 text27 CODE >3123:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+1BA2 text27 CODE >3125:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+1BAE text27 CODE >3126:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+1BE2 text27 CODE >3127:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+1C04 text27 CODE >3128:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+1C2A text27 CODE >3129:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+1C46 text27 CODE >3130:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+1C46 text27 CODE >3132:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+1C62 text27 CODE >3134:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+1C70 text27 CODE >3137:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+1C80 text27 CODE >3138:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+1CB4 text27 CODE >3139:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+1CC2 text27 CODE >3140:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+1CD4 text27 CODE >3144:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+1D08 text27 CODE >3145:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+1D1C text27 CODE >3146:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+1D54 text27 CODE >3147:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+1D70 text27 CODE >3148:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+1D8C text27 CODE >3149:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+1D9C text27 CODE >3135:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+1DB0 text27 CODE >3151:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+1DCC text27 CODE >3152:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+1DF0 text27 CODE >3153:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+1E24 text27 CODE >3154:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+1E32 text27 CODE >3155:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+1E64 text27 CODE >3159:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+1EBA text27 CODE >3171:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+1ED6 text27 CODE >3174:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+1F02 text27 CODE >3175:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+1F2A text27 CODE >3176:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4E0C text26 CODE >2175:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4E0C text26 CODE >2180:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4E38 text26 CODE >2181:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4E5A text26 CODE >2182:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4E5E text26 CODE >2184:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4E78 text26 CODE >2185:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4E7C text26 CODE >2187:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4EB6 text26 CODE >2188:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4EBA text26 CODE >2189:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4EF4 text26 CODE >2192:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4EF6 text26 CODE >2193:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+5D76 text25 CODE >77:C:\Users\Eula\Desktop\MBGRSD.X\mcc_generated_files/spi1.c
+5D76 text25 CODE >81:C:\Users\Eula\Desktop\MBGRSD.X\mcc_generated_files/spi1.c
+5D7A text25 CODE >84:C:\Users\Eula\Desktop\MBGRSD.X\mcc_generated_files/spi1.c
+5D7E text25 CODE >87:C:\Users\Eula\Desktop\MBGRSD.X\mcc_generated_files/spi1.c
+5D82 text25 CODE >88:C:\Users\Eula\Desktop\MBGRSD.X\mcc_generated_files/spi1.c
+412E text24 CODE >296:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+412E text24 CODE >297:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+4130 text24 CODE >304:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+413A text24 CODE >306:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+4146 text24 CODE >308:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+414A text24 CODE >309:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+415E text24 CODE >311:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+4162 text24 CODE >312:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+417E text24 CODE >313:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+419A text24 CODE >314:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+41BA text24 CODE >315:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+41C8 text24 CODE >316:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+41D2 text24 CODE >317:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+41EE text24 CODE >318:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+41FC text24 CODE >319:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+420A text24 CODE >320:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+422E text24 CODE >321:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+424E text24 CODE >322:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+4268 text24 CODE >326:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+4286 text24 CODE >327:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+428E text24 CODE >329:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+4296 text24 CODE >331:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+42A0 text24 CODE >332:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+42BC text24 CODE >333:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+42CA text24 CODE >334:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+42D8 text24 CODE >335:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+42FC text24 CODE >336:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+4300 text24 CODE >337:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+4300 text24 CODE >339:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+4304 text24 CODE >340:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+4308 text24 CODE >342:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+430E text24 CODE >343:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+4312 text24 CODE >344:C:\Users\Eula\Desktop\MBGRSD.X\diskio.c
+4EF8 text23 CODE >2114:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4EF8 text23 CODE >2120:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4EFC text23 CODE >2129:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4F0C text23 CODE >2130:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4F44 text23 CODE >2131:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4F56 text23 CODE >2132:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4F66 text23 CODE >2133:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4F84 text23 CODE >2134:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4F9E text23 CODE >2135:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4FA6 text23 CODE >2136:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4FAE text23 CODE >2137:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4FC2 text23 CODE >2156:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4FCC text23 CODE >2161:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+81C text22 CODE >2203:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+81C text22 CODE >2219:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+82C text22 CODE >2220:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+840 text22 CODE >2221:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+84A text22 CODE >2224:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+864 text22 CODE >2225:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+870 text22 CODE >2228:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+880 text22 CODE >2230:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+88E text22 CODE >2231:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+8A4 text22 CODE >2232:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+8A8 text22 CODE >2233:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+8B0 text22 CODE >2234:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+8B4 text22 CODE >2235:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+8B8 text22 CODE >2242:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+8C4 text22 CODE >2243:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+8D4 text22 CODE >2244:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+8EA text22 CODE >2245:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+8EE text22 CODE >2246:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+8F2 text22 CODE >2247:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+8FC text22 CODE >2254:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+90C text22 CODE >2255:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+92C text22 CODE >2256:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+932 text22 CODE >2257:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+946 text22 CODE >2258:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+97C text22 CODE >2259:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+9EC text22 CODE >2260:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+9F2 text22 CODE >2261:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+9FA text22 CODE >2262:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+A08 text22 CODE >2264:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+A38 text22 CODE >2265:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+A78 text22 CODE >2266:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+A8E text22 CODE >2268:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+A9A text22 CODE >2269:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+AA4 text22 CODE >2273:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+ABC text22 CODE >2276:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+ADC text22 CODE >2277:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+B04 text22 CODE >2278:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+B20 text22 CODE >2280:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+B3C text22 CODE >2281:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+B62 text22 CODE >2283:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+BA0 text22 CODE >2285:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+BBE text22 CODE >2286:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+C12 text22 CODE >2289:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+C32 text22 CODE >2290:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+C56 text22 CODE >2293:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+C76 text22 CODE >2294:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+C9E text22 CODE >2296:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+CB2 text22 CODE >2297:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+CBA text22 CODE >2300:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+D08 text22 CODE >2301:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+D1C text22 CODE >2302:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+D62 text22 CODE >2303:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+D70 text22 CODE >2304:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+D74 text22 CODE >2305:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+D8A text22 CODE >2306:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+DA0 text22 CODE >2309:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+DD4 text22 CODE >2310:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+DF0 text22 CODE >2311:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+E24 text22 CODE >2312:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+E58 text22 CODE >2313:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+E60 text22 CODE >2314:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+E74 text22 CODE >2315:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+E9C text22 CODE >2316:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+ED8 text22 CODE >2317:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+EDA text22 CODE >2318:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+EEE text22 CODE >2319:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+F3E text22 CODE >2320:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+FFC text22 CODE >2322:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+FFC text22 CODE >2323:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+1046 text22 CODE >2328:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+1082 text22 CODE >2331:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+1092 text22 CODE >2333:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+10D8 text22 CODE >2337:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+10EA text22 CODE >2338:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+1150 text22 CODE >2343:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+1178 text22 CODE >2346:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+11A0 text22 CODE >2352:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+11AC text22 CODE >2353:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+53D6 text21 CODE >2402:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+53D6 text21 CODE >2411:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+53DE text21 CODE >2414:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+53F2 text21 CODE >2415:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+53FA text21 CODE >2416:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+5414 text21 CODE >2418:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+541C text21 CODE >2425:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+5428 text21 CODE >2428:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+5430 text21 CODE >2429:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+543C text21 CODE >2434:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+5456 text21 CODE >2436:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+5468 text21 CODE >2438:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+5482 text21 CODE >2439:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+5484 text21 CODE >2440:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+2DB0 text20 CODE >1128:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+2DB0 text20 CODE >1140:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+2DD2 text20 CODE >1141:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+2DF2 text20 CODE >1142:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+2DF6 text20 CODE >1144:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+2E0A text20 CODE >1145:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+2E20 text20 CODE >1147:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+2E38 text20 CODE >1148:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+2E5A text20 CODE >1152:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+2EAA text20 CODE >1153:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+2EEA text20 CODE >1154:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+2F00 text20 CODE >1155:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+2F16 text20 CODE >1156:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+2F3E text20 CODE >1158:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+2F46 text20 CODE >1159:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+2F86 text20 CODE >1160:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+2F98 text20 CODE >1161:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+2FA4 text20 CODE >1162:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+2FB6 text20 CODE >1164:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+2FD0 text20 CODE >1165:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3002 text20 CODE >1166:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+304A text20 CODE >1167:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3056 text20 CODE >1168:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+306E text20 CODE >1169:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3088 text20 CODE >1170:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+30A6 text20 CODE >1171:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+30D2 text20 CODE >1172:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+30F4 text20 CODE >1178:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3110 text20 CODE >1179:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3152 text20 CODE >1184:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3166 text20 CODE >1185:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+31B2 text20 CODE >1187:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+31B4 text20 CODE >1188:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3BE8 text19 CODE >1080:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3BE8 text19 CODE >1089:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3BFC text19 CODE >1090:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3C18 text19 CODE >1091:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3C4E text19 CODE >1092:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3C52 text19 CODE >1093:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3C7E text19 CODE >1094:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3CA2 text19 CODE >1096:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3CAE text19 CODE >1097:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3CCE text19 CODE >1099:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3CF2 text19 CODE >1100:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3CF4 text19 CODE >1102:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3D18 text19 CODE >1103:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3D1A text19 CODE >1104:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3D4E text19 CODE >1105:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3D66 text19 CODE >1106:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3D9E text19 CODE >1108:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3DA6 text19 CODE >1103:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3DA6 text19 CODE >1109:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3DB2 text19 CODE >1110:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3DE6 text19 CODE >1112:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3E02 text19 CODE >1113:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3E10 text19 CODE >1114:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3E5A text19 CODE >1115:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3EA6 text19 CODE >1117:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3EA8 text19 CODE >1118:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4C30 text18 CODE >1199:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4C30 text18 CODE >1208:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4C48 text18 CODE >1209:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4C4E text18 CODE >1210:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4C56 text18 CODE >1212:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4C8A text18 CODE >1213:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4C90 text18 CODE >1214:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4CD6 text18 CODE >1215:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4CEA text18 CODE >1217:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4CF2 text18 CODE >1219:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4D0A text18 CODE >1220:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4D10 text18 CODE >1222:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4D1C text18 CODE >1223:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4D1E text18 CODE >1224:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+57E8 text17 CODE >507:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+57E8 text17 CODE >508:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+57F0 text17 CODE >509:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+57F8 text17 CODE >512:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+57FA text17 CODE >513:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+5812 text17 CODE >514:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+5822 text17 CODE >515:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+582A text17 CODE >512:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+5838 text17 CODE >519:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+5854 text17 CODE >518:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+50B0 text16 CODE >1578:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+50B0 text16 CODE >1629:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+50CA text16 CODE >1632:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+50D0 text16 CODE >1633:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+5104 text16 CODE >1634:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+510A text16 CODE >1635:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+5132 text16 CODE >1636:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+5168 text16 CODE >1640:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+5180 text16 CODE >1644:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+5184 text16 CODE >1645:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+5B18 text15 CODE >543:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+5B18 text15 CODE >544:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+5B4E text15 CODE >545:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+5B5E text15 CODE >546:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3EAA text14 CODE >1843:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3EAA text14 CODE >1974:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3EE4 text14 CODE >1975:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3EF8 text14 CODE >1976:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3F14 text14 CODE >1977:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3F2E text14 CODE >1992:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3F4C text14 CODE >1993:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3F62 text14 CODE >1994:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3F76 text14 CODE >1995:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3F8C text14 CODE >1996:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3F9C text14 CODE >1997:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3FA6 text14 CODE >1999:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3FAC text14 CODE >2000:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3FB0 text14 CODE >2008:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3FB0 text14 CODE >2009:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3FC8 text14 CODE >2010:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3FE6 text14 CODE >2011:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4022 text14 CODE >2013:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4036 text14 CODE >2014:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4048 text14 CODE >2016:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4062 text14 CODE >2018:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+406E text14 CODE >2019:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4070 text14 CODE >2020:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4072 text14 CODE >2021:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+407E text14 CODE >2022:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4084 text14 CODE >2025:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+409A text14 CODE >2028:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+40B6 text14 CODE >2029:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+40D0 text14 CODE >2031:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+40D8 text14 CODE >2032:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+40F4 text14 CODE >2034:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4106 text14 CODE >2035:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4110 text14 CODE >2036:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+411A text14 CODE >2038:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+412A text14 CODE >2040:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+412C text14 CODE >2042:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+593E text13 CODE >533:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+593E text13 CODE >534:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+594E text13 CODE >535:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+5956 text13 CODE >537:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+599A text13 CODE >538:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+59A2 text13 CODE >539:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4D20 text12 CODE >1458:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4D20 text12 CODE >1468:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4D38 text12 CODE >1469:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4D44 text12 CODE >1475:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4D78 text12 CODE >1476:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4D7E text12 CODE >1477:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4D92 text12 CODE >1478:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4D9E text12 CODE >1479:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4DAA text12 CODE >1502:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4DEA text12 CODE >1505:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4E04 text12 CODE >1506:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+576A text11 CODE >1235:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+576A text11 CODE >1242:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+578A text11 CODE >1243:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+579A text11 CODE >1244:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+57D6 text11 CODE >1246:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+57E6 text11 CODE >1247:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+477A text10 CODE >2052:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+477A text10 CODE >2068:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+479E text10 CODE >2069:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+47A4 text10 CODE >2070:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+47BA text10 CODE >2073:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+47CA text10 CODE >2074:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+47E2 text10 CODE >2075:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+47F6 text10 CODE >2076:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+47F8 text10 CODE >2078:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4810 text10 CODE >2079:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4816 text10 CODE >2080:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4826 text10 CODE >2081:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4842 text10 CODE >2082:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4848 text10 CODE >2083:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+484E text10 CODE >2089:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4858 text10 CODE >2093:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4858 text10 CODE >2094:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+485C text10 CODE >2095:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4870 text10 CODE >2096:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4880 text10 CODE >2099:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+48BC text10 CODE >2103:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+48BE text10 CODE >2104:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4630 text9 CODE >937:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4630 text9 CODE >948:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4660 text9 CODE >949:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4666 text9 CODE >952:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+466C text9 CODE >953:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+466E text9 CODE >954:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+469A text9 CODE >955:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+46A8 text9 CODE >956:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+46B4 text9 CODE >957:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+46CC text9 CODE >958:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+46FC text9 CODE >959:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4702 text9 CODE >960:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4720 text9 CODE >961:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4736 text9 CODE >962:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4746 text9 CODE >974:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4756 text9 CODE >953:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4756 text9 CODE >975:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4776 text9 CODE >978:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+4778 text9 CODE >979:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3558 text8 CODE >2449:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3558 text8 CODE >2464:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3566 text8 CODE >2465:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3576 text8 CODE >2468:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+357E text8 CODE >2473:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3582 text8 CODE >2474:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+35A0 text8 CODE >2479:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+35A6 text8 CODE >2480:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+35AE text8 CODE >2481:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+35C6 text8 CODE >2482:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+35CE text8 CODE >2484:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+35D4 text8 CODE >2485:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+35DC text8 CODE >2486:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+35E0 text8 CODE >2493:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+35EC text8 CODE >2494:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+35F2 text8 CODE >2495:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+35FA text8 CODE >2499:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+360A text8 CODE >2501:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+360C text8 CODE >2502:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3614 text8 CODE >2503:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3616 text8 CODE >2505:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+362E text8 CODE >2506:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3632 text8 CODE >2507:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3632 text8 CODE >2508:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3636 text8 CODE >2509:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+363A text8 CODE >2511:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+363A text8 CODE >2512:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3642 text8 CODE >2514:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+365E text8 CODE >2515:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+367A text8 CODE >2516:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+368A text8 CODE >2517:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+369E text8 CODE >2518:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+36C2 text8 CODE >2519:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+36DE text8 CODE >2520:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+36F0 text8 CODE >2521:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+36FC text8 CODE >2522:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3718 text8 CODE >2523:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3738 text8 CODE >2524:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+373E text8 CODE >2525:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3772 text8 CODE >2526:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3792 text8 CODE >2532:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3798 text8 CODE >2533:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+37A8 text8 CODE >2534:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+37AC text8 CODE >2535:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+37AC text8 CODE >2536:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+37C0 text8 CODE >2537:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+37C4 text8 CODE >2540:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+37C4 text8 CODE >2541:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+37CA text8 CODE >2542:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+37CC text8 CODE >2543:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+37CE text8 CODE >2544:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+37F6 text8 CODE >2545:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+380A text8 CODE >2565:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3810 text8 CODE >2566:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3820 text8 CODE >2567:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3830 text8 CODE >2568:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+3862 text8 CODE >2569:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+388A text8 CODE >2570:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+389E text8 CODE >2571:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+38B2 text8 CODE >2575:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+38C2 text8 CODE >2576:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+38EA text8 CODE >2580:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+38EC text8 CODE >2581:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+5252 text7 CODE >13:C:\Users\Eula\Desktop\MBGRSD.X/Errores.h
+5252 text7 CODE >14:C:\Users\Eula\Desktop\MBGRSD.X/Errores.h
+5256 text7 CODE >15:C:\Users\Eula\Desktop\MBGRSD.X/Errores.h
+525A text7 CODE >16:C:\Users\Eula\Desktop\MBGRSD.X/Errores.h
+5260 text7 CODE >17:C:\Users\Eula\Desktop\MBGRSD.X/Errores.h
+5264 text7 CODE >18:C:\Users\Eula\Desktop\MBGRSD.X/Errores.h
+5268 text7 CODE >19:C:\Users\Eula\Desktop\MBGRSD.X/Errores.h
+526C text7 CODE >21:C:\Users\Eula\Desktop\MBGRSD.X/Errores.h
+527E text7 CODE >22:C:\Users\Eula\Desktop\MBGRSD.X/Errores.h
+5292 text7 CODE >23:C:\Users\Eula\Desktop\MBGRSD.X/Errores.h
+52A2 text7 CODE >24:C:\Users\Eula\Desktop\MBGRSD.X/Errores.h
+52A6 text7 CODE >25:C:\Users\Eula\Desktop\MBGRSD.X/Errores.h
+52A8 text7 CODE >26:C:\Users\Eula\Desktop\MBGRSD.X/Errores.h
+52B2 text7 CODE >27:C:\Users\Eula\Desktop\MBGRSD.X/Errores.h
+52B6 text7 CODE >28:C:\Users\Eula\Desktop\MBGRSD.X/Errores.h
+52BA text7 CODE >29:C:\Users\Eula\Desktop\MBGRSD.X/Errores.h
+52BC text7 CODE >30:C:\Users\Eula\Desktop\MBGRSD.X/Errores.h
+52CA text7 CODE >31:C:\Users\Eula\Desktop\MBGRSD.X/Errores.h
+52CE text7 CODE >32:C:\Users\Eula\Desktop\MBGRSD.X/Errores.h
+52D0 text7 CODE >33:C:\Users\Eula\Desktop\MBGRSD.X/Errores.h
+52D0 text7 CODE >34:C:\Users\Eula\Desktop\MBGRSD.X/Errores.h
+52D4 text7 CODE >35:C:\Users\Eula\Desktop\MBGRSD.X/Errores.h
+52D8 text7 CODE >36:C:\Users\Eula\Desktop\MBGRSD.X/Errores.h
+52E6 text7 CODE >38:C:\Users\Eula\Desktop\MBGRSD.X/Errores.h
+52EA text7 CODE >39:C:\Users\Eula\Desktop\MBGRSD.X/Errores.h
+52EE text7 CODE >40:C:\Users\Eula\Desktop\MBGRSD.X/Errores.h
+52F2 text7 CODE >41:C:\Users\Eula\Desktop\MBGRSD.X/Errores.h
+5300 text7 CODE >43:C:\Users\Eula\Desktop\MBGRSD.X/Errores.h
+5304 text7 CODE >44:C:\Users\Eula\Desktop\MBGRSD.X/Errores.h
+5308 text7 CODE >45:C:\Users\Eula\Desktop\MBGRSD.X/Errores.h
+530C text7 CODE >46:C:\Users\Eula\Desktop\MBGRSD.X/Errores.h
+11CA text6 CODE >2691:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+11CA text6 CODE >2701:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+11D2 text6 CODE >2705:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+11E2 text6 CODE >2707:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+11F2 text6 CODE >2708:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+11F8 text6 CODE >2709:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+120A text6 CODE >2711:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+121A text6 CODE >2713:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+1278 text6 CODE >2717:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+12A8 text6 CODE >2718:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+12F4 text6 CODE >2719:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+12FA text6 CODE >2720:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+1312 text6 CODE >2721:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+132E text6 CODE >2722:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+133A text6 CODE >2723:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+1360 text6 CODE >2730:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+13A0 text6 CODE >2732:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+13AE text6 CODE >2733:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+13CC text6 CODE >2734:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+13F0 text6 CODE >2735:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+140C text6 CODE >2736:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+1440 text6 CODE >2739:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+1494 text6 CODE >2740:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+14A8 text6 CODE >2748:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+14EA text6 CODE >2749:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+150A text6 CODE >2750:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+1516 text6 CODE >2751:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+1534 text6 CODE >2752:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+153C text6 CODE >2753:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+156E text6 CODE >2754:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+1592 text6 CODE >2755:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+15D2 text6 CODE >2756:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+15E6 text6 CODE >2759:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+1644 text6 CODE >2760:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+16A8 text6 CODE >2761:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+16C0 text6 CODE >2770:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+16DE text6 CODE >2771:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+16E0 text6 CODE >2774:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+170C text6 CODE >2775:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+173A text6 CODE >2776:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+175E text6 CODE >2785:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+177C text6 CODE >2787:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+17B0 text6 CODE >2788:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+17C4 text6 CODE >2790:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+17FA text6 CODE >2791:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+180E text6 CODE >2792:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+186C text6 CODE >2793:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+1884 text6 CODE >2798:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+18C8 text6 CODE >2800:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+191C text6 CODE >2801:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+192C text6 CODE >2804:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+5A0A text5 CODE >170:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+5A0A text5 CODE >171:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+5A16 text5 CODE >177:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+5A20 text5 CODE >178:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+5A22 text5 CODE >180:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+5A24 text5 CODE >182:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+5A2A text5 CODE >184:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+5A2E text5 CODE >185:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+5A32 text5 CODE >186:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+5A56 text5 CODE >188:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+5A5C text5 CODE >178:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+4A02 text4 CODE >229:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+4A02 text4 CODE >230:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+4A06 text4 CODE >231:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+4A24 text4 CODE >232:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+4A30 text4 CODE >233:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+4A36 text4 CODE >234:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+4A54 text4 CODE >239:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+4A60 text4 CODE >240:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+4A66 text4 CODE >242:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+4A86 text4 CODE >243:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+4A92 text4 CODE >244:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+4A98 text4 CODE >246:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+4ACA text4 CODE >247:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+4AD6 text4 CODE >248:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+4ADC text4 CODE >249:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+4AE0 text4 CODE >251:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+4AEC text4 CODE >252:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+4AF2 text4 CODE >253:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+4AFE text4 CODE >254:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+4B0A text4 CODE >255:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+4B10 text4 CODE >257:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+4B12 text4 CODE >259:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+4B1E text4 CODE >261:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+1F3C text3 CODE >2590:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+1F3C text3 CODE >2600:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+1F44 text3 CODE >2603:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+1F54 text3 CODE >2605:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+1F64 text3 CODE >2606:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+1F6A text3 CODE >2607:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+1F7C text3 CODE >2609:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+1F8C text3 CODE >2611:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+1FDC text3 CODE >2612:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+2006 text3 CODE >2616:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+2036 text3 CODE >2617:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+2082 text3 CODE >2618:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+2088 text3 CODE >2619:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+20A0 text3 CODE >2620:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+20BC text3 CODE >2621:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+20BE text3 CODE >2627:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+20FE text3 CODE >2629:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+2122 text3 CODE >2630:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+2146 text3 CODE >2631:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+2162 text3 CODE >2633:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+21A2 text3 CODE >2634:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+21C2 text3 CODE >2635:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+21CE text3 CODE >2636:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+21EC text3 CODE >2637:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+21F4 text3 CODE >2638:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+2226 text3 CODE >2639:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+224A text3 CODE >2640:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+228A text3 CODE >2641:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+229C text3 CODE >2644:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+2314 text3 CODE >2645:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+2378 text3 CODE >2651:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+2396 text3 CODE >2652:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+2398 text3 CODE >2667:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+23B4 text3 CODE >2668:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+23B4 text3 CODE >2669:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+23E8 text3 CODE >2670:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+23FC text3 CODE >2672:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+2432 text3 CODE >2673:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+2444 text3 CODE >2674:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+24A2 text3 CODE >2678:C:\Users\Eula\Desktop\MBGRSD.X\ff.c
+5486 text2 CODE >196:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+5486 text2 CODE >197:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+5492 text2 CODE >202:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+549C text2 CODE >203:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+549E text2 CODE >205:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+54C2 text2 CODE >206:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+54C6 text2 CODE >207:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+54CE text2 CODE >208:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+54D2 text2 CODE >209:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+54EE text2 CODE >210:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+54F2 text2 CODE >211:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+54F8 text2 CODE >212:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+54FC text2 CODE >213:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+5518 text2 CODE >214:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+551C text2 CODE >203:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+4FD6 text1 CODE >263:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+4FD6 text1 CODE >264:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+4FDA text1 CODE >265:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+4FF8 text1 CODE >266:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+5004 text1 CODE >267:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+500A text1 CODE >268:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+5028 text1 CODE >273:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+5034 text1 CODE >274:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+503A text1 CODE >276:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+505A text1 CODE >277:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+5066 text1 CODE >278:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+506C text1 CODE >280:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+5070 text1 CODE >282:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+507C text1 CODE >283:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+5082 text1 CODE >284:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+508E text1 CODE >285:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+509A text1 CODE >286:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+50A0 text1 CODE >288:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+50A2 text1 CODE >290:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+50AE text1 CODE >292:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+5866 text0 CODE >116:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+5866 text0 CODE >119:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+586A text0 CODE >122:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+586E text0 CODE >124:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+5872 text0 CODE >125:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+5876 text0 CODE >126:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+587A text0 CODE >127:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+587E text0 CODE >128:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+5882 text0 CODE >129:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+5888 text0 CODE >130:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+588C text0 CODE >131:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+5890 text0 CODE >132:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+5894 text0 CODE >134:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+5896 text0 CODE >135:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+5898 text0 CODE >136:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+589A text0 CODE >140:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+58A6 text0 CODE >141:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+58AE text0 CODE >142:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+58B6 text0 CODE >143:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+58C2 text0 CODE >144:C:\Users\Eula\Desktop\MBGRSD.X\Main.c
+5A6C cinit CODE >3005:C:\Users\Eula\AppData\Local\Temp\s7bo.
+5A6C cinit CODE >3007:C:\Users\Eula\AppData\Local\Temp\s7bo.
+5A6C cinit CODE >3010:C:\Users\Eula\AppData\Local\Temp\s7bo.
+5A6C cinit CODE >3081:C:\Users\Eula\AppData\Local\Temp\s7bo.
+5A6E cinit CODE >3082:C:\Users\Eula\AppData\Local\Temp\s7bo.
+5A70 cinit CODE >3083:C:\Users\Eula\AppData\Local\Temp\s7bo.
+5A72 cinit CODE >3084:C:\Users\Eula\AppData\Local\Temp\s7bo.
+5A74 cinit CODE >3085:C:\Users\Eula\AppData\Local\Temp\s7bo.
+5A76 cinit CODE >3086:C:\Users\Eula\AppData\Local\Temp\s7bo.
+5A78 cinit CODE >3087:C:\Users\Eula\AppData\Local\Temp\s7bo.
+5A7C cinit CODE >3088:C:\Users\Eula\AppData\Local\Temp\s7bo.
+5A80 cinit CODE >3089:C:\Users\Eula\AppData\Local\Temp\s7bo.
+5A80 cinit CODE >3090:C:\Users\Eula\AppData\Local\Temp\s7bo.
+5A82 cinit CODE >3091:C:\Users\Eula\AppData\Local\Temp\s7bo.
+5A86 cinit CODE >3092:C:\Users\Eula\AppData\Local\Temp\s7bo.
+5A88 cinit CODE >3093:C:\Users\Eula\AppData\Local\Temp\s7bo.
+5A8A cinit CODE >3094:C:\Users\Eula\AppData\Local\Temp\s7bo.
+5A8C cinit CODE >3098:C:\Users\Eula\AppData\Local\Temp\s7bo.
+5A90 cinit CODE >3099:C:\Users\Eula\AppData\Local\Temp\s7bo.
+5A94 cinit CODE >3100:C:\Users\Eula\AppData\Local\Temp\s7bo.
+5A94 cinit CODE >3101:C:\Users\Eula\AppData\Local\Temp\s7bo.
+5A96 cinit CODE >3102:C:\Users\Eula\AppData\Local\Temp\s7bo.
+5A98 cinit CODE >3103:C:\Users\Eula\AppData\Local\Temp\s7bo.
+5A9A cinit CODE >3104:C:\Users\Eula\AppData\Local\Temp\s7bo.
+5A9C cinit CODE >3105:C:\Users\Eula\AppData\Local\Temp\s7bo.
+5A9E cinit CODE >3106:C:\Users\Eula\AppData\Local\Temp\s7bo.
+5AA0 cinit CODE >3109:C:\Users\Eula\AppData\Local\Temp\s7bo.
+5AA4 cinit CODE >3110:C:\Users\Eula\AppData\Local\Temp\s7bo.
+5AA6 cinit CODE >3111:C:\Users\Eula\AppData\Local\Temp\s7bo.
+5AA6 cinit CODE >3112:C:\Users\Eula\AppData\Local\Temp\s7bo.
+5AA8 cinit CODE >3113:C:\Users\Eula\AppData\Local\Temp\s7bo.
+5AAA cinit CODE >3114:C:\Users\Eula\AppData\Local\Temp\s7bo.
+5AAC cinit CODE >3117:C:\Users\Eula\AppData\Local\Temp\s7bo.
+5AB0 cinit CODE >3118:C:\Users\Eula\AppData\Local\Temp\s7bo.
+5AB2 cinit CODE >3119:C:\Users\Eula\AppData\Local\Temp\s7bo.
+5AB2 cinit CODE >3120:C:\Users\Eula\AppData\Local\Temp\s7bo.
+5AB4 cinit CODE >3121:C:\Users\Eula\AppData\Local\Temp\s7bo.
+5AB6 cinit CODE >3122:C:\Users\Eula\AppData\Local\Temp\s7bo.
+5AB8 cinit CODE >3128:C:\Users\Eula\AppData\Local\Temp\s7bo.
+5AB8 cinit CODE >3131:C:\Users\Eula\AppData\Local\Temp\s7bo.
+5ABA cinit CODE >3132:C:\Users\Eula\AppData\Local\Temp\s7bo.
+5ABC cinit CODE >3133:C:\Users\Eula\AppData\Local\Temp\s7bo.
+5ABE cinit CODE >3134:C:\Users\Eula\AppData\Local\Temp\s7bo.
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+_a D6 0 BANK0 1 bssBANK0 dist/default/production\MBGRSD.X.production.o
+_b D4 0 BANK0 1 bssBANK0 dist/default/production\MBGRSD.X.production.o
+__LdataBANK0 0 0 ABS 0 dataBANK0 dist/default/production\MBGRSD.X.production.o
+__end_of___delay_sec 5C50 0 CODE 0 text55 dist/default/production\MBGRSD.X.production.o
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\MBGRSD.X.production.o
+__Hspace_0 30000E 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__Hspace_1 34E 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__Hspace_2 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__CFG_IESO$OFF 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+?_mem_cmp 1 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+__HidataBANK0 0 0 ABS 0 idataBANK0 dist/default/production\MBGRSD.X.production.o
+_SSP1STATbits FC7 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+_get_ldnumber 4EF8 0 CODE 0 text23 dist/default/production\MBGRSD.X.production.o
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/production\MBGRSD.X.production.o
+follow_path@dir 8A 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+follow_path@res 8D 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+__end_of_move_window 55D2 0 CODE 0 text43 dist/default/production\MBGRSD.X.production.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\Eula\AppData\Local\Temp\s7bo.o
+_EUSART1_Initialize 5D0A 0 CODE 0 text60 dist/default/production\MBGRSD.X.production.o
+__end_of_Init8LEDs 5D76 0 CODE 0 text61 dist/default/production\MBGRSD.X.production.o
+?_chk_chr 1 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\MBGRSD.X.production.o
+__CFG_MCLRE$ON 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__size_of_Init8LEDs 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+disk_write@count 17 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+_ND E2 0 BANK0 1 bssBANK0 dist/default/production\MBGRSD.X.production.o
+_br E4 0 BANK0 1 bssBANK0 dist/default/production\MBGRSD.X.production.o
+_bw E6 0 BANK0 1 bssBANK0 dist/default/production\MBGRSD.X.production.o
+disk_ioctl@cmd 11 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+disk_ioctl@csd 21 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+disk_ioctl@ptr 38 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+disk_ioctl@res 36 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+__Lsmallconst 800 0 SMALLCONST 0 smallconst dist/default/production\MBGRSD.X.production.o
+_ADIE 7CEE 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+_ADIF 7CF6 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+_Fsid DA 0 BANK0 1 bssBANK0 dist/default/production\MBGRSD.X.production.o
+_LATA F89 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+_LATB F8A 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+_LATC F8B 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+_LATD F8C 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+_LATE F8D 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+_PEIE 7F96 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+_Stat F2 0 BANK0 1 dataBANK0 dist/default/production\MBGRSD.X.production.o
+_WPUB F85 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\Eula\AppData\Local\Temp\s7bo.o
+_data DE 0 BANK0 1 bssBANK0 dist/default/production\MBGRSD.X.production.o
+_main 5866 0 CODE 0 text0 dist/default/production\MBGRSD.X.production.o
+_push E0 0 BANK0 1 bssBANK0 dist/default/production\MBGRSD.X.production.o
+_volt D0 0 BANK0 1 bssBANK0 dist/default/production\MBGRSD.X.production.o
+__HbssBIGRAM 0 0 ABS 0 bssBIGRAM dist/default/production\MBGRSD.X.production.o
+start 0 0 CODE 0 init C:\Users\Eula\AppData\Local\Temp\s7bo.o
+?_ld_clust 1 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+__size_of_main 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__size_of___lldiv 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__CFG_WDTEN$OFF 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__end_of_SPI1_Initialize 5D92 0 CODE 0 text57 dist/default/production\MBGRSD.X.production.o
+disk_ioctl@csize 32 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+_st_clust 5C7C 0 CODE 0 text42 dist/default/production\MBGRSD.X.production.o
+_get_fat 31B6 0 CODE 0 text30 dist/default/production\MBGRSD.X.production.o
+__CFG_DEBUG$OFF 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+?___lmul 1 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+?___wmul 1 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+__size_of_rcvr_datablock 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+_Init8LEDs 5D66 0 CODE 0 text61 dist/default/production\MBGRSD.X.production.o
+get_fat@clst 3D 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+__size_of_sync_window 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+remove_chain@nxt 61 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+remove_chain@res 60 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+__LidataBANK0 0 0 ABS 0 idataBANK0 dist/default/production\MBGRSD.X.production.o
+_dir_find 4D20 0 CODE 0 text12 dist/default/production\MBGRSD.X.production.o
+_dir_next 2DB0 0 CODE 0 text20 dist/default/production\MBGRSD.X.production.o
+__end_of_disk_ioctl 2986 0 CODE 0 text40 dist/default/production\MBGRSD.X.production.o
+dir_register@res 8C 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+create_chain@ncl 65 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+create_chain@res 60 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+create_chain@scl 61 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+mem_set@cnt 5 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+mem_set@dst 1 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+mem_set@val 3 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+__end_of_follow_path 48C0 0 CODE 0 text10 dist/default/production\MBGRSD.X.production.o
+__end_of_disk_write 4C30 0 CODE 0 text45 dist/default/production\MBGRSD.X.production.o
+_wait_ready 5BA2 0 CODE 0 text51 dist/default/production\MBGRSD.X.production.o
+__Hpowerup 0 0 CODE 0 powerup dist/default/production\MBGRSD.X.production.o
+__end_of_st_clust 5CA6 0 CODE 0 text42 dist/default/production\MBGRSD.X.production.o
+get_ldnumber@vol 9 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+__size_of___send_cmd 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+f_mount@fs 52 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+f_mount@rp 5A 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+f_open@dir B8 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+f_open@res B7 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+f_open@sfn A3 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+__size_of_get_ldnumber 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__size_of_SYSTEM_Initialize 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__LbssBIGRAM 0 0 ABS 0 bssBIGRAM dist/default/production\MBGRSD.X.production.o
+__end_of_dir_find 4E0C 0 CODE 0 text12 dist/default/production\MBGRSD.X.production.o
+__end_of_dir_next 31B6 0 CODE 0 text20 dist/default/production\MBGRSD.X.production.o
+__size_of_xmit_datablock 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__size_of_validate 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__accesstop 60 0 ABS 0 - C:\Users\Eula\AppData\Local\Temp\s7bo.o
+intlevel0 0 0 CODE 0 text C:\Users\Eula\AppData\Local\Temp\s7bo.o
+intlevel1 0 0 CODE 0 text C:\Users\Eula\AppData\Local\Temp\s7bo.o
+intlevel2 0 0 CODE 0 text C:\Users\Eula\AppData\Local\Temp\s7bo.o
+intlevel3 0 0 CODE 0 text C:\Users\Eula\AppData\Local\Temp\s7bo.o
+f_write@bw 73 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+f_write@cc 85 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+f_write@fp 6D 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+reproductor@c 86 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+reproductor@i 82 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+reproductor@j 80 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\MBGRSD.X.production.o
+put_fat@clst 3D 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+__CFG_EBTR0$OFF 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__CFG_EBTR1$OFF 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__CFG_EBTR2$OFF 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__CFG_EBTR3$OFF 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+f_lseek@bcs 8C 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+f_lseek@ofs 6F 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+f_lseek@res 87 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+follow_path@dp 86 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+follow_path@ns 8C 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+__CFG_EBTRB$OFF 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+put_fat@res 53 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+put_fat@val 41 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+disk_read@buff 11 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+disk_read@pdrv 19 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+__Hifardata 0 0 CODE 0 ifardata dist/default/production\MBGRSD.X.production.o
+disk_read@sector 13 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext dist/default/production\MBGRSD.X.production.o
+__size_of_f_close 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__size_of_f_lseek 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__size_of_f_mount 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__size_of_f_write 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__end_of_get_ldnumber 4FD6 0 CODE 0 text23 dist/default/production\MBGRSD.X.production.o
+___wmul@multiplicand 3 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+__size_of_clust2sect 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+_create_name 3EAA 0 CODE 0 text14 dist/default/production\MBGRSD.X.production.o
+_SPI1_Initialize 5D84 0 CODE 0 text57 dist/default/production\MBGRSD.X.production.o
+_ACTCON FB5 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+_ADCON0 FC2 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+_ADCON1 FC1 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+_ADCON2 FC0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+_ADRESH FC4 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+_ADRESL FC3 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+_ANSELA F5B 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+_ANSELB F5C 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+_ANSELC F5D 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+_ANSELD F5E 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+_ANSELE F5F 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\Eula\AppData\Local\Temp\s7bo.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\Eula\AppData\Local\Temp\s7bo.o
+disk_initialize@ty 1A 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+dir_alloc@dp 80 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+create_name@path B 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+?_get_fat 3B 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+get_fat@val 4C 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+_dir_sdi 3BE8 0 CODE 0 text19 dist/default/production\MBGRSD.X.production.o
+?_clust2sect D 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+__Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\MBGRSD.X.production.o
+__end_of___lmul 5B18 0 CODE 0 text32 dist/default/production\MBGRSD.X.production.o
+__end_of___wmul 5CCC 0 CODE 0 text41 dist/default/production\MBGRSD.X.production.o
+___delay_sec@sec 4 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+_guardar 4A02 0 CODE 0 text4 dist/default/production\MBGRSD.X.production.o
+?_get_ldnumber 1 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+__end_of_dir_alloc 4D20 0 CODE 0 text18 dist/default/production\MBGRSD.X.production.o
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\MBGRSD.X.production.o
+__size_of_dir_alloc 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__end_of_wait_ready 5BDE 0 CODE 0 text51 dist/default/production\MBGRSD.X.production.o
+_CardType DF 0 BANK0 1 bssBANK0 dist/default/production\MBGRSD.X.production.o
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\MBGRSD.X.production.o
+disk_read@count 17 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+chk_chr@chr 3 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+chk_chr@str 1 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+st_clust@dir 1 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+__size_of_SPI1_Exchange8bit 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__Hintcodelo 0 0 CODE 0 intcodelo dist/default/production\MBGRSD.X.production.o
+f_lseek@fp 6D 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+_create_chain 38EE 0 CODE 0 text28 dist/default/production\MBGRSD.X.production.o
+f_lseek@ifptr 83 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+dir_next@dp 6D 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+f_lseek@nsect 88 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+_validate 55D2 0 CODE 0 text36 dist/default/production\MBGRSD.X.production.o
+__end_of___lldiv 56E8 0 CODE 0 text33 dist/default/production\MBGRSD.X.production.o
+f_read@br 5C 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+f_read@cc 7C 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+f_read@fp 56 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+find_volume@nrsv 82 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+find_volume@path 47 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+find_volume@stat 8C 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+sync_window@wsect 2C 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+sync_fs@fs 3A 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+_dir_register 50B0 0 CODE 0 text16 dist/default/production\MBGRSD.X.production.o
+remove_chain@clst 58 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+__CFG_CCP2MX$RC1 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__size_of___delay_sec 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__end_of_validate 5666 0 CODE 0 text36 dist/default/production\MBGRSD.X.production.o
+check_fs@sect 3D 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+__size_of_Error 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__end_of_f_open 38EE 0 CODE 0 text8 dist/default/production\MBGRSD.X.production.o
+__end_of_f_read 24E8 0 CODE 0 text3 dist/default/production\MBGRSD.X.production.o
+__end_of_f_sync 4A02 0 CODE 0 text35 dist/default/production\MBGRSD.X.production.o
+_dir_alloc 4C30 0 CODE 0 text18 dist/default/production\MBGRSD.X.production.o
+___delay_sec@i 5 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+__size_of_reproducir 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+f_read@csect 77 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+__size_of_grabador 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+dir_find@c 82 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+__size_of_move_window 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+f_read@rbuff 75 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+_INTCON2bits FF1 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+disk_initialize@n 1D 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+___lldiv@counter D 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+__Lintcodelo 0 0 CODE 0 intcodelo dist/default/production\MBGRSD.X.production.o
+__CFG_FCMEN$OFF 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+_PIN_MANAGER_Initialize 5CCC 0 CODE 0 text58 dist/default/production\MBGRSD.X.production.o
+start_initialization 5A6C 0 CODE 0 cinit dist/default/production\MBGRSD.X.production.o
+_find_volume 81C 0 CODE 0 text22 dist/default/production\MBGRSD.X.production.o
+__end_of_disk_initialize 4318 0 CODE 0 text24 dist/default/production\MBGRSD.X.production.o
+__size_of_sync_fs 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+_OSCCON FD3 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__CFG_FOSC$INTOSCIO 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\MBGRSD.X.production.o
+create_chain@clst 58 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+__size_of_mem_cmp 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__size_of_mem_cpy 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__size_of_mem_set 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+___lldiv@dividend 1 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+__CFG_nPWRTEN$OFF 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__size_of_create_chain 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+___rparam_used 1 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+_RCREG1 FAE 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+_RCSTA1 FAB 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__end_of_SYSTEM_Initialize 5D44 0 CODE 0 text56 dist/default/production\MBGRSD.X.production.o
+__CFG_WDTPS$32768 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__size_of_chk_chr 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+sync_window@fs 1B 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+sync_window@nf 2A 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+__end_of_f_close 5C18 0 CODE 0 text34 dist/default/production\MBGRSD.X.production.o
+_SPBRG1 FAF 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__pcstackBANK0 60 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+__end_of_f_lseek 1F3C 0 CODE 0 text27 dist/default/production\MBGRSD.X.production.o
+__end_of_f_mount 5486 0 CODE 0 text21 dist/default/production\MBGRSD.X.production.o
+mem_cmp@cnt 5 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+mem_cmp@dst 1 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+mem_cmp@src 3 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+__end_of_f_write 192E 0 CODE 0 text6 dist/default/production\MBGRSD.X.production.o
+get_ldnumber@tp 7 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+get_ldnumber@tt D 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+dir_sdi@clst 6D 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+dir_sdi@sect 69 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+get_fat@bc 54 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+get_fat@fs 3B 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+get_fat@wc 50 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+_TXREG1 FAD 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+_TXSTA1 FAC 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__size_of_dir_register 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+dir_next@c 78 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+dir_next@i 7A 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+__size_of_follow_path 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__size_of_SPI1_Initialize 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+dir_next@stretch 6F 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+__size_of_put_fat 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__end_of_reproductor 552C 0 CODE 0 text2 dist/default/production\MBGRSD.X.production.o
+__end_of_disk_status 5D32 0 CODE 0 text37 dist/default/production\MBGRSD.X.production.o
+__CFG_CFGPLLEN$OFF 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+mem_cpy@cnt 5 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+mem_cpy@dst 1 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+mem_cpy@src 3 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+__size_of_EUSART1_Initialize 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+dir_alloc@n 87 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+__end_of_select 5D0A 0 CODE 0 text50 dist/default/production\MBGRSD.X.production.o
+__Hbank0 0 0 ABS 0 bank0 dist/default/production\MBGRSD.X.production.o
+__Hbank1 0 0 ABS 0 bank1 dist/default/production\MBGRSD.X.production.o
+__Hbank2 0 0 ABS 0 bank2 dist/default/production\MBGRSD.X.production.o
+__Hbank3 0 0 ABS 0 bank3 dist/default/production\MBGRSD.X.production.o
+__Hbank4 0 0 ABS 0 bank4 dist/default/production\MBGRSD.X.production.o
+__Hbank5 0 0 ABS 0 bank5 dist/default/production\MBGRSD.X.production.o
+__Hbank6 0 0 ABS 0 bank6 dist/default/production\MBGRSD.X.production.o
+__Hbank7 0 0 ABS 0 bank7 dist/default/production\MBGRSD.X.production.o
+__Hcinit 0 0 ABS 0 cinit dist/default/production\MBGRSD.X.production.o
+__Hconst 0 0 CONST 0 const dist/default/production\MBGRSD.X.production.o
+find_volume@fasize 8D 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+__end_of_create_chain 3BE8 0 CODE 0 text28 dist/default/production\MBGRSD.X.production.o
+__Hidata 0 0 CODE 0 idata dist/default/production\MBGRSD.X.production.o
+__Hidloc 200008 0 IDLOC 0 idloc dist/default/production\MBGRSD.X.production.o
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/production\MBGRSD.X.production.o
+__Hparam 0 0 COMRAM 1 rparam dist/default/production\MBGRSD.X.production.o
+__size_of_OSCILLATOR_Initialize 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__size_of_disk_ioctl 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__Hrdata 0 0 COMRAM 1 rdata dist/default/production\MBGRSD.X.production.o
+__Hstack 0 0 STACK 2 stack dist/default/production\MBGRSD.X.production.o
+__Htext0 0 0 ABS 0 text0 dist/default/production\MBGRSD.X.production.o
+__Htext1 0 0 ABS 0 text1 dist/default/production\MBGRSD.X.production.o
+__Htext2 0 0 ABS 0 text2 dist/default/production\MBGRSD.X.production.o
+__Htext3 0 0 ABS 0 text3 dist/default/production\MBGRSD.X.production.o
+__Htext4 0 0 ABS 0 text4 dist/default/production\MBGRSD.X.production.o
+__Htext5 0 0 ABS 0 text5 dist/default/production\MBGRSD.X.production.o
+__Htext6 0 0 ABS 0 text6 dist/default/production\MBGRSD.X.production.o
+__Htext7 0 0 ABS 0 text7 dist/default/production\MBGRSD.X.production.o
+__Htext8 0 0 ABS 0 text8 dist/default/production\MBGRSD.X.production.o
+__Htext9 0 0 ABS 0 text9 dist/default/production\MBGRSD.X.production.o
+__size_of_disk_write 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+dir_sdi@dp 56 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+dir_sdi@ic 67 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\MBGRSD.X.production.o
+__Hbigram 0 0 ABS 0 bigram dist/default/production\MBGRSD.X.production.o
+_grabador 5A0A 0 CODE 0 text5 dist/default/production\MBGRSD.X.production.o
+__smallconst 800 0 SMALLCONST 0 smallconst C:\Users\Eula\AppData\Local\Temp\s7bo.o
+_BAUDCON1 FB8 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+mem_cmp@d 9 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+mem_cmp@r D 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+mem_cmp@s B 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+mem_cpy@d 7 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+mem_cpy@s 9 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+mem_set@d 7 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+_sync_window 44D8 0 CODE 0 text44 dist/default/production\MBGRSD.X.production.o
+__Hcomram 0 0 ABS 0 comram dist/default/production\MBGRSD.X.production.o
+__Hconfig 30000E 0 CONFIG 0 config dist/default/production\MBGRSD.X.production.o
+_disk_read$143 1A 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+__end_of_dir_register 5186 0 CODE 0 text16 dist/default/production\MBGRSD.X.production.o
+_disk_initialize 412E 0 CODE 0 text24 dist/default/production\MBGRSD.X.production.o
+move_window@fs 30 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+__Lbank0 0 0 ABS 0 bank0 dist/default/production\MBGRSD.X.production.o
+__Lbank1 0 0 ABS 0 bank1 dist/default/production\MBGRSD.X.production.o
+__Lbank2 0 0 ABS 0 bank2 dist/default/production\MBGRSD.X.production.o
+__Lbank3 0 0 ABS 0 bank3 dist/default/production\MBGRSD.X.production.o
+__Lbank4 0 0 ABS 0 bank4 dist/default/production\MBGRSD.X.production.o
+__Lbank5 0 0 ABS 0 bank5 dist/default/production\MBGRSD.X.production.o
+__Lbank6 0 0 ABS 0 bank6 dist/default/production\MBGRSD.X.production.o
+__Lbank7 0 0 ABS 0 bank7 dist/default/production\MBGRSD.X.production.o
+__Lcinit 0 0 ABS 0 cinit dist/default/production\MBGRSD.X.production.o
+__Lconst 0 0 CONST 0 const dist/default/production\MBGRSD.X.production.o
+__Lidata 0 0 CODE 0 idata dist/default/production\MBGRSD.X.production.o
+__Lidloc 200000 0 IDLOC 0 idloc dist/default/production\MBGRSD.X.production.o
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/production\MBGRSD.X.production.o
+__Lparam 0 0 COMRAM 1 rparam dist/default/production\MBGRSD.X.production.o
+__Lrdata 0 0 COMRAM 1 rdata dist/default/production\MBGRSD.X.production.o
+__Lstack 0 0 STACK 2 stack dist/default/production\MBGRSD.X.production.o
+__Ltext0 0 0 ABS 0 text0 dist/default/production\MBGRSD.X.production.o
+__Ltext1 0 0 ABS 0 text1 dist/default/production\MBGRSD.X.production.o
+__Ltext2 0 0 ABS 0 text2 dist/default/production\MBGRSD.X.production.o
+__Ltext3 0 0 ABS 0 text3 dist/default/production\MBGRSD.X.production.o
+__Ltext4 0 0 ABS 0 text4 dist/default/production\MBGRSD.X.production.o
+__Ltext5 0 0 ABS 0 text5 dist/default/production\MBGRSD.X.production.o
+__Ltext6 0 0 ABS 0 text6 dist/default/production\MBGRSD.X.production.o
+__Ltext7 0 0 ABS 0 text7 dist/default/production\MBGRSD.X.production.o
+__Ltext8 0 0 ABS 0 text8 dist/default/production\MBGRSD.X.production.o
+__Ltext9 0 0 ABS 0 text9 dist/default/production\MBGRSD.X.production.o
+__end_of_grabador 5A6C 0 CODE 0 text5 dist/default/production\MBGRSD.X.production.o
+?_create_chain 56 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/production\MBGRSD.X.production.o
+__Lintcode_body 0 0 ABS 0 intcode_body dist/default/production\MBGRSD.X.production.o
+f_open@cl AF 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+f_open@dj BA 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+f_open@dw B3 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+f_open@fp 9A 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+validate@fil 8 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+validate@obj 2 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+__Habs1 0 0 ABS 0 abs1 dist/default/production\MBGRSD.X.production.o
+__Hdata 0 0 ABS 0 data dist/default/production\MBGRSD.X.production.o
+__Hinit 4 0 CODE 0 init dist/default/production\MBGRSD.X.production.o
+__Hrbit 0 0 COMRAM 1 rbit dist/default/production\MBGRSD.X.production.o
+__Hrbss 0 0 COMRAM 1 rbss dist/default/production\MBGRSD.X.production.o
+__Htemp 0 0 COMRAM 1 temp dist/default/production\MBGRSD.X.production.o
+__Htext 0 0 ABS 0 text dist/default/production\MBGRSD.X.production.o
+__Labs1 0 0 ABS 0 abs1 dist/default/production\MBGRSD.X.production.o
+__Ldata 0 0 ABS 0 data dist/default/production\MBGRSD.X.production.o
+__Linit 0 0 CODE 0 init dist/default/production\MBGRSD.X.production.o
+__Lrbit 0 0 COMRAM 1 rbit dist/default/production\MBGRSD.X.production.o
+__Lrbss 0 0 COMRAM 1 rbss dist/default/production\MBGRSD.X.production.o
+__Ltemp 0 0 COMRAM 1 temp dist/default/production\MBGRSD.X.production.o
+__Ltext 0 0 ABS 0 text dist/default/production\MBGRSD.X.production.o
+__CFG_XINST$OFF 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+_SSP1CON1 FC6 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+_SSP1STAT FC7 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+___lmul 5AC2 0 CODE 0 text32 dist/default/production\MBGRSD.X.production.o
+___wmul 5CA6 0 CODE 0 text41 dist/default/production\MBGRSD.X.production.o
+__end_of_SPI1_Exchange8bit 5D66 0 CODE 0 text54 dist/default/production\MBGRSD.X.production.o
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+__Hintret 0 0 ABS 0 intret dist/default/production\MBGRSD.X.production.o
+move_window@res 3A 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+__Hirdata 0 0 CODE 0 irdata dist/default/production\MBGRSD.X.production.o
+_GIE 7F97 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+_Fil 100 0 BANK1 1 bssBANK1 dist/default/production\MBGRSD.X.production.o
+__S0 30000E 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__S1 34E 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__S2 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__end_of_sync_fs 44D8 0 CODE 0 text38 dist/default/production\MBGRSD.X.production.o
+disk_write@sector 13 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+__CFG_PBADEN$OFF 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__end_of_mem_cmp 59A4 0 CODE 0 text13 dist/default/production\MBGRSD.X.production.o
+__end_of_mem_cpy 5866 0 CODE 0 text17 dist/default/production\MBGRSD.X.production.o
+__end_of_mem_set 5C7C 0 CODE 0 text39 dist/default/production\MBGRSD.X.production.o
+check_fs@fs 3B 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production\MBGRSD.X.production.o
+find_volume@i 95 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+__size_of_get_fat 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+find_volume@sysect 7C 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/production\MBGRSD.X.production.o
+find_volume@szbfat 76 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+_rcvr_datablock 58D2 0 CODE 0 text53 dist/default/production\MBGRSD.X.production.o
+xmit_datablock@token 6 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+_SYSTEM_Initialize 5D32 0 CODE 0 text56 dist/default/production\MBGRSD.X.production.o
+_f_open 3558 0 CODE 0 text8 dist/default/production\MBGRSD.X.production.o
+_f_read 1F3C 0 CODE 0 text3 dist/default/production\MBGRSD.X.production.o
+_f_sync 48C0 0 CODE 0 text35 dist/default/production\MBGRSD.X.production.o
+f_read@btr 5A 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+f_read@res 6C 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+__end_of_chk_chr 5B60 0 CODE 0 text15 dist/default/production\MBGRSD.X.production.o
+find_volume@br 60 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+find_volume@fs 98 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+find_volume@pt 7A 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+remove_chain@fs 56 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+__size_of_wait_ready 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__CFG_BORV$190 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__Lintentry 0 0 ABS 0 intentry dist/default/production\MBGRSD.X.production.o
+___lldiv@divisor 5 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+__Hramtop 800 0 RAM 0 ramtop dist/default/production\MBGRSD.X.production.o
+get_ldnumber@path 1 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+__Hrparam 0 0 COMRAM 1 rparam dist/default/production\MBGRSD.X.production.o
+rcvr_datablock@buff 2 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+f_write@btw 71 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+f_write@res 81 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+__end_of_put_fat 2DB0 0 CODE 0 text29 dist/default/production\MBGRSD.X.production.o
+ld_clust@dir 3 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+__pdataBANK0 E8 0 BANK0 1 dataBANK0 dist/default/production\MBGRSD.X.production.o
+__activetblptr 2 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__Hstruct 0 0 COMRAM 1 struct dist/default/production\MBGRSD.X.production.o
+__size_of___lmul 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__size_of___wmul 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+_xmit_datablock 59A4 0 CODE 0 text46 dist/default/production\MBGRSD.X.production.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\MBGRSD.X.production.o
+__LbssBANK1 0 0 ABS 0 bssBANK1 dist/default/production\MBGRSD.X.production.o
+__size_of_send_cmd 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__Htext10 0 0 ABS 0 text10 dist/default/production\MBGRSD.X.production.o
+__Htext11 0 0 ABS 0 text11 dist/default/production\MBGRSD.X.production.o
+__Htext12 0 0 ABS 0 text12 dist/default/production\MBGRSD.X.production.o
+__Htext13 0 0 ABS 0 text13 dist/default/production\MBGRSD.X.production.o
+__Htext14 0 0 ABS 0 text14 dist/default/production\MBGRSD.X.production.o
+__Htext15 0 0 ABS 0 text15 dist/default/production\MBGRSD.X.production.o
+__Htext16 0 0 ABS 0 text16 dist/default/production\MBGRSD.X.production.o
+__Htext17 0 0 ABS 0 text17 dist/default/production\MBGRSD.X.production.o
+__Htext18 0 0 ABS 0 text18 dist/default/production\MBGRSD.X.production.o
+__Htext19 0 0 ABS 0 text19 dist/default/production\MBGRSD.X.production.o
+__Htext20 0 0 ABS 0 text20 dist/default/production\MBGRSD.X.production.o
+__Htext21 0 0 ABS 0 text21 dist/default/production\MBGRSD.X.production.o
+__Htext22 0 0 ABS 0 text22 dist/default/production\MBGRSD.X.production.o
+__Htext23 0 0 ABS 0 text23 dist/default/production\MBGRSD.X.production.o
+__Htext24 0 0 ABS 0 text24 dist/default/production\MBGRSD.X.production.o
+__Htext25 0 0 ABS 0 text25 dist/default/production\MBGRSD.X.production.o
+__Htext26 0 0 ABS 0 text26 dist/default/production\MBGRSD.X.production.o
+__Htext27 0 0 ABS 0 text27 dist/default/production\MBGRSD.X.production.o
+__Htext28 0 0 ABS 0 text28 dist/default/production\MBGRSD.X.production.o
+__Htext29 0 0 ABS 0 text29 dist/default/production\MBGRSD.X.production.o
+__Htext30 0 0 ABS 0 text30 dist/default/production\MBGRSD.X.production.o
+__Htext31 0 0 ABS 0 text31 dist/default/production\MBGRSD.X.production.o
+__Htext32 0 0 ABS 0 text32 dist/default/production\MBGRSD.X.production.o
+__Htext33 0 0 ABS 0 text33 dist/default/production\MBGRSD.X.production.o
+__Htext34 0 0 ABS 0 text34 dist/default/production\MBGRSD.X.production.o
+__Htext35 0 0 ABS 0 text35 dist/default/production\MBGRSD.X.production.o
+__Htext36 0 0 ABS 0 text36 dist/default/production\MBGRSD.X.production.o
+__Htext37 0 0 ABS 0 text37 dist/default/production\MBGRSD.X.production.o
+__Htext38 0 0 ABS 0 text38 dist/default/production\MBGRSD.X.production.o
+__Htext39 0 0 ABS 0 text39 dist/default/production\MBGRSD.X.production.o
+__Htext40 0 0 ABS 0 text40 dist/default/production\MBGRSD.X.production.o
+__Htext41 0 0 ABS 0 text41 dist/default/production\MBGRSD.X.production.o
+__Htext42 0 0 ABS 0 text42 dist/default/production\MBGRSD.X.production.o
+__Htext43 0 0 ABS 0 text43 dist/default/production\MBGRSD.X.production.o
+__Htext44 0 0 ABS 0 text44 dist/default/production\MBGRSD.X.production.o
+__Htext45 0 0 ABS 0 text45 dist/default/production\MBGRSD.X.production.o
+__Htext46 0 0 ABS 0 text46 dist/default/production\MBGRSD.X.production.o
+__Htext47 0 0 ABS 0 text47 dist/default/production\MBGRSD.X.production.o
+__Htext48 0 0 ABS 0 text48 dist/default/production\MBGRSD.X.production.o
+__Htext49 0 0 ABS 0 text49 dist/default/production\MBGRSD.X.production.o
+__Htext50 0 0 ABS 0 text50 dist/default/production\MBGRSD.X.production.o
+__Htext51 0 0 ABS 0 text51 dist/default/production\MBGRSD.X.production.o
+__Htext52 0 0 ABS 0 text52 dist/default/production\MBGRSD.X.production.o
+__Htext53 0 0 ABS 0 text53 dist/default/production\MBGRSD.X.production.o
+__Htext54 0 0 ABS 0 text54 dist/default/production\MBGRSD.X.production.o
+__Htext55 0 0 ABS 0 text55 dist/default/production\MBGRSD.X.production.o
+__Htext56 0 0 ABS 0 text56 dist/default/production\MBGRSD.X.production.o
+__Htext57 0 0 ABS 0 text57 dist/default/production\MBGRSD.X.production.o
+__Htext58 0 0 ABS 0 text58 dist/default/production\MBGRSD.X.production.o
+__Htext59 0 0 ABS 0 text59 dist/default/production\MBGRSD.X.production.o
+__Htext60 0 0 ABS 0 text60 dist/default/production\MBGRSD.X.production.o
+__Htext61 0 0 ABS 0 text61 dist/default/production\MBGRSD.X.production.o
+__CFG_LS48MHZ$SYS24X4 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__end_of_create_name 412E 0 CODE 0 text14 dist/default/production\MBGRSD.X.production.o
+_find_volume$728 70 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+_find_volume$729 74 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+f_sync@dir 4C 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+f_sync@res 4B 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+rcvr_datablock@btr 4 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+rcvr_datablock@tmr 6 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+__CFG_CPUDIV$NOCLKDIV 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+clust2sect@clst F 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+create_name@dp 9 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+create_name@ni 16 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+create_name@si 13 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+___delay_sec 5C18 0 CODE 0 text55 dist/default/production\MBGRSD.X.production.o
+grabador@a 95 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+grabador@j 93 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+dir_register@dp 8A 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+__ptext10 477A 0 CODE 0 text10 dist/default/production\MBGRSD.X.production.o
+__ptext11 576A 0 CODE 0 text11 dist/default/production\MBGRSD.X.production.o
+__ptext12 4D20 0 CODE 0 text12 dist/default/production\MBGRSD.X.production.o
+__ptext13 593E 0 CODE 0 text13 dist/default/production\MBGRSD.X.production.o
+__ptext14 3EAA 0 CODE 0 text14 dist/default/production\MBGRSD.X.production.o
+__ptext15 5B18 0 CODE 0 text15 dist/default/production\MBGRSD.X.production.o
+__ptext16 50B0 0 CODE 0 text16 dist/default/production\MBGRSD.X.production.o
+__ptext17 57E8 0 CODE 0 text17 dist/default/production\MBGRSD.X.production.o
+__ptext18 4C30 0 CODE 0 text18 dist/default/production\MBGRSD.X.production.o
+__ptext19 3BE8 0 CODE 0 text19 dist/default/production\MBGRSD.X.production.o
+__ptext20 2DB0 0 CODE 0 text20 dist/default/production\MBGRSD.X.production.o
+__ptext21 53D6 0 CODE 0 text21 dist/default/production\MBGRSD.X.production.o
+__ptext22 81C 0 CODE 0 text22 dist/default/production\MBGRSD.X.production.o
+__ptext23 4EF8 0 CODE 0 text23 dist/default/production\MBGRSD.X.production.o
+__ptext24 412E 0 CODE 0 text24 dist/default/production\MBGRSD.X.production.o
+__ptext25 5D76 0 CODE 0 text25 dist/default/production\MBGRSD.X.production.o
+__ptext26 4E0C 0 CODE 0 text26 dist/default/production\MBGRSD.X.production.o
+__ptext27 192E 0 CODE 0 text27 dist/default/production\MBGRSD.X.production.o
+__ptext28 38EE 0 CODE 0 text28 dist/default/production\MBGRSD.X.production.o
+__ptext29 2986 0 CODE 0 text29 dist/default/production\MBGRSD.X.production.o
+__ptext30 31B6 0 CODE 0 text30 dist/default/production\MBGRSD.X.production.o
+__ptext31 531C 0 CODE 0 text31 dist/default/production\MBGRSD.X.production.o
+__ptext32 5AC2 0 CODE 0 text32 dist/default/production\MBGRSD.X.production.o
+__ptext33 5666 0 CODE 0 text33 dist/default/production\MBGRSD.X.production.o
+__ptext34 5BDE 0 CODE 0 text34 dist/default/production\MBGRSD.X.production.o
+__ptext35 48C0 0 CODE 0 text35 dist/default/production\MBGRSD.X.production.o
+__ptext36 55D2 0 CODE 0 text36 dist/default/production\MBGRSD.X.production.o
+__ptext37 5D20 0 CODE 0 text37 dist/default/production\MBGRSD.X.production.o
+__ptext38 4318 0 CODE 0 text38 dist/default/production\MBGRSD.X.production.o
+__ptext39 5C50 0 CODE 0 text39 dist/default/production\MBGRSD.X.production.o
+__ptext40 24E8 0 CODE 0 text40 dist/default/production\MBGRSD.X.production.o
+__ptext41 5CA6 0 CODE 0 text41 dist/default/production\MBGRSD.X.production.o
+__ptext42 5C7C 0 CODE 0 text42 dist/default/production\MBGRSD.X.production.o
+__ptext43 552C 0 CODE 0 text43 dist/default/production\MBGRSD.X.production.o
+__ptext44 44D8 0 CODE 0 text44 dist/default/production\MBGRSD.X.production.o
+__ptext45 4B20 0 CODE 0 text45 dist/default/production\MBGRSD.X.production.o
+__ptext46 59A4 0 CODE 0 text46 dist/default/production\MBGRSD.X.production.o
+__ptext47 5186 0 CODE 0 text47 dist/default/production\MBGRSD.X.production.o
+__ptext48 5B60 0 CODE 0 text48 dist/default/production\MBGRSD.X.production.o
+__ptext49 56E8 0 CODE 0 text49 dist/default/production\MBGRSD.X.production.o
+__ptext50 5CEC 0 CODE 0 text50 dist/default/production\MBGRSD.X.production.o
+__ptext51 5BA2 0 CODE 0 text51 dist/default/production\MBGRSD.X.production.o
+__ptext52 5D9E 0 CODE 0 text52 dist/default/production\MBGRSD.X.production.o
+__ptext53 58D2 0 CODE 0 text53 dist/default/production\MBGRSD.X.production.o
+__ptext54 5D56 0 CODE 0 text54 dist/default/production\MBGRSD.X.production.o
+__ptext55 5C18 0 CODE 0 text55 dist/default/production\MBGRSD.X.production.o
+__ptext56 5D32 0 CODE 0 text56 dist/default/production\MBGRSD.X.production.o
+__ptext57 5D84 0 CODE 0 text57 dist/default/production\MBGRSD.X.production.o
+__ptext58 5CCC 0 CODE 0 text58 dist/default/production\MBGRSD.X.production.o
+__ptext59 5D44 0 CODE 0 text59 dist/default/production\MBGRSD.X.production.o
+__ptext60 5D0A 0 CODE 0 text60 dist/default/production\MBGRSD.X.production.o
+__ptext61 5D66 0 CODE 0 text61 dist/default/production\MBGRSD.X.production.o
+__CFG_PCLKEN$ON 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__end_of_PIN_MANAGER_Initialize 5CEC 0 CODE 0 text58 dist/default/production\MBGRSD.X.production.o
+disk_status@pdrv 1 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+_create_name$624 11 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+___lldiv 5666 0 CODE 0 text33 dist/default/production\MBGRSD.X.production.o
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/production\MBGRSD.X.production.o
+__Lbigram 0 0 ABS 0 bigram dist/default/production\MBGRSD.X.production.o
+___lmul@multiplier 1 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+__size_of_disk_initialize 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+_move_window 552C 0 CODE 0 text43 dist/default/production\MBGRSD.X.production.o
+__Lcomram 0 0 ABS 0 comram dist/default/production\MBGRSD.X.production.o
+__Lconfig 300000 0 CONFIG 0 config dist/default/production\MBGRSD.X.production.o
+__size_of_check_fs 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__end_of_disk_read 5252 0 CODE 0 text47 dist/default/production\MBGRSD.X.production.o
+___wmul@multiplier 1 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+_LATBbits F8A 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__size_of_f_open 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__size_of_f_read 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__size_of_f_sync 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+find_volume@bsect 91 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+__size_of_disk_read 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+find_volume@nclst 88 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+__end_of_rcvr_datablock 593E 0 CODE 0 text53 dist/default/production\MBGRSD.X.production.o
+xmit_datablock@buff 4 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+xmit_datablock@resp 9 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+find_volume@tsect 84 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+find_volume@wmode 49 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+send_cmd@arg B 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+send_cmd@cmd F 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+send_cmd@res 10 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+_RCSTA1bits FAB 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+create_name@b 15 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+create_name@c 1F 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+create_name@d 1A 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+create_name@i 1D 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+create_name@p 18 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+__size_of_reproductor 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__size_of_disk_status 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/production\MBGRSD.X.production.o
+_select 5CEC 0 CODE 0 text50 dist/default/production\MBGRSD.X.production.o
+_SPI1_Exchange8bit 5D56 0 CODE 0 text54 dist/default/production\MBGRSD.X.production.o
+put_fat@p 54 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+__Lfardata 0 0 FARRAM 0 fardata dist/default/production\MBGRSD.X.production.o
+__size_of_dir_sdi 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+___send_cmd 56E8 0 CODE 0 text49 dist/default/production\MBGRSD.X.production.o
+__size_of_guardar 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__end_of_SPI1_Open 5D84 0 CODE 0 text25 dist/default/production\MBGRSD.X.production.o
+dir_alloc@nent 82 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+stackhi 7FF 0 ABS 0 - C:\Users\Eula\AppData\Local\Temp\s7bo.o
+stacklo 34E 0 ABS 0 - C:\Users\Eula\AppData\Local\Temp\s7bo.o
+SPI1_Exchange8bit@data 1 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+__Lintcode 0 0 CODE 0 intcode dist/default/production\MBGRSD.X.production.o
+__size_of_SPI1_Open 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+sync_fs@res 44 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+__CFG_PLLSEL$PLL4X 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__size_of_ld_clust 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+_remove_chain 4630 0 CODE 0 text9 dist/default/production\MBGRSD.X.production.o
+_OSCCON2 FD2 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+_OSCTUNE F9B 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__Lintret 0 0 ABS 0 intret dist/default/production\MBGRSD.X.production.o
+__Lirdata 0 0 CODE 0 irdata dist/default/production\MBGRSD.X.production.o
+_ADCON0bits FC2 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+disk_initialize@cmd 19 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+disk_initialize@ocr 13 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+disk_initialize@tmr 1B 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+__pbssBIGRAM 120 0 BIGRAM 1 bssBIGRAM dist/default/production\MBGRSD.X.production.o
+_disk_read 5186 0 CODE 0 text47 dist/default/production\MBGRSD.X.production.o
+f_mount@path 54 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+__end_of_xmit_datablock 5A0A 0 CODE 0 text46 dist/default/production\MBGRSD.X.production.o
+__CFG_ICPRT$OFF 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+disk_ioctl@buff 12 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+disk_ioctl@pdrv 31 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+_follow_path 477A 0 CODE 0 text10 dist/default/production\MBGRSD.X.production.o
+__Lspace_0 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__Lspace_1 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__Lspace_2 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+_send_cmd 5B60 0 CODE 0 text48 dist/default/production\MBGRSD.X.production.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+_PIR1bits F9E 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+dir_alloc@res 89 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+__end_of_find_volume 11CA 0 CODE 0 text22 dist/default/production\MBGRSD.X.production.o
+__CFG_LVP$ON 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__end_of_get_fat 3558 0 CODE 0 text30 dist/default/production\MBGRSD.X.production.o
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+_f_close 5BDE 0 CODE 0 text34 dist/default/production\MBGRSD.X.production.o
+_f_lseek 192E 0 CODE 0 text27 dist/default/production\MBGRSD.X.production.o
+_f_mount 53D6 0 CODE 0 text21 dist/default/production\MBGRSD.X.production.o
+_f_write 11CA 0 CODE 0 text6 dist/default/production\MBGRSD.X.production.o
+f_close@res 50 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+end_of_initialization 5AB8 0 CODE 0 cinit dist/default/production\MBGRSD.X.production.o
+_SPI1_Open 5D76 0 CODE 0 text25 dist/default/production\MBGRSD.X.production.o
+__end_of_send_cmd 5BA2 0 CODE 0 text48 dist/default/production\MBGRSD.X.production.o
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/production\MBGRSD.X.production.o
+__Hintentry 0 0 ABS 0 intentry dist/default/production\MBGRSD.X.production.o
+f_read@buff 58 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+f_read@clst 71 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+f_read@rcnt 7E 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+f_read@sect 78 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+__CFG_STVREN$ON 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+dir_sdi@idx 58 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+_clust2sect 531C 0 CODE 0 text31 dist/default/production\MBGRSD.X.production.o
+f_sync@fp 45 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+_put_fat$400 4D 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+_put_fat$401 4F 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+?___lldiv 1 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+__Hreset_vec 0 0 CODE 0 reset_vec dist/default/production\MBGRSD.X.production.o
+_check_fs 4E0C 0 CODE 0 text26 dist/default/production\MBGRSD.X.production.o
+disk_write@buff 11 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+disk_write@pdrv 1A 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+__HbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\MBGRSD.X.production.o
+__HbssBANK1 0 0 ABS 0 bssBANK1 dist/default/production\MBGRSD.X.production.o
+__size_of_select 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+sync_window@res 29 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+__Lramtop 800 0 RAM 0 ramtop dist/default/production\MBGRSD.X.production.o
+__Lrparam 0 0 COMRAM 1 rparam dist/default/production\MBGRSD.X.production.o
+__pcinit 5A6C 0 CODE 0 cinit dist/default/production\MBGRSD.X.production.o
+__ptext0 5866 0 CODE 0 text0 dist/default/production\MBGRSD.X.production.o
+__ptext1 4FD6 0 CODE 0 text1 dist/default/production\MBGRSD.X.production.o
+__ptext2 5486 0 CODE 0 text2 dist/default/production\MBGRSD.X.production.o
+__ptext3 1F3C 0 CODE 0 text3 dist/default/production\MBGRSD.X.production.o
+__ptext4 4A02 0 CODE 0 text4 dist/default/production\MBGRSD.X.production.o
+__ptext5 5A0A 0 CODE 0 text5 dist/default/production\MBGRSD.X.production.o
+__ptext6 11CA 0 CODE 0 text6 dist/default/production\MBGRSD.X.production.o
+__ptext7 5252 0 CODE 0 text7 dist/default/production\MBGRSD.X.production.o
+__ptext8 3558 0 CODE 0 text8 dist/default/production\MBGRSD.X.production.o
+__ptext9 4630 0 CODE 0 text9 dist/default/production\MBGRSD.X.production.o
+__Lstruct 0 0 COMRAM 1 struct dist/default/production\MBGRSD.X.production.o
+__size_of_remove_chain 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+rcvr_datablock@token 8 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+__size_of_deselect 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__Ltext10 0 0 ABS 0 text10 dist/default/production\MBGRSD.X.production.o
+__Ltext11 0 0 ABS 0 text11 dist/default/production\MBGRSD.X.production.o
+__Ltext12 0 0 ABS 0 text12 dist/default/production\MBGRSD.X.production.o
+__Ltext13 0 0 ABS 0 text13 dist/default/production\MBGRSD.X.production.o
+__Ltext14 0 0 ABS 0 text14 dist/default/production\MBGRSD.X.production.o
+__Ltext15 0 0 ABS 0 text15 dist/default/production\MBGRSD.X.production.o
+__Ltext16 0 0 ABS 0 text16 dist/default/production\MBGRSD.X.production.o
+__Ltext17 0 0 ABS 0 text17 dist/default/production\MBGRSD.X.production.o
+__Ltext18 0 0 ABS 0 text18 dist/default/production\MBGRSD.X.production.o
+__Ltext19 0 0 ABS 0 text19 dist/default/production\MBGRSD.X.production.o
+__Ltext20 0 0 ABS 0 text20 dist/default/production\MBGRSD.X.production.o
+__Ltext21 0 0 ABS 0 text21 dist/default/production\MBGRSD.X.production.o
+__Ltext22 0 0 ABS 0 text22 dist/default/production\MBGRSD.X.production.o
+__Ltext23 0 0 ABS 0 text23 dist/default/production\MBGRSD.X.production.o
+__Ltext24 0 0 ABS 0 text24 dist/default/production\MBGRSD.X.production.o
+__Ltext25 0 0 ABS 0 text25 dist/default/production\MBGRSD.X.production.o
+__Ltext26 0 0 ABS 0 text26 dist/default/production\MBGRSD.X.production.o
+__Ltext27 0 0 ABS 0 text27 dist/default/production\MBGRSD.X.production.o
+__Ltext28 0 0 ABS 0 text28 dist/default/production\MBGRSD.X.production.o
+__Ltext29 0 0 ABS 0 text29 dist/default/production\MBGRSD.X.production.o
+__Ltext30 0 0 ABS 0 text30 dist/default/production\MBGRSD.X.production.o
+__Ltext31 0 0 ABS 0 text31 dist/default/production\MBGRSD.X.production.o
+__Ltext32 0 0 ABS 0 text32 dist/default/production\MBGRSD.X.production.o
+__Ltext33 0 0 ABS 0 text33 dist/default/production\MBGRSD.X.production.o
+__Ltext34 0 0 ABS 0 text34 dist/default/production\MBGRSD.X.production.o
+__Ltext35 0 0 ABS 0 text35 dist/default/production\MBGRSD.X.production.o
+__Ltext36 0 0 ABS 0 text36 dist/default/production\MBGRSD.X.production.o
+__Ltext37 0 0 ABS 0 text37 dist/default/production\MBGRSD.X.production.o
+__Ltext38 0 0 ABS 0 text38 dist/default/production\MBGRSD.X.production.o
+__Ltext39 0 0 ABS 0 text39 dist/default/production\MBGRSD.X.production.o
+__Ltext40 0 0 ABS 0 text40 dist/default/production\MBGRSD.X.production.o
+__Ltext41 0 0 ABS 0 text41 dist/default/production\MBGRSD.X.production.o
+__Ltext42 0 0 ABS 0 text42 dist/default/production\MBGRSD.X.production.o
+__Ltext43 0 0 ABS 0 text43 dist/default/production\MBGRSD.X.production.o
+__Ltext44 0 0 ABS 0 text44 dist/default/production\MBGRSD.X.production.o
+__Ltext45 0 0 ABS 0 text45 dist/default/production\MBGRSD.X.production.o
+__Ltext46 0 0 ABS 0 text46 dist/default/production\MBGRSD.X.production.o
+__Ltext47 0 0 ABS 0 text47 dist/default/production\MBGRSD.X.production.o
+__Ltext48 0 0 ABS 0 text48 dist/default/production\MBGRSD.X.production.o
+__Ltext49 0 0 ABS 0 text49 dist/default/production\MBGRSD.X.production.o
+__Ltext50 0 0 ABS 0 text50 dist/default/production\MBGRSD.X.production.o
+__Ltext51 0 0 ABS 0 text51 dist/default/production\MBGRSD.X.production.o
+__Ltext52 0 0 ABS 0 text52 dist/default/production\MBGRSD.X.production.o
+__Ltext53 0 0 ABS 0 text53 dist/default/production\MBGRSD.X.production.o
+__Ltext54 0 0 ABS 0 text54 dist/default/production\MBGRSD.X.production.o
+__Ltext55 0 0 ABS 0 text55 dist/default/production\MBGRSD.X.production.o
+__Ltext56 0 0 ABS 0 text56 dist/default/production\MBGRSD.X.production.o
+__Ltext57 0 0 ABS 0 text57 dist/default/production\MBGRSD.X.production.o
+__Ltext58 0 0 ABS 0 text58 dist/default/production\MBGRSD.X.production.o
+__Ltext59 0 0 ABS 0 text59 dist/default/production\MBGRSD.X.production.o
+__Ltext60 0 0 ABS 0 text60 dist/default/production\MBGRSD.X.production.o
+__Ltext61 0 0 ABS 0 text61 dist/default/production\MBGRSD.X.production.o
+__end_of_check_fs 4EF8 0 CODE 0 text26 dist/default/production\MBGRSD.X.production.o
+___send_cmd@n 9 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+__ramtop 800 0 RAM 0 ramtop C:\Users\Eula\AppData\Local\Temp\s7bo.o
+create_chain@cs 69 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+create_chain@fs 56 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+put_fat@bc 51 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+put_fat@fs 3B 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+reproductor@i_1722 84 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+__Lpowerup 0 0 CODE 0 powerup dist/default/production\MBGRSD.X.production.o
+get_ldnumber@i B 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+get_fat@p 52 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\MBGRSD.X.production.o
+__end_of___send_cmd 576A 0 CODE 0 text49 dist/default/production\MBGRSD.X.production.o
+_get_fat$374 4A 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+_ld_clust 576A 0 CODE 0 text11 dist/default/production\MBGRSD.X.production.o
+f_mount@cfs 58 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+f_mount@opt 56 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+f_mount@res 57 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+f_mount@vol 5C 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+__psmallconst 800 0 SMALLCONST 0 smallconst dist/default/production\MBGRSD.X.production.o
+f_write@buff 6F 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+f_write@clst 8B 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+f_write@sect 87 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+f_write@wcnt 8F 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+f_open@mode 9E 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+f_open@path 9C 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+dir_next@clst 7C 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/production\MBGRSD.X.production.o
+f_write@csect 84 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+disk_read@cmd 1C 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+st_clust@cl 3 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+f_write@wbuff 82 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+__CFG_SDOMX$RB3 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__end_of_sync_window 4630 0 CODE 0 text44 dist/default/production\MBGRSD.X.production.o
+xmit_datablock@i 7 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+Error@a 1 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+__end_of_ld_clust 57E8 0 CODE 0 text11 dist/default/production\MBGRSD.X.production.o
+___param_bank 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\MBGRSD.X.production.o
+__end_of__initialization 5AB8 0 CODE 0 cinit dist/default/production\MBGRSD.X.production.o
+__CFG_WRT0$OFF 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__CFG_WRT1$OFF 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__CFG_WRT2$OFF 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__CFG_WRT3$OFF 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__end_of_remove_chain 477A 0 CODE 0 text9 dist/default/production\MBGRSD.X.production.o
+__CFG_WRTB$OFF 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__Libigdata 0 0 CODE 0 ibigdata dist/default/production\MBGRSD.X.production.o
+__CFG_WRTC$OFF 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__CFG_WRTD$OFF 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+_reproducir 4FD6 0 CODE 0 text1 dist/default/production\MBGRSD.X.production.o
+__end_of_dir_sdi 3EAA 0 CODE 0 text19 dist/default/production\MBGRSD.X.production.o
+__pidataBANK0 5D92 0 CODE 0 idataBANK0 dist/default/production\MBGRSD.X.production.o
+disk_initialize@pdrv 12 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+Error@F5055 E8 0 BANK0 1 dataBANK0 dist/default/production\MBGRSD.X.production.o
+__size_of_create_name 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__end_of_guardar 4B20 0 CODE 0 text4 dist/default/production\MBGRSD.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext dist/default/production\MBGRSD.X.production.o
+_SSP1CON1bits FC6 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+_SPBRGH1 FB0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+___lmul@product 9 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+wait_ready@tmr 2 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+_sync_fs 4318 0 CODE 0 text38 dist/default/production\MBGRSD.X.production.o
+Error@v_seg 4 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+__end_of_clust2sect 53D6 0 CODE 0 text31 dist/default/production\MBGRSD.X.production.o
+dir_find@dp 80 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+__CFG_nLPBOR$OFF 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+___lmul@multiplicand 5 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+___lldiv@quotient 9 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+__pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+_mem_cmp 593E 0 CODE 0 text13 dist/default/production\MBGRSD.X.production.o
+_mem_cpy 57E8 0 CODE 0 text17 dist/default/production\MBGRSD.X.production.o
+_mem_set 5C50 0 CODE 0 text39 dist/default/production\MBGRSD.X.production.o
+ff@FatFs DC 0 BANK0 1 bssBANK0 dist/default/production\MBGRSD.X.production.o
+_SSP1ADD FC8 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+_SSP1BUF FC9 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+_disk_initialize$134 17 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+__CFG_BOREN$SBORDIS 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+_chk_chr 5B18 0 CODE 0 text15 dist/default/production\MBGRSD.X.production.o
+__end_of_main 58D2 0 CODE 0 text0 dist/default/production\MBGRSD.X.production.o
+_deselect 5D9E 0 CODE 0 text52 dist/default/production\MBGRSD.X.production.o
+__end_of_Error 531C 0 CODE 0 text7 dist/default/production\MBGRSD.X.production.o
+_Error 5252 0 CODE 0 text7 dist/default/production\MBGRSD.X.production.o
+_FatFs 120 0 BIGRAM 1 bssBIGRAM dist/default/production\MBGRSD.X.production.o
+find_volume@fmt 97 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+find_volume@rfs 45 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+find_volume@vol 80 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+_PORTA F80 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+_PORTC F82 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+_TRISA F92 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+_TRISB F93 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+_TRISC F94 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+_TRISD F95 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+_TRISE F96 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__CFG_CP0$OFF 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__CFG_CP1$OFF 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__HRAM 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__Hbss 0 0 RAM 1 bss dist/default/production\MBGRSD.X.production.o
+__Hram 0 0 ABS 0 ram dist/default/production\MBGRSD.X.production.o
+__Hsfr 0 0 ABS 0 sfr dist/default/production\MBGRSD.X.production.o
+__LRAM 1 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__Lbss 0 0 RAM 1 bss dist/default/production\MBGRSD.X.production.o
+__Lram 0 0 ABS 0 ram dist/default/production\MBGRSD.X.production.o
+__Lsfr 0 0 ABS 0 sfr dist/default/production\MBGRSD.X.production.o
+__CFG_CP2$OFF 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__CFG_CP3$OFF 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+_adcin D8 0 BANK0 1 bssBANK0 dist/default/production\MBGRSD.X.production.o
+ld_clust@cl B 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+ld_clust@fs 1 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+__CFG_CPB$OFF 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__CFG_CPD$OFF 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+follow_path@path 88 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+dir_find@dir 83 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+dir_find@res 85 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+f_close@fp 4E 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+__size_of_PIN_MANAGER_Initialize 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+_put_fat 2986 0 CODE 0 text29 dist/default/production\MBGRSD.X.production.o
+f_read@remain 6D 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+__end_of_deselect 5DA8 0 CODE 0 text52 dist/default/production\MBGRSD.X.production.o
+___send_cmd@arg 4 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+___send_cmd@cmd A 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+___send_cmd@res 8 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+__HdataBANK0 0 0 ABS 0 dataBANK0 dist/default/production\MBGRSD.X.production.o
+create_name@sfn 1B 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+__end_of_EUSART1_Initialize 5D20 0 CODE 0 text60 dist/default/production\MBGRSD.X.production.o
+__end_of_OSCILLATOR_Initialize 5D56 0 CODE 0 text59 dist/default/production\MBGRSD.X.production.o
+f_lseek@clst 90 0 BANK0 1 cstackBANK0 dist/default/production\MBGRSD.X.production.o
+__initialization 5A6C 0 CODE 0 cinit dist/default/production\MBGRSD.X.production.o
+__size_of_st_clust 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+disk_ioctl@n 37 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+move_window@sector 32 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+__pbssBANK0 D0 0 BANK0 1 bssBANK0 dist/default/production\MBGRSD.X.production.o
+__pbssBANK1 100 0 BANK1 1 bssBANK1 dist/default/production\MBGRSD.X.production.o
+_disk_ioctl 24E8 0 CODE 0 text40 dist/default/production\MBGRSD.X.production.o
+_disk_write 4B20 0 CODE 0 text45 dist/default/production\MBGRSD.X.production.o
+__Hfardata 0 0 FARRAM 0 fardata dist/default/production\MBGRSD.X.production.o
+___wmul@product 5 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+__Hsmallconst 81C 0 SMALLCONST 0 smallconst dist/default/production\MBGRSD.X.production.o
+__size_of_dir_find 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__size_of_dir_next 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__Lifardata 0 0 CODE 0 ifardata dist/default/production\MBGRSD.X.production.o
+__end_of_reproducir 50B0 0 CODE 0 text1 dist/default/production\MBGRSD.X.production.o
+__CFG_T3CMX$RC0 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+_reproductor 5486 0 CODE 0 text2 dist/default/production\MBGRSD.X.production.o
+_disk_status 5D20 0 CODE 0 text37 dist/default/production\MBGRSD.X.production.o
+__size_of_find_volume 0 0 ABS 0 - dist/default/production\MBGRSD.X.production.o
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\MBGRSD.X.production.o
+__Hintcode 0 0 CODE 0 intcode dist/default/production\MBGRSD.X.production.o
+clust2sect@fs D 0 COMRAM 1 cstackCOMRAM dist/default/production\MBGRSD.X.production.o
+_OSCILLATOR_Initialize 5D44 0 CODE 0 text59 dist/default/production\MBGRSD.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+idloc 0 200000 200000 8 1
+text22 0 81C 81C 5581 1
+text52 0 5D9E 5D9E A 1
+cstackCOMRAM 1 1 1 5F 1
+cstackBANK0 1 60 60 93 1
+reset_vec 0 0 0 4 1
+bssBANK1 1 100 100 20 1
+smallconst 0 800 800 1C 1
+bssBIGRAM 1 120 120 22E 1
+config 0 300000 300000 E 1
